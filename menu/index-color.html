@@ -1,0 +1,208 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyborg</title>
+
+    <style>
+        @font-face {
+        font-family: "ledlight";
+        src: url("../../assets/fonts/LEDLIGHT.otf");
+         }
+
+        html,
+        body {
+          height: 100%;
+          overflow: hidden;
+          background-color: #000000;
+        }
+        
+        .Loop {
+          position: relative;
+          height: 100%;
+          overflow: auto;
+          -webkit-overflow-scrolling: touch;
+        }
+        
+        section {
+          position: relative;
+          text-align: center;
+          min-height: 300px;
+          max-height: 700px; /* 700px */
+          height: 10%; /* 80% */
+        }
+        
+        ::scrollbar {
+          display: none;
+        }
+        
+        
+        
+        
+        
+        
+        
+        body {
+          font-family: "Avenir Next", Helvetica, sans-serif;
+          /* font-family: 'ledlight'; */
+          font-weight: normal;
+          font-size: 100%;
+        }
+        
+        .one {
+          background: #81234e;
+        }
+        
+        .two {
+          background: #df5252;
+        }
+        
+        .three {
+          background: #ff9a56;
+        }
+        
+        .four {
+          background: #371465;
+        }
+        
+        h1 {
+          margin: 0;
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          width: 100%;
+          font-size: 40px; /* 80px */
+          letter-spacing: 5px;
+          color: #fff;
+          text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+    
+    <main class="Loop js-loop">
+        <section class="one">
+          <h1>Inicio</h1>
+        </section>
+        <section class="two">
+          <h1>Guias</h1>
+        </section>
+        <section class="three">
+          <h1>Sesiones</h1>
+        </section>
+        <section class="four">
+          <h1>Colab</h1>
+        </section>
+        <section class="three">
+          <h1>Instagram</h1>
+        </section>
+        <section class="two">
+          <h1>Video</h1>
+        </section>
+      
+        <!--
+        Estos bloques son los mismos que los primeros bloques para hacer funcionar esa ilusión de bucle.
+        Debe agregar clones para completar una altura de ventana gráfica completa.
+        -->
+        <section class="one is-clone">
+          <h1>Inicio</h1>
+        </section>
+        <section class="two is-clone">
+          <h1>Guias</h1>
+        </section>
+      </main>
+
+      <script>
+                var doc = window.document,
+          context = doc.querySelector('.js-loop'),
+          clones = context.querySelectorAll('.is-clone'),
+          disableScroll = false,
+          scrollHeight = 0,
+          scrollPos = 0,
+          clonesHeight = 0,
+          i = 0;
+        
+        function getScrollPos () {
+          return (context.pageYOffset || context.scrollTop) - (context.clientTop || 0);
+        }
+        
+        function setScrollPos (pos) {
+          context.scrollTop = pos;
+        }
+        
+        function getClonesHeight () {
+          clonesHeight = 0;
+        
+          for (i = 0; i < clones.length; i += 1) {
+            clonesHeight = clonesHeight + clones[i].offsetHeight;
+          }
+        
+          return clonesHeight;
+        }
+        
+        function reCalc () {
+          scrollPos = getScrollPos();
+          scrollHeight = context.scrollHeight;
+          clonesHeight = getClonesHeight();
+        
+          if (scrollPos <= 0) {
+            setScrollPos(1); // Scroll 1 pixel to allow upwards scrolling
+          }
+        }
+        
+        function scrollUpdate () {
+          if (!disableScroll) {
+            scrollPos = getScrollPos();
+        
+            if (clonesHeight + scrollPos >= scrollHeight) {
+              // Scroll to the top when you’ve reached the bottom
+              setScrollPos(1); // Scroll down 1 pixel to allow upwards scrolling
+              disableScroll = true;
+            } else if (scrollPos <= 0) {
+              // Scroll to the bottom when you reach the top
+              setScrollPos(scrollHeight - clonesHeight);
+              disableScroll = true;
+            }
+          }
+        
+          if (disableScroll) {
+            // Disable scroll-jumping for a short time to avoid flickering
+            window.setTimeout(function () {
+              disableScroll = false;
+            }, 40);
+          }
+        }
+        
+        function init () {
+          reCalc();
+          
+          context.addEventListener('scroll', function () {
+            window.requestAnimationFrame(scrollUpdate);
+          }, false);
+        
+          window.addEventListener('resize', function () {
+            window.requestAnimationFrame(reCalc);
+          }, false);
+        }
+        
+        if (document.readyState !== 'loading') {
+          init()
+        } else {
+          doc.addEventListener('DOMContentLoaded', init, false)
+        }
+        
+        
+        
+        
+        
+        
+        
+        
+        // Just for this demo: Center the middle block on page load
+        window.onload = function () {
+          setScrollPos(Math.round(clones[0].getBoundingClientRect().top + getScrollPos() - (context.offsetHeight - clones[0].offsetHeight) / 2));
+        };
+      </script>
+</body>
+</html>

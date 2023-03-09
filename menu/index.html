@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Cyborg">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no">
+    <meta name="applicable-device" content="pc,mobile">
+  
+      <meta name="referrer" content="always" />
+      <meta name="theme-color" content="#000000" />
+  
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ali-bhtty.web.app/cyborg">
+    <meta property="og:title" content="Cyborg">
+    <meta property="og:description" content="Curación de fotografía y arte digital - &quot;Barcelona &quot; It's Cyborg art">
+    <meta property="og:image" content="https://ali-bhtty.web.app/cyborg/assets/icons/meta.jpg">
+
+    <title>Cyborg - Menu</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Playfair+Display'>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Roboto'>
+
+    <style>
+            @font-face {
+        font-family: "ledlight";
+        src: url("../../assets/fonts/LEDLIGHT.otf");
+         }
+            
+         /* body{
+                padding-top: 4rem;
+            } */
+
+         /* @media screen and (display-mode: standalone) {
+            .menu{
+                padding-top: 4rem;
+            }
+          } ; */
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            overflow: hidden;
+            background: #000000;
+            color: #fbfbfd;
+        }
+
+        .menu {
+            height: 100vh;
+            overflow: hidden;
+            background: #000000;
+            cursor: -webkit-grab;
+            cursor: grab;
+        }
+
+        .menu.is-dragging {
+            cursor: -webkit-grabbing;
+            cursor: grabbing;
+        }
+
+        .menu ul {
+            counter-reset: count;
+        }
+
+        .menu--item {
+            counter-increment: count;
+            position: absolute;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            width: 100%;
+            font-size: 120px;
+            line-height: 1.2;
+            padding: 2rem 0;
+            text-align: center;
+        }
+
+        @media (max-width: 767px) {
+            .menu--item {
+                font-size: 10vw;
+                padding: 1.1rem 0;
+            }
+        }
+
+        .menu--item:nth-child(n+10):before {
+            content: counter(count);
+        }
+
+        .menu--item button {
+            color: #fbfbfd; /* fbfbfd */
+            text-decoration: none;
+            position: relative;
+            z-index: 1;
+            display: inline-block;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            font-size: 120px;
+            -webkit-appearance: none;
+            background: none;
+            padding: 0;
+            border: none;
+            outline: none;
+            box-shadow: none;
+            font-family: "ledlight"; /* Orelo-sw-db , serif */
+            cursor: pointer;
+        }
+
+        @media (max-width: 767px) {
+            .menu--item button {
+                font-size: 14vw;  /* font 10vw */
+            }
+        }
+
+        /* .menu--item button:before {
+            position: absolute;
+            z-index: -1;
+            left: 0;
+            display: inline-block;
+            transform: translateX(-100%) scale(0.4);
+            content: "0" counter(count);
+            color: #91a6f0;
+            font-family: cursive;
+        } */
+
+        .version {
+            display: inline-block;
+            position: fixed;
+            z-index: 1;
+            text-decoration: none;
+            background: #333;
+            font-family: sans-serif;
+            color: #fff;
+            text-transform: uppercase;
+            font-size: 12px;
+            border-radius: 10px;
+            box-shadow: 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+            top: -30px;
+            right: -60px;
+            bottom: auto;
+            transform: rotate(45deg);
+            transform-origin: 0% 100%;
+            border-radius: 0;
+            padding: 8px 30px;
+            font-size: 11px;
+        }
+
+        .version:before {
+            content: "";
+            position: absolute;
+            z-index: -1;
+            width: 100%;
+            height: 100px;
+            bottom: 0;
+            right: 0%;
+            background: transparent;
+        }
+
+        @media (max-width: 767px) {
+            .version {
+                transform: scale(0.6) rotate(45deg);
+                right: -110px;
+            }
+        }
+
+
+
+        /* gradiente */
+        /* body:before {
+            content: "";
+            bottom: 0;
+            width: 100%;
+            height: 10rem;
+            position: fixed;
+            top: 0;
+            background: linear-gradient(to top, rgba(255,255,255,0) 0%, rgba(0,0,0,.9) 98%);
+            z-index: 999;
+            pointer-events: none;
+            }
+        
+            @media (max-width: 920px) {
+              body:before {
+                content: "";
+            bottom: 0;
+            width: 100%;
+            height: 40vh;
+            position: block;
+            top: 0;
+            background: linear-gradient(to top, rgba(255,255,255,0) 0%, rgba(0,0,0,.9) 80%);
+            z-index: 999;
+            pointer-events: none;
+              }
+            } */
+
+
+        /* .body:before {
+            content: "";
+            bottom: 0;
+            width: 100%;
+            height: 10rem; /* 70vh /
+            position: fixed;
+            background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(0,0,0,.9) 98%);
+            z-index: 999;
+            pointer-events: none;
+            }
+        
+            @media (max-width: 920px) {
+              .body:before {
+                content: "";
+            bottom: 0;
+            width: 100%;
+            height: 60vh; /* 10rem    70vh /
+            position: fixed;
+            background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(0,0,0,.9) 80%);
+            z-index: 999;
+            pointer-events: none;
+              }
+            }
+ */
+    </style>
+
+
+    <!-- <script>
+        if (document.location.search.match(/type=embed/gi)) {
+            window.parent.postMessage("resize", "*");
+        }
+    </script> -->
+
+</head>
+
+<body class="body" translate="no">
+    <!--
+
+Follow me on
+Instagram: https://www.instagram.com/supahfunk/
+Dribbble: https://dribbble.com/supahfunk
+Twitter: https://twitter.com/supahfunk
+Codepen: https://codepen.io/supah/
+
+Horizontal Version: https://codepen.io/supah/pen/VwegJwV
+
+-->
+
+    <!-- <div class="menu">
+        <ul class="menu--wrapper">
+            <li class="menu--item"><button href="#">Facebook</button></li>
+            <li class="menu--item"><button href="#">Netflix</button></li>
+            <li class="menu--item"><button href="#">Instagram</button></li>
+            <li class="menu--item"><button href="#">Google</button></li>
+            <li class="menu--item"><button href="#">Twitter</button></li>
+            <li class="menu--item"><button href="#">Amazon</button></li>
+            <li class="menu--item"><button href="#">Pinterest</button></li>
+            <li class="menu--item"><button href="#">Spotify</button></li>
+            <li class="menu--item"><button href="#">YouTube</button></li>
+        </ul>
+    </div> -->
+
+    <div class="menu">
+        <ul class="menu--wrapper">
+            <li class="menu--item"><button href="https://ali-bhtty.web.app/cyborg/">Inicio</button></li>
+            <li class="menu--item"><button href="https://ali-bhtty.web.app/cyborg/guias">Guias</button></li>
+            <li class="menu--item"><button href="https://ali-bhtty.web.app/cyborg/set">Sesiones</button></li>
+            <li class="menu--item"><button href="#">Urbano</button></li>
+            <li class="menu--item"><button href="/cyborg/shorts/">Shorts</button></li>
+            <li class="menu--item"><button href="#">Instagram</button></li>
+            <li class="menu--item"><button href="#">Colab</button></li>
+            <li class="menu--item"><button href="#">Playlist</button></li>
+            <li class="menu--item"><button href="#">Videos</button></li>
+        </ul>
+    </div>
+
+    <!-- <a class="version" href="https://codepen.io/supah/pen/VwegJwV" target="_parent">Horizontal version</a> -->
+    <script
+        src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-2c7831bb44f98c1391d6a4ffda0e1fd302503391ca806e7fcc7b9b87197aec26.js"></script>
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/gsap.min.js'></script>
+    <script id="rendered-js">
+        /*--------------------
+        Vars
+        --------------------*/
+        const $menu = document.querySelector('.menu');
+        const $items = document.querySelectorAll('.menu--item');
+        let menuHeight = $menu.clientHeight;
+        let itemHeight = $items[0].clientHeight;
+        let wrapHeight = $items.length * itemHeight;
+
+        let scrollSpeed = 0;
+        let oldScrollY = 0;
+        let scrollY = 0;
+        let y = 0;
+
+
+        /*--------------------
+        Lerp
+        --------------------*/
+        const lerp = (v0, v1, t) => {
+            return v0 * (1 - t) + v1 * t;
+        };
+
+
+        /*--------------------
+        Dispose
+        --------------------*/
+        const dispose = scroll => {
+            gsap.set($items, {
+                y: i => {
+                    return i * itemHeight + scroll;
+                },
+                modifiers: {
+                    y: y => {
+                        const s = gsap.utils.wrap(-itemHeight, wrapHeight - itemHeight, parseInt(y));
+                        return `${s}px`;
+                    }
+                }
+            });
+
+
+        };
+        dispose(0);
+
+
+        /*--------------------
+        Wheel
+        --------------------*/
+        const handleMouseWheel = e => {
+            scrollY -= e.deltaY;
+        };
+
+
+        /*--------------------
+        Touch
+        --------------------*/
+        let touchStart = 0;
+        let touchY = 0;
+        let isDragging = false;
+        const handleTouchStart = e => {
+            touchStart = e.clientY || e.touches[0].clientY;
+            isDragging = true;
+            $menu.classList.add('is-dragging');
+        };
+        const handleTouchMove = e => {
+            if (!isDragging) return;
+            touchY = e.clientY || e.touches[0].clientY;
+            scrollY += (touchY - touchStart) * 2.5;
+            touchStart = touchY;
+        };
+        const handleTouchEnd = () => {
+            isDragging = false;
+            $menu.classList.remove('is-dragging');
+        };
+
+
+        /*--------------------
+        Listeners
+        --------------------*/
+        $menu.addEventListener('mousewheel', handleMouseWheel);
+
+        $menu.addEventListener('touchstart', handleTouchStart);
+        $menu.addEventListener('touchmove', handleTouchMove);
+        $menu.addEventListener('touchend', handleTouchEnd);
+
+        $menu.addEventListener('mousedown', handleTouchStart);
+        $menu.addEventListener('mousemove', handleTouchMove);
+        $menu.addEventListener('mouseleave', handleTouchEnd);
+        $menu.addEventListener('mouseup', handleTouchEnd);
+
+        $menu.addEventListener('selectstart', () => { return false; });
+
+
+        /*--------------------
+        Resize
+        --------------------*/
+        window.addEventListener('resize', () => {
+            menuHeight = $menu.clientHeight;
+            itemHeight = $items[0].clientHeight;
+            wrapHeight = $items.length * itemHeight;
+        });
+
+
+        /*--------------------
+        Render
+        --------------------*/
+        const render = () => {
+            requestAnimationFrame(render);
+            y = lerp(y, scrollY, .1);
+            dispose(y);
+
+            scrollSpeed = y - oldScrollY;
+            oldScrollY = y;
+
+            gsap.to($items, {
+                scale: 1 - Math.min(100, Math.abs(scrollSpeed)) * .005,
+                rotate: scrollSpeed * 0.2
+            });
+
+        };
+        render();
+//# sourceURL=pen.js
+    </script>
+
+
+
+</body>
+
+</html>

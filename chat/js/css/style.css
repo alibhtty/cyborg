@@ -1,0 +1,245 @@
+/* --------------------------------------------------------
+Style Sheet for Odis PWA Mobile App
+version: 1.0
+author: themepassion
+email: themepassion@jaybabani.com
+----------------------------------------------------------*/
+
+/*-------------------------------------
+TABLE OF CONTENTS:
+-------------------------------------*/
+
+/*-------------------------------------
++ Import Font
++ General Layout
++ Typography
++ Page Title
++ Helper Classes
++ Preloader
++ UI - buttons
++ UI - badges & Waves
++ UI - Colors
++ UI - Toasts
++ UI - Modal
++ UI - Grid
++ UI - Icons
++ Form Select
++ Dropdowns
++ Mediabox
++ Date picker
++ Time picker
++ Feature Discovery
++ Carousel
++ Carousel Home Screen
++ Slider
++ Testimonials
++ Floating action buttons
++ Tooltip
++ Highlight
++ Breadcrumbs
++ Buttons
++ Badges
++ Blockquote
++ Pagination
++ Spineers / preloaders
++ Carousel Basic
++ Accordion
++ Waves
++ Modal
++ Page Top Bar
++ Page Top Bar - Left Align
++ Page Top Bar - App Based
++ Page Top Bar - Right Aligned
++ Page Top Bar - Dark Style
++ Page Top Bar - Colored Style
++ Navigation Menu
++ Navigation Menu - Centered 
++ Navigation Menu - Dark Style
++ Navigation Menu - Colored Style
++ Sub pages - Inner Menu Links
++ Footer
++ Footer - Light Style
++ Footer - Colored Style
++ Footer - Minimal
++ Navigation User Menu
++ Drop Down
++ Collection
++ Progress Bars
++ Back to top button
++ Cards
++ Tabs
++ Icon Boxes
++ Chips
++ Form Range Sliders
++ Switches
++ Form Elements
++ Checkboxes
++ Radio Buttons
++ Select
++ Settings
++ Parallax
++ Masonry
++ Cards Wrap
++ Chat
++ Calendar
++ Events
++ Mailbox / Messages
++ Profile Page
++ Timeline
++ Portfolio
++ Blogs
++ Blogs - Aligned
++ Blogs - Small Left Style
++ Blogs - Medium Left Style
++ Blogs - Small Right Style
++ Blogs - Medium Right Style
++ Blogs - Small Alternate Style
++ Blogs - Medium Alternate Style
++ Blogs - Non Image
++ Login Page
++ Welcome page
++ Error Pages 
++ Search Page 
++ Pricing Tables
++ Invoice
++ Notifications
++ Edit Profile
++ App Settings
++ Clients
++ Fixed Footer Menu
++ Fixed Footer Menu - Dark Style
++ Fixed Footer Menu - Colored Style
++ Perfect Scrollbar
++ Table
++ Contact us page
++ Fancybox
++ Image Filter Overlay
++ Site - Dark Mode
++ Site - Dark Mode - Calendar
++ Site - Dark Mode - Events
++ Site - Dark Mode - Collections
++ Site - Dark Mode - Chat
++ Site - Dark Mode - Edit Profile
++ Site - Dark Mode - UI
++ Site - Dark Mode - Cards
++ Site - Dark Mode - Table
++ Site - Dark Mode - Badge and collapsible
++ Site - Dark Mode - Dropdown
++ Site - Dark Mode - Tabs
++ Site - Dark Mode - Iconboxes
++ Site - Dark Mode - Pagination
++ Site - Dark Mode - Modal & Waves
++ Site - Dark Mode - Forms
++ Site - Dark Mode - Datepicker and Timepicker
++ Site - Dark Mode - Checkbox & Radio
++ Site - Dark Mode - Chips
++ Site - Dark Mode - Range & Select
++ Site - Dark Mode - Switches
++ Site - Dark Mode - Inputs
++ Site - Dark Mode - Timeline
++ Site - Dark Mode - Pricing Tables & Search
++ Site - Dark Mode - Blogs
++ Site - Dark Mode - Client
++ Site - Dark Mode - Calendar
++ Site - Dark Mode - Portfolio
++ Site - Dark Mode - UI Icons
+
+--------------------------------------*/
+
+/*-------------------------------------
+  Variables
+  + Font: Roboto
+  + Primary Color: var(--primary-color) / rgba(var(--primary-rgb), 1)
+  + Accent Color: var(--accent-color) / rgba(var(--accent-rgb), 1)
+  + Text Color: #455A64
+  + Background Color: #f5f5f5
+  + Dark Mode Background Color: #263238 / #37474F / #455A64
+  + Dark Mode Text Color: #f5f5f5 / #CFD8DC
+
+-------------------------------------*/
+
+/*-------------------------------------
+  Import Font
+-------------------------------------*/
+
+/* @import url("https://fonts.googleapis.com/css?family=Roboto:400,500,600"); */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+
+@import url("./variables.css");
+
+@import url("./general.css");
+@import url("./preloader.css");
+@import url("./ui.css");
+@import url("./datepicker.css");
+@import url("./timepicker.css");
+@import url("./carousel.css");
+@import url("./carousel-home-screen.css");
+@import url("./slider.css");
+@import url("./testimonials.css");
+@import url("./floating-action.css");
+@import url("./tooltips.css");
+@import url("./buttons.css");
+@import url("./badges.css");
+@import url("./blockquotes.css");
+@import url("./pagination.css");
+@import url("./spinners.css");
+@import url("./accordion.css");
+@import url("./waves.css");
+@import url("./modal.css");
+@import url("./topbar.css");
+@import url("./navigation.css");
+/* @import url("_navigation-centered.css"); */
+@import url("./navigation-dark.css");
+@import url("./navigation-colored.css");
+@import url("./subpages.css");
+@import url("./footer.css");
+@import url("./footer-light.css");
+@import url("./footer-colored.css");
+@import url("./footer-minimal.css");
+@import url("./dropdown.css");
+@import url("./collection.css");
+@import url("./progress.css");
+@import url("./backtotop.css");
+@import url("./cards.css");
+@import url("./tabs.css");
+@import url("./iconboxes.css");
+@import url("./chips.css");
+@import url("./form-range-sliders.css");
+@import url("./switches.css");
+@import url("./form-elements.css");
+@import url("./settings.css");
+@import url("./parallax.css");
+@import url("./chat.css");
+@import url("./calendar.css");
+@import url("./events.css");
+@import url("./mailbox.css");
+@import url("./profile.css");
+@import url("./timeline.css");
+@import url("./portfolio.css");
+@import url("./blogs.css");
+@import url("./products.css");
+@import url("./login.css");
+@import url("./welcome.css");
+@import url("./error.css");
+@import url("./search.css");
+@import url("./pricing.css");
+@import url("./invoice.css");
+@import url("./notifications.css");
+@import url("./profile-edit.css");
+@import url("./app-settings.css");
+@import url("./clients.css");
+@import url("./fixed-footer-menu.css");
+@import url("./perfect-scrollbar.css");
+@import url("./tables.css");
+@import url("./contactus.css");
+@import url("./fancybox.css");
+@import url("./image-filter.css");
+@import url("./shadow.css");
+@import url("./team.css");
+@import url("./charts.css");
+@import url("./activity.css");
+@import url("./page-heading.css");
+@import url("./actions.css");
+@import url("./menu-effect.css");
+@import url("./site-darkmode.css");

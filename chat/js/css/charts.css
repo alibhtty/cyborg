@@ -1,0 +1,12 @@
+.chart-container{
+  background: #ffffff;
+  border-radius: var(--border-radius);
+  width: 100%;
+  margin-left: 0%;
+  /* padding: 15px 0 0 40%; */
+  padding: 15px 0;
+  box-shadow: none !important;
+}
+[data-site_mode="dark"] .chart-container{
+	background-color: #37474F;
+}
