@@ -10,16 +10,15 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <title>Cyborg</title>
 
-  <!-- <link rel="icon" href="/cyborg/assets/icons/icon_192.png" /> -->
   <!-- FAVICON -->
-  <link rel="apple-touch-icon" sizes="180x180" href="/cyborg/assets/icons/icon_192.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/cyborg/assets/icons/icon_32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/cyborg/assets/icons/icon_16.png">
-  <link rel="manifest" href="/cyborg/manifest.json">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/icon_192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/icon_32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/icon_16.png">
+  <link rel="manifest" href="/manifest.json">
   <!-- <link rel="mask-icon" href="https://ali-bhtty.web.app/favicon/safari-pinned-tab.svg" color="#5bbad5"> -->
-  <link rel="shortcut icon" type="image/x-icon" href="/cyborg/assets/icons/icon_192.ico">
+  <link rel="shortcut icon" type="image/x-icon" href="/assets/icons/icon_192.ico">
   <meta name="msapplication-TileColor" content="#2da3ba">
-  <meta name="theme-color" content="#ffffff">
+  <meta name="theme-color" content="#000000">
    <!-- <meta name="msapplication-config" content="https://ali-bhtty.web.app/favicon/browserconfig.xml"> -->
 
   <script type="module" crossorigin src="assets/index.10679811.js"></script>
@@ -33,123 +32,121 @@
   <link href="chat/css/perfect-scrollbar.css" type="text/css" rel="stylesheet" media="screen" />
   <link rel="stylesheet" href="https://ali-bhtty.web.app/cyborg/chat/js/css/style.css" media="screen" id="main-style">
 
-  <!-- <link rel="stylesheet" href="../css/style-v=2.css"> -->
   <style>
-
-.mobileMenuWrapper {
-    position: fixed;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #000;
-    z-index: 200;
-    visibility: hidden;
-    opacity: 0
-}
-
-    .menuButton {
-    display: none;
-    position: fixed;
-    width: 28px;
-    height: 28px;
-    top: 69px;
-    right: 20px;
-    text-indent: -9999px;
-    pointer-events: auto;
-    z-index: 300
-}
-
-.menuButton.working {
-    pointer-events: none
-}
-
-.x, .y, .z {
-    position: absolute;
-    margin: auto;
-    left: 5px;
-    background-color: #fff;
-    border-radius: 0;
-    height: 2px;
-    width: 18px;
-    transition: all 0.2s ease-out
-}
-
-.x {
-    top: 8px
-}
-
-.y {
-    top: 14px
-}
-
-.z {
-    top: 20px
-}
-
-.menuButton.active .x {
-    top: 14px;
-    transform: rotate(45deg)
-}
-
-.menuButton.active .y {
-    opacity: 0
-}
-
-.menuButton.active .z {
-    top: 14px;
-    transform: rotate(-45deg)
-}
-
-@media only all and (max-width: 600px) {
-    .menuButton {
-        display: block
-    }
-}
-  </style>
-
-  <style>
-      @font-face {
-      font-family: "BICRODEPERSONALUSE";
-      src: url("/assets/fonts/BICRODEPERSONALUSE.ttf");
-       }
-      .headerWrapper {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 124px;
-      z-index: 300;
+      .mobileMenuWrapper {
+          position: fixed;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: #000;
+          z-index: 200;
+          visibility: hidden;
+          opacity: 0
       }
-      .headerUpper {
-      position: relative;
-      width: 100%;
-      height: 48px;
-      background: rgba(20, 20, 19, 0.5);
-      backdrop-filter: blur(10px);
-      -webkit-backdrop-filter: blur(10px);}
-
-
-
-  
-        @media screen and (display-mode: standalone) {
-        .headerUpper{
-          height: 88px !important;
-        }
-        .headerUpper-text{
-          display: block;
-          margin-top: 44px !important;
-        }
-        .swiper {
-        width: 100%;
-        padding-top: 28px;
-        }
-      } ;
-
+      
+          .menuButton {
+          display: none;
+          position: fixed;
+          width: 28px;
+          height: 28px;
+          top: 69px;
+          right: 20px;
+          text-indent: -9999px;
+          pointer-events: auto;
+          z-index: 300
+      }
+      
+      .menuButton.working {
+          pointer-events: none
+      }
+      
+      .x, .y, .z {
+          position: absolute;
+          margin: auto;
+          left: 5px;
+          background-color: #fff;
+          border-radius: 0;
+          height: 2px;
+          width: 18px;
+          transition: all 0.2s ease-out
+      }
+      
+      .x {
+          top: 8px
+      }
+      
+      .y {
+          top: 14px
+      }
+      
+      .z {
+          top: 20px
+      }
+      
+      .menuButton.active .x {
+          top: 14px;
+          transform: rotate(45deg)
+      }
+      
+      .menuButton.active .y {
+          opacity: 0
+      }
+      
+      .menuButton.active .z {
+          top: 14px;
+          transform: rotate(-45deg)
+      }
+      
+      @media only all and (max-width: 600px) {
+          .menuButton {
+              display: block
+          }
+      }
+        </style>
+      
+        <style>
+            @font-face {
+            font-family: "BICRODEPERSONALUSE";
+            src: url("/assets/fonts/BICRODEPERSONALUSE.ttf");
+             }
+            .headerWrapper {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 124px;
+            z-index: 300;
+            }
+            .headerUpper {
+            position: relative;
+            width: 100%;
+            height: 48px;
+            background: rgba(20, 20, 19, 0.5);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);}
+      
+      
+      
+        
+              @media screen and (display-mode: standalone) {
+              .headerUpper{
+                height: 88px !important;
+              }
+              .headerUpper-text{
+                display: block;
+                margin-top: 44px !important;
+              }
+              .swiper {
+              width: 100%;
+              padding-top: 28px;
+              }
+            } ;
+      
   </style>
 
   <!-- Open Graph / Facebook -->
