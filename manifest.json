@@ -7,7 +7,7 @@
     "orientation":"portrait",
     "display":"standalone",
     "start_url":"https://alibhtty.github.io/cyborg/",
-    "scope":"https://ali-bhtty.web.app/cyborg/",
+    "scope":"https://alibhtty.github.io/cyborg/",
     "lang":"es-ES",
     "icons":[
         {
