@@ -1,0 +1,29 @@
+.centrado{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+    .helper { display:none; }
+
+* { box-sizing:border-box; 
+  }
+
+body { background-color:black; }
+
+  .pre { font-family:monospace; white-space:pre; 
+  }
+  #outp { background-color:#ccc;
+  height:250px;
+  width:500px;
+  margin:20px 0; 
+  }
+  /* *************** */
+  
+  svg { background-color:#000000; border-radius:12px; }
+
+  circle#rled, ellipse#rled { 
+  fill:#ffffff;
+  stroke:none;
+  stroke-width:0;
+  }

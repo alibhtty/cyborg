@@ -29,6 +29,9 @@
     <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Playfair+Display'>
     <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Roboto'>
 
+    <!-- preloader -->
+    <link href="/assets/css/preloader.css" type="text/css" rel="stylesheet" media="screen" />
+
     <style>
             @font-face {
         font-family: "ledlight";
@@ -241,6 +244,55 @@
 </head>
 
 <body class="body" translate="no">
+
+
+      <!-- Preloader -->
+<div id="onload" class="centrado">
+    <svg viewbox="-5 -7 150 14" width="40%" height="auto" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <defs>
+        <ellipse id="rled" cx="0" cy="0" rx="12" ry="3" filter="url(#gauss)" />
+    
+      </defs>
+    
+      <defs>
+        <filter id="gauss" x="0" y="0">
+          <feGaussianBlur in="SourceGraphic" stdDeviation="0.8" />
+        </filter>
+      </defs>
+    
+      <use xlink:href="#rled" x="10" id="led0" opacity="0.0">
+        <animate attributeType="XML" attributeName="opacity" values="1;0.0" dur="0.8s" begin="left.end+0.2s" fill="freeze" />
+        <animate attributeType="XML" attributeName="opacity" values="0.0;1" dur="0.8s" begin="0s;right.begin+2.6s" fill="freeze" id="left" />
+      </use>
+      <use xlink:href="#rled" x="30" id="led1" opacity="0.0">
+        <animate attributeType="XML" attributeName="opacity" values="0.0;1;1;0.0" dur="1.5s" begin="left.begin+0.6s;right.begin+2.2s" />
+      </use>
+      <use xlink:href="#rled" x="50" id="led2" opacity="0.0">
+        <animate attributeType="XML" attributeName="opacity" values="0.0;1;1;0.0" dur="1.5s" begin="left.begin+1s;right.begin+1.8s" />
+      </use>
+      <use xlink:href="#rled" x='70' id="led3" opacity="0.0">
+        <animate attributeType="XML" attributeName="opacity" values="0.0;1;1;0.0" dur="1.5s" begin="left.begin+1.4s;right.begin+1.4s" />
+      </use>
+      <use xlink:href="#rled" x='90' id="led4" opacity="0.0">
+        <animate attributeType="XML" attributeName="opacity" values="0.0;1;1;0.0" dur="1.5s" begin="left.begin+1.8s;right.begin+1s" />
+      </use>
+      <use xlink:href="#rled" x='110' id="led5" opacity="0.0">
+        <animate attributeType="XML" attributeName="opacity" values="0.0;1;1;0.0" dur="1.5s" begin="left.begin+2.2s;right.begin+0.6s" />
+      </use>
+      <use xlink:href="#rled" x='130' id="led6" opacity="0.0">
+        <animate attributeType="XML" attributeName="opacity" values="0.0;1" dur="0.8s" begin="left.begin+2.6s" fill="freeze" id="right" />
+        <animate attributeType="XML" attributeName="opacity" values="1;0.0" dur="0.8s" begin="right.end+0.2s" fill="freeze" />
+      </use>
+    
+      <line class="helper" x1="0" y1="0" x2="10" y2="10" stroke="green" stroke-width="1" />
+      <circle class="helper" cx="0" cy="0" r="1" stroke="blue" stroke-width="0.3" fill="white" id="zerozero" />
+      <line class="helper" x1="0" x2="0" y1="10" y2="-10" stroke="white" stroke-width="0.1" id="zero_x" />
+      <line class="helper" x1="10" x2="-10" y1="0" y2="0" stroke="white" stroke-width="0.1" id="zero_y" />
+    </svg>
+  </div>
+
+
+
     <!--
 
 Follow me on
@@ -409,6 +461,12 @@ Horizontal Version: https://codepen.io/supah/pen/VwegJwV
         render();
 //# sourceURL=pen.js
     </script>
+
+
+
+    <!-- preloader -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="/assets/js/preloader.js"></script>
 
 
 

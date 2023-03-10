@@ -32,7 +32,11 @@
   <link href="chat/css/perfect-scrollbar.css" type="text/css" rel="stylesheet" media="screen" />
   <link rel="stylesheet" href="https://ali-bhtty.web.app/cyborg/chat/js/css/style.css" media="screen" id="main-style">
 
-  <style>
+  <!-- PWA CSS -->
+  <link href="/assets/css/style.css" type="text/css" rel="stylesheet" media="screen" />
+  <link href="/assets/css/preloader.css" type="text/css" rel="stylesheet" media="screen" />
+
+  <!-- <style>
       .mobileMenuWrapper {
           position: fixed;
           display: flex;
@@ -107,9 +111,9 @@
               display: block
           }
       }
-        </style>
+        </style> -->
       
-        <style>
+        <!-- <style>
             @font-face {
             font-family: "BICRODEPERSONALUSE";
             src: url("/assets/fonts/BICRODEPERSONALUSE.ttf");
@@ -147,7 +151,43 @@
               }
             } ;
       
-  </style>
+  </style> -->
+
+
+
+  <!-- PRELOADER -->
+  <!-- <style>
+    .centrado{
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+      .helper { display:none; }
+  
+  * { box-sizing:border-box; 
+    }
+  
+  body { background-color:black; }
+  
+    .pre { font-family:monospace; white-space:pre; 
+    }
+    #outp { background-color:#ccc;
+    height:250px;
+    width:500px;
+    margin:20px 0; 
+    }
+    /* *************** */
+    
+    svg { background-color:#000000; border-radius:12px; }
+  
+    circle#rled, ellipse#rled { 
+    fill:#ffffff;
+    stroke:none;
+    stroke-width:0;
+    }
+  </style> -->
+
 
   <!-- Open Graph / Facebook -->
 	<meta property="og:type" content="website">
@@ -159,6 +199,53 @@
 
 <body class="menu-full header-image html" data-header="light" data-footer="dark"  data-header_align="center"  data-menu_type="left" data-menu="light" data-menu_icons="on" data-footer_type="left" data-site_mode="light" data-footer_menu="show" data-footer_menu_style="light"        data-page="homepage" data-device="desktop" data-site="index.html" translate="no" oncontextmenu="return false" translate="no">
 
+<!-- Preloader -->
+<div id="onload" class="centrado">
+  <svg viewbox="-5 -7 150 14" width="40%" height="auto" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+      <ellipse id="rled" cx="0" cy="0" rx="12" ry="3" filter="url(#gauss)" />
+  
+    </defs>
+  
+    <defs>
+      <filter id="gauss" x="0" y="0">
+        <feGaussianBlur in="SourceGraphic" stdDeviation="0.8" />
+      </filter>
+    </defs>
+  
+    <use xlink:href="#rled" x="10" id="led0" opacity="0.0">
+      <animate attributeType="XML" attributeName="opacity" values="1;0.0" dur="0.8s" begin="left.end+0.2s" fill="freeze" />
+      <animate attributeType="XML" attributeName="opacity" values="0.0;1" dur="0.8s" begin="0s;right.begin+2.6s" fill="freeze" id="left" />
+    </use>
+    <use xlink:href="#rled" x="30" id="led1" opacity="0.0">
+      <animate attributeType="XML" attributeName="opacity" values="0.0;1;1;0.0" dur="1.5s" begin="left.begin+0.6s;right.begin+2.2s" />
+    </use>
+    <use xlink:href="#rled" x="50" id="led2" opacity="0.0">
+      <animate attributeType="XML" attributeName="opacity" values="0.0;1;1;0.0" dur="1.5s" begin="left.begin+1s;right.begin+1.8s" />
+    </use>
+    <use xlink:href="#rled" x='70' id="led3" opacity="0.0">
+      <animate attributeType="XML" attributeName="opacity" values="0.0;1;1;0.0" dur="1.5s" begin="left.begin+1.4s;right.begin+1.4s" />
+    </use>
+    <use xlink:href="#rled" x='90' id="led4" opacity="0.0">
+      <animate attributeType="XML" attributeName="opacity" values="0.0;1;1;0.0" dur="1.5s" begin="left.begin+1.8s;right.begin+1s" />
+    </use>
+    <use xlink:href="#rled" x='110' id="led5" opacity="0.0">
+      <animate attributeType="XML" attributeName="opacity" values="0.0;1;1;0.0" dur="1.5s" begin="left.begin+2.2s;right.begin+0.6s" />
+    </use>
+    <use xlink:href="#rled" x='130' id="led6" opacity="0.0">
+      <animate attributeType="XML" attributeName="opacity" values="0.0;1" dur="0.8s" begin="left.begin+2.6s" fill="freeze" id="right" />
+      <animate attributeType="XML" attributeName="opacity" values="1;0.0" dur="0.8s" begin="right.end+0.2s" fill="freeze" />
+    </use>
+  
+    <line class="helper" x1="0" y1="0" x2="10" y2="10" stroke="green" stroke-width="1" />
+    <circle class="helper" cx="0" cy="0" r="1" stroke="blue" stroke-width="0.3" fill="white" id="zerozero" />
+    <line class="helper" x1="0" x2="0" y1="10" y2="-10" stroke="white" stroke-width="0.1" id="zero_x" />
+    <line class="helper" x1="10" x2="-10" y1="0" y2="0" stroke="white" stroke-width="0.1" id="zero_y" />
+  </svg>
+</div>
+
+
+
   <!-- header -->
   <header>
     <div class="headerWrapper">
@@ -169,7 +256,7 @@
   </header>
 
   <!-- MOBIL -->	
-	<div id="mobileMenuWrapper" class="mobileMenuWrapper" translate="no">
+	<!-- <div id="mobileMenuWrapper" class="mobileMenuWrapper" translate="no">
 		
 		<ul class="mobileNavWrapper">
 			<div id="stories-wrapper">
@@ -189,13 +276,7 @@
 			<li><a href="https://ali-bhtty.web.app/develop/" class="transition">4B <a class="circulo"></a></a> </li>
 		</ul>
 		
-		<div class="menuSocialWrapper">
-			<ul class="musicLinks">
-				<!-- <li><a href="https://open.spotify.com/artist/codigo" class="spotify transition" target="_blank">Spotify</a></li> -->
-				<!-- <li><a href="https://itunes.apple.com/gb/artist/alibhtty/78011850" class="applemusic transition" target="_blank">Apple Music</a></li> -->
-				<!-- <li><a href="https://listen.tidal.com/artist/codigo" class="tidal transition" target="_blank">Tidal</a></li> -->
-			</ul>
-	
+		<div class="menuSocialWrapper">	
 			<ul class="socialLinks">
 				<li class="animate"><a href="https://www.instagram.com/ali.bhtty/" class="instagram transition" target="_blank">Instagram</a></li>
 				<li class="animate"><a href="https://youtu.be/nI_kmK_yey0" class="youtube transition" target="_blank">YouTube</a></li>
@@ -203,7 +284,7 @@
 				<li class="animate"><a href="https://www.facebook.com/alibhtty" class="facebook transition" target="_blank">Facebook</a></li>
 			</ul>
 		</div>
-	</div>
+	</div> -->
 
   <!-- menu -->
   <ul id="slide-nav" class="sidenav sidemenu"> <!-- ps -->
@@ -753,17 +834,14 @@
   <div class="footer-menu circular" style="position: fixed; bottom: 0;">
     <ul>
       <li>
-        <!-- <a class="waves-effect waves-light modal-trigger " href="#modal1958039793">
-          <span><img class="icon-menu" src="/cyborg/assets/icons/tocar.svg" alt=""></span>
-        </a> -->
         <a href="#" style="width: 80%;" data-target="slide-settings" class="waves-effect navicon sidenav-trigger show-on-large">
           <span><img class="icon-menu" src="https://ali-bhtty.web.app/cyborg/assets/icons/tocar.svg" alt=""></span>
         </a>
       </li>
       <li>
-        <!-- <a href="#" style="color: rgba(255, 255, 255, 0.7);"> <i class="fi fi-sr-home"></i> <!-- mdi mdi-home   //  data-target="slide-nav" class="waves-effect navicon sidenav-trigger show-on-large" ->
+        <a href="#" style="color: rgba(255, 255, 255, 0.7);"> <i class="fi fi-sr-home"></i> <!-- mdi mdi-home   //  data-target="slide-nav" class="waves-effect navicon sidenav-trigger show-on-large" -->
           <span><img class="icon-menu" src="/cyborg/assets/icons/hogar.svg" alt=""></span>
-        </a> -->
+        </a>
 
         <!-- <a style="width: 80%;" class="waves-effect navicon sidenav-trigger show-on-large" href="index.html#" id="menuButton" class="menuButton">
           <span>Menu</span>
@@ -772,7 +850,7 @@
           <div id="z" class="z"></div>
         </a> -->
 
-        <a href="https://ali-bhtty.web.app/cyborg/menu/" class="white-text"> <!-- btn btn-rounded deep-purple    ////    onclick="M.toast({html: 'Música a la carta mientras ves la galería! 🎧', classes: 'rounded deep-purple lighten-2 white-text'});" style="width: 80%;" -->
+        <a href="https://ali-bhtty.web.app/cyborg/menu/" class="white-text">   <!-- btn btn-rounded deep-purple    ////    onclick="M.toast({html: 'Música a la carta mientras ves la galería! 🎧', classes: 'rounded deep-purple lighten-2 white-text'});" style="width: 80%;" -->
           <span><img class="icon-menu" src="https://ali-bhtty.web.app/cyborg/assets/icons/hogar.svg" alt=""></span></a>
 
       </li>
@@ -858,6 +936,17 @@
   
   <script src="/chat/js/scripts.js"></script>
   <script src="/chat/js/preloader.js"></script>
+
+  <!-- preloader -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="/assets/js/preloader.js"></script>
+
+  <!-- <script>
+      window.onload = function(){
+          $('#onload') .fadeOut();
+          $('body').removeClass('hidden')
+      }
+  </script> -->
 
 </body>
 
