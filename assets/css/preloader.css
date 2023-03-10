@@ -35,7 +35,8 @@ body { background-color:black; }
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #000000;
+    background-color: rgb(0,0,0,04)
+    /* background-color: #000000; */
   }
   .preloader-orbit-loading {
     position: relative;

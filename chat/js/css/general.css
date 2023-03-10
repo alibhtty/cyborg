@@ -9,7 +9,7 @@
 	-o-box-sizing: border-box;
 }
 body {
-	background: #ffffff;
+	background: #000000;  /* #ffffff */
 	color: #455a64;
 }
 body,
