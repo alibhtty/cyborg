@@ -47,10 +47,15 @@
   <!-- CORE CSS FRAMEWORK - START -->
   <!-- <link href="/cyborg/css/preloader.css" type="text/css" rel="stylesheet" media="screen" /> -->
 
-  <link href="/cyborg/css/materialize.min.css" type="text/css" rel="stylesheet" media="screen" />
-  <link href="/cyborg/css/appicon/appicon.css" type="text/css" rel="stylesheet" media="screen" />
-  <link href="/cyborg/css/materialdesignicons.min.css" type="text/css" rel="stylesheet" media="screen" />
-  <link href="/cyborg/css/perfect-scrollbar.css" type="text/css" rel="stylesheet" media="screen" />
+  <link href="/cyborg/chat/css/materialize.min.css" type="text/css" rel="stylesheet" media="screen" />
+  <link href="/cyborg/chat/css/appicon/appicon.css" type="text/css" rel="stylesheet" media="screen" />
+  <link href="/cyborg/chat/css/materialdesignicons.min.css" type="text/css" rel="stylesheet" media="screen" />
+  <link href="/cyborg/chat/css/perfect-scrollbar.css" type="text/css" rel="stylesheet" media="screen" />
+
+
+  <!-- PWA CSS -->
+  <link href="/cyborg/assets/css/style.css" type="text/css" rel="stylesheet" media="screen" />
+  <link href="/cyborg/assets/css/preloader.css" type="text/css" rel="stylesheet" media="screen" />
 
   <!-- <link href="/cyborg/css/timeline.css" type="text/css" rel="stylesheet" media="screen" /> -->
 
@@ -71,7 +76,7 @@
   <!-- CORE CSS TEMPLATE - START -->
 
   
-    <link href="/cyborg/js/css/style.css" type="text/css" rel="stylesheet" media="screen" id="main-style" />
+    <link href="/cyborg/chat/js/css/style.css" type="text/css" rel="stylesheet" media="screen" id="main-style" />
   <!-- CORE CSS TEMPLATE - END -->
 
   
@@ -146,7 +151,7 @@
     <div class="user-view row">
      
             <div class="col s3 imgarea">
-        <a href="ui-app-social-timeline.html#user" class="status available"><img class="circle" src="/cyborg/img/cyborg.jpg" alt="menu user"></a>
+        <a href="ui-app-social-timeline.html#user" class="status available"><img class="circle" src="/cyborg/chat/css/img/cyborg.jpg" alt="menu user"></a>
       </div>
             <div class="col s9 infoarea">
         <a href="ui-app-profile.html"><span class="name">cybord</span></a>
@@ -581,7 +586,7 @@
       </div>
         <div class="card-panel primary-bg white-text has-image">
 
-      <img alt="image" class="" style="width: 100%;" src="/cyborg/img/post-01.jpg"><div class='msg'>Atardecer rosa, temporada de navidad en Plaza Catalunya - Barcelona.</div>
+      <img alt="image" class="" style="width: 100%;" src="/cyborg/chat/css/img/post-01.jpg"><div class='msg'>Atardecer rosa, temporada de navidad en Plaza Catalunya - Barcelona.</div>
         <div class="user-actions">
       
       
@@ -646,7 +651,7 @@
       </div>
         <div class="card-panel deep-orange lighten-2 white-text has-image">
 
-      <img alt="image" class="" style="width: 100%;" src="/cyborg/img/post-02.jpg"><div class='msg'>massimo</div>
+      <img alt="image" class="" style="width: 100%;" src="/cyborg/chat/css/img/post-02.jpg"><div class='msg'>massimo</div>
         <div class="user-actions">
       
       
@@ -711,7 +716,7 @@
       </div>
         <div class="card-panel accent-bg white-text has-image">
 
-      <img alt="image" class="" style="width: 100%;" src="/cyborg/img/post-03.jpg"><div class='msg'>captura de semáforo.</div>
+      <img alt="image" class="" style="width: 100%;" src="/cyborg/chat/css/img/post-03.jpg"><div class='msg'>captura de semáforo.</div>
         <div class="user-actions">
       
       
@@ -772,7 +777,7 @@
 
        <div class="card-panel green lighten-2 white-text has-image">
 
-      <img alt="image" class="" style="width: 100%;" src="/cyborg/img/post-04.jpg"><div class='msg'>neon #1.</div>
+      <img alt="image" class="" style="width: 100%;" src="/cyborg/chat/css/img/post-04.jpg"><div class='msg'>neon #1.</div>
         <div class="user-actions">
       
       
@@ -833,7 +838,7 @@
 
        <div class="card-panel green lighten-2 white-text has-image">
 
-      <img alt="image" class="" style="width: 100%;" src="/cyborg/img/post-05.jpg"><div class='msg'>Bon Nadal.</div>
+      <img alt="image" class="" style="width: 100%;" src="/cyborg/chat/css/img/post-05.jpg"><div class='msg'>Bon Nadal.</div>
         <div class="user-actions">
       
       
@@ -959,9 +964,20 @@
 </div><!--.content-area-->
 
 <div class="footer-menu circular">
-  <ul>
+
+  <style>
+    .but-nav{
+      width: 80%;
+      height: 50px;
+    }
+    .but-nav img{
+      padding-top: 15px;
+    }
+  </style>
+
+  <ul style="height: 100%;">
     <li>
-      <a href="https://ali-bhtty.web.app/mixtape/"> <i class="mdi mdi-music-box"></i>
+      <a class="but-nav" href="https://ali-bhtty.web.app/mixtape/"> <i class="mdi mdi-music-box"></i>
         <span></span>
       </a>
     </li>
@@ -971,7 +987,7 @@
       </a>
     </li> -->
     <li>
-      <a href="sub-home.html" data-target="slide-nav" class="waves-effect navicon sidenav-trigger show-on-large"> <i class="mdi mdi-home"></i> <!-- camera-timer -->
+      <a href="sub-home.html" data-target="slide-nav" class="but-nav waves-effect navicon sidenav-trigger show-on-large"> <i class="mdi mdi-home"></i> <!-- camera-timer -->
         <span></span>
       </a>
     </li>
@@ -981,7 +997,7 @@
       </a>
     </li> -->
     <li>
-      <a href="sub-features.html" data-target="slide-nav" class="waves-effect navicon sidenav-trigger show-on-large"> <i class="mdi mdi-account"></i> <!-- beaker -->
+      <a href="sub-features.html" data-target="slide-nav" class="but-nav waves-effect navicon sidenav-trigger show-on-large"> <i class="mdi mdi-account"></i> <!-- beaker -->
         <span></span>
       </a>
     </li>
@@ -1001,27 +1017,27 @@
 <!-- LOAD FILES AT PAGE END FOR FASTER LOADING -->
 
 <!-- CORE JS FRAMEWORK - START -->
-<script src="/cyborg/js/jquery-2.2.4.min.js"></script>
-<script src="/cyborg/js/materialize.js"></script>
-<script src="/cyborg/js/perfect-scrollbar.min.js"></script>
-<script src="/cyborg/js/variables.js"></script>
+<script src="/cyborg/chat/js/jquery-2.2.4.min.js"></script>
+<script src="/cyborg/chat/js/materialize.js"></script>
+<script src="/cyborg/chat/js/perfect-scrollbar.min.js"></script>
+<script src="/cyborg/chat/js/variables.js"></script>
 <!-- CORE JS FRAMEWORK - END -->
 
 
 <!-- OTHER SCRIPTS INCLUDED ON THIS PAGE - START -->
-<script src="/cyborg/js/common.js"></script><!-- OTHER SCRIPTS INCLUDED ON THIS PAGE - END -->
+<script src="/cyborg/chat/js/common.js"></script><!-- OTHER SCRIPTS INCLUDED ON THIS PAGE - END -->
 
 
 <!-- CORE TEMPLATE JS - START -->
-<script src="/cyborg/js/init.js"></script>
-<script src="/cyborg/js/settings.js"></script>
+<script src="/cyborg/chat/js/init.js"></script>
+<script src="/cyborg/chat/js/settings.js"></script>
 
-<script src="/cyborg/js/scripts.js"></script>
+<script src="/cyborg/chat/js/scripts.js"></script>
 
 <!-- END CORE TEMPLATE JS - END -->
 
 
-<script src="/cyborg/js/preloader.js"></script>
+<script src="/cyborg/chat/js/preloader.js"></script>
 </body>
 
 </html>

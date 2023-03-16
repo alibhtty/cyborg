@@ -5,8 +5,13 @@
     font-style: normal
 }
 
+@font-face {
+    font-family: "bicrode";
+    src: url(../assets/fonts/BICRODEPERSONALUSE.ttf);
+}
+
 :root {
-    --swiper-theme-color: #007aff
+    --swiper-theme-color: #ffffff; /* 007aff */
 }
 
 .swiper {
@@ -258,6 +263,7 @@ body {
     height: calc(100% - 0px)
 } /* 3.8rem */
 
+
 .swiper-slide-content {
     position: absolute;
     left: 20px; /* 32px */
@@ -388,12 +394,10 @@ body {
         height: 100%
     }
 }
-
 @media (max-width: 1920px) {
     .swiper {
         width: 100%;
         height: 100%;
-        padding-top: 0rem;
     }
 }
 

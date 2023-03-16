@@ -29,10 +29,42 @@
     <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Playfair+Display'>
     <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Roboto'>
 
-    <!-- preloader -->
-    <link href="/assets/css/preloader.css" type="text/css" rel="stylesheet" media="screen" />
+    <!-- PWA CSS -->
+    <link href="/cyborg/assets/css/style.css" type="text/css" rel="stylesheet" media="screen" />
+    <link href="/cyborg/assets/css/preloader.css" type="text/css" rel="stylesheet" media="screen" />
 
     <style>
+            /* ::-webkit-scrollbar {
+            display: none;
+        }
+
+            .custom-scroll {
+          &::-webkit-scrollbar{
+            width: 5px;
+          }
+          &::-webkit-scrollbar-track {
+            background-color: green;
+          }
+          &::-webkit-scrollbar-thumb {
+            background-color: orange;
+          }
+        } */
+
+            ::-webkit-scrollbar-track {
+            background-color: black;
+            width: 20px;
+            } 
+            ::-webkit-scrollbar-thumb {
+            background-color: rgba(0, 0, 0, 0.2);
+            } 
+            :-webkit-scrollbar-button {
+                 background-color: black;
+                }
+            :-webkit-scrollbar-corner {
+                 background-color: black;
+                }
+            
+
             @font-face {
         font-family: "ledlight";
         src: url("../../assets/fonts/LEDLIGHT.otf");
@@ -92,7 +124,7 @@
         @media (max-width: 767px) {
             .menu--item {
                 font-size: 10vw;
-                padding: 1.1rem 0;
+                padding: 1rem 0; /* 1.1 */
             }
         }
 
@@ -123,7 +155,7 @@
 
         @media (max-width: 767px) {
             .menu--item button {
-                font-size: 14vw;  /* font 10vw */
+                font-size: 13vw;  /* font 10vw */
             }
         }
 
@@ -208,11 +240,11 @@
             } */
 
 
-        /* .body:before {
+        .body:before {
             content: "";
             bottom: 0;
             width: 100%;
-            height: 10rem; /* 70vh /
+            height: 10rem; /* 70vh */
             position: fixed;
             background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(0,0,0,.9) 98%);
             z-index: 999;
@@ -224,14 +256,14 @@
                 content: "";
             bottom: 0;
             width: 100%;
-            height: 60vh; /* 10rem    70vh /
+            height: 60vh; /* 10rem    70vh */
             position: fixed;
             background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(0,0,0,.9) 80%);
             z-index: 999;
             pointer-events: none;
               }
             }
- */
+
     </style>
 
 
@@ -245,53 +277,14 @@
 
 <body class="body" translate="no">
 
-
       <!-- Preloader -->
-<div id="onload" class="centrado">
-    <svg viewbox="-5 -7 150 14" width="40%" height="auto" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-      <defs>
-        <ellipse id="rled" cx="0" cy="0" rx="12" ry="3" filter="url(#gauss)" />
-    
-      </defs>
-    
-      <defs>
-        <filter id="gauss" x="0" y="0">
-          <feGaussianBlur in="SourceGraphic" stdDeviation="0.8" />
-        </filter>
-      </defs>
-    
-      <use xlink:href="#rled" x="10" id="led0" opacity="0.0">
-        <animate attributeType="XML" attributeName="opacity" values="1;0.0" dur="0.8s" begin="left.end+0.2s" fill="freeze" />
-        <animate attributeType="XML" attributeName="opacity" values="0.0;1" dur="0.8s" begin="0s;right.begin+2.6s" fill="freeze" id="left" />
-      </use>
-      <use xlink:href="#rled" x="30" id="led1" opacity="0.0">
-        <animate attributeType="XML" attributeName="opacity" values="0.0;1;1;0.0" dur="1.5s" begin="left.begin+0.6s;right.begin+2.2s" />
-      </use>
-      <use xlink:href="#rled" x="50" id="led2" opacity="0.0">
-        <animate attributeType="XML" attributeName="opacity" values="0.0;1;1;0.0" dur="1.5s" begin="left.begin+1s;right.begin+1.8s" />
-      </use>
-      <use xlink:href="#rled" x='70' id="led3" opacity="0.0">
-        <animate attributeType="XML" attributeName="opacity" values="0.0;1;1;0.0" dur="1.5s" begin="left.begin+1.4s;right.begin+1.4s" />
-      </use>
-      <use xlink:href="#rled" x='90' id="led4" opacity="0.0">
-        <animate attributeType="XML" attributeName="opacity" values="0.0;1;1;0.0" dur="1.5s" begin="left.begin+1.8s;right.begin+1s" />
-      </use>
-      <use xlink:href="#rled" x='110' id="led5" opacity="0.0">
-        <animate attributeType="XML" attributeName="opacity" values="0.0;1;1;0.0" dur="1.5s" begin="left.begin+2.2s;right.begin+0.6s" />
-      </use>
-      <use xlink:href="#rled" x='130' id="led6" opacity="0.0">
-        <animate attributeType="XML" attributeName="opacity" values="0.0;1" dur="0.8s" begin="left.begin+2.6s" fill="freeze" id="right" />
-        <animate attributeType="XML" attributeName="opacity" values="1;0.0" dur="0.8s" begin="right.end+0.2s" fill="freeze" />
-      </use>
-    
-      <line class="helper" x1="0" y1="0" x2="10" y2="10" stroke="green" stroke-width="1" />
-      <circle class="helper" cx="0" cy="0" r="1" stroke="blue" stroke-width="0.3" fill="white" id="zerozero" />
-      <line class="helper" x1="0" x2="0" y1="10" y2="-10" stroke="white" stroke-width="0.1" id="zero_x" />
-      <line class="helper" x1="10" x2="-10" y1="0" y2="0" stroke="white" stroke-width="0.1" id="zero_y" />
-    </svg>
+  <div id="onload" class="centrado">
+    <div class="preloader-orbit-loading">
+      <div class="cssload-inner cssload-one"></div>
+      <div class="cssload-inner cssload-two"></div>
+      <div class="cssload-inner cssload-three"></div>
+    </div>
   </div>
-
-
 
     <!--
 
@@ -320,16 +313,16 @@ Horizontal Version: https://codepen.io/supah/pen/VwegJwV
     </div> -->
 
     <div class="menu">
-        <ul class="menu--wrapper">
-            <li class="menu--item"><button href="https://ali-bhtty.web.app/cyborg/">Inicio</button></li>
-            <li class="menu--item"><button href="https://ali-bhtty.web.app/cyborg/guias">Guias</button></li>
-            <li class="menu--item"><button href="https://ali-bhtty.web.app/cyborg/set">Sesiones</button></li>
-            <li class="menu--item"><button href="#">Urbano</button></li>
-            <li class="menu--item"><button href="/cyborg/shorts/">Shorts</button></li>
-            <li class="menu--item"><button href="#">Instagram</button></li>
-            <li class="menu--item"><button href="#">Colab</button></li>
-            <li class="menu--item"><button href="#">Playlist</button></li>
-            <li class="menu--item"><button href="#">Videos</button></li>
+        <ul class="menu--wrapper custom-scroll">
+            <a href="https://ali-bhtty.web.app/cyborg" class="menu--item"><button>Inicio</button></a>
+            <a href="https://ali-bhtty.web.app/cyborg/guias/barcelona/la-barceloneta/" class="menu--item"><button>Guias</button></a>
+            <a href="https://ali-bhtty.web.app/cyborg" class="menu--item"><button>Sesiones</button></a>
+            <a href="https://ali-bhtty.web.app/cyborg" class="menu--item"><button>Urbano</button></a>
+            <a href="https://ali-bhtty.web.app/cyborg/shorts" class="menu--item"><button>Shorts</button></a>
+            <a href="https://ali-bhtty.web.app/cyborg" class="menu--item"><button>Instagram</button></a>
+            <!-- <a href="https://ali-bhtty.web.app/" class="menu--item"><button>Colab</button></a> -->
+            <a href="https://ali-bhtty.web.app/mixtape" class="menu--item"><button>Musica</button></a>
+            <a href="https://ali-bhtty.web.app/cyborg" class="menu--item"><button>Install App</button></a>
         </ul>
     </div>
 
@@ -464,11 +457,9 @@ Horizontal Version: https://codepen.io/supah/pen/VwegJwV
 
 
 
-    <!-- preloader -->
+<!-- preloader -->
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-  <script src="/assets/js/preloader.js"></script>
-
-
+  <script src="/cyborg/assets/js/preloader.js"></script>
 
 </body>
 

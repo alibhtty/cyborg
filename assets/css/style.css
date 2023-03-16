@@ -95,10 +95,76 @@
     width: 100%;
     height: 48px;
     background: rgba(20, 20, 19, 0.5);
+    
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);}
 
+    
 
+
+    
+    /* NOTIFY TOASTR */
+    /* :root{
+      --gradient:  linear-gradient(to right, 
+        #1c2121,
+        #1c2121,
+        #221800,
+        #1c2121,
+        #1c2121,
+        #1c2121
+      );
+    } */
+
+    
+    @media screen and (max-width: 920px){
+      .toast-container {
+        position: fixed;
+        width: 100vw;
+        height: 9rem; /* 115px */
+        right: 0;
+        bottom: 0;
+        padding: 0 1.5rem 70px 1.5rem ;
+        z-index: 999;
+        pointer-events: none;
+        }
+        
+        .toast-toast {
+        padding: 20px 20px;
+        width: auto;
+        height: auto;
+        align-items: center;
+        font-size: 14px;
+        font-family: 'Ubuntu';
+        margin-bottom: 3px;
+        border-radius: 12px;
+        background: #4920ff; /* #1c2121   ---  var(--gradient)  */
+        color: #ffffff;
+        text-align: center;
+        line-height: 1.2;  
+        transition: all 0.5s; 
+        }
+        
+        .fadeout{
+        opacity: 0;
+        }
+    }
+
+
+
+
+        /* boton navegacion */
+        .but-nav{
+          width: 80%;
+          height: 50px;
+        }
+        .but-nav img{
+          padding-top: 15px;
+        }
+
+
+
+
+    /* PWA STYLE */
       @media screen and (display-mode: standalone) {
       .headerUpper{
         height: 88px !important;
@@ -111,5 +177,25 @@
       width: 100%;
       padding-top: 28px;
       }
-    } ;
+      .swiper-wrapper {
+        position: relative;
+        width: 100%;
+        height: 110%;
+        z-index: 1;
+        display: flex;
+        transition-property: transform;
+        box-sizing: content-box
+      }
+      .swiper {
+        width: 100%;
+        height: 100vh;
+      }
+      .footer-menu{
+        height: 70px;
+      }
 
+      .toast-container{
+        visibility:hidden !important;
+        display:none !important;
+      }
+    } ;

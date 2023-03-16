@@ -1,4 +1,4 @@
 window.onload = function(){
-    $('#onload') .fadeOut();
+    $('#onload') .fadeOut('slow');
     $('body').removeClass('hidden')
 }

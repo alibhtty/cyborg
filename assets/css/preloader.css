@@ -35,14 +35,13 @@ body { background-color:black; }
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(0,0,0,04)
-    /* background-color: #000000; */
+    background-color: #000000
   }
   .preloader-orbit-loading {
     position: relative;
     /* left: calc(50% - 31px); */
-    width: 80px; /* 62px */
-    height: 80px;
+    width: 70px; /* 62px */
+    height: 70px;
     border-radius: 50%;
     -o-border-radius: 50%;
     -ms-border-radius: 50%;
