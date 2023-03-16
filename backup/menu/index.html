@@ -30,10 +30,26 @@
     <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Roboto'>
 
     <!-- PWA CSS -->
-    <link href="../assets/css/style.css" type="text/css" rel="stylesheet" media="screen" />
-    <link href="../assets/css/preloader.css" type="text/css" rel="stylesheet" media="screen" />
+    <link href="/cyborg/assets/css/style.css" type="text/css" rel="stylesheet" media="screen" />
+    <link href="/cyborg/assets/css/preloader.css" type="text/css" rel="stylesheet" media="screen" />
 
     <style>
+            /* ::-webkit-scrollbar {
+            display: none;
+        }
+
+            .custom-scroll {
+          &::-webkit-scrollbar{
+            width: 5px;
+          }
+          &::-webkit-scrollbar-track {
+            background-color: green;
+          }
+          &::-webkit-scrollbar-thumb {
+            background-color: orange;
+          }
+        } */
+
             ::-webkit-scrollbar-track {
             background-color: black;
             width: 20px;
@@ -48,11 +64,22 @@
                  background-color: black;
                 }
             
+
             @font-face {
         font-family: "ledlight";
-        src: url("../assets/fonts/LEDLIGHT.otf");
+        src: url("../../assets/fonts/LEDLIGHT.otf");
          }
             
+         /* body{
+                padding-top: 4rem;
+            } */
+
+         /* @media screen and (display-mode: standalone) {
+            .menu{
+                padding-top: 4rem;
+            }
+          } ; */
+
         * {
             box-sizing: border-box;
         }
@@ -97,7 +124,7 @@
         @media (max-width: 767px) {
             .menu--item {
                 font-size: 10vw;
-                padding: 1rem 0;
+                padding: 1rem 0; /* 1.1 */
             }
         }
 
@@ -106,7 +133,7 @@
         }
 
         .menu--item button {
-            color: #fbfbfd;
+            color: #fbfbfd; /* fbfbfd */
             text-decoration: none;
             position: relative;
             z-index: 1;
@@ -122,15 +149,26 @@
             border: none;
             outline: none;
             box-shadow: none;
-            font-family: "ledlight";
+            font-family: "ledlight"; /* Orelo-sw-db , serif */
             cursor: pointer;
         }
 
         @media (max-width: 767px) {
             .menu--item button {
-                font-size: 13vw;
+                font-size: 13vw;  /* font 10vw */
             }
         }
+
+        /* .menu--item button:before {
+            position: absolute;
+            z-index: -1;
+            left: 0;
+            display: inline-block;
+            transform: translateX(-100%) scale(0.4);
+            content: "0" counter(count);
+            color: #91a6f0;
+            font-family: cursive;
+        } */
 
         .version {
             display: inline-block;
@@ -172,11 +210,41 @@
             }
         }
 
-        .body:before {
+
+
+        /* gradiente */
+        /* body:before {
             content: "";
             bottom: 0;
             width: 100%;
             height: 10rem;
+            position: fixed;
+            top: 0;
+            background: linear-gradient(to top, rgba(255,255,255,0) 0%, rgba(0,0,0,.9) 98%);
+            z-index: 999;
+            pointer-events: none;
+            }
+        
+            @media (max-width: 920px) {
+              body:before {
+                content: "";
+            bottom: 0;
+            width: 100%;
+            height: 40vh;
+            position: block;
+            top: 0;
+            background: linear-gradient(to top, rgba(255,255,255,0) 0%, rgba(0,0,0,.9) 80%);
+            z-index: 999;
+            pointer-events: none;
+              }
+            } */
+
+
+        .body:before {
+            content: "";
+            bottom: 0;
+            width: 100%;
+            height: 10rem; /* 70vh */
             position: fixed;
             background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(0,0,0,.9) 98%);
             z-index: 999;
@@ -188,27 +256,62 @@
                 content: "";
             bottom: 0;
             width: 100%;
-            height: 60vh;
+            height: 60vh; /* 10rem    70vh */
             position: fixed;
             background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(0,0,0,.9) 80%);
             z-index: 999;
             pointer-events: none;
               }
             }
+
     </style>
+
+
+    <!-- <script>
+        if (document.location.search.match(/type=embed/gi)) {
+            window.parent.postMessage("resize", "*");
+        }
+    </script> -->
 
 </head>
 
 <body class="body" translate="no">
-    <!-- Preloader -->
-    <div id="onload" class="centrado">
-        <div class="preloader-orbit-loading">
-            <div class="cssload-inner cssload-one"></div>
-            <div class="cssload-inner cssload-two"></div>
-            <div class="cssload-inner cssload-three"></div>
-        </div>
+
+      <!-- Preloader -->
+  <div id="onload" class="centrado">
+    <div class="preloader-orbit-loading">
+      <div class="cssload-inner cssload-one"></div>
+      <div class="cssload-inner cssload-two"></div>
+      <div class="cssload-inner cssload-three"></div>
     </div>
-    
+  </div>
+
+    <!--
+
+Follow me on
+Instagram: https://www.instagram.com/supahfunk/
+Dribbble: https://dribbble.com/supahfunk
+Twitter: https://twitter.com/supahfunk
+Codepen: https://codepen.io/supah/
+
+Horizontal Version: https://codepen.io/supah/pen/VwegJwV
+
+-->
+
+    <!-- <div class="menu">
+        <ul class="menu--wrapper">
+            <li class="menu--item"><button href="#">Facebook</button></li>
+            <li class="menu--item"><button href="#">Netflix</button></li>
+            <li class="menu--item"><button href="#">Instagram</button></li>
+            <li class="menu--item"><button href="#">Google</button></li>
+            <li class="menu--item"><button href="#">Twitter</button></li>
+            <li class="menu--item"><button href="#">Amazon</button></li>
+            <li class="menu--item"><button href="#">Pinterest</button></li>
+            <li class="menu--item"><button href="#">Spotify</button></li>
+            <li class="menu--item"><button href="#">YouTube</button></li>
+        </ul>
+    </div> -->
+
     <div class="menu">
         <ul class="menu--wrapper custom-scroll">
             <a href="https://ali-bhtty.web.app/cyborg" class="menu--item"><button>Inicio</button></a>
@@ -217,12 +320,15 @@
             <a href="https://ali-bhtty.web.app/cyborg" class="menu--item"><button>Urbano</button></a>
             <a href="https://ali-bhtty.web.app/cyborg/shorts" class="menu--item"><button>Shorts</button></a>
             <a href="https://ali-bhtty.web.app/cyborg" class="menu--item"><button>Instagram</button></a>
+            <!-- <a href="https://ali-bhtty.web.app/" class="menu--item"><button>Colab</button></a> -->
             <a href="https://ali-bhtty.web.app/mixtape" class="menu--item"><button>Musica</button></a>
             <a href="https://ali-bhtty.web.app/cyborg" class="menu--item"><button>Install App</button></a>
         </ul>
     </div>
 
-    <script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-2c7831bb44f98c1391d6a4ffda0e1fd302503391ca806e7fcc7b9b87197aec26.js"></script>
+    <!-- <a class="version" href="https://codepen.io/supah/pen/VwegJwV" target="_parent">Horizontal version</a> -->
+    <script
+        src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-2c7831bb44f98c1391d6a4ffda0e1fd302503391ca806e7fcc7b9b87197aec26.js"></script>
 
     <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/gsap.min.js'></script>
     <script id="rendered-js">
@@ -346,11 +452,15 @@
 
         };
         render();
-        //# sourceURL=pen.js
+//# sourceURL=pen.js
     </script>
 
-    <!-- preloader -->
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="../assets/js/preloader.js"></script>
+
+
+<!-- preloader -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="/cyborg/assets/js/preloader.js"></script>
+
 </body>
+
 </html>

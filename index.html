@@ -1,175 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=0">
+      <meta name="apple-mobile-web-app-capable" content="yes">
+      <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+      <title>Cyborg</title>
+    
+      <!-- FAVICON -->
+      <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/icon_192.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/icon_32.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/icon_16.png">
+      <link rel="manifest" href="manifest.json">
+      <link rel="shortcut icon" type="image/x-icon" href="assets/icons/icon_192.ico">
+      <meta name="msapplication-TileColor" content="#2da3ba">
+      <meta name="theme-color" content="#000000">
+    
+      <script type="module" crossorigin src="assets/index.10679811.js"></script>
+      <link rel="modulepreload" href="assets/vendor.ab396e5d.js">
+      <link rel="stylesheet" href="assets/index.62cb2863.css">
+      <link rel="stylesheet" href="https://ali-bhtty.web.app/cyborg/style.css">
+      <link rel="stylesheet" href="https://ali-bhtty.web.app/cyborg/materialize/materialdesignicons.min.css">
+      <link href="chat/css/materialize.min.css" type="text/css" rel="stylesheet" media="screen" />
+      <link href="chat/css/appicon/appicon.css" type="text/css" rel="stylesheet" media="screen" />
+      <link href="chat/css/materialdesignicons.min.css" type="text/css" rel="stylesheet" media="screen" />
+      <link href="chat/css/perfect-scrollbar.css" type="text/css" rel="stylesheet" media="screen" />
+      <link rel="stylesheet" href="https://ali-bhtty.web.app/cyborg/chat/js/css/style.css" media="screen" id="main-style">
 
-<head>
-  <meta charset="UTF-8" />
-  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
-  <!-- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"> -->
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=0">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <title>Cyborg</title>
+      <!-- Open Graph / Facebook -->
+	    <meta property="og:type" content="website">
+	    <meta property="og:url" content="https://ali-bhtty.web.app/cyborg">
+	    <meta property="og:title" content="Cyborg">
+	    <meta property="og:description" content="Curación de fotografía y arte digital - &quot;Barcelona &quot; It's Cyborg art">
+	    <meta property="og:image" content="https://ali-bhtty.web.app/cyborg/assets/icons/meta.jpg">
 
-  <!-- <link rel="icon" href="/cyborg/assets/icons/icon_192.png" /> -->
-  <!-- FAVICON -->
-  <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/icon_192.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/icon_32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/icon_16.png">
-  <link rel="manifest" href="manifest.json">
-  <!-- <link rel="mask-icon" href="https://ali-bhtty.web.app/favicon/safari-pinned-tab.svg" color="#5bbad5"> -->
-  <link rel="shortcut icon" type="image/x-icon" href="assets/icons/icon_192.ico">
-  <meta name="msapplication-TileColor" content="#2da3ba">
-  <meta name="theme-color" content="#000000">
-   <!-- <meta name="msapplication-config" content="https://ali-bhtty.web.app/favicon/browserconfig.xml"> -->
+      <!-- PWA CSS -->
+      <link href="assets/css/style.css" type="text/css" rel="stylesheet" media="screen" />
+      <link href="assets/css/preloader.css" type="text/css" rel="stylesheet" media="screen" />
+      <!-- Noti --><script src="assets/js/push.min.js"></script>
 
-  <script type="module" crossorigin src="assets/index.10679811.js"></script>
-  <link rel="modulepreload" href="assets/vendor.ab396e5d.js">
-  <link rel="stylesheet" href="assets/index.62cb2863.css">
-  <link rel="stylesheet" href="https://ali-bhtty.web.app/cyborg/style.css">
-  <link rel="stylesheet" href="https://ali-bhtty.web.app/cyborg/materialize/materialdesignicons.min.css">
-  <link href="chat/css/materialize.min.css" type="text/css" rel="stylesheet" media="screen" />
-  <link href="chat/css/appicon/appicon.css" type="text/css" rel="stylesheet" media="screen" />
-  <link href="chat/css/materialdesignicons.min.css" type="text/css" rel="stylesheet" media="screen" />
-  <link href="chat/css/perfect-scrollbar.css" type="text/css" rel="stylesheet" media="screen" />
-  <link rel="stylesheet" href="https://ali-bhtty.web.app/cyborg/chat/js/css/style.css" media="screen" id="main-style">
-
-    <!-- PWA CSS -->
-    <link href="assets/css/style.css" type="text/css" rel="stylesheet" media="screen" />
-    <link href="assets/css/preloader.css" type="text/css" rel="stylesheet" media="screen" />
-    <!-- Noti --><script src="assets/js/push.min.js"></script>
-
-    <style>
-      body{
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    -webkit-tap-highlight-color:  rgba(177, 229, 253, 0.8); 
-}
-    </style>
-
-
-  <!-- <link rel="stylesheet" href="../css/style-v=2.css"> -->
-
-  <!-- <style>
-        .mobileMenuWrapper {
-            position: fixed;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: #000;
-            z-index: 200;
-            visibility: hidden;
-            opacity: 0
-        }
-            .menuButton {
-            display: none;
-            position: fixed;
-            width: 28px;
-            height: 28px;
-            top: 69px;
-            right: 20px;
-            text-indent: -9999px;
-            pointer-events: auto;
-            z-index: 300
-        }
-        .menuButton.working {
-            pointer-events: none
-        }
-        .x, .y, .z {
-            position: absolute;
-            margin: auto;
-            left: 5px;
-            background-color: #fff;
-            border-radius: 0;
-            height: 2px;
-            width: 18px;
-            transition: all 0.2s ease-out
-        }
-        .x {
-            top: 8px
-        }
-        
-        .y {
-            top: 14px
-        }
-        
-        .z {
-            top: 20px
-        }
-        
-        .menuButton.active .x {
-            top: 14px;
-            transform: rotate(45deg)
-        }
-        
-        .menuButton.active .y {
-            opacity: 0
-        }
-        
-        .menuButton.active .z {
-            top: 14px;
-            transform: rotate(-45deg)
-        }
-        
-        @media only all and (max-width: 600px) {
-            .menuButton {
-                display: block
-            }
-        }
-  </style> -->
-
-  <!-- <style>
-      @font-face {
-      font-family: "BICRODEPERSONALUSE";
-      src: url("/assets/fonts/BICRODEPERSONALUSE.ttf");
-       }
-      .headerWrapper {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 124px;
-      z-index: 300;
-      }
-      .headerUpper {
-      position: relative;
-      width: 100%;
-      height: 48px;
-      background: rgba(20, 20, 19, 0.5);
-      backdrop-filter: blur(10px);
-      -webkit-backdrop-filter: blur(10px);}
-
-
-        @media screen and (display-mode: standalone) {
-        .headerUpper{
-          height: 88px !important;
-        }
-        .headerUpper-text{
-          display: block;
-          margin-top: 44px !important;
-        }
-        .swiper {
-        width: 100%;
-        padding-top: 28px;
-        }
-      } ;
-
-  </style> -->
-
-  <!-- Open Graph / Facebook -->
-	<meta property="og:type" content="website">
-	<meta property="og:url" content="https://ali-bhtty.web.app/cyborg">
-	<meta property="og:title" content="Cyborg">
-	<meta property="og:description" content="Curación de fotografía y arte digital - &quot;Barcelona &quot; It's Cyborg art">
-	<meta property="og:image" content="https://ali-bhtty.web.app/cyborg/assets/icons/meta.jpg">
+      <style>
+        body{
+          -webkit-touch-callout: none;
+          -webkit-user-select: none;
+          -khtml-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+          -webkit-tap-highlight-color:  rgba(177, 229, 253, 0.8); 
+          }
+      </style>
   </head>
 
 <body class="menu-full header-image html" data-header="light" data-footer="dark"  data-header_align="center"  data-menu_type="left" data-menu="light" data-menu_icons="on" data-footer_type="left" data-site_mode="light" data-footer_menu="show" data-footer_menu_style="light"        data-page="homepage" data-device="desktop" data-site="index.html" translate="no" oncontextmenu="return false" translate="no">
@@ -194,42 +74,12 @@
     </div>
   </header>
 
-  <!-- MOBIL -->	
-	<!-- <div id="mobileMenuWrapper" class="mobileMenuWrapper" translate="no">
-		
-		<ul class="mobileNavWrapper">
-			<div id="stories-wrapper">
-				<div id="stories-container">
-					<a href="https://ali-bhtty.web.app/story" class="story">
-						<div class="profile">
-						  <img src="https://ali-bhtty.web.app/favicon/story.jpg" alt="" />
-						</div>
-					</a>
-				</div>
-			</div>
-			<li><a href="https://ali-bhtty.web.app/game/" class="transition">Game</a></li>
-			<li><a href="https://ali-bhtty.web.app/mixtape/" class="transition">DJ-Set</a></li>
-			<li><a href="https://ali-bhtty.web.app/releases/" class="transition">Materials</a></li>
-			<li><a href="https://ali-bhtty.web.app/playlist/" class="transition">Playlist</a></li>
-			<li><a href="https://ali-bhtty.web.app/video/" class="transition">Video</a></li>
-			<li><a href="https://ali-bhtty.web.app/develop/" class="transition">4B <a class="circulo"></a></a> </li>
-		</ul>
-		
-		<div class="menuSocialWrapper">	
-			<ul class="socialLinks">
-				<li class="animate"><a href="https://www.instagram.com/ali.bhtty/" class="instagram transition" target="_blank">Instagram</a></li>
-				<li class="animate"><a href="https://youtu.be/nI_kmK_yey0" class="youtube transition" target="_blank">YouTube</a></li>
-				<li class="animate"><a href="https://twitter.com/alibhtty" class="twitter transition" target="_blank">Twitter</a></li>
-				<li class="animate"><a href="https://www.facebook.com/alibhtty" class="facebook transition" target="_blank">Facebook</a></li>
-			</ul>
-		</div>
-	</div> -->
 
-  <!-- menu -->
-  <ul id="slide-nav" class="sidenav sidemenu"> <!-- ps -->
+  <!-- menu  -- ps-->
+  <!-- <ul id="slide-nav" class="sidenav sidemenu">
     <li class="user-wrap">
       <div class="user-view row" style="margin-top: 3rem;">
-       
+  
         <div class="col s3 imgarea">
           <a class="status available">
             <img class="circle" src="assets/img/alibhtty-mini.jpg" alt="ali bhtty">
@@ -240,135 +90,93 @@
           <a><span class="email">4b.contact@gmail.com</span></a>
         </div>
       </div>
-            <div class="center">
-              <a href="https://ali-bhtty.web.app/cyborg/shorts" class='waves-light btn'> Shorts </a> <!-- https://instagram.com/ali.bhtty -->
-            </div>
-      
-        <div class="connections">
-                <a href='#' class="count">
-                  <div class="no">102</div>
-          <div class="tag">Friends</div>      </a>
-                <a href='#' class="count">
-                  <div class="no">510</div>
-          <div class="tag">Followers</div>      </a>
-                <a href='#' class="count">
-                  <div class="no">814</div>
-          <div class="tag">Following</div>      </a>
-        </div>
+      <div class="center">
+        <a href="https://ali-bhtty.web.app/cyborg/shorts" class='waves-light btn'> Shorts </a>
+      </div>
+  
+      <div class="connections">
+        <a href='#' class="count">
+          <div class="no">102</div>
+          <div class="tag">Friends</div>
+        </a>
+        <a href='#' class="count">
+          <div class="no">510</div>
+          <div class="tag">Followers</div>
+        </a>
+        <a href='#' class="count">
+          <div class="no">814</div>
+          <div class="tag">Following</div>
+        </a>
+      </div>
   
     </li>
   
     <li class="menulinks">
       <ul class="collapsible">
   
-        <!-- <li class="lvl1 ">
-          <div class=" waves-effect   ui-app-social-timeline " >
-              <a href="https://ali-bhtty.web.app/">
-              <i class="mdi mdi-home"></i>
-              <span class="title">Inicio</span></a>
-              </div>
-          </li> -->
-
-          <li class="lvl1 ">
-            <div class=" waves-effect   ui-app-social-timeline " >
-                <a href="https://ali-bhtty.web.app/" >
-                  <i><img class="icon-menu" style="width: 15px;" src="./assets/icons/hogar.svg" alt=""></i>
-                <!-- <i class="mdi mdi-home"></i> -->
-                
-                <span class="title">Inicio alibhtty</span></a>
-                </div>
-          </li>
-
-          <li class="lvl1 ">
-            <div class=" waves-effect   ui-app-social-timeline ">
-              <a href="https://ali-bhtty.web.app/mixtape/">
-                <!-- <i class="mdi mdi-radio"></i> -->
-                <i><img class="icon-menu" style="width: 15px;" src="./assets/icons/tocar.svg" alt=""></i>
-                <span class="title">Radio Mixtape</span>
-                <span class="badge">15</span>
-              </a>
-            </div>
-          </li>
-
-          <li class="lvl1 ">
-            <div class=" waves-effect   ui-app-social-timeline ">
-              <a href="https://ali-bhtty.web.app/" data-target="slide-proyectos" class="sidenav-trigger show-on-large">
-                <!-- <i class="mdi mdi-camera-iris"></i> -->
-                <i><img class="icon-menu" style="width: 15px;" src="./assets/icons/camara.svg" alt=""></i>
-                <span class="title">Urbano</span>
-                <span class="badge">5</span>
-              </a>
-            </div>
-          </li>
-
-          <li class="lvl1 ">
-            <div class=" waves-effect   ui-app-social-timeline ">
-              <a href="https://ali-bhtty.web.app/cyborg/guias">
-                <!-- <i class="mdi mdi-camera-iris"></i> -->
-                <i><img class="icon-menu" style="width: 15px;" src="./assets/icons/comentario.svg" alt=""></i>
-                <span class="title">Guías</span>
-                <span class="badge">1</span>
-              </a>
-            </div>
-          </li>
-
-          <li class="lvl1 ">
-            <div class=" waves-effect   ui-app-social-timeline ">
-              <a href="https://ali-bhtty.web.app/cyborg/menu">
-                <!-- <i class="mdi mdi-camera-iris"></i> -->
-                <i><img class="icon-menu" style="width: 15px;" src="./assets/icons/comentario.svg" alt=""></i>
-                <span class="title">Menu</span>
-                <span class="badge">1</span>
-              </a>
-            </div>
-          </li>
-
-        
-
-          <!-- <li class="lvl1 ">
-            <div class=" waves-effect   ui-app-social-timeline " >
-              <a href="index.html#" data-target="" class="nav-site-mode show-on-large navicon">
-                <i class="mdi mdi-all-inclusive"></i>
-                <span class="title">Modo de vista</span>
-              </a>
+        <li class="lvl1 ">
+          <div class=" waves-effect   ui-app-social-timeline ">
+            <a href="https://ali-bhtty.web.app/">
+              <i><img class="icon-menu" style="width: 15px;" src="./assets/icons/hogar.svg" alt=""></i>
   
-                <a href="https://ali-bhtty.web.app/4b">
-                <i class="mdi mdi-all-inclusive"></i>
-                <span class="badge">8</span>
-              </a>
-              </div>
-            </li> -->
-            
-         <!-- Menu Data End-->
-  </ul>
-  </li>
+              <span class="title">Inicio alibhtty</span></a>
+          </div>
+        </li>
+  
+        <li class="lvl1 ">
+          <div class=" waves-effect   ui-app-social-timeline ">
+            <a href="https://ali-bhtty.web.app/mixtape/">
+              <i><img class="icon-menu" style="width: 15px;" src="./assets/icons/tocar.svg" alt=""></i>
+              <span class="title">Radio Mixtape</span>
+              <span class="badge">15</span>
+            </a>
+          </div>
+        </li>
+  
+        <li class="lvl1 ">
+          <div class=" waves-effect   ui-app-social-timeline ">
+            <a href="https://ali-bhtty.web.app/" data-target="slide-proyectos" class="sidenav-trigger show-on-large">
+              <i><img class="icon-menu" style="width: 15px;" src="./assets/icons/camara.svg" alt=""></i>
+              <span class="title">Urbano</span>
+              <span class="badge">5</span>
+            </a>
+          </div>
+        </li>
+  
+        <li class="lvl1 ">
+          <div class=" waves-effect   ui-app-social-timeline ">
+            <a href="https://ali-bhtty.web.app/cyborg/guias">
+              <i><img class="icon-menu" style="width: 15px;" src="./assets/icons/comentario.svg" alt=""></i>
+              <span class="title">Guías</span>
+              <span class="badge">1</span>
+            </a>
+          </div>
+        </li>
+  
+        <li class="lvl1 ">
+          <div class=" waves-effect   ui-app-social-timeline ">
+            <a href="https://ali-bhtty.web.app/cyborg/menu">
+              <i><img class="icon-menu" style="width: 15px;" src="./assets/icons/comentario.svg" alt=""></i>
+              <span class="title">Menu</span>
+              <span class="badge">1</span>
+            </a>
+          </div>
+        </li>
+  
+      </ul>
+    </li>
   
   
-    <!-- <li class="menu-social">
-        <ul class="social-wrap social-colored">
-            <li class="social">
-              <a class="" href="ui-app-social-timeline.html#!"><i class="mdi mdi-facebook"></i></a><a class="" href="ui-app-social-timeline.html#!"><i class="mdi  mdi-twitter"></i></a><a class="" href="ui-app-social-timeline.html#!"><i class="mdi  mdi-google-plus"></i></a><a class="" href="ui-app-social-timeline.html#!"><i class="mdi  mdi-instagram"></i></a><a class="" href="ui-app-social-timeline.html#!"><i class="mdi  mdi-linkedin"></i></a>          </li>
-          </ul>
-    </li> -->
   
-  <!-- <li class="copy-spacer"></li>
-  <li class="copy-wrap">
-    <div class="copyright">&copy; Copyright @ themepassion</div> -->
-  
-    </ul>
+  </ul> -->
 
-  <!-- musica -->
+  <!-- musica ->
   <ul id="slide-settings" class="sidenav sidesettings ">
 
-  <!-- carrusel -->
+  <!-- carrusel ->
   <div class="carousel carousel-fullscreen carousel-slider home_carousel carousel-dashboard-home" style="height: auto;" >
     <a class="carousel-item" href="https://ali-bhtty.web.app/mixtape">
       <div class="bg" style="background-image: url('/assets/img/banner/mixtape-app.jpg')"></div>
-      <!-- <div class="item-content center-align white-text">
-        <div class="spacer-large"></div>
-        <h3>Bass Remix</h3>
-      /cyborg/index.html  <h5 class="light white-text">ft. Jalen</h5>
-      </div> -->
     </a>
     <a class="carousel-item">
       <div class="bg" style="background-image: url('/assets/img/banner/mixtape-list-slider.jpg')"></div>
@@ -385,13 +193,13 @@
   </div>
 
 
-  <div class="container">
-     <!-- sets -->
+  <!-- <div class="container">
+     <!-- sets ->
     <div class="section pb0">
       <div class="spacer"></div>
       <div class="row mb0">
         <div class="col s12 pad-0">
-          <!--   Icon Section   -->
+
           <div class="row">
 
             <div class="col s12 m12 l3">
@@ -433,7 +241,7 @@
     <div class="spacer"></div>
     <div class="spacer"></div>
 
-  <!-- text footer -->
+  <!-- text footer ->
     <div class="slider testi-slider3 testi-boxed testi-overlay white-text primary-bg ">
       <ul class="slides transparent testimonials center">
       
@@ -493,81 +301,23 @@
       
       </ul>
     </div>
-  </div>
+  </div> ->
 
   <div class="spacer"></div>
   <div class="spacer"></div>
   <div class="spacer"></div>
   <div class="spacer"></div>
 
-<!-- full banner -->
-<!-- <div class="spacer"></div>
-<div class="row primary-bg mb0">
-  <div class="spacer"></div>
-  <div class="spacer"></div>
-  <h5 class="center bot-0 sec-tit white-text pad-15">Subscribe Newsletter</h5>
-  <p class="center-align white-text pad-30">Odis is a multi purpose PWA Mobile UI APP with tons of features and functionalities. Try it now.</p>
-  <div class="center">
+  </ul> -->
 
-  
-      <a class="btn-large waves-effect theme-bg-btn" target="_blank" href="ui-app-dashboard-home.html#!">Subscribe</a>
-      
-  
-  </div>
-  <div class="spacer"></div>
-  <div class="spacer"></div>
-</div> -->
-
-
-  <!-- </div>
-</div>
-<div class="spacer"></div>
-<div class="spacer"></div>
-</div> -->
-
-  </ul>
-
-  <!-- proyectos -->
+  <!-- Proyectos -->
   <ul id="slide-proyectos" class="sidenav sidesettings" style="padding-top: 0;">
-    <!-- <li class="user-wrap">
-      <div class="user-view row" style="margin-top: 3rem;">
-       
-        <div class="col s3 imgarea">
-          <a href="ui-app-social-timeline.html#user" class="status available">
-            <img class="circle" src="assets/img/cyborg.jpg" alt="menu user">
-          </a>
-        </div>
-        <div class="col s9 infoarea">
-          <a href="ui-app-profile.html"><span class="name">cyborg</span></a>
-          <a href="ui-app-profile.html"><span class="email">four@gmail.com</span></a>
-        </div>
-      </div>
-            <div class="center">
-              <a href="https://instagram.com/ali.bhtty" class='waves-light btn'> Instagram </a>
-            </div>
-      
-        <div class="connections">
-                <a href='ui-app-social-timeline.html#!' class="count">
-                  <div class="no">102</div>
-          <div class="tag">Friends</div>      </a>
-                <a href='ui-app-social-timeline.html#!' class="count">
-                  <div class="no">510</div>
-          <div class="tag">Followers</div>      </a>
-                <a href='ui-app-social-timeline.html#!' class="count">
-                  <div class="no">814</div>
-          <div class="tag">Following</div>      </a>
-        </div>
-  
-    </li> -->
 
     <div class="swiper">
       <div class="swiper-wrapper">
 
         <div class="swiper-slide">
           <img class="swiper-gl-image" src="images/massimo-dutti-min.jpg" alt="massimo dutti">
-          <!-- <div class="swiper-slide-content">
-            <div class="swiper-slide-title">Lights</div>
-          </div> -->
           <div class="swiper-slide-content">
             <div class="swiper-slide-title" style="width: 110px; height: 50px; border-radius: 25px; background-color: var(--primary-color); text-align: center;">
               <a style="display: block; color: #ffffff; font-size: 16px;padding: 13px 0; text-align: center; font-weight: 600; font-family: Ubuntu;" href="https://ali-bhtty.web.app/cyborg/images/massimo-dutti-min.jpg" download="massimo-dutti-alibhtty.jpg">&nbsp; Descargar &nbsp;</a>
@@ -667,9 +417,6 @@
 
       <div class="swiper-slide">
         <img class="swiper-gl-image" src="images/cyborg-zoom-min.jpg" alt="cyborg zoom ali bhtty">
-        <!-- <div class="swiper-slide-content">
-          <div class="swiper-slide-title">Tarde rosa</div>
-        </div> -->
       </div>
 
       <div class="swiper-slide">
@@ -728,21 +475,9 @@
         <img class="swiper-gl-image" src="images/massimo-dutti-min.jpg" alt="massimo dutti">
       </div>
 
-      <!-- <div class="swiper-slide">
-        <img class="swiper-gl-image" src="images/izan-wok-ronda-min.jpg" alt="Izan en Wok Ronda">
-      </div>
-
-      <div class="swiper-slide">
-        <img class="swiper-gl-image" src="images/izan-wok-ronda-2-min.jpg" alt="Izan en Wok Ronda">
-      </div> -->
-
       <div class="swiper-slide">
         <img class="swiper-gl-image" src="images/yellow-lights-min-1.jpg" alt="yellow lights">
       </div>
-
-      <!-- <div class="swiper-slide">
-        <img class="swiper-gl-image" src="images/yellow-lights-min-2.jpg" alt="yellow lights 2">
-      </div> -->
 
       <div class="swiper-slide">
         <img class="swiper-gl-image" src="images/corte-ingles.jpg" alt="bon nadal barcelona">
@@ -752,75 +487,38 @@
         <img class="swiper-gl-image" src="images/gato-raval-min.jpg" alt="el raval">
       </div>
 
-      <!-- <div class="swiper-slide">
-        <img class="swiper-gl-image" src="images/la-belleza.jpg" alt="la belleza es tu cabeza">
-      </div>
-
-      <div class="swiper-slide">
-        <img class="swiper-gl-image" src="images/angeles-barceloneta.jpg" alt="angeles barceloneta">
-      </div> -->
-
       <div class="swiper-slide">
         <img class="swiper-gl-image" src="images/cyborg-bw-min.jpg" alt="blanco y negro">
       </div>
-
     </div>
 
     <div class="swiper-button-prev"></div>
     <div class="swiper-button-next"></div>
   </div>
 
+  <!-- Footer Nav -->
   <div class="footer-menu circular" style="position: fixed; background: rgba(20, 20, 19, 0.5);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);">
-
-  <!-- <style>
-    .but-nav{
-      width: 80%;
-      height: 50px;
-    }
-    .but-nav img{
-      padding-top: 15px;
-    }
-  </style> -->
-
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);">
+  
     <ul style="height: 100%;">
       <li>
-        <!-- <a class="waves-effect waves-light modal-trigger " href="#modal1958039793">
-          <span><img class="icon-menu" src="/cyborg/assets/icons/tocar.svg" alt=""></span>
-        </a> -->
-        <a href="/mixtape/" class="but-nav waves-effect navicon sidenav-trigger show-on-large"> <!-- data-target="slide-settings" -->
+        <a href="/mixtape/" class="but-nav waves-effect navicon sidenav-trigger show-on-large">
           <span><img class="icon-menu" src="https://ali-bhtty.web.app/cyborg/assets/icons/tocar.svg" alt=""></span>
         </a>
       </li>
       <li>
-        <!-- <a href="#" style="color: rgba(255, 255, 255, 0.7);"> <i class="fi fi-sr-home"></i> <!-- mdi mdi-home   //  data-target="slide-nav" class="waves-effect navicon sidenav-trigger show-on-large" ->
-          <span><img class="icon-menu" src="/cyborg/assets/icons/hogar.svg" alt=""></span>
-        </a> -->
-
-        <!-- <a style="width: 80%;" class="waves-effect navicon sidenav-trigger show-on-large" href="index.html#" id="menuButton" class="menuButton">
-          <span>Menu</span>
-          <div id="x" class="x"></div>
-          <div id="y" class="y"></div>
-          <div id="z" class="z"></div>
-        </a> -->
-
-        <a href="https://ali-bhtty.web.app/cyborg/menu/" class="but-nav white-text"> <!-- btn btn-rounded deep-purple    ////    onclick="M.toast({html: 'Música a la carta mientras ves la galería! 🎧', classes: 'rounded deep-purple lighten-2 white-text'});" style="width: 80%;" -->
+        <a href="/menu/" class="but-nav white-text">
           <span><img class="icon-menu" src="https://ali-bhtty.web.app/cyborg/assets/icons/hogar.svg" alt=""></span></a>
-
+  
       </li>
       <li>
-        <a href="player/" class="but-nav waves-effect navicon sidenav-trigger show-on-large"> <i class=""></i> <!-- data-target="slide-nav"      -------      mdi mdi-account -->
+        <a href="/player/" class="but-nav waves-effect navicon sidenav-trigger show-on-large">
           <span><img class="icon-menu" src="https://ali-bhtty.web.app/cyborg/assets/icons/usuario.svg" alt=""></span>
         </a>
       </li>
-  
     </ul>
   </div>
-
-
-
-  
 
   <!-- <div class="demo-shader-picker">
     <div class="demo-shader-selector">
@@ -874,107 +572,71 @@
 <!-- menu -->
   <!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script> -->
 
-  <script src="chat/js/jquery-2.2.4.min.js"></script>
+  <!-- <script src="chat/js/jquery-2.2.4.min.js"></script>
   <script src="chat/js/materialize.js"></script>
   <script src="chat/js/perfect-scrollbar.min.js"></script>
-  <script src="chat/js/variables.js"></script>
+  <script src="chat/js/variables.js"></script> -->
   <!-- CORE JS FRAMEWORK - END -->
   
-  
   <!-- OTHER SCRIPTS INCLUDED ON THIS PAGE - START -->
-  <script src="https://ali-bhtty.web.app/cyborg/chat/js/common.js"></script><!-- OTHER SCRIPTS INCLUDED ON THIS PAGE - END -->
-  
+  <!-- <script src="https://ali-bhtty.web.app/cyborg/chat/js/common.js"></script> -->  <!-- OTHER SCRIPTS INCLUDED ON THIS PAGE - END -->
   
   <!-- CORE TEMPLATE JS - START -->
-  <script src="https://ali-bhtty.web.app/cyborg/chat/js/init.js"></script>
+  <!-- <script src="https://ali-bhtty.web.app/cyborg/chat/js/init.js"></script>
   <script src="https://ali-bhtty.web.app/cyborg/chat/js/settings.js"></script>
   
-  <script src="https://ali-bhtty.web.app/cyborg/chat/js/scripts.js"></script>
+  <script src="https://ali-bhtty.web.app/cyborg/chat/js/scripts.js"></script> -->
+
   <!-- <script src="https://ali-bhtty.web.app/cyborg/chat/js/preloader.js"></script> -->
 
   <!-- preloader -->
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   <script src="assets/js/preloader.js"></script>
 
-  <!-- <style>
-      .toast-container {
-      position: fixed;
-      width: 100vw;
-      height: 110px;
-      right: 0;
-      bottom: 0;
-      padding: 0 1.5rem 2rem 1.5rem ;
-      z-index: 999;
-      pointer-events: none;
-      }
-      
-      .toast-toast {
-      padding: 10px 10px;
-      width: auto;
-      height: auto;
-      align-items: center;
-      font-size: 14px;
-      font-family: 'Ubuntu';
-      margin-bottom: 3px;
-      border-radius: 12px;
-      background: #1c2121;
-      color: #ffffff;
-      text-align: center;
-      line-height: 1;  
-      transition: all 0.5s; 
-      }
-      
-      .fadeout{
-      opacity: 0;
-      }
-</style> -->
-<!-- <script src="/scripts/snippet-javascript-console.min.js?v=1"></script> -->
-
-
   <script type="text/javascript">
-    (function(window, document) { // asilamos el componente
-// creamos el contedor de las tostadas o la tostadora
-var container = document.createElement('div');
-container.className = 'toast-container';
-document.body.appendChild(container);
+    (function (window, document) { // asilamos el componente
+      // creamos el contedor de las tostadas o la tostadora
+      var container = document.createElement('div');
+      container.className = 'toast-container';
+      document.body.appendChild(container);
 
-// esta es la funcion que hace la tostada
-window.doToast = function(message) {
-// creamos tostada
-var toast = document.createElement('div');
-toast.className = 'toast-toast';
-toast.innerHTML = message;
+      // esta es la funcion que hace la tostada
+      window.doToast = function (message) {
+        // creamos tostada
+        var toast = document.createElement('div');
+        toast.className = 'toast-toast';
+        toast.innerHTML = message;
 
-// agregamos a la tostadora
-container.appendChild(toast);    
+        // agregamos a la tostadora
+        container.appendChild(toast);
 
-// programamos su eliminación
-setTimeout(function() {
-  // cuando acabe de desaparecer, lo eliminamos del dom.
-  toast.addEventListener("transitionend", function() {
-     container.removeChild(toast);
-  }, true);
+        // programamos su eliminación
+        setTimeout(function () {
+          // cuando acabe de desaparecer, lo eliminamos del dom.
+          toast.addEventListener("transitionend", function () {
+            container.removeChild(toast);
+          }, true);
 
-  // agregamos un estilo que inicie la "transition". 
-  toast.classList.add("fadeout");      
-}, 5000); // OP dijo, "solo dos segundos"
-}
-})(window, document);
+          // agregamos un estilo que inicie la "transition". 
+          toast.classList.add("fadeout");
+        }, 5000); // OP dijo, "solo dos segundos"
+      }
+    })(window, document);
 
-// ejempo de uso
-/* doToast("Hola mundo!"); */
+    // ejempo de uso
+    /* doToast("Hola mundo!"); */
 
-// ejemplo retardado de uso
-setTimeout(function() {
-doToast("Instala la APP &nbsp; ツ");
-}, 6000);
+    // ejemplo retardado de uso
+    setTimeout(function () {
+      doToast("Instala la APP &nbsp; ツ");
+    }, 6000);
 
-// ejemplo retardado de uso
-setTimeout(function() {
-doToast("Presiona Compartir y <br> Añadir a pantalla de inicio");
-}, 14000);
+    // ejemplo retardado de uso
+    setTimeout(function () {
+      doToast("Presiona Compartir y <br> Añadir a pantalla de inicio");
+    }, 14000);
 
-</script>
+  </script>
 
 </body>
 
