@@ -6,8 +6,8 @@
     "theme_color":"#FF6600",
     "orientation":"portrait",
     "display":"standalone",
-    "start_url":"https://ali-bhtty.web.app/cyborg",
-    "scope":"https://ali-bhtty.web.app/cyborg/",
+    "start_url":"https://alibhtty.github.io/cyborg/",
+    "scope":"https://alibhtty.github.io/cyborg/",
     "lang":"es-ES",
     "icons":[
         {
