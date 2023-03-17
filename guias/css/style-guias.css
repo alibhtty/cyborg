@@ -20957,7 +20957,7 @@ html[dir=rtl] .story__section--linkblock::after {
 
 .story-card--branded, .story-card--content:not(.story-card--list):not(.story-card--app-event-on-light):not(.story-card--app-event-on-dark) {
     min-height: 409.26px
-}
+} /* 409.26px */
 
 @media only screen and (min-width:735px) {
     .story-card--branded, .story-card--content:not(.story-card--list):not(.story-card--app-event-on-light):not(.story-card--app-event-on-dark) {

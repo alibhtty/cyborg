@@ -2,30 +2,30 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
+
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=0">
-    <meta name="apple-mobile-web-app-title" content="Cyborg">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>Cyborg - Dashboard</title>
-    <meta name="msapplication-TileColor" content="#2da3ba">
-    <meta name="referrer" content="always" />
-    <meta name="theme-color" content="#000000" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="applicable-device" content="pc,mobile">
-    <!-- FAVICON -->
-    <link rel="apple-touch-icon" sizes="180x180" href="../assets/icons/icon_192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="../assets/icons/icon_32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="../assets/icons/icon_16.png">
-    <link rel="manifest" href="../manifest.json">
-    <link rel="shortcut icon" type="image/x-icon" href="../assets/icons/icon_192.ico">
+    <title>Player 2.0</title>
 
-    <link rel="stylesheet" href="../../../guias/css/style-global.css"> <!-- ../guias/css/style-global.css -->
-  <link integrity="" rel="stylesheet" href="../../../guias/css/style-guias.css">
-    <!-- <link href='https://fonts.googleapis.com/css?family=Lato:400,700,900' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,700,900' rel='stylesheet' type='text/css'>
     <script src="https://use.typekit.net/hoy3lrg.js"></script>
-    <script>try { Typekit.load({ async: true }); } catch (e) { }</script> -->
+    <script>try { Typekit.load({ async: true }); } catch (e) { }</script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+
+
+    <!-- FAVICON -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/cyborg/assets/icons/icon_192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/cyborg/assets/icons/icon_32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/cyborg/assets/icons/icon_16.png">
+  <link rel="manifest" href="/cyborg/manifest.json">
+  <!-- <link rel="mask-icon" href="https://ali-bhtty.web.app/favicon/safari-pinned-tab.svg" color="#5bbad5"> -->
+  <link rel="shortcut icon" type="image/x-icon" href="/cyborg/assets/icons/icon_192.ico">
+  <meta name="msapplication-TileColor" content="#2da3ba">
+  <meta name="theme-color" content="#000000">
+
+
 
     <style>
         @charset "UTF-8";
@@ -243,7 +243,7 @@
         }
 
         div#iphone div#screen::after {
-            background: #000000; /* gray */
+            background: gray;
             content: "";
             display: block;
             height: 130%;
@@ -375,7 +375,7 @@
 
         #header{
             height: 1rem;
-            padding: 0rem 10vw;
+            padding: 1rem 10vw;
         }
 
         div#header {
@@ -401,24 +401,13 @@
         }
 
         div.jcarousel {
-            height: 11rem; /* 55vh */
+            height: 55vh;
 
-            /* left: 50vw; */ /* 10vw -15px */
+            left: 10vw; /* -15px */
             width: calc(100% + 0px); /* calc(100% + 30px) */
             position: relative;
             overflow: hidden;
         }
-
-
-
-        /* none */
-        /* div.jcarouselclima {
-    height: 11rem;
-    left: 10vw;
-    width: calc(100% + 0px);
-    position: relative;
-    overflow: hidden;
-} */
 
         div.jcarousel ul#songs {
             width: 20000em;
@@ -427,15 +416,14 @@
 
         div.jcarousel ul#songs li.song {
             float: left;
-            margin: 0px 0rem; /* 10px 15px */
-            margin-right: 10vw; /* 4rem */
+            margin: 4vh 0rem; /* 10px 15px */
+            margin-right: 4rem;
             text-align: center;
-            width: calc(40vw - 0vw); /* calc(90vw - 10vw      --      calc(225px - 30px) */
+            width: calc(80vw - 0vw); /* calc(90vw - 10vw      --      calc(225px - 30px) */
         }
 
         div.jcarousel ul#songs li.song img {
-            width: 100%; /* 100%      92.5% */
-            float: right;
+            width: 100%; /* 92.5% */
             border-radius: 12px;
             -webkit-box-shadow: 0px 5px 25px rgba(50, 50, 50, 0.5);
             -moz-box-shadow: 0px 5px 25px rgba(50, 50, 50, 0.5);
@@ -448,38 +436,35 @@
         }
 
         div.jcarousel ul#songs li.song p.song-title {
-            font-size: 14px; /* 16px */
+            font-size: 25px; /* 16px */
             text-align: left;
             font-weight: 600;
-            /* margin: 1rem 0 5px; */ /* 10px 0 5px */
-            padding: 5px 0;
+            margin: 2rem 0 5px; /* 10px 0 5px */
         }
 
         div.jcarousel ul#songs li.song p.song-artist {
             color: #b3b3b3;
             text-align: left;
             font-size: 20px; /* 12px */
-            margin: 0rem 0; /* 0 */
+            margin: 1rem 0; /* 0 */
         }
 
         div#controls {
             color: white;
             display: table;
-            padding: .5rem 0 1rem 0;
-            /* margin: 0rem 0 1rem 0; */   /*  -7rem 0 1rem 50vw */
-            /* margin: 5vh auto 25px; */  /* 10px auto 25px */
+            margin: 5vh auto 25px;  /* 10px auto 25px */
             text-align: center;
-            width: 100%; /* 75 */
+            width: 75%; /* 75 */
         }
 
         div#controls span {
             display: table-cell;
-            font-size: 25px; /* 20px */
+            font-size: 30px; /* 20px */
             vertical-align: middle;
         }
 
         div#controls span#play-btn {
-            font-size: 24px; /* 34px */
+            font-size: 45px; /* 34px */
         }
 
         div#controls span i {
@@ -591,7 +576,7 @@
             box-sizing: border-box;
             height: 100%;
             left: 0;
-            padding: 4rem 10vw; /* 20px 10px  ---- 2rem*/
+            padding: 4rem 2rem; /* 20px 10px */
             position: absolute;
             top: 0;
             width: 100%;
@@ -624,7 +609,7 @@
         div#sidemenu ul li {
             cursor: pointer;
             font-weight: 300;
-            padding: 1.5rem 1rem; /* 8px 5px */
+            padding: 1rem 2rem; /* 8px 5px */
             font-size: 20px;
         }
 
@@ -644,11 +629,11 @@
 
         div#sidemenu ul li .svg {
             display: inline-block;
-            height: 24px;
+            height: 20px;
             padding: 0 0.2em;
             position: relative;
             top: 2px;
-            width: 24px; /* 16px */
+            width: 20px; /* 16px */
         }
 
         div#sidemenu ul li .svg,
@@ -660,15 +645,6 @@
             -ms-transition: opacity 0.25s ease;
             -o-transition: opacity 0.25s ease;
             transition: opacity 0.25s ease;
-            height: auto;
-        }
-
-        .dash{
-            background-color: #552bff;
-            margin: .5rem 0;
-            border-radius: 12px;
-            width: 39vw;
-            display: inline-block;
         }
 
         div#song-options div#song-info {
@@ -956,130 +932,6 @@
     </style>
 
 
-<style>
-    @font-face {
-  font-family: "BICRODEPERSONALUSE";
-  src: url("/assets/fonts/BICRODEPERSONALUSE.ttf");
-     }
-    .headerWrapper {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 124px;
-    z-index: 300;
-    }
-    .headerUpper {
-    position: relative;
-    width: 100%;
-    height: 48px;
-    background: rgba(20, 20, 19, 0.5);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);}
-
-
-    body:before {
-    content: "";
-    bottom: 0;
-    width: 100%;
-    height: 10rem; /* 70vh */
-    position: fixed;
-    /* top: 0;
-    right: 0; */
-    background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(0,0,0,.9) 98%);
-    z-index: 999;
-    pointer-events: none;
-    /* background: radial-gradient(circle, rgba(255,255,255,0), rgba(0,0,0,1) ); */
-    }
-
-    @media (max-width: 920px) {
-      body:before {
-        content: "";
-    bottom: 0;
-    width: 100%;
-    height: 10rem; /* 70vh */
-    position: fixed;
-    /* top: 0;
-    right: 0; */
-    background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(0,0,0,.9) 98%);
-    z-index: 999;
-    pointer-events: none;
-      }
-    }
-
-
-
-    .header-top {
-      width: 100%;
-      text-align: center;
-      padding-top: .7rem;
-      /* background-color: #5500ff; */
-      /* padding-top: 44px; */
-    }
-    .header-top-text {
-      width: 100%;
-      font-family: BICRODEPERSONALUSE;
-      font-size: 24px;
-      color: #fbfbfd;
-      /* margin-bottom: 7rem; */
-      padding-top: 44px;
-    }
-
-
-    /* .localnav-background, .localnav-content {
-        height: 100px;
-      }
-
-      .localnav-title {
-        padding-top: 30px
-      } */
-
-      .localnav-background, .localnav-content {
-        height: 78px;
-      }
-
-      .localnav-title {
-        padding-top: 0px
-      }
-
-      .l-content-width {
-        padding-top: 24px
-      }
-    
-    @media screen and (display-mode: standalone) {
-      .header-top {
-      width: 100%;
-      text-align: center;
-      padding-top: .7rem;
-      /* background-color: #5500ff; */
-      height: 88px;
-      padding-top: 44px;
-      }
-      .header-top-text {
-        width: 100%;
-        font-family: 'BICRODEPERSONALUSE';
-        font-size: 24px;
-        color: #fbfbfd;
-        /* margin-bottom: 7rem; */
-        margin-top: 44px;
-      }
-
-      .localnav-background, .localnav-content {
-        height: 110px;
-      }
-
-      .localnav-title {
-        padding-top: 38px
-      }
-
-      .l-content-width {
-        padding-top: 34px
-      }
-
-    } ;
-
-  </style>
-
 </head>
 
 <body translate="no">
@@ -1100,337 +952,20 @@
                             <span id="options-btn"><img src="https://emilcarlsson.se/assets/svg/more.svg" alt=""
                                     class="svg"></span>
                         </div>
-
-
-                        <!-- in -->
-                        <div>
-                            <div class="story-card story-card--branded" style="--event-color: #130707; margin-top: 2rem;">
-                              <!---->
-                              <!-- <li>
-                                <img src="https://ali-bhtty.web.app/cyborg/images/colon-min.jpg" alt="">
-                              </li> -->
-
-                              <picture class="we-artwork we-artwork--downloaded we-artwork--no-border story-card__artwork"
-                                style="--background-color: #130707;">
-              
-                                <img
-                                  srcset="https://ali-bhtty.web.app/cyborg/images/colon-min.jpg 960w"
-                                  sizes="(max-width: 734px) 366px, (min-width: 735px) and (max-width: 1068px) 336px, 480px"
-                                  type="image/jpg">
-              
-                                <img
-                                  srcset="https://ali-bhtty.web.app/cyborg/images/colon-min.jpg 366w, https://ali-bhtty.web.app/cyborg/images/colon-min.jpg 336w, https://ali-bhtty.web.app/cyborg/images/colon-min.jpg 480w, https://ali-bhtty.web.app/cyborg/images/colon-min.jpg 732w, https://ali-bhtty.web.app/cyborg/images/colon-min.jpg 672w, https://ali-bhtty.web.app/cyborg/images/colon-min.jpg 960w"
-                                  sizes="(max-width: 734px) 366px, (min-width: 735px) and (max-width: 1068px) 336px, 480px"
-                                  type="image/jpg">
-              
-                                <img
-                                  srcset="https://ali-bhtty.web.app/cyborg/images/colon-min.jpg 366w, https://ali-bhtty.web.app/cyborg/images/colon-min.jpg 336w, https://ali-bhtty.web.app/cyborg/images/colon-min.jpg 480w, https://ali-bhtty.web.app/cyborg/images/colon-min.jpg 732w, https://ali-bhtty.web.app/cyborg/images/colon-min.jpg 672w, https://ali-bhtty.web.app/cyborg/images/colon-min.jpg 960w"
-                                  sizes="(max-width: 734px) 366px, (min-width: 735px) and (max-width: 1068px) 336px, 480px"
-                                  type="image/jpg">
-              
-                                <img src="../../assets/artwork/1x1-42817eea7ade52607a760cbee00d1495.gif" decoding="async"
-                                  loading="lazy" class="we-artwork__image ember6811  we-artwork__image--lazyload" alt
-                                  role="presentation" height="483" width="366">
-              
-              
-              
-              
-              
-                                  <!-- test -- source -->
-                                <!-- <source
-                                  srcset="https://is2-ssl.mzstatic.com/image/thumb/Features112/v4/78/b0/89/78b089f3-8c50-ce38-9d65-81b6f575faea/6d1cc449-15ae-4d67-ad12-6293b41fbbaf.png/366x483fn.webp 366w, https://is2-ssl.mzstatic.com/image/thumb/Features112/v4/78/b0/89/78b089f3-8c50-ce38-9d65-81b6f575faea/6d1cc449-15ae-4d67-ad12-6293b41fbbaf.png/336x443fn.webp 336w, https://is2-ssl.mzstatic.com/image/thumb/Features112/v4/78/b0/89/78b089f3-8c50-ce38-9d65-81b6f575faea/6d1cc449-15ae-4d67-ad12-6293b41fbbaf.png/480x633fn.webp 480w, https://is2-ssl.mzstatic.com/image/thumb/Features112/v4/78/b0/89/78b089f3-8c50-ce38-9d65-81b6f575faea/6d1cc449-15ae-4d67-ad12-6293b41fbbaf.png/732x966fn.webp 732w, https://is2-ssl.mzstatic.com/image/thumb/Features112/v4/78/b0/89/78b089f3-8c50-ce38-9d65-81b6f575faea/6d1cc449-15ae-4d67-ad12-6293b41fbbaf.png/672x886fn.webp 672w, https://is2-ssl.mzstatic.com/image/thumb/Features112/v4/78/b0/89/78b089f3-8c50-ce38-9d65-81b6f575faea/6d1cc449-15ae-4d67-ad12-6293b41fbbaf.png/960x1266fn.webp 960w"
-                                  sizes="(max-width: 734px) 366px, (min-width: 735px) and (max-width: 1068px) 336px, 480px"
-                                  type="image/webp">
-              
-                                <source
-                                  srcset="https://is2-ssl.mzstatic.com/image/thumb/Features112/v4/78/b0/89/78b089f3-8c50-ce38-9d65-81b6f575faea/6d1cc449-15ae-4d67-ad12-6293b41fbbaf.png/366x483fn.png 366w, https://is2-ssl.mzstatic.com/image/thumb/Features112/v4/78/b0/89/78b089f3-8c50-ce38-9d65-81b6f575faea/6d1cc449-15ae-4d67-ad12-6293b41fbbaf.png/336x443fn.png 336w, https://is2-ssl.mzstatic.com/image/thumb/Features112/v4/78/b0/89/78b089f3-8c50-ce38-9d65-81b6f575faea/6d1cc449-15ae-4d67-ad12-6293b41fbbaf.png/480x633fn.png 480w, https://is2-ssl.mzstatic.com/image/thumb/Features112/v4/78/b0/89/78b089f3-8c50-ce38-9d65-81b6f575faea/6d1cc449-15ae-4d67-ad12-6293b41fbbaf.png/732x966fn.png 732w, https://is2-ssl.mzstatic.com/image/thumb/Features112/v4/78/b0/89/78b089f3-8c50-ce38-9d65-81b6f575faea/6d1cc449-15ae-4d67-ad12-6293b41fbbaf.png/672x886fn.png 672w, https://is2-ssl.mzstatic.com/image/thumb/Features112/v4/78/b0/89/78b089f3-8c50-ce38-9d65-81b6f575faea/6d1cc449-15ae-4d67-ad12-6293b41fbbaf.png/960x1266fn.png 960w"
-                                  sizes="(max-width: 734px) 366px, (min-width: 735px) and (max-width: 1068px) 336px, 480px"
-                                  type="image/png">
-              
-                                <img src="../../assets/artwork/1x1-42817eea7ade52607a760cbee00d1495.gif" decoding="async"
-                                  loading="lazy" class="we-artwork__image ember6811  we-artwork__image--lazyload" alt
-                                  role="presentation" height="483" width="366"> -->
-              
-              
-                                <style>
-                                  .ember6811,
-                                  #ember6811::before {
-                                    width: 366px;
-                                    height: 483px;
-                                  }
-              
-                                  .ember6811::before {
-                                    padding-top: 131.9672131147541%;
-                                  }
-              
-                                  @media (min-width: 735px) {
-              
-                                    .ember6811,
-                                    #ember6811::before {
-                                      width: 336px;
-                                      height: 443px;
-                                    }
-              
-                                    .ember6811::before {
-                                      padding-top: 131.8452380952381%;
-                                    }
-                                  }
-              
-                                  @media (min-width: 1069px) {
-              
-                                    .ember6811,
-                                    #ember6811::before {
-                                      width: 480px;
-                                      height: 633px;
-                                    }
-              
-                                    .ember6811::before {
-                                      padding-top: 131.875%;
-                                    }
-                                  }
-                                </style>
-                              </picture>
-              
-              
-                              <div class="story-card__content"
-                                style="--background-image: url('https://is2-ssl.mzstatic.com/image/thumb/Features112/v4/78/b0/89/78b089f3-8c50-ce38-9d65-81b6f575faea/6d1cc449-15ae-4d67-ad12-6293b41fbbaf.png/100x25br.jpg'); max-height: fit-content;">
-                                <div class="story-card__material"></div>
-                                <div class="story-card__joe-color"></div>
-                                <div class="story-card__copy">
-                                  <!-- <h1 class="story-card__name">
-                                    JUEGO<br />DEL DÍA
-                                  </h1> -->
-                                </div>
-              
-              
-                                <section class="app-placard app-placard--inside app-placard--otd">
-                                  <picture class="we-artwork we-artwork--downloaded app-placard__image we-artwork--ios-app-icon"
-                                    style="--background-color: #1b1b1b;"> <!-- id="ember6812" -->
-              
-                                    <source
-                                      srcset="./img/icon-min.jpg 52w, ./img/icon-min.jpg 60w, ./img/icon-min.jpg 80w, ./img/icon-min.jpg 104w, ./img/icon-min.jpg 120w, ./img/icon-min.jpg 160w"
-                                      sizes="(max-width: 734px) 52px, (min-width: 735px) and (max-width: 1068px) 60px, 80px"
-                                      type="image/jpg">
-              
-                                    <!-- <source
-                                      srcset="/cyborg/guias/img/icon-min.jpg 52w, /cyborg/guias/img/icon-min.jpg 60w, /cyborg/guias/img/icon-min.jpg 80w, /cyborg/guias/img/icon-min.jpg 104w, /cyborg/guias/img/icon-min.jpg 120w, /cyborg/guias/img/icon-min.jpg 160w"
-                                      sizes="(max-width: 734px) 52px, (min-width: 735px) and (max-width: 1068px) 60px, 80px"
-                                      type="image/png"> -->
-
-              
-                                    <img src="../../assets/artwork/1x1-42817eea7ade52607a760cbee00d1495.gif" decoding="async"
-                                      loading="lazy" class="we-artwork__image ember6812  we-artwork__image--lazyload" alt
-                                      role="presentation" height="52" width="52">
-              
-                                      <!-- <img class="ember6813" style="width: 100%;" src="../../img/icon-min.jpg" alt=""> -->
-              
-              
-                                    <style>
-                                      .ember6812,
-                                      #ember6812::before {
-                                        width: 52px;
-                                        height: 52px;
-                                      }
-              
-                                      .ember6812::before {
-                                        padding-top: 100%;
-                                      }
-              
-                                      @media (min-width: 735px) {
-              
-                                        .ember6812,
-                                        #ember6812::before {
-                                          width: 60px;
-                                          height: 60px;
-                                        }
-              
-                                        .ember6812::before {
-                                          padding-top: 100%;
-                                        }
-                                      }
-              
-                                      @media (min-width: 1069px) {
-              
-                                        .ember6812,
-                                        #ember6812::before {
-                                          width: 80px;
-                                          height: 80px;
-                                        }
-              
-                                        .ember6812::before {
-                                          padding-top: 100%;
-                                        }
-                                      }
-                                    </style>
-                                  </picture>
-              
-              
-                                  <div class="app-placard__copy">
-                                    <!---->
-                                    <p class="app-placard__title truncate-single-line">
-                                      La Barceloneta
-                                    </p>
-              
-                                    <p class="app-placard__subtitle truncate-single-line">
-                                      @alibhtty
-                                    </p>
-                                  </div>
-              
-                                  <a class="app-placard__cta we-button we-button--pill"
-                                    data-metrics-click="{&quot;actionDetails&quot;:{&quot;type&quot;:&quot;app&quot;},&quot;actionType&quot;:&quot;navigate&quot;,&quot;actionUrl&quot;:&quot;https://apps.apple.com/es/app/vampire-survivors/id6444525702&quot;,&quot;targetType&quot;:&quot;link&quot;,&quot;targetId&quot;:&quot;LinkToStoryApp&quot;}"
-                                    href="../../../guias/">VER</a>
-                                </section>
-              
-                                <!---->
-                              </div>
-                            </div>
-              
-                            <!---->
-                          </div>
-
-
-                          <style>
-                            .song p{
-                                padding: 15px 0;
-                            }
-
-
-                            @import url('https://fonts.googleapis.com/css?family=Roboto');
-
-
-
-/* .wrapper {
-    margin: auto;
-    padding: 0 20px;
-    max-width: 1024px;
-} */
-
-/* main {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-    margin-top: 200px;
-    margin-bottom: 100px;
-} */
-
-.weatherWidget {
-    /* height: auto; */
-    text-align: center;
-    font-size: 16px;
-    font-weight: 400;
-    margin: 50% .5rem;
-    justify-content: center;
-    /* border-radius: 3%;
-    min-width: 7em;
-    min-height: 5em; */
-    /* padding: .5rem; */
-    -webkit-box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-            box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-}
-
-.temp {
-    cursor: pointer;
-}
-
-#icon {
-    height: 5em;
-}
-
-/*
-
-#license {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-    font-size: 12px;
-    color: #fff;
-}
-*/
-
-a {
-    color: lightblue;
-}
-
-#loading { 
-    width: 100%;
-    position:absolute;
-    text-align: center;
-    /* left:calc(50% - 100px); */
-    top:calc(50% - 25px);
-}
-                          </style>
-
-                          <!-- music -->
-                          <div style="position: absolute; display: -webkit-box; width: 100%; height: auto; padding: 0 10vw;">
-                            <div style="width: 39vw; background-color: rgba(0, 0, 0, .5); border-radius: 12px;">
-                                <div class="weatherWidget">
-                                    <div id="loading">Loading...</div>
-                                    <div class="place">
-                                      <span class="city"></span><span class="country"></span>
-                                    </div>
-                                    <div class="temp"></div>
-                                    <div class="desc"></div>
-                                    <img id="icon">
-                                  </div>
-                            </div>
-                            <!-- <div style="width: 39vw; background-color: #552bff; border-radius: 12px; margin-left: 4vw;"></div> -->
-                          <div class="jcarousel" style="width: 39vw; height: auto; background-color: #000000; border-radius: 12px; margin-left: 4vw;">
-                            <ul id="songs">
-                                <li class="song">
-                                    <img src="https://ali-bhtty.web.app/cyborg/player/calling.jpg">
-                                    <div style="padding: 15px 10px;">
-                                        <p class="song-title">Calling</p>
-                                        <p class="song-artist">Ali Bhtty, Jalen</p>
-                                    </div>
-                                </li>
-                            </ul>
-                            <div id="controls">
-                                <span id="previous-btn"><i class="fa fa-step-backward fa-fw" aria-hidden="true"></i></span>
-                                <span id="play-btn"><i class="fa fa-play fa-fw" aria-hidden="true"></i></span>
-                                <span id="next-btn"><i class="fa fa-step-forward fa-fw" aria-hidden="true"></i></span>
-                            </div>
-                        </div>       </div>
-
-
-                        <audio crossorigin>
-                            <source src="" type="audio/mpeg">
-                        </audio>
-
-                        <!-- <div class="jcarousel">
+                        <div class="jcarousel">
                             <ul id="songs">
                                 <li class="song" data-audio="https://dl.dropbox.com/s/f2rsaxbus9vh81q/Calling%20-%20Jalen%20%28Ali%20Bhtty%20Remix%29.mp3?dl=0" data-color="#ff6600">
-                                    <img src="https://ali-bhtty.web.app/cyborg/images/colon-min.jpg"> <!-- https://ali-bhtty.web.app/cyborg/player/calling.jpg ->
+                                    <img src="https://ali-bhtty.web.app/cyborg/player/calling.jpg">
                                     <p class="song-title">Calling</p>
                                     <p class="song-artist">Ali Bhtty, Jalen</p>
                                 </li>
                             </ul>
-                        </div> -->
-
-
-
-
-
-
-                        <div class="jcarousel">
-                            <ul id="songs">
-                                <li class="song" data-audio="https://dl.dropbox.com/s/f2rsaxbus9vh81q/Calling%20-%20Jalen%20%28Ali%20Bhtty%20Remix%29.mp3?dl=0" data-color="#ff6600">
-                                    <img hidden src="https://ali-bhtty.web.app/cyborg/player/calling.jpg">
-                                    <!-- <p class="song-title">Calling</p>
-                                    <p class="song-artist">Ali Bhtty, Jalen</p> -->
-                                </li>
-                            </ul>
                         </div>
-                        <!-- <audio crossorigin>
+                        <audio crossorigin>
                             <source src="" type="audio/mpeg">
-                        </audio> -->
+                        </audio>
 
-                        <!-- <div id="timeline">
+                        <div id="timeline">
                             <span id="current-time">--:--</span>
                             <span id="total-time">--:--</span>
                             <div class="slider" data-direction="horizontal">
@@ -1444,58 +979,50 @@ a {
                             <i class="fa fa-refresh" aria-hidden="true"></i>
                             <i class="fa fa-bluetooth-b active" id="bluetooth-btn" aria-hidden="true"></i>
                             <i class="fa fa-heart-o" id="heart-icon" aria-hidden="true"></i>
-                        </div> -->
+                        </div>
 
-                        <!-- <div id="controls">
+                        <div id="controls">
                             <span id="previous-btn"><i class="fa fa-step-backward fa-fw" aria-hidden="true"></i></span>
                             <span id="play-btn"><i class="fa fa-play fa-fw" aria-hidden="true"></i></span>
                             <span id="next-btn"><i class="fa fa-step-forward fa-fw" aria-hidden="true"></i></span>
-                        </div> -->
+                        </div>
                         
                     </div>
                     <div id="overlay"></div>
                 </div>
 
                 <div id="sidemenu">
-                    <ul style="width: 100%; padding: 0;">
-                        <li class="dash">
+                    <ul>
+                        <li>
                             <i class="fa fa-search fa-fw" aria-hidden="true"></i>
                             Search
                         </li>
-                        <li class="dash">
+                        <li>
                             <img class="svg menu-icons" src="https://emilcarlsson.se/assets/svg/music-player.svg"
                                 alt="">
                             Playlists
                         </li>
-                        <li class="dash">
+                        <li>
                             <img id="album-icon" class="svg menu-icons"
                                 src="https://emilcarlsson.se/assets/svg/album-icon.svg" alt="">
                             Albums
                         </li>
-                        <li class="dash">
+                        <li>
                             <i class="fa fa-microphone fa-fw" aria-hidden="true"></i>
                             Artists
                         </li>
-                        <li class="dash">
+                        <li>
                             <i class="fa fa-podcast fa-fw" aria-hidden="true"></i>
                             Podcasts
                         </li>
-                        <li class="dash">
-                            <i class="fa fa-cog fa-fw" aria-hidden="true"></i>
-                            Settings
-                        </li>
-                        <li class="dash">
-                            <i class="fa fa-podcast fa-fw" aria-hidden="true"></i>
-                            Podcasts
-                        </li>
-                        <li class="dash">
+                        <li>
                             <i class="fa fa-cog fa-fw" aria-hidden="true"></i>
                             Settings
                         </li>
                     </ul>
                 </div>
 
-                <!-- <div id="bluetooth-devices" class="menu">
+                <div id="bluetooth-devices" class="menu">
                     <span class="close-btn"><span>&times;</span> Close</span>
                     <h3>Devices nearby</h3>
                     <ul>
@@ -1527,7 +1054,7 @@ a {
                     <p class="info-text">
                         Make sure your bluetooth device is turned on and in range.
                     </p>
-                </div> -->
+                </div>
 
                 <div id="song-options" class="menu">
                     <span class="close-btn"><span>&times;</span> Close</span>
@@ -1630,14 +1157,13 @@ a {
                     color: "#cd4829"
                 }, */
 
-                /* {
+                {
                     title: "Ep. 013 Cy-BORED",
                     artist: "alibhtty",
                     cover: "set/ep013.jpg",
                     audioFile: "https://dl.dropbox.com/s/bs3rezop8r4iewt/Ep.%20013%20Cy-bored%20-%20Ali%20Bhtty.mp3?dl=0",
                     color: "#5d0126"
-                } */
-            ];
+                }];
 
 
 
@@ -1930,178 +1456,6 @@ a {
             }
         }
 //# sourceURL=pen.js
-    </script>
-
-
-
-
-    <script>
-        /* 
-    A local weather widget that pulls data from openweathermap.org
-
-    SVG and background image will change to reflect day/night & conditions
-
-    C/F conversion when temp is clicked
-           
-*/
-
-let isCelsius = true;
-let date = new Date();
-let today = date.getHours(); 
-
-// Pull api from openweathermap.org 
-const getApiUrl = (lat, lon) => 'https://api.openweathermap.org/data/2.5/weather?lat=' + lat + '&lon=' + lon + '&appid=2bcc4123a99bf9b75c11673b0029ea8a';
-
-const geoSuccess = position => {
-  startPos = position;
-  lat = startPos.coords.latitude;
-  lon = startPos.coords.longitude;
-
-  // Call the api and fetch the local weather
-  makeRequest('GET', getApiUrl(lat, lon), handleWeather);
-};
-
-// Request server data
-const makeRequest = (type, url, callback) => {
-  const req = new XMLHttpRequest();
-  let response = '';
-
-  req.open(type, url, true);
-
-  // Confirm response is ready (200: "OK")
-  req.onreadystatechange = () => {
-    if (req.readyState === XMLHttpRequest.DONE && req.status === 200) {
-      callback(req.responseText);
-    }
-  }
-  req.send(null);
-};
-
-const setNodeContents = (node, content) => {
-  document.querySelector(node).innerHTML = content;
-}
-
-// Round temp to nearest decimal
-const formatTemp = x => Number.parseFloat(x).toFixed(1);
-
-// Fill with fetched data
-const updateTempDashboard = (city, country, temp, desc) => {
-  document.querySelector('#loading').remove();
-  setNodeContents('.city', city);
-  setNodeContents('.country', `, ${country}`);
-  setNodeContents('.temp', `${temp} ºC`);
-  setNodeContents('.desc', desc);
-}
-
-// ºC and ºF conversions
-const getCelsius = tempKelvin => formatTemp(tempKelvin - 273);
-const getFahrenheit = tempKelvin => formatTemp(1.8 * (tempKelvin - 273) + 32);
-
-// Conversion toggle
-const handleToggleTemp = () => {
-  console.log('clicked');
-  if(isCelsius) {
-    setNodeContents('.temp', tempF + ' ºF');
-  } else {
-    setNodeContents('.temp', tempC + ' ºC');
-  }
-  isCelsius = !isCelsius;
-}
-
-// Set data variables
-const handleWeather = (data) => {
-  // console.log(data);
-  const obj = JSON.parse(data);
-  city = obj.name;
-  country = obj.sys.country;
-  tempKelvin = obj.main.temp;
-  tempF = getFahrenheit(tempKelvin);
-  tempC = getCelsius(tempKelvin);
-  tempDescription = obj.weather[0].main;
-  
-  document.querySelector('.temp').addEventListener('click', handleToggleTemp);
-
-  updateTempDashboard(city, country, tempC, tempDescription);
-
-  // Select background image and icon based on tempDescription & current time
-  let image = document.getElementById("icon");
-
-  if (tempDescription === "Rain") {
-    if (today >= 7 && today <= 19) {
-      document.body.style.background = "url('https://source.unsplash.com/b-sTYb0quYQ') no-repeat center center fixed";
-      document.body.style.backgroundSize = "cover";
-      image.src = "https://res.cloudinary.com/trobes/image/upload/v1537821722/rainy-1.svg"; 
-    }
-    else {
-      document.body.style.background = "url('https://source.unsplash.com/LM4X_cIjjQ8') no-repeat center center fixed";
-      document.body.style.backgroundSize = "cover";
-      image.src = "https://res.cloudinary.com/trobes/image/upload/v1537821730/rainy-7.svg"; 
-    }
-
-  } else if (tempDescription === "Thunderstorm") {
-      if (today >= 7 && today <= 19) {
-        document.body.style.background = "url('https://source.unsplash.com/2uOcrLACf_4') no-repeat center center fixed";
-        document.body.style.backgroundSize = "cover";
-        image.src = "https://res.cloudinary.com/trobes/image/upload/v1537821752/thunder.svg"; 
-      }
-      else {
-        document.body.style.background = "url('https://source.unsplash.com/vP5Im4q8Z6g') no-repeat center center fixed";
-      }
-
-  } else if (tempDescription === "Snow") {
-      if (today >= 7 && today <= 19) {
-        document.body.style.background = "url('https://source.unsplash.com/pY1FKeEP8v8') no-repeat center center fixed";
-        document.body.style.backgroundSize = "cover";
-        image.src = "https://res.cloudinary.com/trobes/image/upload/v1537821749/snowy-3.svg"; 
-      }
-      else {
-        document.body.style.background = "url('https://source.unsplash.com/73osnYZ133o') no-repeat center center fixed";
-        document.body.style.backgroundSize = "cover";
-        image.src = "https://res.cloudinary.com/trobes/image/upload/v1537821752/snowy-6.svg"; 
-      }
-
-  } else if (tempDescription === "Clear") {
-      if (today >= 7 && today <= 19) {
-        document.body.style.background = "url('https://source.unsplash.com/E9aetBe2w40') no-repeat center center fixed";
-        document.body.style.backgroundSize = "cover";
-        image.src = "https://res.cloudinary.com/trobes/image/upload/v1537821710/day.svg"; 
-      }
-      else {
-        document.body.style.background = "url('https://source.unsplash.com/UiO6KzrBTJk') no-repeat center center fixed";
-        document.body.style.backgroundSize = "cover";
-        image.src = "https://res.cloudinary.com/trobes/image/upload/v1537821712/night.svg"; 
-      }
-
-  } else if (tempDescription === "Clouds") {
-      if (today >= 7 && today <= 19) {
-        document.body.style.background = "url('https://source.unsplash.com/3Eqc3Ph4oRg') no-repeat center center fixed";
-        document.body.style.backgroundSize = "cover";
-        image.src = "https://res.cloudinary.com/trobes/image/upload/v1537821701/cloudy-day-2.svg"; 
-      }
-      else {
-        document.body.style.background = "url('https://source.unsplash.com/B31OD0bsYV0') no-repeat center center fixed";
-        document.body.style.backgroundSize = "cover";
-        image.src = "https://res.cloudinary.com/trobes/image/upload/v1537821702/cloudy-night-2.svg"; 
-      }
-
-  } else 
-    document.body.style.background = "url('https://source.unsplash.com/3Eqc3Ph4oRg') no-repeat center center fixed";
-    document.body.style.backgroundSize = "cover";
-  }
-
-
-// Check for Geolocation support
-if (navigator.geolocation) {
-  window.onload = () => {
-
-    navigator.geolocation.getCurrentPosition(geoSuccess);
-
-  };
-
-} else { 
-    alert('Geolocation is not supported! Check browser/os settings.'); 
-}
-
     </script>
 
 
