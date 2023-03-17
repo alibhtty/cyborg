@@ -20,8 +20,8 @@
     <link rel="manifest" href="../manifest.json">
     <link rel="shortcut icon" type="image/x-icon" href="../assets/icons/icon_192.ico">
 
-    <link rel="stylesheet" href="../../../guias/css/style-global.css"> <!-- ../guias/css/style-global.css -->
-  <link integrity="" rel="stylesheet" href="../../../guias/css/style-guias.css">
+    <link rel="stylesheet" href="./../guias/css/style-global.css"> <!-- ../guias/css/style-global.css -->
+  <link integrity="" rel="stylesheet" href="./../guias/css/style-guias.css">
     <!-- <link href='https://fonts.googleapis.com/css?family=Lato:400,700,900' rel='stylesheet' type='text/css'>
     <script src="https://use.typekit.net/hoy3lrg.js"></script>
     <script>try { Typekit.load({ async: true }); } catch (e) { }</script> -->
@@ -1078,6 +1078,10 @@
 
     } ;
 
+
+
+    
+
   </style>
 
 </head>
@@ -1290,14 +1294,19 @@
 
 
                           <style>
-                            .song p{
-                                padding: 15px 0;
-                            }
-
+                            
 
                             @import url('https://fonts.googleapis.com/css?family=Roboto');
 
-
+                            .background {
+    background: url("https://source.unsplash.com/OHzkfrv9Ycw") fixed center;  /* default background image */
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
+    -webkit-transition: background 5s ease;
+    -o-transition: background 5s ease;
+    transition: background 5s ease;
+    height: 100%;
+}
 
 /* .wrapper {
     margin: auto;
@@ -1327,8 +1336,8 @@
     min-width: 7em;
     min-height: 5em; */
     /* padding: .5rem; */
-    -webkit-box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-            box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    /* -webkit-box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23); */
 }
 
 .temp {
@@ -1368,7 +1377,7 @@ a {
 
                           <!-- music -->
                           <div style="position: absolute; display: -webkit-box; width: 100%; height: auto; padding: 0 10vw;">
-                            <div style="width: 39vw; background-color: rgba(0, 0, 0, .5); border-radius: 12px;">
+                            <div class="background" style="width: 39vw; background-color: rgba(0, 0, 0, .5); border-radius: 12px;">
                                 <div class="weatherWidget">
                                     <div id="loading">Loading...</div>
                                     <div class="place">
@@ -1383,8 +1392,8 @@ a {
                           <div class="jcarousel" style="width: 39vw; height: auto; background-color: #000000; border-radius: 12px; margin-left: 4vw;">
                             <ul id="songs">
                                 <li class="song">
-                                    <img src="https://ali-bhtty.web.app/cyborg/player/calling.jpg">
-                                    <div style="padding: 15px 10px;">
+                                    <img src="https://ali-bhtty.web.app/cyborg/player/calling.jpg"><br>
+                                    <div>
                                         <p class="song-title">Calling</p>
                                         <p class="song-artist">Ali Bhtty, Jalen</p>
                                     </div>
