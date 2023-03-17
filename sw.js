@@ -12,6 +12,7 @@ urlToCache = [
     'https://ali-bhtty.web.app/favicon/favicon.ico',
     'https://alibhtty.github.io/cyborg/index.html',
     'https://alibhtty.github.io/cyborg/set/index.html',
+    'https://alibhtty.github.io/cyborg/images/cyborg-bw-min.jpg',
     'https://alibhtty.github.io/cyborg/style.css',
     'https://alibhtty.github.io/cyborg/guias/index.html',
     'https://alibhtty.github.io/cyborg/guias/style-global',
