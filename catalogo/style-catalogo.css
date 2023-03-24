@@ -712,7 +712,13 @@ img, video {
 }
 
 .m-1 {
-    margin: .25rem
+    margin: .25rem 0 
+}
+
+.linea{
+    width: 10px;
+    height: 1px;
+    border: solid 1px #00D8FF;
 }
 
 .-m-1 {

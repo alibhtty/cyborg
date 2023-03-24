@@ -2,7 +2,11 @@
     <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=0">
+        <meta name="apple-mobile-web-app-title" content="Cyborg">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
 
         <!--=============== FAVICON ===============-->
         <link rel="apple-touch-icon" sizes="180x180" href="../../favicon/apple-touch-icon.png">
@@ -22,13 +26,21 @@
 
         <!--=============== CSS ===============-->
         <link rel="stylesheet" href="../../css/styles.css">
-        <link rel="stylesheet" href="../../css/fancybox.min.css">
+        <!-- <link rel="stylesheet" href="../../css/fancybox.min.css"> -->
+        <link rel="stylesheet" href="../../style-catalogo.css">
+
+
+        <!-- <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script> -->
+        
+        <link rel="stylesheet" href="../../css/fancybox-v5.css">
+        <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/> -->
         <!-- <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css'> -->
 
         <title>Sonia - Sesión DP</title>
 
         <!-- SESION STYLE's -->
-        <style>
+        <!-- <style>
           .card{height: 100%;}
           .card-image{height: 100%;}
 
@@ -42,18 +54,18 @@
           .mains .card-image {
             padding-top: 0;
           }
-        </style>
+        </style> -->
     </head>
     <body>
         <!--=============== HEADER ===============-->
-        <header class="header" id="header">
+        <!-- <header class="header" id="header">
             <nav class="nav container">
                 <a href="../../index.html" class="nav__logo">Inicio</a>
 
                 <div class="nav__menu">
                     <ul class="nav__list">
                         <li class="nav__item">
-                            <a href="../../index.html#home" class="nav__link"> <!-- active-link -->
+                            <a href="../../index.html#home" class="nav__link"> <!-- active-link ->
                                 <i class='bx bx-home-alt'></i>
                             </a>
                         </li>
@@ -84,27 +96,63 @@
                     </ul>
                 </div>
 
-                <!-- Theme change button -->
+                
                 <i class='bx bx-moon change-theme' id="theme-button"></i>
             </nav>
-        </header>
+        </header> -->
 
 
         <!--=============== MAIN ===============-->
         <main class="main">
+          
+          <div style="padding: 0 1rem; max-width: 1280px; margin: 3rem 0 2rem 0; font-size: 14px; line-height: 2.25rem;">
+            <h1 class="text-3xl md:text-4xl font-bold mb-8 "><a href="../../catalogo/" style="color: #444444;">Catálogo /&nbsp;</a>Sesiones</h1>
+
+            <div class="-ml-1 -mr-1 -mt-1 mb-8 flex flex-wrap items-center">
+              <div class="relative overflow-hidden rounded-full border px-2 py-1 text-sm font-medium cursor-pointer m-1"
+                  style="border-color:#00D8FF;color:#00D8FF">
+                  <span class="absolute left-0 top-0 z-0 h-full w-full opacity-10" style="background-color:#00D8FF"></span>
+                  <div class="relative z-10 flex items-center">
+                      <!-- <img class="mr-1.5 h-[22px] w-[22px]" src="images/techs/react.svg"
+                          width="22" height="22" alt="React" style="filter:none" /> -->
+                          <span>Catálogo</span>
+                  </div>
+              </div>
+
+              <div class="linea"></div>
+
+              <div class="relative overflow-hidden rounded-full border px-2 py-1 text-sm font-medium cursor-pointer m-1"
+                  style="border-color:#00D8FF;color:#00D8FF">
+                  <span class="absolute left-0 top-0 z-0 h-full w-full opacity-10" style="background-color:#00D8FF"></span>
+                  <div class="relative z-10 flex items-center">
+                          <span>Sesiones</span>
+                  </div>
+              </div>
+
+              <div class="linea"></div>
+
+              <div class="relative overflow-hidden rounded-full border px-2 py-1 text-sm font-medium cursor-pointer m-1"
+                  style="border-color:#00D8FF;color:#00D8FF">
+                  <span class="absolute left-0 top-0 z-0 h-full w-full opacity-10" style="background-color:#00D8FF"></span>
+                  <div class="relative z-10 flex items-center">
+                          <span>Cyborg</span>
+                  </div>
+              </div>
+          </div>
+          </div>
             <!--=============== HOME ===============-->
             <div hidden class="work__container"></div> <!-- activa light-mode -->
 
             <!--=============== GALLERY ===============-->
             <section class="gallery section" id="galery">
-              <span class="section__subtitle">RECIENTE</span> <!-- 24 FEB 2022 -->
-              <h2 class="section__title">Sonia Season</h2>
+              <!-- <span class="section__subtitle">RECIENTE</span>
+              <h2 class="section__title">Sonia Season</h2> -->
   
               <main class="mains">
                   <div class="containers">
                     <div class="card">
                       <div class="card-image">
-                        <a href="../../assets/img/sesion/sonia/DSC07741.jpg" data-fancybox="gallery" data-caption="Sesión Glamour by Ariana">
+                        <a data-fancybox="gallery" data-src="https://alibhtty.github.io/cyborg/catalogo/assets/img/sesion/sonia/DSC07741.jpg" data-caption="Sesión Glamour by Ariana">
                           <img src="../../assets/img/sesion/sonia/DSC07741-min.jpg" alt="Image Gallery">
                         </a>
                       </div>
@@ -257,7 +305,7 @@
             </section>
 
             <!--=============== METADATA ===============-->
-            <div class="metadata containers">
+            <!-- <div class="metadata containers">
               <div class="meta-sub">
                 <h1 class="meta-title">Modelo: </h1>
                 <p class="meta-p">Sonia</p>
@@ -284,9 +332,8 @@
                       <div class="meta-tag-list"><a href="../../index.html#galery" class="meta-tag-item">#model</a></div>
                   </li>
                 </ul>
-                <!-- <p class="meta-p">#barcelona #urban <br> #paisaje</p> -->
               </div>
-            </div>
+            </div> -->
             
             <!--=============== PAGES ===============-->
             <!-- <div class="containers pages-container">
@@ -308,25 +355,23 @@
             <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
             <script src='../../js/galery-jquery.js'></script>
             <!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js'></script> -->
-            <script id="rendered-js" >
+            <!-- <script id="rendered-js" >
           // Fancybox Configuration
           $('[data-fancybox="gallery"]').fancybox({
             buttons: [
             "slideShow",
             "thumbs",
-            "zoom",
-            "fullScreen",
             "share",
             "close"],
           
             loop: true,
-            protect: true });
+            protect: true }); /* "zoom","fullScreen", */
           //# sourceURL=pen.js
-            </script>
+            </script> -->
         </main>
 
         <!--=============== FOOTER ===============-->
-        <footer class="footer">
+        <!-- <footer class="footer">
             <div class="footer__container container">
 
                 <ul class="footer__social">
@@ -345,7 +390,7 @@
                   &#169 <a target="_blank" href="https://ali-bhtty.web.app/">4B</a>. All rights reserved
                 </span>
             </div>
-        </footer>
+        </footer> -->
 
         <!--=============== SCROLLREVEAL ===============-->
         <script src="../../js/scrollreveal.min.js"></script>
@@ -358,6 +403,42 @@
 
         <!--=============== MAIN JS ===============-->
         <script src="../../js/main.js"></script>
+
+
+
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <!-- <script>
+      Fancybox.bind('[data-fancybox="gallery"]', {
+        //
+      });    
+    </script> -->
+
+    <script>
+      Fancybox.bind("[data-fancybox]", {
+  Carousel: {
+    infinite: false,
+  },
+  Slideshow: {
+    playOnStart: true,
+    timeout: 5000,
+  },
+  Toolbar: {
+    display: {
+      left: [],
+      middle: [],
+      right: ["slideshow", "close"],
+    },
+  },
+  Images: {
+    zoom: false,
+  },
+  Thumbs: false,
+  Caption: false,
+});
+    </script>
         
     </body>
 </html>

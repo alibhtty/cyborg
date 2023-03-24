@@ -2,8 +2,11 @@
 <html>
 
 <head>
-    <meta name="viewport" content="width=device-width" />
     <meta charSet="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=0">
+    <meta name="apple-mobile-web-app-title" content="Cyborg">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <link rel="shortcut icon" href="favicon.png" />
     <meta property="og:site_name" content="Cyborg" />
     <meta name="twitter:card" content="summary_large_image" />
@@ -534,10 +537,19 @@
             unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
         }
     </style>
+
+    <style>
+        hr {
+            height: 2px;
+            background-color: red;
+            }
+    </style>
 </head>
 
 <body>
     <div id="__next">
+
+        <!-- header -->
         <!-- <div class="border-b-2 border-primary-p3 bg-dark-1">
             <div class="mx-auto flex h-12 max-w-screen-xl items-center justify-between px-4 sm:h-16 md:px-10">
                 <div class="flex h-full items-center"><a class="block h-full" href="index.html"><svg
@@ -567,6 +579,42 @@
         <!-- Catálogo -->
         <div class="max-w-screen-xl px-4 md:px-10 mx-auto my-12">
             <h1 class="text-3xl md:text-4xl font-bold mb-8 ">Catálogo</h1>
+
+
+            <div class="-ml-1 -mr-1 -mt-1 mb-8 flex flex-wrap items-center">
+                <div class="relative overflow-hidden rounded-full border px-2 py-1 text-sm font-medium cursor-pointer m-1"
+                    style="border-color:#00D8FF;color:#00D8FF">
+                    <span class="absolute left-0 top-0 z-0 h-full w-full opacity-10" style="background-color:#00D8FF"></span>
+                    <div class="relative z-10 flex items-center">
+                        <!-- <img class="mr-1.5 h-[22px] w-[22px]" src="images/techs/react.svg"
+                            width="22" height="22" alt="React" style="filter:none" /> -->
+                            <span>Catálogo</span>
+                    </div>
+                </div>
+
+                <div class="linea"></div>
+
+                <div class="relative overflow-hidden rounded-full border px-2 py-1 text-sm font-medium cursor-pointer m-1"
+                    style="border-color:#00D8FF;color:#00D8FF">
+                    <span class="absolute left-0 top-0 z-0 h-full w-full opacity-10" style="background-color:#00D8FF"></span>
+                    <div class="relative z-10 flex items-center">
+                            <span>Sesiones</span>
+                    </div>
+                </div>
+
+                <div class="linea"></div>
+
+                <div class="relative overflow-hidden rounded-full border px-2 py-1 text-sm font-medium cursor-pointer m-1"
+                    style="border-color:#00D8FF;color:#00D8FF">
+                    <span class="absolute left-0 top-0 z-0 h-full w-full opacity-10" style="background-color:#00D8FF"></span>
+                    <div class="relative z-10 flex items-center">
+                            <span>Cyborg</span>
+                    </div>
+                </div>
+            </div>
+
+
+
             <!-- <div class="-ml-1 -mr-1 -mt-1 mb-8 flex flex-wrap items-center">
                 <div class="relative overflow-hidden rounded-full border px-2 py-1 text-sm font-medium cursor-pointer m-1"
                     style="border-color:#0080FF;color:#0080FF"><span
