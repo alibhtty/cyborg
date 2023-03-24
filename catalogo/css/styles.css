@@ -1137,6 +1137,9 @@ body.light-theme{
 
 /* For large devices */
 @media screen and (min-width: 992px){
+  .text-3xl{
+    margin-bottom: 2rem;
+  }
   .container{
     margin-left: auto;
     margin-right: auto;
@@ -1266,7 +1269,7 @@ body.light-theme{
     padding: 0 2rem;
   }
   .card:hover{
-    filter: brightness(120%)contrast(120%);
+    filter: brightness(75%)contrast(120%);
     transition: 1.8s;
   }
 }
