@@ -145,7 +145,7 @@
 
 @media only screen and (max-width:767px) {
     .localnav-content {
-        padding: 0 16px
+        padding: 0 1.5rem; /* 16px */
     }
 }
 
@@ -1344,7 +1344,7 @@
 }
 
 .localnav-title, .localnav-title a {
-    color: #000;
+    /* color: #000; */
     transition: color .5s cubic-bezier(.28, .11, .32, 1)
 }
 
