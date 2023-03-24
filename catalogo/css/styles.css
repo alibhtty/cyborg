@@ -1411,3 +1411,9 @@ h2, h3, p {
   }
 }
     
+
+#pulse{
+  border-color: #00D8FF;
+  color: #00D8FF;
+  background-color: rgb(0, 217, 255, 0.3);
+}

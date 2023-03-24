@@ -27,7 +27,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preload" href="../style-catalogo.css" as="style" />
     <link rel="stylesheet" href="../style-catalogo.css" data-n-g="" />
-    <link rel="stylesheet" href="../css/galery.css">
+    <!-- <link rel="stylesheet" href="../css/galery.css"> -->
     <noscript data-n-css=""></noscript>
     <script defer="" nomodule="" src="_next/static/chunks/polyfills-5cd94c89d3acac5f.js"></script>
     <script src="chunks/webpack-00a257e87a402dae.js" defer=""></script>
@@ -537,6 +537,12 @@
             src: url("https://fonts.gstatic.com/s/robotomono/v22/L0xTDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vrtSM1J-gEPT5Ese6hmHSh0me8iUI0.woff2") format('woff2');
             unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
         }
+
+        #pulse{
+    border-color: #00D8FF;
+    color: #00D8FF;
+    background-color: rgb(0, 217, 255, 0.3);
+  }
     </style>
 </head>
 
@@ -595,7 +601,7 @@
   
                 <div class="linea"></div>
   
-                <div class="relative overflow-hidden rounded-full border px-2 py-1 text-sm font-medium cursor-pointer m-1"
+                <div id="pulse" class="relative overflow-hidden rounded-full border px-2 py-1 text-sm font-medium cursor-pointer m-1"
                     style="border-color:#00D8FF;color:#00D8FF">
                     <span class="absolute left-0 top-0 z-0 h-full w-full opacity-10" style="background-color:#00D8FF"></span>
                     <div class="relative z-10 flex items-center">
@@ -603,7 +609,7 @@
                     </div>
                 </div>
   
-                <div class="linea"></div>
+                <!-- <div class="linea"></div>
   
                 <div class="relative overflow-hidden rounded-full border px-2 py-1 text-sm font-medium cursor-pointer m-1"
                     style="border-color:#00D8FF;color:#00D8FF">
@@ -611,7 +617,7 @@
                     <div class="relative z-10 flex items-center">
                             <a href="cyborg/">Cyborg</a>
                     </div>
-                </div>
+                </div> -->
               </div>
 
 
@@ -672,8 +678,9 @@
                 <a id="catalog-shaders-slider"
                     class="catalog-item group relative block rounded-xl duration-200 active:bg-dark-3 group-hover:bg-dark-2 bg-dark-1 p-4 "
                     href="cyborg/"> <!--    catalog-item-featured       //////      catalog-item-featured-label    -->
-                    <div class="catalog-item-featured-label absolute right-0 top-0 rounded-tr-lg rounded-bl bg-primary-p3 px-2 py-1 text-xs font-semibold uppercase text-white">
-                        Último</div><svg class="absolute left-0 top-0 z-0 h-full w-full">
+                    <!-- <div class="catalog-item-featured-label absolute right-0 top-0 rounded-tr-lg rounded-bl bg-primary-p3 px-2 py-1 text-xs font-semibold uppercase text-white">
+                        Último</div>-->
+                        <svg class="absolute left-0 top-0 z-0 h-full w-full"> 
                         <rect x="1" y="1" fill="none" stroke-width="2" rx="8" ry="8"></rect>
                     </svg>
                     <div class="relative mb-4">
@@ -732,7 +739,7 @@
                     href="./../index.html">
                     <div class="relative mb-4">
                         <div class="font-bold">Timeline</div>
-                        <div class="mt-1 text-sm font-medium opacity-75">Collab inputs and outputs</div>
+                        <!-- <div class="mt-1 text-sm font-medium opacity-75">Collab inputs and outputs</div> -->
                     </div>
                     <!-- <div class="atropos"><span class="atropos-scale"><span class="atropos-rotate"><span
                                     class="atropos-inner rounded-xl text-[0px]"><img data-atropos-offset="-1" alt="Password Input"
@@ -760,7 +767,7 @@
                     href="./../index.html">
                     <div class="relative mb-4">
                         <div class="font-bold">Instagram</div>
-                        <div class="mt-1 text-sm font-medium opacity-75">Compartidos en IG</div>
+                        <!-- <div class="mt-1 text-sm font-medium opacity-75">Compartidos en IG</div> -->
                     </div>
                     <!-- <div class="atropos"><span class="atropos-scale"><span class="atropos-rotate"><span
                                     class="atropos-inner rounded-xl text-[0px]"><img data-atropos-offset="-1" alt="Shutters Slider"
@@ -782,8 +789,8 @@
                     href="https://ali-bhtty.web.app/mixtape/">
                     <div class="relative mb-4">
                         <div class="font-bold">Música</div>
-                        <div class="mt-1 text-sm font-medium opacity-75">Bass music in mix
-                        </div>
+                        <!-- <div class="mt-1 text-sm font-medium opacity-75">Bass music in mix
+                        </div> -->
                     </div>
                     <!-- <div class="atropos"><span class="atropos-scale"><span class="atropos-rotate"><span
                                     class="atropos-inner rounded-xl text-[0px]"><img data-atropos-offset="-1" alt="Stories Slider"
@@ -807,11 +814,11 @@
                 <a id="catalog-keypad"
                     class="catalog-item group relative block rounded-xl duration-200 active:bg-dark-3 group-hover:bg-dark-2 bg-dark-1 p-4 border border-white border-opacity-5 "
                     href="./../index.html">
-                    <!-- <div class="relative mb-4">
+                    <div class="relative mb-4">
                         <div class="font-bold">Instalar App</div>
-                        <div class="mt-1 text-sm font-medium opacity-75"> Contenido completo
-                        </div>
-                    </div> -->
+                        <!-- <div class="mt-1 text-sm font-medium opacity-75"> Contenido completo
+                        </div> -->
+                    </div>
                     <!-- <div class="atropos"><span class="atropos-scale"><span class="atropos-rotate"><span
                                     class="atropos-inner rounded-xl text-[0px]"><img data-atropos-offset="-1" alt="Keypad"
                                         class="lazy rounded-xl " src="https://s.uiinitiative.com/items/keypad/cover_s.jpg"
