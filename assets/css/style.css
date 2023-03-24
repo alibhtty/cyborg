@@ -173,6 +173,10 @@
         display: block;
         margin-top: 44px !important;
       }
+      .headerUpper h1{
+        display: block;
+        padding-top: 44px !important;
+      }
       .swiper {
       width: 100%;
       padding-top: 28px;
