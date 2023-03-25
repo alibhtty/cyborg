@@ -1,0 +1,21 @@
+@font-face {
+    font-family: "BICRODEPERSONALUSE";
+    src: url("https://ali-bhtty.web.app/assets/fonts/BICRODEPERSONALUSE.ttf");
+  }
+
+.quotes {
+    display: none;
+    color: #000000;
+    font-size: 34px;
+    font-family: "BICRODEPERSONALUSE";
+  }
+
+
+.centrado{
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff
+  }

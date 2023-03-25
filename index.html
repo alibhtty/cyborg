@@ -39,8 +39,9 @@
 
       <!-- PWA CSS -->
       <link href="assets/css/style.css" type="text/css" rel="stylesheet" media="screen" />
-      <link href="assets/css/preloader.css" type="text/css" rel="stylesheet" media="screen" />
-      <!-- Noti --><script src="assets/js/push.min.js"></script>
+      <link href="assets/css/preload-init.css" type="text/css" rel="stylesheet" media="screen" />
+      <!-- <script type="text/javascript" src="assets/css/preload-init.js"></script> -->
+      <!-- Noti --> <!-- <script src="assets/js/push.min.js"></script> -->
 
       <style>
         body{
@@ -127,6 +128,32 @@
       }
     } ;
       </style>
+
+      <style>
+        @font-face {
+    font-family: "BICRODEPERSONALUSE";
+    src: url("https://ali-bhtty.web.app/assets/fonts/BICRODEPERSONALUSE.ttf");
+  }
+
+.quotes {
+    display: none;
+    color: #000000;
+    font-size: 34px;
+    font-family: "BICRODEPERSONALUSE" !important;
+  }
+
+
+.centrado{
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    position: inherit;
+    z-index: 9999;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff
+  }
+      </style>
   </head>
 
 <body class="menu-full header-image html" data-header="light" data-footer="dark"  data-header_align="center"  data-menu_type="left" data-menu="light" data-menu_icons="on" data-footer_type="left" data-site_mode="light" data-footer_menu="show" data-footer_menu_style="light"        data-page="homepage" data-device="desktop" data-site="index.html" translate="no" oncontextmenu="return false" translate="no">
@@ -135,11 +162,19 @@
   </div>
     <!-- Preloader -->
   <div id="onload" class="centrado">
-    <div class="preloader-orbit-loading">
+    <div class="container">
+      <h2 class="quotes">cyborg</h2>
+      <h2 class="quotes">cyborg</h2>
+      <h2 class="quotes">cyborg</h2>
+      <h2 class="quotes">cyborg</h2>
+      <h2 class="quotes">cyborg</h2>
+      <h2 class="quotes">cyborg</h2>
+    </div>
+    <!-- <div class="preloader-orbit-loading">
       <div class="cssload-inner cssload-one"></div>
       <div class="cssload-inner cssload-two"></div>
       <div class="cssload-inner cssload-three"></div>
-    </div>
+    </div> -->
   </div>
   
   <!-- header -->
@@ -669,6 +704,25 @@
   <!-- preloader -->
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   <script src="assets/js/preloader.js"></script>
+
+  <script>
+    (function() {
+
+var quotes = $(".quotes");
+var quoteIndex = -1;
+
+function showNextQuote() {
+  ++quoteIndex;
+  quotes.eq(quoteIndex % quotes.length)
+    .fadeIn(1500)
+    .delay(1000)
+    .fadeOut(1500, showNextQuote);
+}
+
+showNextQuote();
+
+})();
+  </script>
 
   <script type="text/javascript">
     (function (window, document) { // asilamos el componente
