@@ -2626,6 +2626,11 @@ pre.line-numbers, pre.line-numbers>code {
     .headerUpper{
       height: 88px !important;
     }
+
+    .mains{
+        margin-top: 1rem;
+    }
+
     .headerUpper-text{
       display: block;
       margin-top: 44px !important;

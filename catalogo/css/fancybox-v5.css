@@ -750,7 +750,7 @@ html.with-fancybox body.hide-scrollbar {
 }
 
 .fancybox__nav {
-    --f-button-width: 20px; /* 50px */
+    --f-button-width: 15px; /* 50px */
     --f-button-height: 50px;
     --f-button-border: 0;
     --f-button-border-radius: 50%;
@@ -764,10 +764,10 @@ html.with-fancybox body.hide-scrollbar {
     --f-button-transform: none;
     --f-button-svg-width: 26px;
     --f-button-svg-height: 26px;
-    --f-button-svg-stroke-width: 2.5;
+    --f-button-svg-stroke-width: 3.5;
     --f-button-svg-fill: none;
     --f-button-svg-filter: drop-shadow(1px 1px 1px rgba(24, 24, 27, 0.5));
-    --f-button-svg-disabled-opacity: 0.65;
+    --f-button-svg-disabled-opacity: 0.75;
     --f-button-next-pos: 1rem;
     --f-button-prev-pos: 1rem;
     opacity: var(--fancybox-opacity, 1)
@@ -1216,7 +1216,7 @@ html.with-fancybox body.hide-scrollbar {
 .fancybox__toolbar.is-absolute, .is-compact .fancybox__toolbar {
     position: absolute;
     /* top: 0; */
-    bottom: 3.5rem;
+    bottom: 2.5rem;
     left: 0;
     right: 0
 }
