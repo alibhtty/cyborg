@@ -7,7 +7,7 @@
   position: fixed;
   bottom: 0px;
   width: 100%;
-  height: 50px; /* 60px */
+  height: 70px; /* 60px o    50px nutral*/
   background-color: #000000;
   /* background: rgba(20, 20, 19, 0.5);
   backdrop-filter: blur(10px);
@@ -42,6 +42,8 @@ body.isfullscreen .footer-menu{
 }
 .footer-menu li a{
   display: inline-block;
+  background-color: #000000; /* none */
+  border-radius: 50%;
   width: 90%;
   height: 100%;
   color: #546E7A;
