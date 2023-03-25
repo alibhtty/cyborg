@@ -726,8 +726,8 @@ var quoteIndex = -1;
 function showNextQuote() {
   ++quoteIndex;
   quotes.eq(quoteIndex % quotes.length)
-    .fadeIn(1000)
-    .delay(1000)
+    .fadeIn(1500)
+    .delay(1500)
     .fadeOut(1500, showNextQuote);
 }
 
@@ -739,7 +739,7 @@ showNextQuote();
 
 
 window.onload = function(){
-    $('#onload').delay(4000).fadeOut(1000);
+    $('#onload').delay(3000).fadeOut(2000);
     $('body').removeClass('hidden')
 }
   </script>
