@@ -1,5 +1,10 @@
 @charset "UTF-8";
 
+@font-face {
+    font-family: "BICRODEPERSONALUSE";
+    src: url("../../assets/fonts/BICRODEPERSONALUSE.ttf");
+       }
+
 #localnav-viewport-emitter {
     overflow: hidden;
     position: absolute;
@@ -145,7 +150,7 @@
 
 @media only screen and (max-width:767px) {
     .localnav-content {
-        padding: 0 16px
+        padding: 0 1.5rem; /* 16px */
     }
 }
 
@@ -1344,7 +1349,7 @@
 }
 
 .localnav-title, .localnav-title a {
-    color: #000;
+    /* color: #000; */
     transition: color .5s cubic-bezier(.28, .11, .32, 1)
 }
 
@@ -1644,7 +1649,7 @@ html {
 }
 
 :lang(fr) {
-    quotes: "« "" »"
+    quotes: "« "" »"
 }
 
 :lang(fr-CH) {
@@ -13874,8 +13879,9 @@ html[dir=rtl] .tracks__track__button .icon-play::after {
 
 @media only screen and (max-width:480px) {
     .we-localnav:not(.we-localnav--no-qualifier):lang(es), .we-localnav:not(.we-localnav--no-qualifier):lang(es) .we-localnav__title {
-        height: 75px
-    }
+        height: 65px;
+        z-index: 1;
+    } /* 75px */
 
     .we-localnav:not(.we-localnav--no-qualifier):lang(es) .we-localnav__title {
         margin: 16px 0 -16px
@@ -20957,7 +20963,7 @@ html[dir=rtl] .story__section--linkblock::after {
 
 .story-card--branded, .story-card--content:not(.story-card--list):not(.story-card--app-event-on-light):not(.story-card--app-event-on-dark) {
     min-height: 409.26px
-}
+} /* 409.26px */
 
 @media only screen and (min-width:735px) {
     .story-card--branded, .story-card--content:not(.story-card--list):not(.story-card--app-event-on-light):not(.story-card--app-event-on-dark) {
