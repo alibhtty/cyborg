@@ -1349,7 +1349,7 @@
 }
 
 .localnav-title, .localnav-title a {
-    color: #000;
+    /* color: #000; */
     transition: color .5s cubic-bezier(.28, .11, .32, 1)
 }
 
