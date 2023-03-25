@@ -1216,7 +1216,7 @@ html.with-fancybox body.hide-scrollbar {
 .fancybox__toolbar.is-absolute, .is-compact .fancybox__toolbar {
     position: absolute;
     /* top: 0; */
-    bottom: 2.5rem;
+    bottom: 2rem;
     left: 0;
     right: 0
 }
