@@ -137,9 +137,21 @@
 
 .quotes {
     display: none;
-    color: #000000;
+    /* color: #ffffff; */
     font-size: 34px;
     font-family: "BICRODEPERSONALUSE" !important;
+    animation: fluido 10s ease-in-out infinite;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 300%;
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+  }
+  
+  @keyframes fluido {
+    0% { background-position: 0 50% }
+    50% { background-position: 100% 50% }
+    100% { background-position: 0 50% }
   }
 
 
@@ -151,7 +163,7 @@
     z-index: 9999;
     justify-content: center;
     align-items: center;
-    background-color: #ffffff
+    background-color: #000000
   }
       </style>
   </head>
