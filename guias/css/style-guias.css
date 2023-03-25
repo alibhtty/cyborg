@@ -13879,8 +13879,9 @@ html[dir=rtl] .tracks__track__button .icon-play::after {
 
 @media only screen and (max-width:480px) {
     .we-localnav:not(.we-localnav--no-qualifier):lang(es), .we-localnav:not(.we-localnav--no-qualifier):lang(es) .we-localnav__title {
-        height: 75px
-    }
+        height: 65px;
+        z-index: 1;
+    } /* 75px */
 
     .we-localnav:not(.we-localnav--no-qualifier):lang(es) .we-localnav__title {
         margin: 16px 0 -16px
