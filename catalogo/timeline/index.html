@@ -56,6 +56,11 @@
   <!-- <link integrity="" rel="stylesheet" href="../../css/style-v=2.css"> -->
   <!-- <link rel="stylesheet" href="https://ali-bhtty.web.app/cyborg/style.css"> -->
 
+  <!-- galery css -->
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../style-catalogo.css">
+  <link rel="stylesheet" href="../css/fancybox-v5.css">
+
   <!-- preloader -->
   <link href="/cyborg/assets/css/preloader.css" type="text/css" rel="stylesheet" media="screen" />
 
@@ -216,8 +221,8 @@
     }
     
     .timeline__left {
-      font-size: 16px; /* 2.5rem */
-      line-height: 20px;
+      font-size: 15px; /* 2.5rem */
+      line-height: 15px;
       text-align: right;
       text-transform: uppercase;
     }
@@ -268,8 +273,8 @@
     }
     
     .timeline__content {
-      font-size: 20px; /* 3rem */
-      line-height: 26px;
+      font-size: 16px; /* 3rem */
+      line-height: 20px;
       color: var(--color-grey);
       transition: color 1s cubic-bezier(0, 0.39, 0.58, 1);
     }
@@ -601,8 +606,8 @@
   <div class="timeline__section">
     <div class="timeline__left">
       <div class="timeline__date">
-        <div>Lorem ipsum</div>
-        <div>March 1st, 2022</div>
+        <div>Cyborg</div>
+        <div>Nov 22, 2022</div>
       </div>
     </div>
     <div class="timeline__tracker">
@@ -614,71 +619,39 @@
     <div class="timeline__right">
       <div>
         <div class="timeline__content">
-          Yes, Yes, without the oops! You're a very talented young man, with your own clever thoughts and ideas. Do you need a manager? Did he just throw my cat out of the window? Eventually, you do plan to have dinosaurs on your dinosaur tour, right? Remind me to thank John for a lovely weekend.
+          Sesión inicial club Av. Marina.
 
+          <style>
+            .story__article-media__caption {
+                  display: flex;
+                  padding: 10px 10px 10px;
+                  border-radius: 0 0 12px 12px;
+                  color: #79797d;
+                  background-color: #111111;
+                  font-size: 13px;
+                  line-height: 15px;
+                  font-weight: 400;
+                  letter-spacing: .027em;
+                  font-family: "SF Pro Display", "SF Pro Icons", "Apple WebExp Icons Custom", "Helvetica Neue", Helvetica, Arial, sans-serif;
+              }
+              .story__section{
+                padding-top: 10px;
+              }
+              .story__section a img{
+                border-radius: 12px 12px 0 0 ;
+              }
+          </style>
+          
           <div class="story__section story__article-media story__article-media--captioned">
-            <picture
-              class="we-artwork we-artwork--downloaded we-artwork--no-border we-artwork--fullwidth  we-artwork--square-bottom" id="ember6813">
-
-                <img class="ember6813" style="width: 100%;" src="https://ali-bhtty.web.app/cyborg/images/cyborg-holo-min.jpg" alt="">
-                
-              <style>
-                .ember6813,
-                #ember6813::before {
-                  width: 100%; /* 736px */
-                  height: 100%; /* 1459px */
-                  border-radius: 12px  12px 0 0;
-                }
-
-                .ember6813::before {
-                  padding-top: 198.2336956521739%;
-                }
-
-                @media (min-width: 735px) {
-
-                  .ember6813,
-                  #ember6813::before {
-                    width:  100%;  /* 336px */
-                    height: 100%;  /* 666px */
-                  }
-
-                  .ember6813::before {
-                    padding-top: 198.21428571428572%;
-                  }
-                }
-
-                @media (min-width: 1069px) {
-
-                  .ember6813,
-                  #ember6813::before {
-                    width: 100%; /* 480px */
-                    height: 100%; /* 951px */
-                  }
-
-                  .ember6813::before {
-                    padding-top: 198.125%;
-                  }
-                }
-
-                /* clean */
-                .story__article-media__caption {
-                    display: flex;
-                    padding: 10px 10px 10px;
-                    border-radius: 0 0 12px 12px;
-                    color: #79797d;
-                    background-color: #111111;
-                    font-size: 14px;
-                    line-height: 1.22226;
-                    font-weight: 400;
-                    letter-spacing: .027em;
-                    font-family: "SF Pro Display", "SF Pro Icons", "Apple WebExp Icons Custom", "Helvetica Neue", Helvetica, Arial, sans-serif;
-                }
-              </style>
-            </picture>
+            
+            <a data-fancybox="gallery" data-src="https://www.dropbox.com/s/mnaf5p7fen40lak/cyborg-zoom-min.jpg?raw=1" data-caption="">
+              <img src="https://www.dropbox.com/s/b3ag1jvq4aw0u9s/cyborg-zoom-min.jpg?raw=1" alt="">
+              
+            </a>
 
             <div class="story__article-media__caption">
               <div>
-                Protegida por un halo, Imelda descuartiza demonios en la biblioteca.
+                av. la Marina
               </div>
             </div>
           </div>
@@ -871,6 +844,33 @@
     });
   
   </script>
+
+<!-- Fancy Gallery -->
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+      <script>
+        Fancybox.bind("[data-fancybox]", {
+          Carousel: {
+            infinite: false,
+          },
+          Slideshow: {
+            playOnStart: true,
+            timeout: 5000,
+          },
+          Toolbar: {
+            display: {
+              left: [],
+              middle: [],
+              right: ["slideshow", "close"],
+            },
+          },
+          Images: {
+            zoom: false,
+          },
+          Thumbs: false,
+          Caption: false,
+        });
+      </script>
+
 
 <!-- timeline -->
 <script id="rendered-js" >

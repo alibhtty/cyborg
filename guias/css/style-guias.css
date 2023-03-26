@@ -13879,7 +13879,8 @@ html[dir=rtl] .tracks__track__button .icon-play::after {
 
 @media only screen and (max-width:480px) {
     .we-localnav:not(.we-localnav--no-qualifier):lang(es), .we-localnav:not(.we-localnav--no-qualifier):lang(es) .we-localnav__title {
-        height: 75px
+        height: 75px;
+        z-index: 9;
     }
 
     .we-localnav:not(.we-localnav--no-qualifier):lang(es) .we-localnav__title {
