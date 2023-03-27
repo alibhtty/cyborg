@@ -141,7 +141,7 @@
     font-size: 34px;
     font-family: "BICRODEPERSONALUSE" !important;
     animation: fluido 10s ease-in-out infinite;
-    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background: linear-gradient(-45deg, #ff5500, #ffffff, #6638ff,  #23cfd5); /* naranjitaee7752  azul23a6d5    e73c7e      #23cfd5, #23d5ab   */
     background-size: 300%;
     -webkit-background-clip: text;
     background-clip: text;
@@ -435,7 +435,7 @@
   </ul> -->
 
   <!-- Proyectos -->
-  <ul id="slide-proyectos" class="sidenav sidesettings" style="padding-top: 0;">
+  <!-- <ul id="slide-proyectos" class="sidenav sidesettings" style="padding-top: 0;">
 
     <div class="swiper">
       <div class="swiper-wrapper">
@@ -486,7 +486,6 @@
         </div>
         
         <div class="swiper-slide">
-          <!-- shaders image must be a direct child of the slide and have additional "swiper-gl-image" class  -->
           <img class="swiper-gl-image" src="images/pz-catalunya.jpg" alt="plaza catalunya">
           <div class="swiper-slide-content">
             <div class="swiper-slide-title" style="width: 110px; height: 50px; border-radius: 25px; background-color: var(--primary-color); text-align: center;">
@@ -524,7 +523,7 @@
       <div class="swiper-button-next"></div>
     </div>
 
-  </ul>
+  </ul> -->
     
     <div class="menu-close"><i class="mdi mdi-close"></i></div>
 
@@ -567,21 +566,21 @@
         <img class="swiper-gl-image" src="images/rolex-holo-min.jpg" alt="rolex">
       </div>
 
-      <div class="swiper-slide">
+      <!-- <div class="swiper-slide">
         <img class="swiper-gl-image" src="images/hardest-mix-min.jpg" alt="hardestmix ali bhtty">
-      </div>
+      </div> -->
 
-      <div class="swiper-slide">
+      <!-- <div class="swiper-slide">
         <img class="swiper-gl-image" src="images/croma-rims-min.jpg" alt="croma rims">
-      </div>
+      </div> -->
 
       <div class="swiper-slide">
         <img class="swiper-gl-image" src="images/gaviota-min.jpg" alt="Barceloneta">
       </div>
 
-      <div class="swiper-slide">
+      <!-- <div class="swiper-slide">
         <img class="swiper-gl-image" src="images/dispensador-metro-min.jpg" alt="dispensador metro barcelona">
-      </div>
+      </div> -->
 
       <div class="swiper-slide">
         <img class="swiper-gl-image" src="images/noria-min.jpg" alt="noria barcelona">
@@ -592,20 +591,16 @@
       </div>
 
       <div class="swiper-slide">
-        <img class="swiper-gl-image" src="images/fuente-barcelona-min.jpg" alt="fuente barcelona">
-      </div>
-
-      <div class="swiper-slide">
         <img class="swiper-gl-image" src="images/massimo-dutti-min.jpg" alt="massimo dutti">
       </div>
 
-      <div class="swiper-slide">
+      <!-- <div class="swiper-slide">
         <img class="swiper-gl-image" src="images/yellow-lights-min-1.jpg" alt="yellow lights">
-      </div>
+      </div> -->
 
-      <div class="swiper-slide">
+      <!-- <div class="swiper-slide">
         <img class="swiper-gl-image" src="images/corte-ingles.jpg" alt="bon nadal barcelona">
-      </div>
+      </div> -->
 
       <div class="swiper-slide">
         <img class="swiper-gl-image" src="images/gato-raval-min.jpg" alt="el raval">
@@ -628,7 +623,7 @@
     <ul style="height: 100%;">
       <li>
         <a style="left: -15px;" href="https://ali-bhtty.web.app/mixtape/" class="but-nav waves-effect navicon sidenav-trigger show-on-large">
-          <span><img class="icon-menu" src="https://ali-bhtty.web.app/cyborg/assets/icons/tocar.svg" alt=""></span>
+          <span><img class="icon-menu" src="assets/icons/tocar.svg" alt=""></span>
         </a>
       </li>
       <li>
@@ -638,7 +633,7 @@
       </li>
       <li>
         <a style="left: 15px;" href="./catalogo/" class="but-nav waves-effect navicon sidenav-trigger show-on-large">
-          <span><img class="icon-menu" src="https://ali-bhtty.web.app/cyborg/assets/icons/usuario.svg" alt=""></span>
+          <span><img class="icon-menu" src="assets/icons/usuario.svg" alt=""></span>
         </a>
       </li>
     </ul>
@@ -726,9 +721,9 @@ var quoteIndex = -1;
 function showNextQuote() {
   ++quoteIndex;
   quotes.eq(quoteIndex % quotes.length)
-    .fadeIn(1500)
+    .fadeIn(2000)
     .delay(1500)
-    .fadeOut(1500, showNextQuote);
+    .fadeOut(2500, showNextQuote);
 }
 
 showNextQuote();
@@ -745,6 +740,7 @@ window.onload = function(){
   </script>
   
 
+  <!-- notificacion -->
   <script type="text/javascript">
     (function (window, document) { // asilamos el componente
       // creamos el contedor de las tostadas o la tostadora
