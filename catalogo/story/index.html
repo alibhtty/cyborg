@@ -694,15 +694,21 @@
         }
 
 
-        @media screen and (display-mode: standalone) {
+
+        amp-story[standalone] {
+                  top: -88px;
+                }
+
+        /* @media screen and (display-mode: standalone) {
                 .amp-story{
                   height: 88px !important;
                   margin-top: 6rem;
                 }
+            } */
 
-                amp-story[standalone] {
+                /* amp-story[standalone] {
                   margin-top: -88px;
-                }
+                } */
 
                 /* amp-story[standalone] {
                   -ms-flex-item-align: center!important;
@@ -717,7 +723,6 @@
                   min-width: initial!important;
                   visibility: visible!important;
                 } */
-            }
 
     </style>
 
