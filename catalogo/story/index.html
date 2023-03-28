@@ -25,7 +25,8 @@
             -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
             -moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
             -ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
-            animation: -amp-start 8s steps(1, end) 0s 1 normal both
+            animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+            background-color: #000000;
         }
 
         @-webkit-keyframes -amp-start {
@@ -83,7 +84,8 @@
                 -webkit-animation: none;
                 -moz-animation: none;
                 -ms-animation: none;
-                animation: none
+                animation: none;
+                background-color: #000000;
             }
         </style>
     </noscript>
@@ -699,12 +701,11 @@
                   top: -88px;
                 }
 
-        /* @media screen and (display-mode: standalone) {
-                .amp-story{
-                  height: 88px !important;
-                  margin-top: 6rem;
+        @media screen and (display-mode: standalone) {
+                amp-story{
+                  top: -88px !important;
                 }
-            } */
+            }
 
                 /* amp-story[standalone] {
                   margin-top: -88px;
