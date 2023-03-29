@@ -31,14 +31,15 @@
     <script defer="" nomodule="" src="_next/static/chunks/polyfills-5cd94c89d3acac5f.js"></script>
     <script src="chunks/webpack-00a257e87a402dae.js" defer=""></script>
     <!-- <script src="chunks/framework-fc97f3f1282ce3ed.js" defer=""></script> -->
-    <script src="chunks/main-f962425130346e35.js" defer=""></script>
+    
+    <!-- <script src="chunks/main-f962425130346e35.js" defer=""></script>
     <script src="chunks/pages/_app-92b108363f5fc3cc.js" defer=""></script>
     <script src="chunks/617-e6970fd4be48ad29.js" defer=""></script>
     <script src="chunks/328-7a7a043f9a95d087.js" defer=""></script>
     <script src="chunks/pages/catalog-b9da32e63f64c91b.js" defer=""></script>
     <script src="_next/static/CJQEgiOPgg5FpXLUPJhdi/_buildManifest.js" defer=""></script>
     <script src="_next/static/CJQEgiOPgg5FpXLUPJhdi/_ssgManifest.js" defer=""></script>
-    <script src="_next/static/CJQEgiOPgg5FpXLUPJhdi/_middlewareManifest.js" defer=""></script>
+    <script src="_next/static/CJQEgiOPgg5FpXLUPJhdi/_middlewareManifest.js" defer=""></script> -->
     <style
         data-href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap">
         @font-face {
@@ -539,6 +540,20 @@
     </style>
 
     <style>
+
+        /* -webkit-tap-highlight-color       ---      TAP SELECTOR   */
+        span{
+            display: inline-block;
+            overflow: hidden;
+            border-radius: 12px;
+        }
+        a{
+            -webkit-tap-highlight-color:  rgba(0, 216, 255, .1);      /* 0, 216, 255         --- 255, 255, 255, 0.1*/
+            border-radius: 12px;
+        }
+
+
+
         hr {
             height: 2px;
             background-color: red;
@@ -693,7 +708,8 @@
 
 
             <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-                <a id="catalog-shaders-slider"
+                <span>
+                    <a id="catalog-shaders-slider"
                     class="catalog-item group relative block rounded-xl duration-200 active:bg-dark-3 group-hover:bg-dark-2 bg-dark-1 p-4 catalog-item-featured "
                     href="sesiones/">
                     <div class="catalog-item-featured-label absolute right-0 top-0 rounded-tr-lg rounded-bl bg-primary-p3 px-2 py-1 text-xs font-semibold uppercase text-white">
@@ -723,8 +739,10 @@
                         </span>
                     </div>
                 </a>
+                </span>
                 
-                <a id="catalog-slicer-slider"
+                <span>
+                    <a id="catalog-slicer-slider"
                     class="catalog-item group relative block rounded-xl duration-200 active:bg-dark-3 group-hover:bg-dark-2 bg-dark-1 p-4 border border-white border-opacity-5 "
                     href="../guias/">
                     <div class="relative mb-4">
@@ -750,8 +768,10 @@
                         </span>
                     </div>
                 </a>
+                </span>
                 
-                <a id="catalog-password-input"
+                <span>
+                    <a id="catalog-password-input"
                     class="catalog-item group relative block rounded-xl duration-200 active:bg-dark-3 group-hover:bg-dark-2 bg-dark-1 p-4 border border-white border-opacity-5 "
                     href="../catalogo/timeline/index.html">
                     <div class="relative mb-4">
@@ -778,8 +798,10 @@
                                 </span><span class="atropos-shadow"></span></span></span>
                             </div> -->
                 </a>
+                </span>
                 
-                <a id="catalog-shutters-slider"
+                <span>
+                    <a id="catalog-shutters-slider"
                     class="catalog-item group relative block rounded-xl duration-200 active:bg-dark-3 group-hover:bg-dark-2 bg-dark-1 p-4 border border-white border-opacity-5 "
                     href="./story/index.html">
                     <div class="relative mb-4">
@@ -800,8 +822,10 @@
                                 </span><span class="atropos-shadow"></span></span></span>
                             </div> -->
                 </a>
+                </span>
                 
-                <a id="catalog-stories-slider"
+                <span>
+                    <a id="catalog-stories-slider"
                     class="catalog-item group relative block rounded-xl duration-200 active:bg-dark-3 group-hover:bg-dark-2 bg-dark-1 p-4 border border-white border-opacity-5 "
                     href="player/index.html">
 
@@ -828,8 +852,10 @@
                                 </span><span class="atropos-shadow"></span></span></span>
                             </div> -->
                 </a>
+                </span>
                 
-                <a id="catalog-keypad"
+                <span>
+                    <a id="catalog-keypad"
                     class="catalog-item group relative block rounded-xl duration-200 active:bg-dark-3 group-hover:bg-dark-2 bg-dark-1 p-4 border border-white border-opacity-5 "
                     href="./../index.html">
                     <div class="relative mb-4">
@@ -850,7 +876,8 @@
                                     <span class="atropos-highlight"></span>
                                 </span><span class="atropos-shadow"></span></span></span>
                             </div> -->
-                </a>  
+                </a>
+                </span>  
             </div>
 
         </div>
