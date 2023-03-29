@@ -1,0 +1,273 @@
+
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  
+
+    <link rel="apple-touch-icon" type="image/png" href="https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png" />
+
+    <meta name="apple-mobile-web-app-title" content="CodePen">
+
+    <link rel="shortcut icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico" />
+
+    <link rel="mask-icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-b4b4269c16397ad2f0f7a01bcdf513a1994f4c94b8af2f191c09eb0d601762b1.svg" color="#111" />
+
+
+
+  
+  <title>Timeline</title>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+  
+  
+<style>
+:root {
+  --color-black: black;
+  --color-white: white;
+  --color-grey: #494949;
+  --sticky-top-pos: 30vh;
+  --buffer: 5rem;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-black);
+  color: var(--color-white);
+}
+
+.timeline {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.timeline__section {
+  display: grid;
+  grid-template-columns: auto 5px 50px auto;
+  align-items: start;
+  position: relative;
+}
+
+.timeline__left {
+  font-size: 2.5rem;
+  text-align: right;
+  text-transform: uppercase;
+}
+
+.timeline__left,
+.timeline__middle,
+.timeline__tracker {
+  position: sticky;
+  top: var(--sticky-top-pos);
+  /*   margin-bottom: var(--buffer); */
+}
+
+.timeline__left,
+.timeline__middle {
+  margin-bottom: var(--buffer);
+}
+
+.timeline__right {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(128, 128, 128, 1) 0%,
+    rgba(128, 128, 128, 1) 100%
+  );
+}
+
+.timeline__right > div {
+  background-color: var(--color-black);
+  padding-bottom: var(--buffer);
+  padding-left: 45px;
+  margin-left: 4px;
+}
+
+.timeline__date > div:first-child {
+  font-size: 1.3rem;
+}
+
+.timeline__bullet {
+  --bullet-dims: 20px;
+  background-color: var(--color-white);
+  width: var(--bullet-dims);
+  height: var(--bullet-dims);
+  border-radius: 99999%;
+  transform: translateX(calc(var(--bullet-dims) / 2 + 2px));
+  float: right;
+}
+
+.timeline__content {
+  font-size: 3rem;
+  color: var(--color-grey);
+  transition: color 1s cubic-bezier(0, 0.39, 0.58, 1);
+}
+
+.animate-on-scroll {
+  color: var(--color-white);
+}
+</style>
+
+  <!-- <script>
+  window.console = window.console || function(t) {};
+</script> -->
+
+  
+  
+</head>
+
+<body translate="no">
+  <div style="height: 30vh"></div>
+<div class="timeline" style="padding: 0 2rem;">
+  <div class="timeline__section">
+    <div class="timeline__left">
+      <div class="timeline__date">
+        <div>Lorem ipsum</div>
+        <div>March 1st, 2022</div>
+      </div>
+    </div>
+    <div class="timeline__tracker">
+      <div class="tracker"></div>
+    </div>
+    <div class="timeline__middle">
+      <div class="timeline__bullet"></div>
+    </div>
+    <div class="timeline__right">
+      <div>
+        <div class="timeline__content">
+          Yes, Yes, without the oops! You're a very talented young man, with your own clever thoughts and ideas. Do you need a manager? Did he just throw my cat out of the window? Eventually, you do plan to have dinosaurs on your dinosaur tour, right? Remind me to thank John for a lovely weekend.
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="timeline__section">
+    <div class="timeline__left">
+      <div class="timeline__date">
+        <div>Lorem ipsum</div>
+        <div>March 1st, 2022</div>
+      </div>
+    </div>
+    <div class="timeline__tracker">
+      <div class="tracker"></div>
+    </div>
+    <div class="timeline__middle">
+      <div class="timeline__bullet"></div>
+    </div>
+    <div class="timeline__right">
+      <div>
+        <div class="timeline__content">
+          Yes, Yes, without the oops! You're a very talented young man, with your own clever thoughts and ideas. Do you need a manager? Did he just throw my cat out of the window? Eventually, you do plan to have dinosaurs on your dinosaur tour, right? Remind me to thank John for a lovely weekend.
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="timeline__section">
+    <div class="timeline__left">
+      <div class="timeline__date">
+        <div>Lorem ipsum</div>
+        <div>March 1st, 2022</div>
+      </div>
+    </div>
+    <div class="timeline__tracker">
+      <div class="tracker"></div>
+    </div>
+    <div class="timeline__middle">
+      <div class="timeline__bullet"></div>
+    </div>
+    <div class="timeline__right">
+      <div>
+        <div class="timeline__content">
+          Yes, Yes, without the oops! You're a very talented young man, with your own clever thoughts and ideas. Do you need a manager? Did he just throw my cat out of the window? Eventually, you do plan to have dinosaurs on your dinosaur tour, right? Remind me to thank John for a lovely weekend.
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="timeline__section">
+    <div class="timeline__left">
+      <div class="timeline__date">
+        <div>Lorem ipsum</div>
+        <div>March 1st, 2022</div>
+      </div>
+    </div>
+    <div class="timeline__tracker">
+      <div class="tracker"></div>
+    </div>
+    <div class="timeline__middle">
+      <div class="timeline__bullet"></div>
+    </div>
+    <div class="timeline__right">
+      <div>
+        <div class="timeline__content">
+          Yes, Yes, without the oops! You're a very talented young man, with your own clever thoughts and ideas. Do you need a manager? Did he just throw my cat out of the window? Eventually, you do plan to have dinosaurs on your dinosaur tour, right? Remind me to thank John for a lovely weekend.
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="timeline__section">
+    <div class="timeline__left">
+      <div class="timeline__date">
+        <div>Lorem ipsum</div>
+        <div>March 1st, 2022</div>
+      </div>
+    </div>
+    <div class="timeline__tracker">
+      <div class="tracker"></div>
+    </div>
+    <div class="timeline__middle">
+      <div class="timeline__bullet"></div>
+    </div>
+    <div class="timeline__right">
+      <div>
+        <div class="timeline__content">
+          Yes, Yes, without the oops! You're a very talented young man, with your own clever thoughts and ideas. Do you need a manager? Did he just throw my cat out of the window? Eventually, you do plan to have dinosaurs on your dinosaur tour, right? Remind me to thank John for a lovely weekend.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-2c7831bb44f98c1391d6a4ffda0e1fd302503391ca806e7fcc7b9b87197aec26.js"></script>
+
+  
+      <script id="rendered-js" >
+const timelines = document.querySelectorAll(".timeline__right");
+
+const trackers = document.querySelectorAll(".timeline__tracker");
+// console.log(bullet.offsetParent);
+
+window.addEventListener(
+"scroll",
+e => {
+  timelines.forEach((timeline, i) => {
+    //  Animate on scroll
+    if (trackers[i].offsetTop > 0) {
+      timeline.
+      querySelector(".timeline__content").
+      classList.add("animate-on-scroll");
+    } else {
+      timeline.
+      querySelector(".timeline__content").
+      classList.remove("animate-on-scroll");
+    }
+
+    //       Timeline progress
+    timeline.style.background = `linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) ${
+    trackers[i].offsetTop + 5
+    }px, var(--color-grey) ${
+    trackers[i].offsetTop + 5
+    }px, var(--color-grey) 100%)`;
+  });
+},
+{ passive: true });
+//# sourceURL=pen.js
+    </script>
+
+  
+</body>
+
+</html>

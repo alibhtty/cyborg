@@ -2,30 +2,30 @@
 <html lang="en">
 
 <head>
-
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=0">
+    <meta name="apple-mobile-web-app-title" content="Cyborg">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>Player 2.0</title>
-
-    <link href='https://fonts.googleapis.com/css?family=Lato:400,700,900' rel='stylesheet' type='text/css'>
-    <script src="https://use.typekit.net/hoy3lrg.js"></script>
-    <script>try { Typekit.load({ async: true }); } catch (e) { }</script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-
-
+    <title>Cyborg - Dashboard</title>
+    <meta name="msapplication-TileColor" content="#2da3ba">
+    <meta name="referrer" content="always" />
+    <meta name="theme-color" content="#000000" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="applicable-device" content="pc,mobile">
     <!-- FAVICON -->
-  <link rel="apple-touch-icon" sizes="180x180" href="/cyborg/assets/icons/icon_192.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/cyborg/assets/icons/icon_32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/cyborg/assets/icons/icon_16.png">
-  <link rel="manifest" href="/cyborg/manifest.json">
-  <!-- <link rel="mask-icon" href="https://ali-bhtty.web.app/favicon/safari-pinned-tab.svg" color="#5bbad5"> -->
-  <link rel="shortcut icon" type="image/x-icon" href="/cyborg/assets/icons/icon_192.ico">
-  <meta name="msapplication-TileColor" content="#2da3ba">
-  <meta name="theme-color" content="#000000">
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/icons/icon_192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/icons/icon_32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/icons/icon_16.png">
+    <link rel="manifest" href="../manifest.json">
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/icons/icon_192.ico">
 
-
+    <link rel="stylesheet" href="./../guias/css/style-global.css"> <!-- ../guias/css/style-global.css -->
+    <link integrity="" rel="stylesheet" href="./../guias/css/style-guias.css">
+    <!-- <link href='https://fonts.googleapis.com/css?family=Lato:400,700,900' rel='stylesheet' type='text/css'>
+    <script src="https://use.typekit.net/hoy3lrg.js"></script>
+    <script>try { Typekit.load({ async: true }); } catch (e) { }</script> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
 
     <style>
         @charset "UTF-8";
@@ -143,7 +143,6 @@
             justify-content: center; */
             height: 100vh;
             width: 100vw;
-            background: #000000; /* ef8b80 */
             font-family: "proxima-nova", "Lato", "Source Sans Pro", "Raleway", Arial, sans-serif;
             -webkit-transition: background 0.25s ease;
             -moz-transition: background 0.25s ease;
@@ -304,11 +303,11 @@
         }
 
 
-        #fa-pause:active {
+        /* #fa-pause:active {
             div.jcarouselimg{
                 scale: 80%;
             }
-        }
+        } */
 
         div#overlay {
             cursor: pointer;
@@ -342,7 +341,7 @@
             -moz-filter: blur(100px);
             -ms-filter: blur(100px);
             -o-filter: blur(100px);
-            filter: blur(100px);
+            filter: blur(70px);
             -webkit-transition: background-image 0.25s ease;
             -moz-transition: background-image 0.25s ease;
             -ms-transition: background-image 0.25s ease;
@@ -401,12 +400,12 @@
         }
 
         div.jcarousel {
-            height: 55vh;
+            height: 28vh; /* 55vh */
 
             left: 10vw; /* -15px */
             width: calc(100% + 0px); /* calc(100% + 30px) */
             position: relative;
-            overflow: hidden;
+            /* overflow: hidden; */
         }
 
         div.jcarousel ul#songs {
@@ -417,7 +416,7 @@
         div.jcarousel ul#songs li.song {
             float: left;
             margin: 4vh 0rem; /* 10px 15px */
-            margin-right: 4rem;
+            margin-right: 10vw;
             text-align: center;
             width: calc(80vw - 0vw); /* calc(90vw - 10vw      --      calc(225px - 30px) */
         }
@@ -931,7 +930,6 @@
         } */
     </style>
 
-
 </head>
 
 <body translate="no">
@@ -954,7 +952,7 @@
                         </div>
                         <div class="jcarousel">
                             <ul id="songs">
-                                <li class="song" data-audio="https://dl.dropbox.com/s/f2rsaxbus9vh81q/Calling%20-%20Jalen%20%28Ali%20Bhtty%20Remix%29.mp3?dl=0" data-color="#ff6600">
+                                <li class="song" data-color="#ff6600">
                                     <img src="https://ali-bhtty.web.app/cyborg/player/calling.jpg">
                                     <p class="song-title">Calling</p>
                                     <p class="song-artist">Ali Bhtty, Jalen</p>
@@ -964,6 +962,15 @@
                         <audio crossorigin>
                             <source src="" type="audio/mpeg">
                         </audio>
+                        <div class="jcarousel">
+                            <ul id="songs">
+                                <li class="song" data-audio="https://dl.dropbox.com/s/f2rsaxbus9vh81q/Calling%20-%20Jalen%20%28Ali%20Bhtty%20Remix%29.mp3?dl=0" data-color="#ff6600">
+                                    <img hidden src="https://ali-bhtty.web.app/cyborg/player/calling.jpg">
+                                    <!-- <p class="song-title">Calling</p>
+                                    <p class="song-artist">Ali Bhtty, Jalen</p> -->
+                                </li>
+                            </ul>
+                        </div>
 
                         <div id="timeline">
                             <span id="current-time">--:--</span>
@@ -1108,9 +1115,7 @@
             <div id="home-btn"></div>
         </div>
     </div>
-    <script
-        src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-2c7831bb44f98c1391d6a4ffda0e1fd302503391ca806e7fcc7b9b87197aec26.js"></script>
-
+    <!-- <script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-2c7831bb44f98c1391d6a4ffda0e1fd302503391ca806e7fcc7b9b87197aec26.js"></script> -->
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
     <script src='https://use.fontawesome.com/15af25ac7b.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jcarousel/0.3.1/jquery.jcarousel.min.js'></script>
@@ -1136,7 +1141,7 @@
                 {
                     title: "Ep. 015 House Sause",
                     artist: "alibhtty",
-                    cover: "set/ep015.jpg",
+                    cover: "https://alibhtty.github.io/cyborg/player/set/ep015.jpg",
                     audioFile: "https://dl.dropbox.com/s/m7a1g134s3c76r8/Ep.%20015%20House%20Sause%20-%20Ali%20Bhtty.mp3?dl=0",
                     color: "#25323b"
                 },
@@ -1144,7 +1149,7 @@
                 {
                     title: "Ep. 014 Ravehovse",
                     artist: "alibhtty",
-                    cover: "set/ep014.jpg",
+                    cover: "https://alibhtty.github.io/cyborg/player/set/ep014.jpg",
                     audioFile: "https://dl.dropbox.com/s/v2yaesqtlrs337q/Ep.%20014%20Rave%20House.mp3?dl=0",
                     color: "#c1c1c1"
                 },
@@ -1160,7 +1165,7 @@
                 {
                     title: "Ep. 013 Cy-BORED",
                     artist: "alibhtty",
-                    cover: "set/ep013.jpg",
+                    cover: "https://alibhtty.github.io/cyborg/player/set/ep013.jpg",
                     audioFile: "https://dl.dropbox.com/s/bs3rezop8r4iewt/Ep.%20013%20Cy-bored%20-%20Ali%20Bhtty.mp3?dl=0",
                     color: "#5d0126"
                 }];
@@ -1253,9 +1258,6 @@
         // Play Icon Switcher
         $('#play-btn').click(function () {
             $(this).find('i').toggleClass('fa-pause');
-            
-            /* $('#zoom').css({'scale': '80%'}); */ /* yooo */
-
         });
 
 
