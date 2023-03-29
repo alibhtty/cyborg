@@ -550,6 +550,11 @@
         a{
             -webkit-tap-highlight-color:  rgba(0, 216, 255, .1);      /* 0, 216, 255         --- 255, 255, 255, 0.1*/
             border-radius: 12px;
+
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none; 
         }
 
 
@@ -576,7 +581,7 @@
     </style>
 </head>
 
-<body>
+<body oncontextmenu="return false">
     <div id="__next">
 
         <!-- header -->
