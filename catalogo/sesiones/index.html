@@ -557,6 +557,31 @@
                   margin-top: 6rem;
                 }
             }
+
+
+
+        /* -webkit-tap-highlight-color       ---      TAP SELECTOR   */
+        body{
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none; 
+        }
+        span{
+            display: inline-block;
+            overflow: hidden;
+            border-radius: 12px;
+        }
+        a, img{
+            -webkit-tap-highlight-color:  rgba(255, 255, 255, .1);      /* 0, 216, 255         --- 255, 255, 255, 0.1*/
+            border-radius: 12px;
+
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none; 
+        }
+
     </style>
 </head>
 
@@ -682,7 +707,8 @@
 
 
             <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-                <a id="catalog-shaders-slider"
+                <span>
+                    <a id="catalog-shaders-slider"
                     class="catalog-item group relative block rounded-xl duration-200 active:bg-dark-3 group-hover:bg-dark-2 bg-dark-1 p-4 "
                     href="cyborg/"> <!--    catalog-item-featured       //////      catalog-item-featured-label    -->
                     <!-- <div class="catalog-item-featured-label absolute right-0 top-0 rounded-tr-lg rounded-bl bg-primary-p3 px-2 py-1 text-xs font-semibold uppercase text-white">
@@ -713,8 +739,10 @@
                         </span>
                     </div>
                 </a>
+                </span>
                 
-                <a id="catalog-slicer-slider"
+                <span>
+                    <a id="catalog-slicer-slider"
                     class="catalog-item group relative block rounded-xl duration-200 active:bg-dark-3 group-hover:bg-dark-2 bg-dark-1 p-4 border border-white border-opacity-5 "
                     href="index.html">
                     <div class="relative mb-4">
@@ -740,8 +768,10 @@
                         </span>
                     </div>
                 </a>
+                </span>
                 
-                <a id="catalog-password-input"
+                <span>
+                    <a id="catalog-password-input"
                     class="catalog-item group relative block rounded-xl duration-200 active:bg-dark-3 group-hover:bg-dark-2 bg-dark-1 p-4 border border-white border-opacity-5 "
                     href="./../index.html">
                     <div class="relative mb-4">
@@ -768,8 +798,10 @@
                                 </span><span class="atropos-shadow"></span></span></span>
                             </div> -->
                 </a>
+                </span>
                 
-                <a id="catalog-shutters-slider"
+                <span>
+                    <a id="catalog-shutters-slider"
                     class="catalog-item group relative block rounded-xl duration-200 active:bg-dark-3 group-hover:bg-dark-2 bg-dark-1 p-4 border border-white border-opacity-5 "
                     href="./../index.html">
                     <div class="relative mb-4">
@@ -790,8 +822,10 @@
                                 </span><span class="atropos-shadow"></span></span></span>
                             </div> -->
                 </a>
+                </span>
                 
-                <a id="catalog-stories-slider"
+                <span>
+                    <a id="catalog-stories-slider"
                     class="catalog-item group relative block rounded-xl duration-200 active:bg-dark-3 group-hover:bg-dark-2 bg-dark-1 p-4 border border-white border-opacity-5 "
                     href="https://ali-bhtty.web.app/mixtape/">
                     <div class="relative mb-4">
@@ -817,8 +851,10 @@
                                 </span><span class="atropos-shadow"></span></span></span>
                             </div> -->
                 </a>
+                </span>
                 
-                <a id="catalog-keypad"
+                <span>
+                    <a id="catalog-keypad"
                     class="catalog-item group relative block rounded-xl duration-200 active:bg-dark-3 group-hover:bg-dark-2 bg-dark-1 p-4 border border-white border-opacity-5 "
                     href="./../index.html">
                     <div class="relative mb-4">
@@ -839,7 +875,8 @@
                                     <span class="atropos-highlight"></span>
                                 </span><span class="atropos-shadow"></span></span></span>
                             </div> -->
-                </a>  
+                </a>
+                </span>  
             </div>
 
         </div>
