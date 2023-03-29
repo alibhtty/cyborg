@@ -1361,7 +1361,7 @@ img, video {
 }
 
 .text-sm {
-    font-size: .875rem;
+    font-size: .835rem; /* .875rem */
     line-height: 1.25rem
 }
 
@@ -1431,7 +1431,7 @@ img, video {
 }
 
 .opacity-75 {
-    opacity: .75
+    opacity: .60; /* .75 */ 
 }
 
 .opacity-50 {
