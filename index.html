@@ -24,6 +24,7 @@
       <link rel="stylesheet" href="assets/css/index-swipper.css">
       <link rel="stylesheet" href="style.css">
       <link rel="stylesheet" href="assets/materialize/materialdesignicons.min.css">
+      <link rel="stylesheet" href="assets/css/brake.css">
       <!-- <link href="chat/css/materialize.min.css" type="text/css" rel="stylesheet" media="screen" />
       <link href="chat/css/appicon/appicon.css" type="text/css" rel="stylesheet" media="screen" />
       <link href="chat/css/materialdesignicons.min.css" type="text/css" rel="stylesheet" media="screen" />
@@ -46,6 +47,10 @@
 
       <style>
         body, img{
+          overscroll-behavior: contain;
+          overscroll-behavior-x: contain;
+          overscroll-behavior-y: none;
+
           -webkit-touch-callout: none;
           -webkit-user-select: none;
           -khtml-user-select: none;
@@ -134,6 +139,11 @@
       </style>
 
       <style>
+        body{
+          overscroll-behavior-x: contain;
+          overscroll-behavior-y: none;
+        }
+
           @font-face {
               font-family: "BICRODEPERSONALUSE";
               src: url("./assets/fonts/BICRODEPERSONALUSE.ttf");
