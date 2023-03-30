@@ -121,8 +121,8 @@
     @media screen and (max-width: 920px){
       .toast-container {
         position: fixed;
-        width: 100%; /* 100vh */
-        height: 5.5rem; /* 9.5     115px */
+        width: -webkit-fill-available; /* 100vh */
+        height: 5rem; /* 9.5     115px */
         /* right: 0; */
         bottom: 0;
         padding: 0 1.5rem 70px 1.5rem ;

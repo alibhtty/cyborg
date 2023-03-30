@@ -1,17 +1,10 @@
 ;
 //asiganr un nombre y versión al cache
-const CACHE_NAME = 'v1_cache_mixtape',
+const CACHE_NAME = 'cache_cyborg',
 urlToCache = [
     './',
     'https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap',
-    'https://fonts.googleapis.com/css?family=Chivo:300,700%7CPress+Start+2P',
-    'https://ali-bhtty.web.app/css/style-v=2.css',
-    'https://ali-bhtty.web.app/mixtape/styles-mixtape.css',
-    'https://ali-bhtty.web.app/mixtape/mixtape.css',
-    'https://ali-bhtty.web.app/favicon/apple-touch-icon.png',
-    'https://ali-bhtty.web.app/favicon/favicon.ico',
     'https://alibhtty.github.io/cyborg/index.html',
-    'https://alibhtty.github.io/cyborg/set/index.html',
     'https://alibhtty.github.io/cyborg/images/cyborg-bw-min.jpg',
     'https://alibhtty.github.io/cyborg/style.css',
     'https://alibhtty.github.io/cyborg/guias/index.html',

@@ -21,7 +21,7 @@ import {
     b as x,
     S as u,
     N as v
-} from "./vendor.ab396e5d.js";
+} from "./vendor-swipper.js";
 ! function() {
     const e = document.createElement("link").relList;
     if (!(e && e.supports && e.supports("modulepreload"))) {
