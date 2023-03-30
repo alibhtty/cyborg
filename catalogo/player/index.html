@@ -294,7 +294,7 @@
             -o-transform: scale(0.85) translate(0, 60%);
             -ms-transform: scale(0.85) translate(0, 60%);
             -webkit-transform: scale(0.85) translate(0, 60%);
-            transform: scale(0.85) translate(0, 60%);
+            transform: scale(0.85) translate(0, 45%);
             border-radius: 20px;
         }
 
@@ -606,10 +606,26 @@
         }
 
         div#sidemenu ul li {
+            width: 100%;
             cursor: pointer;
             font-weight: 300;
             padding: 1rem 2rem; /* 8px 5px */
             font-size: 20px;
+        }
+
+        div#sidemenu ul a.menu-item{
+            display: flex;
+            cursor: pointer;
+            font-weight: 300;
+            padding: 1.2rem 2rem; /* 8px 5px */
+            font-size: 20px;
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        div#sidemenu ul a.menu-item:hover {
+            background: #212121;
+            border-radius: 6px;
         }
 
         div#sidemenu ul li:nth-child(1) {
@@ -617,7 +633,7 @@
         }
 
         div#sidemenu ul li:hover {
-            background: #515151;
+            background: #212121;
             border-radius: 5px;
         }
 
@@ -632,7 +648,7 @@
             padding: 0 0.2em;
             position: relative;
             top: 2px;
-            width: 20px; /* 16px */
+            width: 26px; /* 16px */
         }
 
         div#sidemenu ul li .svg,
@@ -953,7 +969,7 @@
                         <div class="jcarousel">
                             <ul id="songs">
                                 <li class="song" data-color="#ff6600">
-                                    <img src="calling.jpg">
+                                    <img rel="preload" src="https://alibhtty.github.io/cyborg/catalogo/player/calling.jpg">
                                     <p class="song-title">Calling</p>
                                     <p class="song-artist">Ali Bhtty, Jalen</p>
                                 </li>
@@ -965,7 +981,7 @@
                         <div class="jcarousel">
                             <ul id="songs">
                                 <li class="song" data-audio="https://dl.dropbox.com/s/f2rsaxbus9vh81q/Calling%20-%20Jalen%20%28Ali%20Bhtty%20Remix%29.mp3?dl=0" data-color="#ff6600">
-                                    <img hidden src="calling.jpg">
+                                    <img hidden src="https://alibhtty.github.io/cyborg/catalogo/player/calling.jpg">
                                     <!-- <p class="song-title">Calling</p>
                                     <p class="song-artist">Ali Bhtty, Jalen</p> -->
                                 </li>
@@ -1000,11 +1016,11 @@
 
                 <div id="sidemenu">
                     <ul>
-                        <li>
-                            <i class="fa fa-search fa-fw" aria-hidden="true"></i>
-                            Search
-                        </li>
-                        <li>
+                        <a href="../../catalogo/index.html" class="menu-item">
+                            <i class="fa fa-search fa-fw" aria-hidden="true"></i> &nbsp;
+                            Catálogo
+                        </a>
+                        <!-- <li>
                             <img class="svg menu-icons" src="https://emilcarlsson.se/assets/svg/music-player.svg"
                                 alt="">
                             Playlists
@@ -1013,19 +1029,19 @@
                             <img id="album-icon" class="svg menu-icons"
                                 src="https://emilcarlsson.se/assets/svg/album-icon.svg" alt="">
                             Albums
-                        </li>
-                        <li>
-                            <i class="fa fa-microphone fa-fw" aria-hidden="true"></i>
-                            Artists
-                        </li>
-                        <li>
-                            <i class="fa fa-podcast fa-fw" aria-hidden="true"></i>
-                            Podcasts
-                        </li>
-                        <li>
-                            <i class="fa fa-cog fa-fw" aria-hidden="true"></i>
-                            Settings
-                        </li>
+                        </li> -->
+                        <a href="../sesiones/index.html" class="menu-item">
+                            <i class="fa fa-microphone fa-fw" aria-hidden="true"></i> &nbsp;
+                            Sesiones
+                        </a>
+                        <a href="https://ali-bhtty.web.app/mixtape/" class="menu-item">
+                            <i class="fa fa-podcast fa-fw" aria-hidden="true"></i> &nbsp;
+                            Mixtape
+                        </a>
+                        <a href="../../menu/index.html" class="menu-item" class="menu-item">
+                            <i class="fa fa-cog fa-fw" aria-hidden="true"></i> &nbsp;
+                            Menú
+                        </a>
                     </ul>
                 </div>
 
