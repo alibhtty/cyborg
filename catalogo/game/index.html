@@ -103,9 +103,9 @@
         display: block;
         padding-top: 44px !important;
       }
-      .swiper {
+      /* .swiper {
       width: 100%;
-      padding-top: 0px; /* 28px */
+      padding-top: 0px;
       }
       .swiper-wrapper {
         position: relative;
@@ -115,7 +115,7 @@
         display: flex;
         transition-property: transform;
         box-sizing: content-box
-      }
+      } */
       .swiper {
         width: 100%;
         height: 100vh;
@@ -124,11 +124,6 @@
         height: 70px;
         background-color: #dbda97;
       }
-
-      /* .toast-container{
-        visibility:hidden !important;
-        display:none !important;
-      } */
     };
       </style>
 
@@ -136,6 +131,7 @@
         body{
           overscroll-behavior-x: contain;
           overscroll-behavior-y: none;
+          background-color: #7bc4cd;
         }
 
           @font-face {
@@ -227,7 +223,8 @@
             } */
             .headerWrapper{
               background-color: #7bc4cd;
-              height: 92px;
+              height: 90px; /* 85 */
+              z-index: 1;
             }
             .footer-menu ul{
               padding: 20px 0 0 0;
@@ -300,7 +297,7 @@
 
 
   <!-- Footer Nav -->
-  <div class="footer-menu circular" style="position: fixed; background-color: #dbda97"> <!-- background: rgba(20, 20, 19, 0.5);
+  <div class="footer-menu circular" style="position: fixed; background-color: #dbda97;"> <!-- background: rgba(20, 20, 19, 0.5);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px); -->
 
