@@ -1,39 +1,365 @@
-<!doctype html>
-<html>
-<head>
-    <meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover' />
-    <meta charset='utf-8'>
-    <link rel="stylesheet" type="text/css" href="https://s3-eu-west-1.amazonaws.com/apps.playcanvas.com/DLgXf1zr/styles.css">
-    <!-- <link rel="manifest" href="https://s3-eu-west-1.amazonaws.com/apps.playcanvas.com/DLgXf1zr/manifest.json"> -->
-    <style></style>
-    <title>Flappyborg</title>
-    <script src="https://s3-eu-west-1.amazonaws.com/apps.playcanvas.com/DLgXf1zr/playcanvas-stable.min.js"></script>
-    <script>
-        ASSET_PREFIX = "https://s3-eu-west-1.amazonaws.com/apps.playcanvas.com/DLgXf1zr/";
-        SCRIPT_PREFIX = "https://s3-eu-west-1.amazonaws.com/apps.playcanvas.com/DLgXf1zr/";
-        SCENE_PATH = "404993.json";
-        CONTEXT_OPTIONS = {
-            'antialias': true,
-            'alpha': false,
-            'preserveDrawingBuffer': false,
-            'preferWebGl2': true,
-            'powerPreference': "default"
-        };
-        SCRIPTS = [ 37175323, 21399876, 4554207, 4554213, 4554214, 4554217, 4554270, 4554271, 4554273, 4554276, 4554279, 20754603, 20755574, 37175329, 37186400 ];
-        CONFIG_FILENAME = "https://s3-eu-west-1.amazonaws.com/apps.playcanvas.com/DLgXf1zr/config.json";
-        INPUT_SETTINGS = {
-            useKeyboard: true,
-            useMouse: true,
-            useGamepads: false,
-            useTouch: true
-        };
-        pc.script.legacy = false;
-        PRELOAD_MODULES = [
-        ];
-    </script>
-</head>
-<body>
-    <script src="https://s3-eu-west-1.amazonaws.com/apps.playcanvas.com/DLgXf1zr/__start__.js"></script>
+<!DOCTYPE html>
+<html lang="es-ES">
+  <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=0">
+      <meta name="apple-mobile-web-app-title" content="Cyborg">
+      <meta name="apple-mobile-web-app-capable" content="yes">
+      <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+      <title>Cyborg</title>
+      <meta name="msapplication-TileColor" content="#2da3ba">
+      <meta name="referrer" content="always" />
+      <meta name="theme-color" content="#000000" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <meta name="applicable-device" content="pc,mobile">
+      <!-- FAVICON -->
+      <link rel="apple-touch-icon" sizes="180x180" href="../../assets/icons/icon_192.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="../../assets/icons/icon_32.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="../../assets/icons/icon_16.png">
+      <link rel="manifest" href="manifest.json">
+      <link rel="shortcut icon" type="image/x-icon" href="assets/icons/icon_192.ico">
+    
+      <!-- <link rel="stylesheet" type="text/css" href="https://s3-eu-west-1.amazonaws.com/apps.playcanvas.com/DLgXf1zr/styles.css"> --> <!-- canvas -->
+      <link rel="stylesheet" href="../../assets/css/index-swipper.css">
+      <link rel="stylesheet" href="../../style.css">
+      <link rel="stylesheet" href="../../assets/materialize/materialdesignicons.min.css">
+      <link rel="stylesheet" href="../../assets/css/brake.css">
+
+      <!-- Open Graph / Facebook -->
+	    <meta property="og:type" content="website">
+	    <meta property="og:url" content="https://ali-bhtty.web.app/cyborg">
+	    <meta property="og:title" content="Cyborg">
+	    <meta property="og:description" content="Curación de fotografía y arte digital - &quot;Barcelona &quot; It's Cyborg art">
+	    <meta property="og:image" content="https://ali-bhtty.web.app/cyborg/assets/icons/meta.jpg">
+
+      <!-- PWA CSS -->
+      <link href="../../assets/css/style-pwa.css" type="text/css" rel="stylesheet" media="screen" />
+      <link href="../../assets/css/preload-cyborg.css" type="text/css" rel="stylesheet" media="screen" />
+      <!-- <script type="text/javascript" src="assets/css/preload-init.js"></script> -->
+      <!-- Noti --> <!-- <script src="assets/js/push.min.js"></script> -->
+
+      <style>
+        body, img{
+          overscroll-behavior: contain;
+          overscroll-behavior-x: contain;
+          overscroll-behavior-y: none;
+
+          -webkit-touch-callout: none;
+          -webkit-user-select: none;
+          -khtml-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+          -webkit-tap-highlight-color:  rgba(255, 255, 255, 0.5);  /* toque activo       rgba(177, 229, 253, 0.8)    */
+          }
+
+
+
+          .footer-menu{
+            display: block;
+            position: fixed;
+            bottom: 0px;
+            width: 100%;
+            height: 85px; /* 75px o    50px nutral*/
+            /* background-color: #000000; */
+            /* background: rgba(20, 20, 19, 0.5);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px); */           
+
+            z-index: 998;
+            box-shadow: 0 2px 2px 0 rgba(0,0,0,0), 0 3px 1px -2px rgba(0,0,0,0), 0 1px 5px 0 rgba(0,0,0,0);
+            -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0), 0 3px 1px -2px rgba(0,0,0,0), 0 1px 5px 0 rgba(0,0,0,0);
+
+            /* box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+            -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2); */
+            /* border-top-left-radius: 24px;
+            border-top-right-radius: 24px; */
+          }
+
+          .footer-menu li a{
+            display: inline-block;
+            background: rgba(20, 20, 19, 0.5);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            /* background-color: #000000; */
+            border-radius: 50%;
+            width: 55px;
+            height: 55px;
+            margin-bottom: 10px;
+            color: #546E7A;
+          }
+
+
+          /* PWA STYLE */
+      @media screen and (display-mode: standalone) {
+      .headerUpper{
+        height: 88px !important;
+      }
+      .headerUpper-text{
+        display: block;
+        margin-top: 44px !important;
+      }
+      .headerUpper h1{
+        display: block;
+        padding-top: 44px !important;
+      }
+      .swiper {
+      width: 100%;
+      padding-top: 0px; /* 28px */
+      }
+      .swiper-wrapper {
+        position: relative;
+        width: 100%;
+        height: 112%;
+        z-index: 1;
+        display: flex;
+        transition-property: transform;
+        box-sizing: content-box
+      }
+      .swiper {
+        width: 100%;
+        height: 100vh;
+      }
+      .footer-menu{
+        height: 70px;
+        background-color: #dbda97;
+      }
+
+      .toast-container{
+        visibility:hidden !important;
+        display:none !important;
+      }
+    } ;
+      </style>
+
+      <style>
+        body{
+          overscroll-behavior-x: contain;
+          overscroll-behavior-y: none;
+        }
+
+          @font-face {
+              font-family: "BICRODEPERSONALUSE";
+              src: url("../../assets/fonts/BICRODEPERSONALUSE.ttf");
+            }
+          
+          .quotes {
+              display: none;
+              /* color: #ffffff; */
+              font-size: 34px;
+              font-family: "BICRODEPERSONALUSE" !important;
+              animation: fluido 11s ease-in-out infinite;
+              background: linear-gradient(-45deg, #ff5500, #F6FFDD, #6638FF,  #23CFD5); /* naranjitaee7752  azul23a6d5    e73c7e      #23cfd5, #23d5ab    limon#BFFF00 */
+              background-size: 300%;
+              -webkit-background-clip: text;
+              background-clip: text;
+              -webkit-text-fill-color: transparent;
+            }
+          
+            @keyframes fluido {
+              0% { background-position: 0 50% }
+              50% { background-position: 100% 50% }
+              100% { background-position: 0 50% }
+            }
+          
+          
+          .centrado{
+              width: 100%;
+              height: 100vh;
+              text-align: center;
+              display: flex;
+              position: absolute;
+              z-index: 9999;
+              justify-content: center;
+              align-items: center;
+              background-color: #000000
+            }
+
+
+
+            /* canvas */
+            /* html {
+                height: 100%;
+                width: 100%;
+                background-color: #1d292c;
+            }
+            body {
+                margin: 0;
+                max-height: 100%;
+                height: 100%;
+                overflow: hidden;
+                background-color: #1d292c;
+                font-family: Helvetica, arial, sans-serif;
+                position: relative;
+                width: 100%;
+            
+                -webkit-tap-highlight-color: transparent;
+            } */
+            
+            #application-canvas {
+                display: block;
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+            }
+            #application-canvas.fill-mode-NONE {
+                margin: auto;
+            }
+            #application-canvas.fill-mode-KEEP_ASPECT {
+                width: 100%;
+                height: auto;
+                margin: 0;
+            }
+            #application-canvas.fill-mode-FILL_WINDOW {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+            }
+            
+            canvas:focus {
+                outline: none;
+            }
+
+            /* .headerUpper{
+              background-color: #23CFD5;
+            } */
+            .headerWrapper{
+              background-color: #7bc4cd;
+              height: 85px;
+            }
+      </style>
+
+
+
+      <!-- flappy -->
+      <script src="https://s3-eu-west-1.amazonaws.com/apps.playcanvas.com/DLgXf1zr/playcanvas-stable.min.js"></script>
+      <script>
+          ASSET_PREFIX = "https://s3-eu-west-1.amazonaws.com/apps.playcanvas.com/DLgXf1zr/";
+          SCRIPT_PREFIX = "https://s3-eu-west-1.amazonaws.com/apps.playcanvas.com/DLgXf1zr/";
+          SCENE_PATH = "404993.json";
+          CONTEXT_OPTIONS = {
+              'antialias': true,
+              'alpha': false,
+              'preserveDrawingBuffer': false,
+              'preferWebGl2': true,
+              'powerPreference': "default"
+          };
+          SCRIPTS = [ 37175323, 21399876, 4554207, 4554213, 4554214, 4554217, 4554270, 4554271, 4554273, 4554276, 4554279, 20754603, 20755574, 37175329, 37186400 ];
+          CONFIG_FILENAME = "https://s3-eu-west-1.amazonaws.com/apps.playcanvas.com/DLgXf1zr/config.json";
+          INPUT_SETTINGS = {
+              useKeyboard: true,
+              useMouse: true,
+              useGamepads: false,
+              useTouch: true
+          };
+          pc.script.legacy = false;
+          PRELOAD_MODULES = [
+          ];
+      </script>
+
+  </head>
+
+<body class="hidden menu-full header-image html" data-header="light" data-footer="dark"  data-header_align="center"  data-menu_type="left" data-menu="light" data-menu_icons="on" data-footer_type="left" data-site_mode="light" data-footer_menu="show" data-footer_menu_style="light"        data-page="homepage" data-device="desktop" data-site="index.html" translate="no" oncontextmenu="return false">
+
+  <div class="toast-container">
+  </div>
+    <!-- Preloader -->
+  <div id="onload" class="centrado">
+    <div class="container">
+      <h2 class="quotes">cyborg</h2>
+      <h2 class="quotes">cyborg</h2>
+      <h2 class="quotes">cyborg</h2>
+      <h2 class="quotes">cyborg</h2>
+      <h2 class="quotes">cyborg</h2>
+      <h2 class="quotes">cyborg</h2>
+    </div>
+    <!-- <div class="preloader-orbit-loading">
+      <div class="cssload-inner cssload-one"></div>
+      <div class="cssload-inner cssload-two"></div>
+      <div class="cssload-inner cssload-three"></div>
+    </div> -->
+  </div>
+  
+  <!-- header -->
+  <header>
+    <div class="headerWrapper">
+      <div class="headerUpper" style="text-align: center; font-family: Ubuntu; font-size: 22px; padding-top: .7rem;">
+        <a class="headerUpper-text" style="font-family: BICRODEPERSONALUSE; font-size: 24px; color: #ffffff">Cyborg</a>
+        </div>
+    </div>
+  </header>
+
+  <!-- Galería Shaders -->
+
+
+
+  <!-- Footer Nav -->
+  <div class="footer-menu circular" style="position: fixed; background-color: #dbda97"> <!-- background: rgba(20, 20, 19, 0.5);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); -->
+  
+    <ul style="height: 100%;">
+      <li>
+        <a style="margin-left: -40px;" href="../player/index.html" class="but-nav waves-effect navicon sidenav-trigger show-on-large">
+          <span><img style="scale: 130%;" class="icon-menu" src="../../assets/icons/play.svg" alt=""></span> <!-- tocar -->
+        </a>
+      </li>
+      <li>
+        <!-- <a href="./menu/" class="but-nav white-text">
+          <span><img class="icon-menu" src="https://ali-bhtty.web.app/cyborg/assets/icons/hogar.svg" alt=""></span></a> -->
+  
+      </li>
+      <li>
+        <span class="btn-nave" style="margin-left: 40px;">
+          <a href="../index.html" class="but-nav waves-effect navicon sidenav-trigger show-on-large">
+            <span><img class="icon-menu" src="../../assets/icons/biblioteca.svg" alt=""></span>
+          </a>
+        </span>
+      </li>
+    </ul>
+  </div>
+
+
+  <!-- flappy -->
+  <script src="https://s3-eu-west-1.amazonaws.com/apps.playcanvas.com/DLgXf1zr/__start__.js"></script>
     <script src="https://s3-eu-west-1.amazonaws.com/apps.playcanvas.com/DLgXf1zr/__loading__.js"></script>
+
+
+  <!-- preloader -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="assets/js/preloader.js"></script>
+
+  <script>
+          (function() {
+      
+      var quotes = $(".quotes");
+      var quoteIndex = -1;
+      
+      function showNextQuote() {
+        ++quoteIndex;
+        quotes.eq(quoteIndex % quotes.length)
+          .fadeIn(2000)
+          .delay(1500)
+          .fadeOut(2500, showNextQuote);
+      }
+      
+      showNextQuote();
+      
+      })();
+      
+      
+      
+      
+      window.onload = function(){
+          $('#onload').delay(3000).fadeOut(2000);
+          $('body').removeClass('hidden')
+      }
+  </script>
+  
+
+<script src="../../script.js"></script>
 </body>
+
 </html>
