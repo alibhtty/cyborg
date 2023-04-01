@@ -42,7 +42,7 @@
             width: 100%;
             position: absolute;
             z-index: 1;
-            height: calc(90% - 88px); /* 40vh o 100vh */
+            height: calc(80% - 88px); /* 40vh o 100vh */
         }
 
         .menu.is-dragging {
@@ -55,7 +55,7 @@
             display: flex;
             position: absolute;
             z-index: 1;
-            height: inherit; /* 100%       -webkit-fill-available */
+            height: 100%; /* 100%       -webkit-fill-available */
             top: 0;
             left: 0;
             width: 100%;
