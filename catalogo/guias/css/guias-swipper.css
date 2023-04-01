@@ -39,10 +39,10 @@
             overflow: hidden;
             cursor: -webkit-grab;
             cursor: grab;
-            width: -webkit-fill-available; /* 100% */
+            width: 96%; /* 100% */
             position: absolute;
             z-index: 1;
-            height: calc(75% - 88px); /* 40vh o 100vh */
+            height: calc(55% - 88px); /* 40vh o 100vh */
         }
 
         .menu.is-dragging {
