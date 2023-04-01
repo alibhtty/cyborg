@@ -576,7 +576,6 @@
             -moz-user-select: none;
             -ms-user-select: none;
             user-select: none; 
-            display: block;
         }
         span{
             display: inline-block;
@@ -597,10 +596,10 @@
 
 
         /* guias */
-        /* .gap-8 {
+        .gap-8 {
     gap: 1rem;
     grid-template-columns: repeat(1, minmax(0, 1fr));
-} */
+}
 
     </style>
 </head>
@@ -720,23 +719,31 @@
                 </div>
 
 
-                <!-- item  -->
-                <!-- <span>
+                <span>
                     <a id="catalog-shaders-slider"
                     class="catalog-item group relative block rounded-xl duration-200 active:bg-dark-3 group-hover:bg-dark-2 bg-dark-1 p-4 "
-                    href="cyborg/">
+                    href="cyborg/"> <!--    catalog-item-featured       //////      catalog-item-featured-label    -->
+                    <!-- <div class="catalog-item-featured-label absolute right-0 top-0 rounded-tr-lg rounded-bl bg-primary-p3 px-2 py-1 text-xs font-semibold uppercase text-white">
+                        Último</div>-->
                         <svg class="absolute left-0 top-0 z-0 h-full w-full"> 
                         <rect x="1" y="1" fill="none" stroke-width="2" rx="8" ry="8"></rect>
                     </svg>
                     <div class="relative mb-4">
                         <div class="font-bold">Cyborg</div>
+                        <!-- <div class="mt-1 text-sm font-medium opacity-75">holo jpg</div> -->
                     </div>
                     <div class="atropos">
                         <span class="atropos-scale">
                             <span class="atropos-rotate">
                                 <span class="atropos-inner rounded-xl text-[0px]">
                                     <img data-atropos-offset="-1" alt="Cyborg" class="rounded-xl"
-                                        src="../../assets/icons/meta.jpg"/> 
+                                        src="../../assets/icons/meta.jpg"/>  <!-- width="560" height="280" loading="lazy" -->
+                                    <!-- <div data-atropos-offset="4" class="absolute left-0 top-0 h-full w-full"><img
+                                            class="absolute top-[11%] left-[5.5%] w-[20%]" src="./icon/icon1.svg" alt="Shaders Slider" width="192"
+                                            height="192" /></div> -->
+                                    <!-- <div class="absolute left-0 top-0 h-full w-full" data-atropos-offset="1"><img src="images/techs/swiper.svg"
+                                            width="22" height="22" alt="Swiper" class="absolute top-[65%]" style="left:5.5%;width:6%;height:12%" />
+                                    </div> -->
                                     <span class="atropos-highlight"></span>
                                 </span>
                                 <span class="atropos-shadow"></span>
@@ -744,8 +751,89 @@
                         </span>
                     </div>
                 </a>
-                </span> -->
-
+                </span>
+                
+                <span>
+                    <a id="catalog-slicer-slider"
+                    class="catalog-item group relative block rounded-xl duration-200 active:bg-dark-3 group-hover:bg-dark-2 bg-dark-1 p-4 border border-white border-opacity-5 "
+                    href="wok-ronda/">
+                    <div class="relative mb-4">
+                        <div class="font-bold">Wok Ronda</div>
+                        <!-- <div class="mt-1 text-sm font-medium opacity-75">Set urbano - El Forum</div> -->
+                    </div>
+                    <div class="atropos">
+                        <span class="atropos-scale">
+                            <span class="atropos-rotate"><span
+                                    class="atropos-inner rounded-xl text-[0px]">
+                                    <img data-atropos-offset="-1" alt="Forum D49"
+                                        class="rounded-xl" src="assets/img/meta-33.jpg"/> <!-- width="560" height="280" loading="lazy" -->
+                                    <!-- <div data-atropos-offset="4" class="absolute left-0 top-0 h-full w-full"><img
+                                            class="absolute top-[11%] left-[5.5%] w-[20%]" src="./icon/icon2.svg"
+                                            alt="Slicer Slider" width="192" height="192" /></div> -->
+                                    <!-- <div class="absolute left-0 top-0 h-full w-full" data-atropos-offset="1"><img
+                                            src="images/techs/swiper.svg" width="22" height="22" alt="Swiper"
+                                            class="absolute top-[65%]" style="left:5.5%;width:6%;height:12%" /></div> -->
+                                    <span class="atropos-highlight"></span>
+                                </span><span class="atropos-shadow"></span>
+                            </span>
+                        </span>
+                    </div>
+                </a>
+                </span>
+                
+                <span>
+                    <a id="catalog-password-input"
+                    class="catalog-item group relative block rounded-xl duration-200 active:bg-dark-3 group-hover:bg-dark-2 bg-dark-1 p-4 border border-white border-opacity-5 "
+                    href="./../index.html">
+                    <div class="relative mb-4">
+                        <div class="font-bold">Próximo</div>
+                        <!-- <div class="mt-1 text-sm font-medium opacity-75">Collab inputs and outputs</div> -->
+                    </div>
+                    <!-- <div class="atropos"><span class="atropos-scale"><span class="atropos-rotate"><span
+                                    class="atropos-inner rounded-xl text-[0px]"><img data-atropos-offset="-1" alt="Password Input"
+                                        class="lazy rounded-xl " src="https://s.uiinitiative.com/items/password-input/cover_s.jpg"
+                                        width="560" height="280" loading="lazy" />
+                                    <div data-atropos-offset="4" class="absolute left-0 top-0 h-full w-full"><img
+                                            class="absolute top-[11%] left-[5.5%] w-[20%]" src="items/password-input/icon.svg"
+                                            alt="Password Input" width="192" height="192" /></div>
+                                    <div class="absolute left-0 top-0 h-full w-full" data-atropos-offset="1"><img
+                                            src="images/techs/framework7.svg" width="22" height="22" alt="Framework7"
+                                            class="absolute top-[65%]" style="left:5.5%;width:6%;height:12%" /><img
+                                            src="images/techs/react.svg" width="22" height="22" alt="React"
+                                            class="absolute top-[65%]" style="left:13%;width:6%;height:12%" /><img
+                                            src="images/techs/vue.svg" width="22" height="22" alt="Vue" class="absolute top-[65%]"
+                                            style="left:20.5%;width:6%;height:12%" /><img src="images/techs/svelte.svg" width="22"
+                                            height="22" alt="Svelte" class="absolute top-[65%]"
+                                            style="left:28%;width:6%;height:12%" /></div>
+                                    <span class="atropos-highlight"></span>
+                                </span><span class="atropos-shadow"></span></span></span>
+                            </div> -->
+                </a>
+                </span>
+                
+                <span>
+                    <a id="catalog-shutters-slider"
+                    class="catalog-item group relative block rounded-xl duration-200 active:bg-dark-3 group-hover:bg-dark-2 bg-dark-1 p-4 border border-white border-opacity-5 "
+                    href="./../index.html">
+                    <div class="relative mb-4">
+                        <div class="font-bold">Próximo</div>
+                        <!-- <div class="mt-1 text-sm font-medium opacity-75">Compartidos en IG</div> -->
+                    </div>
+                    <!-- <div class="atropos"><span class="atropos-scale"><span class="atropos-rotate"><span
+                                    class="atropos-inner rounded-xl text-[0px]"><img data-atropos-offset="-1" alt="Shutters Slider"
+                                        class="lazy rounded-xl " src="https://s.uiinitiative.com/items/shutters-slider/cover_s.jpg"
+                                        width="560" height="280" loading="lazy" />
+                                    <div data-atropos-offset="4" class="absolute left-0 top-0 h-full w-full"><img
+                                            class="absolute top-[11%] left-[5.5%] w-[20%]" src="items/shutters-slider/icon.svg"
+                                            alt="Shutters Slider" width="192" height="192" /></div>
+                                    <div class="absolute left-0 top-0 h-full w-full" data-atropos-offset="1"><img
+                                            src="images/techs/swiper.svg" width="22" height="22" alt="Swiper"
+                                            class="absolute top-[65%]" style="left:5.5%;width:6%;height:12%" /></div>
+                                    <span class="atropos-highlight"></span>
+                                </span><span class="atropos-shadow"></span></span></span>
+                            </div> -->
+                </a>
+                </span>
 
                 
             </div>
