@@ -36,13 +36,13 @@
         }
 
         .menu {
-            /* overflow: hidden; */
+            overflow: hidden;
             cursor: -webkit-grab;
             cursor: grab;
             width: 100%;
             position: absolute;
             z-index: 1;
-            height: calc(100% - 88px); /* 40vh o 100vh */
+            height: calc(90% - 88px); /* 40vh o 100vh */
         }
 
         .menu.is-dragging {
