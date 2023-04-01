@@ -52,7 +52,7 @@
 
         .menu--wrapper {
             counter-reset: count;
-            /* display: flex; */ /* noneeee */
+            display: flex; /* noneeee */
             position: absolute;
             z-index: 1;
             height: 100%; /* 100%       -webkit-fill-available */
