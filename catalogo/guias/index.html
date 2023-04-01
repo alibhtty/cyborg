@@ -23,10 +23,22 @@
   
     <meta name="web-experience-app/config/environment">
     <title>Slide</title>
+     <!-- FAVICON -->
+	<link rel="apple-touch-icon" sizes="180x180" href="../../assets/icons/icon_192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="../../assets/icons/icon_32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="../../assets/icons/icon_16.png">
+	<link rel="shortcut icon" type="image/x-icon" href="../../assets/icons/icon_192.ico">
+	<meta name="msapplication-TileColor" content="#2da3ba">
+	<meta name="theme-color" content="#000000">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
 
+    <link rel="stylesheet" href="../../assets/css/brake.css">
+    
     <style>
+
+        @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+
         * {
             box-sizing: border-box;
         }
@@ -36,7 +48,7 @@
             overflow: hidden;
             background: #000;
             color: #fff;
-            font-family: "Playfair Display", cursive;
+            font-family: "Ubuntu"; /* Playfair Display", cursive */
             display: flex;
             align-items: center;
             justify-content: center;
@@ -58,7 +70,7 @@
             width: 100%;
             position: relative;
             z-index: 1;
-            height: 100vh; /* 40vh */
+            height: -webkit-fill-available; /* 40vh o 100vh */
         }
 
         .menu.is-dragging {
@@ -71,7 +83,7 @@
             display: flex;
             position: absolute;
             z-index: 1;
-            height: 100%;
+            height: -webkit-fill-available; /* 100% */
             top: 0;
             left: 0;
             width: 100%;
@@ -135,6 +147,8 @@
             transform-origin: center;
         }
 
+
+        /* COUNT STYLE */
         .menu--item figure:before {
             position: absolute;
             z-index: 2;
@@ -142,8 +156,10 @@
             left: 1vw;
             display: inline-block;
             content: "0" counter(count);
-            color: #ffffff;
-            font-size: 3vw;
+            color: rgba(0, 221, 255, 0.5);
+            font-size: 5vw;
+            
+            padding: 10px;
         }
 
         .version {
@@ -197,7 +213,7 @@
             <a href="barcelona/la-barceloneta/index.html" class="menu--item">
                 <figure>
                     <div style="position: absolute; z-index: 99; padding: 3rem; font-size: 26px; font-family: Ubuntu; color: #ffffff; bottom: 0;">
-                        <h2>Hotel W.</h2>
+                        <h2> &nbsp; </h2>
                     </div>
                     <img class="main-baner" src="../../images/colon-min.jpg" alt="" />
                 </figure>            
