@@ -27,16 +27,16 @@
         }
 
         .main-baner{
-            padding: 25px 25px;
-            border-radius: 40px;
+            padding: 10px 10px;
+            border-radius: 30px;
         }
 
         img{
-            border-radius: 42px;
+            border-radius: 40px;
         }
 
         .menu {
-            overflow: hidden;
+            /* overflow: hidden; */
             cursor: -webkit-grab;
             cursor: grab;
             width: 100%;
@@ -111,7 +111,7 @@
             z-index: 1;
             top: 0;
             left: 0;
-            width: 100%;
+            width: 90%;
             height: 100%;
             -o-object-fit: cover;
             object-fit: cover;
@@ -174,3 +174,13 @@
                 right: -100px;
             }
         }
+
+
+
+
+
+
+
+        /* 88
+        
+        109*/
