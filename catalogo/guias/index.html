@@ -563,21 +563,27 @@
     <style>
         /* PWA STYLE */
         @media screen and (display-mode: standalone) {
-            body{
+            /* body{
                 height: 85%;
-            }
+            } */
                 .headerUpper{
                   height: 88px !important;
                   margin-top: 6rem;
                 }
 
-                .menu {
+                /* .menu {
                     width: -webkit-fill-available;
-                }
+                } */
 
             }
 
 
+        body, html {
+              min-height: 70%;
+              position: relative;
+              background: #000;
+              color: #fff;
+            }
 
         /* -webkit-tap-highlight-color       ---      TAP SELECTOR   */
         body{
@@ -677,7 +683,7 @@
                     style="border-color:#00D8FF;color:#00D8FF">
                     <span class="absolute left-0 top-0 z-0 h-full w-full opacity-10" style="background-color:#00D8FF"></span>
                     <div class="relative z-10 flex items-center">
-                            <a href="https://alibhtty.github.io/cyborg/catalogo/guias/index.html">Guías.</a>
+                            <a href="https://alibhtty.github.io/cyborg/catalogo/guias/index.html">Guías</a>
                     </div>
                 </div>
               </div>
@@ -714,7 +720,7 @@
         </div>
 
         <!-- SWIPPER -->
-        <div class="menu" style="height: 50vh;">
+        <div class="menu">
             <div class="menu--wrapper">
                 <a href="barcelona/la-barceloneta/index.html" class="menu--item">
                     <figure>
