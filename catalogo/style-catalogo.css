@@ -1531,7 +1531,7 @@ html {
 
 body, html {
     min-height: 70%; /* 100% */
-    /* position: relative; */
+    position: relative;
     background: #000;
     color: #fff
 }
