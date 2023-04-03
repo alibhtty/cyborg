@@ -42,7 +42,7 @@
             width: 96%; /* 100% */
             position: absolute;
             z-index: 1;
-            height: 70%;
+            height: 100%;
             /* height: calc(75% - 88px); */  /* 40vh o 100vh */
         }
 
