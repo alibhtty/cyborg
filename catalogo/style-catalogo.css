@@ -1370,8 +1370,8 @@ img, video {
 }
 
 .text-xs {
-    font-size: .75rem;
-    line-height: 1rem
+    font-size: .65rem; /* .75rem */
+    line-height: .6rem; /* 1rem */
 }
 
 .font-bold {
