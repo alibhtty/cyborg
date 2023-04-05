@@ -132,14 +132,14 @@
         }
         
         .toast-toast {
-        padding: .5rem;
+        padding: .7rem;
         width: auto;
         height: -webkit-fill-available;
         justify-items: center;
         align-items: center;
-        font-size: 14px;
+        font-size: 13px;
         font-family: 'Ubuntu';
-        margin-bottom: 3px;
+        /* margin-bottom: 3px; */
         border-radius: 25px;
         background: #000000; /* azul #4920ff          #1c2121   ---  var(--gradient)  */
         color: #ffffff;
