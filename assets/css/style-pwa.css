@@ -123,24 +123,25 @@
       .toast-container {
         position: fixed;
         width: -webkit-fill-available; /* 100vh */
-        height: 5rem; /* 9.5     115px */
+        height: 3.5rem;
         /* right: 0; */
         bottom: 0;
-        padding: 0 1.5rem 70px 1.5rem ;
+        padding: 0 5rem 1.2rem 5rem;
         z-index: 999;
         pointer-events: none;
         }
         
         .toast-toast {
-        padding: 20px 20px;
+        padding: .5rem;
         width: auto;
-        height: auto;
+        height: -webkit-fill-available;
+        justify-items: center;
         align-items: center;
         font-size: 14px;
         font-family: 'Ubuntu';
         margin-bottom: 3px;
-        border-radius: 12px;
-        background: #4920ff; /* #1c2121   ---  var(--gradient)  */
+        border-radius: 25px;
+        background: #000000; /* azul #4920ff          #1c2121   ---  var(--gradient)  */
         color: #ffffff;
         text-align: center;
         line-height: 1.2;  
