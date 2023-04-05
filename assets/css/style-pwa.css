@@ -132,7 +132,7 @@
         }
         
         .toast-toast {
-        padding: .7rem;
+        padding: 12px; /* .7rem */
         width: auto;
         height: -webkit-fill-available;
         justify-items: center;
