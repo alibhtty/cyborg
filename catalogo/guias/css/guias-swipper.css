@@ -125,8 +125,8 @@
         .menu--item figure:before {
             position: absolute;
             z-index: 2;
-            bottom: 1vw;
-            left: 1vw;
+            bottom: 4vw; /* 1vw */
+            left: 5vw; /* 1vw */
             display: inline-block;
             content: "0" counter(count);
             color: rgba(0, 221, 255, 0.5);
