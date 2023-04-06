@@ -631,18 +631,60 @@
             </div>
         </div> -->
 
+        <style>
+            .line-all{
+                width: 100%; height: 30px; margin-bottom: 1.5rem;
+            }
+            .line-content{
+                width: 100%; height: 30px;
+                display: grid; grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+                grid-column-gap: .5rem; grid-row-gap: 1em;
+                border-radius: 8px;
+            }
+            .line-menu{
+                background-color: rgb(0, 216, 255, .08); border-radius: 4px; color: #ffffff; font-size: 10px; font-weight: 600;
+                text-align: center; border: solid 1px rgba(255, 255, 255, .10); padding: 6px 0;
+            }
+            .line-on{
+                /* background-color: rgba(255, 255, 255, .3); */
+                background-color: rgba(0, 216, 255, .2) ;
+                color: #00D8FF; border: solid 1px #00D8FF;
+            }
+            .line-r-1{
+                background-color: rgba(0, 216, 255, .3) ;
+                border-radius: 25px 8px 8px 25px;
+            }
+            .line-r-2{
+                background-color: rgba(0, 216, 255, .3) ;
+            }
+            .line-r-5{
+                background-color: rgba(0, 216, 255, .08) ;
+                border-radius: 8px 25px 25px 8px;
+            }
+        </style>
+
         <!-- Catálogo -->
         <div class="headerUpper max-w-screen-xl px-4 md:px-10 mx-auto my-12">
             <h1 class="text-3xl md:text-4xl font-bold mb-8 ">Catálogo</h1>
 
+            <span class="line-all">
+                <div class="line-content">
+                <a href="../index.html" class="line-menu line-on line-r-1">INICIO</a>
+                <a href="index.html" class="line-menu line-on line-r-2">CATÁLOGO</a>
+                <a class="line-menu"> </a>
+                <a class="line-menu"> </a>
+                <a class="line-menu line-r-5"> </a>
+            </div>
+            </span>
 
-            <div class="-mt-1 mb-8 flex flex-wrap items-center"> <!-- -ml-1 -mr-1 -->
+
+            <!-- <div class="-mt-1 mb-8 flex flex-wrap items-center"> <!-- -ml-1 -mr-1     - ->
                 <div class="relative overflow-hidden rounded-full border px-2 py-1 text-sm font-medium cursor-pointer m-1"
                     style="border-color:#00D8FF;color:#00D8FF">
                     <span class="absolute left-0 top-0 z-0 h-full w-full opacity-10" style="background-color:#00D8FF"></span>
                     <div class="relative z-10 flex items-center">
-                        <!-- <img class="mr-1.5 h-[22px] w-[22px]" src="images/techs/react.svg"
-                            width="22" height="22" alt="React" style="filter:none" /> -->
+                        <img class="mr-1.5 h-[22px] w-[22px]" src="images/techs/react.svg"
+                            width="22" height="22" alt="React" style="filter:none" />
                             <a href="../index.html">Inicio</a>
                     </div>
                 </div>
@@ -657,7 +699,7 @@
                     </div>
                 </div>
   
-                <!-- <div class="linea"></div>
+                <div class="linea"></div>
   
                 <div class="relative overflow-hidden rounded-full border px-2 py-1 text-sm font-medium cursor-pointer m-1"
                     style="border-color:#00D8FF;color:#00D8FF">
@@ -675,61 +717,8 @@
                     <div class="relative z-10 flex items-center">
                             <a href="sesiones/cyborg/">Cyborg</a>
                     </div>
-                </div> -->
-              </div>
-
-
-
-            <!-- <div class="-ml-1 -mr-1 -mt-1 mb-8 flex flex-wrap items-center">
-                <div class="relative overflow-hidden rounded-full border px-2 py-1 text-sm font-medium cursor-pointer m-1"
-                    style="border-color:#0080FF;color:#0080FF"><span
-                        class="absolute left-0 top-0 z-0 h-full w-full opacity-10"
-                        style="background-color:#0080FF"></span>
-                    <div class="relative z-10 flex items-center"><img class="mr-1.5 h-[22px] w-[22px]"
-                            src="images/techs/swiper.svg" width="22" height="22" alt="Swiper"
-                            style="filter:none" /><span>Swiper</span></div>
                 </div>
-                <div class="relative overflow-hidden rounded-full border px-2 py-1 text-sm font-medium cursor-pointer m-1"
-                    style="border-color:#EE350F;color:#EE350F"><span
-                        class="absolute left-0 top-0 z-0 h-full w-full opacity-10"
-                        style="background-color:#EE350F"></span>
-                    <div class="relative z-10 flex items-center"><img class="mr-1.5 h-[22px] w-[22px]"
-                            src="images/techs/framework7.svg" width="22" height="22" alt="Framework7"
-                            style="filter:none" /><span>Framework7</span></div>
-                </div>
-                <div class="relative overflow-hidden rounded-full border px-2 py-1 text-sm font-medium cursor-pointer m-1"
-                    style="border-color:#00D8FF;color:#00D8FF"><span
-                        class="absolute left-0 top-0 z-0 h-full w-full opacity-10"
-                        style="background-color:#00D8FF"></span>
-                    <div class="relative z-10 flex items-center"><img class="mr-1.5 h-[22px] w-[22px]"
-                            src="images/techs/react.svg" width="22" height="22" alt="React"
-                            style="filter:none" /><span>React</span></div>
-                </div>
-                <div class="relative overflow-hidden rounded-full border px-2 py-1 text-sm font-medium cursor-pointer m-1"
-                    style="border-color:#41B883;color:#41B883"><span
-                        class="absolute left-0 top-0 z-0 h-full w-full opacity-10"
-                        style="background-color:#41B883"></span>
-                    <div class="relative z-10 flex items-center"><img class="mr-1.5 h-[22px] w-[22px]"
-                            src="images/techs/vue.svg" width="22" height="22" alt="Vue"
-                            style="filter:none" /><span>Vue</span></div>
-                </div>
-                <div class="relative overflow-hidden rounded-full border px-2 py-1 text-sm font-medium cursor-pointer m-1"
-                    style="border-color:#FF3E00;color:#FF3E00"><span
-                        class="absolute left-0 top-0 z-0 h-full w-full opacity-10"
-                        style="background-color:#FF3E00"></span>
-                    <div class="relative z-10 flex items-center"><img class="mr-1.5 h-[22px] w-[22px]"
-                            src="images/techs/svelte.svg" width="22" height="22" alt="Svelte"
-                            style="filter:none" /><span>Svelte</span></div>
-                </div>
-                <div class="relative overflow-hidden rounded-full border px-2 py-1 text-sm font-medium cursor-pointer m-1"
-                    style="border-color:#5A0FC8;color:#5A0FC8"><span
-                        class="absolute left-0 top-0 z-0 h-full w-full opacity-10"
-                        style="background-color:#5A0FC8"></span>
-                    <div class="relative z-10 flex items-center"><img class="mr-1.5 h-[22px] w-[22px]"
-                            src="images/techs/pwa.svg" width="22" height="22" alt="PWA"
-                            style="filter:none" /><span>PWA</span></div>
-                </div>
-            </div> -->
+              </div> -->
 
 
             <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
@@ -1009,6 +998,12 @@
             </div>
         </div> -->
     </div>
+
+    <!-- <div>
+        <h2 style="font-size: 10px; text-align: center; margin-top: 0rem; padding-bottom: .5rem; color: rgb(55, 55, 62);" class="font-bold">version 10.13</h2>
+    </div> -->
+
+    
 
     <!-- <style>
         @media (min-width: 320px) {
