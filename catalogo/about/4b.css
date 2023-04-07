@@ -1,0 +1,89 @@
+/* html {
+    box-sizing: border-box;
+  }
+  
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  } */
+  
+/*   body {
+    display: flex;
+    min-height: 100vh;
+    padding: 1rem;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    background-color: #000;
+    font-family: 'IBM Plex Mono', monospace;
+    overflow: hidden;
+  } */
+  
+  a,
+  a:link,
+  a:visited,
+  a:active,
+  a:hover {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .desc {
+    display: flex;
+    min-width: 15rem;
+    max-width: 30rem;
+    align-self: stretch;
+    flex-direction: column;
+    flex: 1 1 auto;
+    padding-right: 5rem;
+  }
+  
+  h1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0.4rem 0;
+    border-bottom: 1px solid #fff;
+    font-size: 6rem;
+    line-height: 1;
+    font-weight: 600;
+    flex: 1 1 50%;
+  }
+  
+  h2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 0;
+    padding: 1.1rem 0;
+    font-size: 2.4rem;
+    font-style: italic;
+    font-weight: 300;
+    line-height: 1;
+    flex: 1 1 50%;
+  }
+  
+  shader-doodle {
+    display: block;
+    /* border-radius: 50%; */
+    width: calc(300vmin - 0rem);
+    height: calc(100vmin - 0rem);
+    max-width: 60rem;
+    max-height: 40vh; /* 20rem */
+  }
+
+  @media screen and (max-width:576px) {
+    shader-doodle {
+        display: block;
+        width: calc(100vmin - 0rem);
+        height: calc(100vmin - 0rem);
+        max-width: 60rem;
+        max-height: 40vh; /* 17rem */
+      }   
+  }
