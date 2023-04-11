@@ -42,6 +42,8 @@
     <!-- <link rel="stylesheet" href="../guias/css/guias-swipper.css"> -->
     <link rel="preload" href="../style-catalogo.css" as="style" />
     <link rel="stylesheet" href="../style-catalogo.css" data-n-g="" />
+
+    <link rel="stylesheet" href="../calendar/calendar.css">
     
     <!-- <link rel="stylesheet" href="../css/galery.css"> -->
     <noscript data-n-css=""></noscript>
@@ -838,6 +840,47 @@
                 grid-column-gap: 1rem;
                 grid-row-gap: 1em;" class="wrapper">                    
                     <span>
+
+
+                        <div style="width: calc(50% - 2rem); position: absolute; z-index: 1;padding: 10px 8px; font-family: Ubuntu;   display: grid;
+                        grid-template-columns: 1fr 2.5fr;
+                        grid-column-gap: .5rem;
+                        grid-row-gap: 1em; padding: 8px 8px;">
+                            <div style="width: 2.5rem; border-right: solid 1.5px #333333; padding: 5px;">
+                                <h2><b style="font-size: 20px; color: #f1f1f1;">12</b> <br> Abr</h2>
+                            </div>
+
+                            <style>
+                                .lista{background-color: rgba(255,255,255, .06);
+                                padding: 1.5px 5px 1.5px 5px; border-radius: 6px; margin: 3px 0; font-size: 11px; color: #f1f1f1;}
+                            </style>
+                            <div>
+                                <div class="lista" style="background-color: rgba(182, 121, 255, .2);"><h1>Post new session</h1></div>
+                                <div class="lista"><h1>Guía #2</h1></div>
+                                <div class="lista"><h1>...</h1></div>
+                            </div>
+                        </div>
+
+                        <!-- <div style="display: grid;
+                            grid-template-columns: 1fr 2fr;
+                            grid-column-gap: .5rem;
+                            grid-row-gap: .5em;">
+                           <span style="position: absolute; z-index: 1; background-color: rgba(255, 116, 57, 0.47); width: 3rem; height: 5rem; padding: 15px 10px;
+                           font-weight: 600;">
+                                <a href="" class="catalog-item group relative block rounded-xl">
+                                    <h2>12 <br> mar</h2>
+                                </a>
+                           </span>
+
+                           <span style="position: absolute; z-index: 1; width: 7rem; background-color: rgba(255, 255, 255, .1); left: 4.5rem; height: 5rem;">
+                                <h2> rec 12 mar</h2>
+                           </span>
+                        </div> -->
+
+
+
+                        <!-- <div style="position: absolute; width: 100%; z-index: 1; scale: 25%;" id="app"></div> -->
+
                         <a id="catalog-slicer-slider" href="index.html"
                         class="catalog-item group relative block rounded-xl duration-200 active:bg-dark-3 group-hover:bg-dark-2 bg-dark-1 p-4 border border-white border-opacity-5 ">
                         <div class="relative" style="height: 6vh;"> <!-- mb-4 -->
@@ -1174,5 +1217,14 @@
         loop: true,
         protect: true });
     </script> -->
+
+
+
+
+    <script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-2c7831bb44f98c1391d6a4ffda0e1fd302503391ca806e7fcc7b9b87197aec26.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react-with-addons.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react-dom.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/node-uuid/1.4.7/uuid.min.js'></script>
+    <script src="../calendar/app.js"></script>
 
 </html>
