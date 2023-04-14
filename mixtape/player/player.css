@@ -13,6 +13,21 @@ h1, h2, h3, h4, h5, h6 {
             .standalone {
                 margin-top: 88px;
             }
+            .mixtape-banner{
+                height: 60vh;
+                margin: 1rem 10vw;
+            }
+            .menu-mix {
+                overflow: hidden;
+                cursor: -webkit-grab;
+                cursor: grab;
+                width: 96%; /* 100% */
+                position: absolute;
+                z-index: 1;
+                height: 100%;
+                margin-top: 3rem;
+                /* height: calc(75% - 88px); */  /* 40vh o 100vh */
+            }
         }
 
         .no-seleccionable {
@@ -990,7 +1005,7 @@ h1, h2, h3, h4, h5, h6 {
         }
         .mixtape-banner{
             height: 50vh;
-            margin: 2rem 10vw;
+            margin: 1rem 10vw;
         }
         .set-banner {
             width: 100%;
@@ -1167,7 +1182,7 @@ h1, h2, h3, h4, h5, h6 {
             position: absolute;
             z-index: 1;
             height: 100%;
-            margin: .5rem 0;
+            margin-top: 2rem;
             /* height: calc(75% - 88px); */  /* 40vh o 100vh */
         }
         div.menu-mix{
