@@ -373,7 +373,7 @@ h1, h2, h3, h4, h5, h6 {
             width: 5rem;
             height: 2rem;
             border-radius: 25px;
-            background-color: rgb(255,255,255, .1);
+            background-color: rgb(255,255,255, .2);
             padding: 0;
         }
         div#header span#options-btn svg{
