@@ -1263,7 +1263,7 @@ h1, h2, h3, h4, h5, h6 {
                 margin-top: 88px;
             } */
             .mixtape-banner{
-                height: 55vh;
+                height: 50vh;
                 margin: 1rem 10vw;
             }
             .menu-mix {
@@ -1283,4 +1283,28 @@ h1, h2, h3, h4, h5, h6 {
             div#header{
                 margin-top: 12px;
             }
+        }
+
+
+
+
+
+
+
+
+
+
+
+        /* RECIENTES - SLIDE MIXTAPE */
+        .mixtape{
+            margin: 2rem 0;
+        }
+        .mb-normal {
+            margin-bottom: 2rem;
+          }
+        @media (max-width: 920px){
+            .roster-lane > div {
+              display: inline-block;
+              margin-right: 1.5em;
+          }
         }
