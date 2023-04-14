@@ -1197,7 +1197,7 @@ h1, h2, h3, h4, h5, h6 {
         .set-text-min{
             padding: 2px; font-weight: 600;
         }
-        @media screen and (min-width: 920px){
+        @media screen and (min-width: 520px){
             .float-ban{
                 top: 1rem;
                 width: 35vw;
@@ -1276,5 +1276,11 @@ h1, h2, h3, h4, h5, h6 {
                 height: 100%;
                 margin-top: 3rem;
                 /* height: calc(75% - 88px); */  /* 40vh o 100vh */
+            }
+        }
+
+        @media screen and (display-mode: landscape) {
+            div#header{
+                margin-top: 12px;
             }
         }
