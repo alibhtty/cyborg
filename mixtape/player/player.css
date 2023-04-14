@@ -7,8 +7,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
         @media screen and (display-mode: standalone) {
-            header {
+            /* header {
                 height: 80px !important;
+            } */
+            .standalone {
+                margin-top: 88px;
             }
         }
 
@@ -20,8 +23,11 @@ h1, h2, h3, h4, h5, h6 {
         }
 
         .standalone {
-            margin-top: 44px; /* 35px */
+            margin-top: 22px;
         }
+        /* header{
+            margin-top: 44px;
+        } */
 
         /* Flat UI Colors */
         .alizarin {
@@ -671,7 +677,7 @@ h1, h2, h3, h4, h5, h6 {
         }
 
         div#song-options div#song-info div.artist-wrap p {
-            bottom: 1rem; /* 4px */
+            bottom: 0; /* 4px */
             margin-left: 4rem; /* none */
             font-size: 36px; /* 16px */
             position: absolute;
@@ -983,7 +989,7 @@ h1, h2, h3, h4, h5, h6 {
             margin-left: 0;
         }
         .mixtape-banner{
-            height: 55vh;
+            height: 50vh;
             margin: 2rem 10vw;
         }
         .set-banner {
