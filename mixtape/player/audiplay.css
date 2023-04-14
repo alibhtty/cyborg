@@ -1,0 +1,101 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300ita‌​lic,400italic,500,500italic,700,700italic,900italic,900);
+
+.ap_container {
+    width: 100%;
+    height: 2rem;
+
+    transition-duration: .5s;
+    display: inline-block;
+    text-align: center;
+    overflow: hidden;
+    /* padding: 5px; */
+    background: rgba(0, 0, 0, 0);
+    border-radius: 4px;
+    transition: all 1s;
+}
+
+.duration{
+    height: 1.5rem;
+}
+.ap_loop{
+    height: 1.5rem;
+}
+
+.ap_controls {
+    width: 100%;
+    /* display: flex; */
+    display: grid;
+    grid-template-columns: 1fr 0fr 4fr 1fr;
+    /* row-gap: 15px; */
+    position: relative;
+    flex-direction: row;
+    /* font-size: large; */
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer
+}
+
+.ap_controls span {
+    /* margin: .8rem .5rem; */
+    /* margin:.5rem .5rem 0 .5rem; */
+
+    /* margin: 5px; */
+    display: inline-block
+}
+
+.ap_container .playpausebtn {
+    height: 1.5rem;
+
+    border-radius: 50%;
+    font-size: larger
+}
+
+.ap_container svg {
+    width: 1.5rem; /* 22px */
+    height: 1.5rem;
+}
+
+.ap_controls .duration {
+    width: 100%;
+    /* margin-right: 1.5rem; */
+
+    /* width: 40%; */
+    /* margin-right: 10px; */
+    /* bottom: 4px */
+}
+
+.ap_controls input[type=range] {
+    -webkit-appearance: none;
+    width: 90%;
+    outline: 0;
+    height: 10px; /* 2px */
+    border-radius: 10px;
+    margin: 8px 0; /*  0  15px */
+    background: rgba(255, 255, 255, .6);  /* 0ff */
+}
+
+.ap_controls:hover input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    background: #f1f1f1;  /* 00ced1 */
+}
+
+.ap_controls input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 0
+}
+
+.ap_sound {
+    height: 1.5rem;
+}
+
+.ap_time {
+    padding: 5px 0;
+    width: 2.5rem;
+    height: 1.5rem;
+    color: #f1f1f1;
+    margin: 0 .5rem;
+    font-family: "Roboto";
+}
