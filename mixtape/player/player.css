@@ -20,7 +20,7 @@ h1, h2, h3, h4, h5, h6 {
         }
 
         .standalone {
-            margin-top: 35px;
+            margin-top: 44px; /* 35px */
         }
 
         /* Flat UI Colors */
@@ -349,7 +349,7 @@ h1, h2, h3, h4, h5, h6 {
         }
 
         #header{
-            height: 1rem;
+            height: 3rem; /* 1rem */
             padding: 1rem 10vw;
         }
 
@@ -964,6 +964,28 @@ h1, h2, h3, h4, h5, h6 {
 
 
         /* BANNER */
+        .genero-set{
+            width: 90px;
+            height: 100%; /* 24px */
+            margin: 0 10px 0 10px;
+            text-align: center;
+            background-color: rgba(0,0,0,.5);
+            color: #F1F1F1;
+            border-radius: 6px;
+            font-weight: 400;
+            margin-left: 0;
+        }
+        .genero-text{
+            font-size: 10px;
+            letter-spacing: 0px;
+            padding: 2px 5px;  /* 8px 5px */
+            text-align: center;
+            margin-left: 0;
+        }
+        .mixtape-banner{
+            height: 55vh;
+            margin: 2rem 10vw;
+        }
         .set-banner {
             width: 100%;
             height: 70vh;
@@ -972,9 +994,11 @@ h1, h2, h3, h4, h5, h6 {
         }
 
         .float-ban {
+            position: relative;
             /* width: 80%; */
-            margin: 0 10vw;
-            margin-top: 5vh;
+            height: 100%;
+            /* margin: 0 10vw; */
+            /* margin-top: 5vh; */
             padding: 1rem 1rem;
             margin-bottom: 3rem;
             box-shadow: 0px 0px 22px rgba(0, 0, 0, .3);
@@ -1016,8 +1040,10 @@ h1, h2, h3, h4, h5, h6 {
         }
         @media (max-width: 920px){
             .set-description {
+                position: absolute;
+                bottom: 6rem;
                 width: 100%;
-                height: 35px;
+                /* height: 35px; */
                 height: fit-content;
                 margin: 0 0;
                 margin-bottom: 10px;
@@ -1029,6 +1055,8 @@ h1, h2, h3, h4, h5, h6 {
             }
         }
         .set-text {
+            position: absolute;
+            bottom: 9.5rem;
             font-family: "Ubuntu";
             color: #F1F1F1;
             font-size: 48px;
@@ -1036,6 +1064,7 @@ h1, h2, h3, h4, h5, h6 {
             letter-spacing: 0px;
             font-weight: 600;
             margin: 0 0 10px;
+            text-shadow: .5px .5px 0px black, 0 0 35px #000000, 0 0 1px #000000;
         }
         @media (max-width: 920px){
             .set-text {
@@ -1115,4 +1144,53 @@ h1, h2, h3, h4, h5, h6 {
                 font-size: 10px;
                 line-height: 24px;
             }
+        }
+
+
+
+
+
+
+
+        /* GENEROS SLIDE */
+        .menu-mix {
+            overflow: hidden;
+            cursor: -webkit-grab;
+            cursor: grab;
+            width: 96%; /* 100% */
+            position: absolute;
+            z-index: 1;
+            height: 100%;
+            margin: .5rem 0;
+            /* height: calc(75% - 88px); */  /* 40vh o 100vh */
+        }
+        div.menu-mix{
+            position: relative;
+            /* background-color: rgb(255,255,255, .1); */
+            bottom: .5rem;
+            width: 100%;
+            height: 20vh;
+            z-index: 1;
+        }
+        .main-baner{
+            padding: 5px 10px;
+            border-radius: 20px;
+        }
+        .menu--item{
+            width: 30vw;
+            height: 20vh;
+            border-radius: 10px;
+            margin: 0 5rem;
+        }
+        .menu--item figure:before {
+            display: none;
+            /* position: absolute;
+            z-index: 2;
+            bottom: 4vw;
+            left: 5vw;
+            display: inline-block;
+            content: "0" counter(count);
+            color: rgba(0, 221, 255, 0.5);
+            font-size: 5vw;
+            padding: 10px; */
         }
