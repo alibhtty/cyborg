@@ -35,9 +35,9 @@
 
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-    <link rel="stylesheet" href="audiplay.css">
-    <link rel="stylesheet" href="player.css">
+    <link preload rel="stylesheet" href="audiplay.css">
     <link rel="stylesheet" href="assets/css/mixtape.css">
+    <link rel="stylesheet" href="player.css">
     <!-- <link rel="stylesheet" href="style-v=2.css"> -->
     <!-- <link rel="stylesheet" href="styles-mixtape.css"> -->
 
@@ -65,7 +65,7 @@
                             <span id="options-btn">
                                 <div style="position: absolute; display: flex; right: 10vw;">
                                     <h2 style="font-size: 16px; padding: 8px 5px;">DJ's</h2>
-                                    <img class="svg" src="../../assets/icons/usuarios.svg" alt="Dj's">
+                                    <img style="scale: 90%; padding: 5px 0;" class="svg" src="../../assets/icons/usuarios.svg" alt="Dj's">
                                 </div>
                             </span> <!-- https://emilcarlsson.se/assets/svg/more.svg -->
                         </div>
@@ -615,25 +615,25 @@
     <script src='https://use.fontawesome.com/15af25ac7b.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jcarousel/0.3.1/jquery.jcarousel.min.js'></script>
     <script id="rendered-js">
-        $(document).ready(function () {
+        /* $(document).ready(function () {
             var songs = [
-                /* {
+                {
                     title: "Calling",
                     artist: "Ali Bhtty, Jalen",
                     cover: "https://ali-bhtty.web.app/cyborg/player/calling.jpg",
                     audioFile: "https://dl.dropbox.com/s/f2rsaxbus9vh81q/Calling%20-%20Jalen%20%28Ali%20Bhtty%20Remix%29.mp3?dl=0",
                     color: "#ff6600"
-                }, */
+                },
 
-                /* {
+                {
                     title: "Rockstar",
                     artist: "Post Malone, 21 Savage",
                     cover: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/308622/rockstar-album-cover.jpg",
                     audioFile: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/308622/Post%20Malone%20-%20rockstar%20ft.%2021%20Savage%20(1).mp3",
                     color: "#c3af50"
-                }, */
+                },
 
-                /* {
+                {
                     title: "Ep. 015 House Sause",
                     artist: "alibhtty",
                     cover: "set/ep015.jpg",
@@ -647,15 +647,15 @@
                     cover: "set/ep014.jpg",
                     audioFile: "https://dl.dropbox.com/s/v2yaesqtlrs337q/Ep.%20014%20Rave%20House.mp3?dl=0",
                     color: "#c1c1c1"
-                }, */
+                },
 
-                /* {
+                {
                     title: "I Fall Apart",
                     artist: "Post Malone",
                     cover: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/308622/stoney-cover-album.jpg",
                     audioFile: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/308622/Post%20Malone%20-%20I%20Fall%20Apart.mp3",
                     color: "#cd4829"
-                }, */
+                },
 
                 {
                     title: "Ep. 013 Cy-BORED",
@@ -679,7 +679,7 @@
                 wrap: 'circular'
             });
 
-        });
+        }); */
 
         /*
          * Replace all SVG images with inline SVG

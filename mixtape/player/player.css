@@ -14,7 +14,7 @@ h1, h2, h3, h4, h5, h6 {
         }
 
         .standalone {
-            margin-top: 22px;
+            margin-top: 1rem;
         }
         /* header{
             margin-top: 44px;
@@ -379,7 +379,7 @@ h1, h2, h3, h4, h5, h6 {
         div#header span#options-btn svg{
             scale: 90%;
             padding: 5px;
-            margin: 2px;
+            margin: 1px;
             background-color: rgba(0, 0, 0, .3);
             border-radius: 25px;
         }
@@ -980,7 +980,7 @@ h1, h2, h3, h4, h5, h6 {
             margin-left: 0;
         }
         .mixtape-banner{
-            height: 50vh;
+            height: 45vh;
             margin: 1rem 10vw;
         }
         .set-banner {
@@ -1240,6 +1240,21 @@ h1, h2, h3, h4, h5, h6 {
                 position: absolute;
                 padding-bottom: 10px;
             } */
+
+
+
+            /* OTRO SLIDE MIXTAPE */
+            .mixtape{
+                position: absolute;
+                top: 3rem;
+                right: 0;
+                width: 50%;
+                height: 70vh;
+            }
+            .aspect-2-3{
+                height: 30vh;
+            }
+
         }
         /* @media screen and (display-mode: landscape){
             .float-ban{
@@ -1296,9 +1311,46 @@ h1, h2, h3, h4, h5, h6 {
 
 
         /* RECIENTES - SLIDE MIXTAPE */
+        @media (orientation: landscape){
+            .roster-lane {
+                height: fit-content;
+                overflow-x: scroll;
+                white-space: nowrap;
+                padding: 0vh 0rem 0px;
+                position: relative;
+            }
+            .mb-desktop-large:before {
+                display: none;
+            }
+        }
+        .mb-desktop-large:before {
+            content: "";
+            padding: relative;
+            width: 50%;
+            height: 100vh;
+            margin: -1rem 0;
+            /* height: 40vh; */
+            position: absolute;
+            /* top: 0; */
+            right: 0;
+            background: linear-gradient(to right, rgba(0,0,0,0) 50%,rgba(0,0,0,.4) 70%, rgba(0,0,0,.4) 85%, rgba(0,0,0,.6) 99% );
+            z-index: 100;
+            pointer-events: none;
+        }
+        /* @media (max-width: 920px){
+            .mb-desktop-large:before {
+                height: 400px;
+
+                overflow-y: none;
+                pointer-events: none;
+            }
+        } */
+
+
         .mixtape{
             margin: 2rem 0;
         }
+        #cont2{border-radius: 18px;}
         .mb-normal {
             margin-bottom: 2rem;
           }
@@ -1307,4 +1359,9 @@ h1, h2, h3, h4, h5, h6 {
               display: inline-block;
               margin-right: 1.5em;
           }
+        }
+
+        ::-webkit-scrollbar {
+            display: none;
+            overflow: auto;
         }
