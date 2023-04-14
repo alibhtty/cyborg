@@ -6,30 +6,6 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 300
 }
 
-        @media screen and (display-mode: standalone) {
-            /* header {
-                height: 80px !important;
-            } */
-            .standalone {
-                margin-top: 88px;
-            }
-            .mixtape-banner{
-                height: 60vh;
-                margin: 1rem 10vw;
-            }
-            .menu-mix {
-                overflow: hidden;
-                cursor: -webkit-grab;
-                cursor: grab;
-                width: 96%; /* 100% */
-                position: absolute;
-                z-index: 1;
-                height: 100%;
-                margin-top: 3rem;
-                /* height: calc(75% - 88px); */  /* 40vh o 100vh */
-            }
-        }
-
         .no-seleccionable {
             -webkit-user-select: none;
             -moz-user-select: none;
@@ -1214,4 +1190,34 @@ h1, h2, h3, h4, h5, h6 {
             color: rgba(0, 221, 255, 0.5);
             font-size: 5vw;
             padding: 10px; */
+        }
+
+
+
+        /* STANDALONE */
+        @media screen and (display-mode: standalone) {
+            /* header {
+                height: 80px !important;
+            } */
+            div#header{
+                margin-top: 88px;
+            }
+            /* .standalone {
+                margin-top: 88px;
+            } */
+            .mixtape-banner{
+                height: 60vh;
+                margin: 1rem 10vw;
+            }
+            .menu-mix {
+                overflow: hidden;
+                cursor: -webkit-grab;
+                cursor: grab;
+                width: 96%; /* 100% */
+                position: absolute;
+                z-index: 1;
+                height: 100%;
+                margin-top: 3rem;
+                /* height: calc(75% - 88px); */  /* 40vh o 100vh */
+            }
         }
