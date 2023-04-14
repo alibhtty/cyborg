@@ -1194,19 +1194,76 @@ h1, h2, h3, h4, h5, h6 {
 
 
 
+        .set-text-min{
+            padding: 2px; font-weight: 600;
+        }
+        @media screen and (min-width: 920px){
+            .float-ban{
+                top: 1rem;
+                width: 35vw;
+                height: 70vh;
+            }
+            div.menu-mix{
+                position: absolute;
+                top: 3rem;
+                right: 0;
+                width: 50%;
+                height: 70vh;
+            }
+            .menu--item{
+                height: 70vh;
+            }
+            .set-text{
+                font-size: 25px;
+                line-height: 25px;
+                bottom: 11rem;
+            }
+            .set-description{
+                position: absolute;
+                font-size: 12px;
+                bottom: 8rem;
+            }
+            .set-text-min{
+                font-size: 12px;
+                bottom: 18rem;
+            }
+            .present{
+                position: absolute;
+                bottom: 1rem;
+            }
+            .genero-set{
+                height: 3rem;
+                padding: 0;
+            }
+            /* .genero-text{
+                height: 10px;
+                position: absolute;
+                padding-bottom: 10px;
+            } */
+        }
+        /* @media screen and (display-mode: landscape){
+            .float-ban{
+                width: 8rem;
+            }
+        } */
+
+
+
+
+
         /* STANDALONE */
         @media screen and (display-mode: standalone) {
             /* header {
                 height: 80px !important;
             } */
             div#header{
-                margin-top: 88px;
+                margin-top: 66px;
             }
             /* .standalone {
                 margin-top: 88px;
             } */
             .mixtape-banner{
-                height: 60vh;
+                height: 55vh;
                 margin: 1rem 10vw;
             }
             .menu-mix {
