@@ -1363,8 +1363,9 @@ h1, h2, h3, h4, h5, h6 {
 
 
         .roster-lane > div {
+            height: 35vh;
             display: inline-table;
-            width: 165px;
+            width: 165px; /* 165px */
             margin-right: 2em;
             /* transition-timing-function: ease-in;
             transition: .4s; */
@@ -1376,7 +1377,7 @@ h1, h2, h3, h4, h5, h6 {
             height: 100%;
             background-color: rgba(0,0,0,.6);
             border-radius: 18px;
-            padding: 50% 3rem;
+            padding: 50% 2rem;
             transition: all ease .1s;
         }
 
@@ -1414,7 +1415,7 @@ h1, h2, h3, h4, h5, h6 {
           }
         @media (max-width: 920px){
             .aspect-2-3 {
-                height: 30vh;
+                height: 20vh;
             }
             /* .roster-lane > div {
                 display: inline-block;
@@ -1423,8 +1424,12 @@ h1, h2, h3, h4, h5, h6 {
             } */
             .roster-lane > div {
               /* display: inline-block; */
+              display: inline-table;
+              width: 30vw; /* 165px */
+              margin-right: 2em;
               margin-right: .5rem;
-          }
+            }
+            
         }
 
         ::-webkit-scrollbar {
