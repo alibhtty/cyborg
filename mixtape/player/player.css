@@ -985,7 +985,7 @@ h1, h2, h3, h4, h5, h6 {
             color: #111111;
         }
         .mixtape-banner{
-            height: 35vh;
+            height: 30vh;
             margin: 1rem 6vw;
         }
         .set-banner {
@@ -1208,7 +1208,7 @@ h1, h2, h3, h4, h5, h6 {
         @media screen and (min-width: 520px){
             .float-ban{
                 top: 1rem;
-                width: 35vw;
+                width: 30vw;
                 height: 70vh;
             }
             div.menu-mix{
@@ -1286,7 +1286,7 @@ h1, h2, h3, h4, h5, h6 {
                 margin-top: 88px;
             } */
             .mixtape-banner{
-                height: 40vh;
+                height: 30vh;
                 margin: 1rem 10vw;
             }
             .menu-mix {
@@ -1330,6 +1330,9 @@ h1, h2, h3, h4, h5, h6 {
             .mb-desktop-large:before {
                 display: none;
             }
+            .mixtape{
+                width: 60%;
+            }
         }
         a, .aspect-2-3 {
             border-radius: 8px;
@@ -1338,14 +1341,14 @@ h1, h2, h3, h4, h5, h6 {
         .mb-desktop-large:before {
             content: "";
             padding: relative;
-            width: 50%;
+            width: 100%;
             height: 100vh;
             margin: -1rem 0;
             /* height: 40vh; */
             position: absolute;
             /* top: 0; */
             right: 0;
-            background: linear-gradient(to right, rgba(0,0,0,0) 50%,rgba(0,0,0,.4) 70%, rgba(0,0,0,.4) 85%, rgba(0,0,0,.6) 99% );
+            background: linear-gradient(to bottom right, rgba(0,0,0,0) 50%,rgba(0,0,0,.4) 70%, rgba(0,0,0,.4) 85%, rgba(0,0,0,.6) 99% );
             z-index: 100;
             pointer-events: none;
         }
@@ -1363,8 +1366,8 @@ h1, h2, h3, h4, h5, h6 {
             display: inline-table;
             width: 165px;
             margin-right: 2em;
-            transition-timing-function: ease-in;
-            transition: 2s;
+            /* transition-timing-function: ease-in;
+            transition: .4s; */
         }
 
         #cont2{
