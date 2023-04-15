@@ -395,6 +395,7 @@
   a, .aspect-2-3{
     border-radius: 18px;
     z-index: 99;
+    transition: 0.5s;
   }
 
   /* .text-stroke {
@@ -2173,10 +2174,11 @@
 }
 @media (max-width: 920px){
   .roster-lane {
+    /* display: inline-flex; */
     height: fit-content;
     overflow-x: scroll;
     white-space: nowrap;
-    padding: 0rem 10vw;
+    padding: 0rem 6vw;
     /* padding-bottom: 1rem; */
     position: relative;
 }
