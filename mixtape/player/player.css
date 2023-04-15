@@ -316,12 +316,12 @@ h1, h2, h3, h4, h5, h6 {
             top: 0;
             width: 100%;
             z-index: 1;
-            -webkit-backdrop-filter: blur(100px) saturate(2) brightness(1.5);
-            -webkit-filter: blur(100px) saturate(2) brightness(1.5);
-            -moz-filter: blur(100px) saturate(2) brightness(1.5);
-            -ms-filter: blur(100px) saturate(2) brightness(1.5);
-            -o-filter: blur(100px) saturate(2) brightness(1.5);
-            filter: blur(70px) saturate(2) brightness(1.5);
+            -webkit-backdrop-filter: blur(100px) saturate(1.6) brightness(1.6);
+            -webkit-filter: blur(100px) saturate(1.6) brightness(1.6);
+            -moz-filter: blur(100px) saturate(1.6) brightness(1.6);
+            -ms-filter: blur(100px) saturate(1.6) brightness(1.6);
+            -o-filter: blur(100px) saturate(1.6) brightness(1.6);
+            filter: blur(70px) saturate(1.6) brightness(1.6);
             -webkit-transition: background-image 0.25s ease;
             -moz-transition: background-image 0.25s ease;
             -ms-transition: background-image 0.25s ease;
@@ -411,10 +411,10 @@ h1, h2, h3, h4, h5, h6 {
 
         div.jcarousel ul#songs li.song {
             float: left;
-            margin: 4vh 0rem; /* 10px 15px */
+            margin: 4vh 0rem;
             margin-right: 10vw;
             text-align: center;
-            width: calc(80vw - 0vw); /* calc(90vw - 10vw      --      calc(225px - 30px) */
+            width: calc(80vw - 0vw);
         }
 
         div.jcarousel ul#songs li.song img {
@@ -1006,7 +1006,7 @@ h1, h2, h3, h4, h5, h6 {
         }
         .mixtape-banner{
             height: 45vh; /* 30vh */
-            margin: 1rem 12vw; /* 1rem 8vw */
+            margin: 1rem 13vw; /* 1rem 8vw */
         }
         .set-banner {
             width: 100%;
@@ -1306,7 +1306,7 @@ h1, h2, h3, h4, h5, h6 {
                 margin-top: 88px;
             } */
             .mixtape-banner{
-                height: 50vh;
+                height: 48vh;
                 margin: 1rem 10vw;
             }
             .menu-mix {
@@ -1336,7 +1336,7 @@ h1, h2, h3, h4, h5, h6 {
 
 
         .catego-margin{
-            margin: .5rem 0;
+            margin: .2rem 0; /* .5rem 0 */
         }
         .catego {
             overflow-x: scroll;
@@ -1489,7 +1489,7 @@ h1, h2, h3, h4, h5, h6 {
         }
         #cont2{border-radius: 8px;}
         .mb-normal {
-            margin-bottom: 1.5rem;
+            margin-bottom: 1rem;
           }
         @media (max-width: 920px){
             .aspect-2-3 {
