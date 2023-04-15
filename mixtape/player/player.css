@@ -985,7 +985,7 @@ h1, h2, h3, h4, h5, h6 {
             color: #111111;
         }
         .mixtape-banner{
-            height: 30vh;
+            height: 45vh; /* 30vh */
             margin: 1rem 6vw;
         }
         .set-banner {
@@ -1044,7 +1044,7 @@ h1, h2, h3, h4, h5, h6 {
             .set-description {
                 position: absolute;
                 bottom: 6rem;
-                width: 100%;
+                width: fit-content;
                 /* height: 35px; */
                 height: fit-content;
                 margin: 0 0;
@@ -1286,7 +1286,7 @@ h1, h2, h3, h4, h5, h6 {
                 margin-top: 88px;
             } */
             .mixtape-banner{
-                height: 30vh;
+                height: 50vh;
                 margin: 1rem 10vw;
             }
             .menu-mix {
