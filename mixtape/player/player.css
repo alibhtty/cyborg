@@ -986,7 +986,7 @@ h1, h2, h3, h4, h5, h6 {
         }
         .mixtape-banner{
             height: 45vh; /* 30vh */
-            margin: 1rem 6vw;
+            margin: 1rem 10vw; /* 1rem 8vw */
         }
         .set-banner {
             width: 100%;
@@ -1415,7 +1415,7 @@ h1, h2, h3, h4, h5, h6 {
           }
         @media (max-width: 920px){
             .aspect-2-3 {
-                height: 20vh;
+                height: 16vh;
             }
             /* .roster-lane > div {
                 display: inline-block;
@@ -1425,7 +1425,7 @@ h1, h2, h3, h4, h5, h6 {
             .roster-lane > div {
               /* display: inline-block; */
               display: inline-table;
-              width: 30vw; /* 165px */
+              width: 25vw; /* 165px */
               margin-right: 2em;
               margin-right: .5rem;
             }
