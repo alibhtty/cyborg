@@ -1315,6 +1315,62 @@ h1, h2, h3, h4, h5, h6 {
 
 
 
+        .catego-margin{
+            margin: .5rem 0;
+        }
+        .catego {
+            overflow-x: scroll;
+            overflow-y: none;
+            margin-top: 0rem;
+            white-space: nowrap;
+            padding: 2rem 4rem;
+            /* padding-bottom: 1rem; */
+            position: relative;
+            z-index: 99;
+          }
+          .catego > a {
+            display: inline-block;
+            width: fit-content;
+            min-width: 60px;
+            /* width: 165px; */
+            margin-right: .3rem;
+          }
+        
+          /* .roster-lane-remix > div {
+            display: inline-block;
+            width: 320px;   
+            margin-right: 1.5em;
+          }
+          .roster-lane-remix {
+            height: fit-content;
+            overflow-x: scroll;
+            white-space: nowrap;
+            padding: 0rem 4rem;
+            position: relative;
+          } */
+        .burbuja{
+            height: 1.4rem;
+            border: solid 1px #a2a2a2;
+            font-family: "Ubuntu";
+            font-size: 11px;
+            border-radius: 20px;
+        }
+        .burbuja h2{
+            position: relative;
+            padding: 4px 15px;
+            text-align: center;
+            color: #f1f1f1;
+        }
+        /* div.catego{
+            height: 1.6rem;
+            width: 350%;
+            overflow-x: scroll;
+            white-space: nowrap;
+            padding: 0vh 0rem 0px;
+            position: relative;
+        } */
+
+
 
 
 
@@ -1430,6 +1486,20 @@ h1, h2, h3, h4, h5, h6 {
               margin-right: .5rem;
             }
             
+        }
+
+
+
+        @media (max-width: 920px){
+            .catego {
+                /* display: inline-flex; */
+                /* height: fit-content; */
+                overflow-x: scroll;
+                white-space: nowrap;
+                padding: 0rem 6vw;
+                /* padding-bottom: 1rem; */
+                position: relative;
+            }
         }
 
         ::-webkit-scrollbar {
