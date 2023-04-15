@@ -3,7 +3,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
 
 h1, h2, h3, h4, h5, h6 {
-    font-weight: 500
+    font-weight: 500;
+    user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    pointer-events: none;
 }
 
         .no-seleccionable {
@@ -946,13 +953,13 @@ h1, h2, h3, h4, h5, h6 {
 
 
 
-        .float-ban{
+        /* BLUR GB */
+        /* .float-ban{
             background-image: linear-gradient( rgba(255,255,255,.1), rgba(0,0,0,.8) 100%), url(https://ali-bhtty.web.app/assets/img/banner/ep015.jpg);
         }
         #background{
             background-image: linear-gradient(-180deg,rgba(73,74,79,0) 2%,#252525),radial-gradient(80% 137%,rgba(73,74,79,0) 0,#151515 100%), url(https://ali-bhtty.web.app/assets/img/banner/ep015.jpg);
-            /* background-image: linear-gradient(-180deg,rgba(73,74,79,0) 2%,#252525),radial-gradient(50% 137%,rgba(73,74,79,0) 0,#252525 100%), url(https://ali-bhtty.web.app/assets/img/banner/ep015.jpg); */
-        }
+        } */
 
 
 
@@ -1502,6 +1509,14 @@ h1, h2, h3, h4, h5, h6 {
                 position: relative;
             }
         }
+
+
+        .float-ban { -webkit-tap-highlight-color: rgba(0,0,0,0);}
+        :focus { 
+            outline-color: transparent; 
+            outline-style: none;
+          }
+
 
         ::-webkit-scrollbar {
             display: none;
