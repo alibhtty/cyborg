@@ -790,7 +790,7 @@ h1, h2, h3, h4, h5, h6 {
         }
 
         div.menu span.close-btn {
-            position: absolute;
+            position: fixed;
             bottom: 1rem;
             margin: 0;
             width: calc(100% - 12vw);
@@ -1437,7 +1437,14 @@ h1, h2, h3, h4, h5, h6 {
             .mixtape{
                 width: 60%;
             }
+            .catego{
+                padding: .5rem 4rem;
+            }
+            .mixtape-banner{
+                margin: 1rem 4rem;
+            }
         }
+
         a, .aspect-2-3 {
             border-radius: 8px;
             z-index: 99;
@@ -1565,7 +1572,7 @@ h1, h2, h3, h4, h5, h6 {
 
         /* BACK MENU BOTON */
         .back-menu{
-            position: absolute;
+            position: fixed; /* absolute */
             bottom: 1rem;
             margin: 0px 6vw;
             width: -webkit-fill-available;
