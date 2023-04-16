@@ -1324,6 +1324,10 @@ h1, h2, h3, h4, h5, h6 {
 
 
 
+        .mixtape{
+            position: absolute;
+            bottom: 4rem;
+        }
 
         /* STANDALONE */
         @media screen and (display-mode: standalone) {
@@ -1336,6 +1340,10 @@ h1, h2, h3, h4, h5, h6 {
             /* .standalone {
                 margin-top: 88px;
             } */
+            .mixtape{
+                position: absolute;
+                bottom: 4rem;
+            }
             .mixtape-banner{
                 height: 48vh;
                 margin: 1rem 10vw;
