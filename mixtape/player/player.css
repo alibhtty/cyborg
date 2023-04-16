@@ -1405,14 +1405,14 @@ h1, h2, h3, h4, h5, h6 {
 
             .back-menu{
                 height: 3.2rem; border: solid .5px #333349;
-                bottom: 4.5rem;
+                bottom: 5rem;
             }
             .back-menu h2{
                 padding: 1rem 0;
             }
             div.menu span.close-btn {
                 height: 3.2rem; border: solid .5px #333349;
-                bottom: 2rem;
+                bottom: 2.5rem;
                 padding: 1rem 0;
             }
             div#song-options div#song-info {
