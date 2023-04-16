@@ -47,6 +47,37 @@
             background-image: linear-gradient(-180deg,rgba(73,74,79,0) 2%,#252525),radial-gradient(80% 137%,rgba(73,74,79,0) 0,#151515 100%), url(https://ali-bhtty.web.app/assets/img/banner/ep015.jpg);  
             /* background-image: linear-gradient(-180deg,rgba(73,74,79,0) 2%,#252525),radial-gradient(50% 137%,rgba(73,74,79,0) 0,#252525 100%), url(https://ali-bhtty.web.app/assets/img/banner/ep015.jpg); */
         }
+
+        .quotes {
+              display: block;
+              /* color: #ffffff; */
+              /* font-size: 34px; */
+              /* font-family: "BICRODEPERSONALUSE" !important; */
+              animation: fluidos 10s ease-in-out infinite;
+              background: linear-gradient(-45deg, #80a4ff, #F6FFDD, #9a7cff,  #23CFD5); /* naranjitaee7752  azul23a6d5    e73c7e      #23cfd5, #23d5ab    limon#BFFF00 */
+              background-size: 300%;
+              -webkit-background-clip: text;
+              background-clip: text;
+              -webkit-text-fill-color: transparent;
+            }
+          
+            @keyframes fluidos {
+              0% { background-position: 0 50% }
+              50% { background-position: 100% 50% }
+              100% { background-position: 0 50% }
+            }
+
+        /* .centrado{
+          width: 100%;
+          height: 100vh;
+          text-align: center;
+          display: flex;
+          position: absolute;
+          z-index: 9999;
+          justify-content: center;
+          align-items: center;
+          background-color: #000000
+        } */
     </style>
 
 </head>
@@ -427,9 +458,9 @@
                         	</div>
                         </section>
                         
-                        <footer id="menu-btn" class="back-menu">
+                        <footer id="menu-btn" class="back-menu centrado">
                             <div>
-                                <h2>MENÚ</h2>
+                                <h2 class="quotes">MENÚ</h2>
                             </div>
                         </footer>
 
