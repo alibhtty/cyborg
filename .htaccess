@@ -1,9 +1,15 @@
 RewriteEngine On
 RewriteRule test\.html http://www.google.com [R]
 
+#html
+RewriteBase /
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.html -f 
+RewriteRule ^([^\.]+)$ $1.html [NC,L]
+
 
 ## EXPIRES CACHING ##
-
 ExpiresActive On
 ExpiresActive "access plus 10 days"
 ExpiresByType image/jpg "access plus 1 week"
@@ -22,7 +28,3 @@ ExpiresByType image/x-icon "access plus 3 months"
 ## EXPIRES CACHING ##
 
 
-#html
-    RewriteCond %{REQUEST_FILENAME} !-f 
-    RewriteCond %{REQUEST_FILENAME} !-d 
-    RewriteRule ^([^\.]+)$ $1.html [NC,L]
