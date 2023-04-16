@@ -278,6 +278,20 @@ h1, h2, h3, h4, h5, h6 {
             border-radius: 20px;
         }
 
+        div#content-wrap.inactive div#header{
+            display: none;
+            overflow: hidden;
+        }
+        div#content-wrap.inactive .catego-margin{
+            display: none;
+            overflow: hidden;
+        }
+        div#content-wrap.inactive .mixtape-banner{
+            margin: 0;
+            height: 64vh;
+        }
+
+
         div#content-wrap.inactive div#overlay {
             display: block;
         }
@@ -301,6 +315,7 @@ h1, h2, h3, h4, h5, h6 {
         }
 
         div#content {
+            height: 100vh;
             padding: 0rem; /* 15px */
             position: relative;
             z-index: 2;
@@ -571,7 +586,7 @@ h1, h2, h3, h4, h5, h6 {
             box-sizing: border-box;
             height: 100%;
             left: 0;
-            padding: 4rem 2rem; /* 20px 10px */
+            padding: 1rem 6vw; /* 4rem 2rem */
             position: absolute;
             top: 0;
             width: 100%;
@@ -613,7 +628,7 @@ h1, h2, h3, h4, h5, h6 {
             display: flex;
             cursor: pointer;
             font-weight: 300;
-            padding: 1.2rem 2rem; /* 8px 5px */
+            padding: .5rem 1rem; /*1.2rem 2rem */
             font-size: 20px;
             color: #ffffff;
             text-decoration: none;
@@ -758,7 +773,7 @@ h1, h2, h3, h4, h5, h6 {
             box-sizing: border-box;
             display: block;
             height: 100%;
-            padding: 2rem 2rem; /* 0 20px */
+            padding: 2rem 6vw;
             position: absolute;
             top: 100%;
             width: 100%;
@@ -775,14 +790,25 @@ h1, h2, h3, h4, h5, h6 {
         }
 
         div.menu span.close-btn {
-            color: #b3b3b3;
+            position: absolute;
+            bottom: 1rem;
+            margin: 0;
+            width: calc(100% - 12vw);
+            /* width: -webkit-fill-available; */
+            height: 2.2rem; border: solid 1px #767676;
+            background-color: rgba(255,255,255,.8);
+            border-radius: 16px  16px 4rem 4rem;
+            color: #000;
+            text-align: center;
+
+            /* color: #b3b3b3;
             cursor: pointer;
             display: block;
-            font-size: 24px; /* 14px */
+            font-size: 24px;
             margin: 5px auto 15px;
             padding: 0 8px 4px;
             text-align: center;
-            width: 100%; /* 50px */
+            width: 100%; */
             -webkit-transition: color 0.25s ease;
             -moz-transition: color 0.25s ease;
             -ms-transition: color 0.25s ease;
@@ -1530,6 +1556,24 @@ h1, h2, h3, h4, h5, h6 {
             outline-color: transparent; 
             outline-style: none;
           }
+
+
+
+
+
+
+
+        /* BACK MENU BOTON */
+        .back-menu{
+            position: absolute;
+            bottom: 1rem;
+            margin: 0px 6vw;
+            width: -webkit-fill-available;
+            height: 2.2rem; border: solid 1px #767676;
+            background-color: rgba(255,255,255,.8);
+            border-radius: 16px  16px 4rem 4rem
+        }
+
 
 
         ::-webkit-scrollbar {
