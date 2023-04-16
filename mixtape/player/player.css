@@ -1396,7 +1396,7 @@ h1, h2, h3, h4, h5, h6 {
                 margin-top: 3rem;
                 /* height: calc(75% - 88px); */  /* 40vh o 100vh */
             }
-            div.sidemenu{
+            div#sidemenu{
                 padding: 88px 6vw;
             }
             div.menu{
