@@ -1036,7 +1036,7 @@ h1, h2, h3, h4, h5, h6 {
             color: #111111;
         }
         .mixtape-banner{
-            height: 43vh; /* 30vh */
+            height: 42vh; /* 30vh */
             margin: 1rem 14vw; /* 1rem 8vw */
         }
         .set-banner {
@@ -1341,10 +1341,10 @@ h1, h2, h3, h4, h5, h6 {
             /* .standalone {
                 margin-top: 88px;
             } */
-            .mixtape{
+            /* .mixtape{
                 position: absolute;
                 bottom: 4rem;
-            }
+            } */
             .mixtape-banner{
                 height: 48vh;
                 margin: 1rem 10vw;
@@ -1366,6 +1366,7 @@ h1, h2, h3, h4, h5, h6 {
             div#menu{
                 padding: 66px 6vw;
             }
+
             .back-menu{
                 height: 3.2rem;
             }
@@ -1379,6 +1380,7 @@ h1, h2, h3, h4, h5, h6 {
                 margin-top: 12px;
             }
         }
+
 
 
 
