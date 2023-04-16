@@ -1327,6 +1327,7 @@ h1, h2, h3, h4, h5, h6 {
         .mixtape{
             position: absolute;
             bottom: 4rem;
+            max-height: 20vh;
         }
 
         /* STANDALONE */
