@@ -790,7 +790,7 @@ h1, h2, h3, h4, h5, h6 {
         }
 
         div.menu span.close-btn {
-            position: fixed;
+            position: absolute;
             bottom: 1.5rem;
             margin: 0;
             width: calc(100% - 12vw);
@@ -1580,7 +1580,7 @@ h1, h2, h3, h4, h5, h6 {
 
         /* BACK MENU BOTON */
         .back-menu{
-            position: fixed; /* absolute */
+            position: absolute; /* absolute */
             bottom: 1rem;
             font-size: 14px;
             margin: 0px 6vw;
