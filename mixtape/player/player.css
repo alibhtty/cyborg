@@ -276,7 +276,7 @@ h1, h2, h3, h4, h5, h6 {
             -o-transform: scale(0.85) translate(0, 60%);
             -ms-transform: scale(0.85) translate(0, 60%);
             -webkit-transform: scale(0.85) translate(0, 60%);
-            transform: scale(0.85) translate(0, 45%);
+            transform: scale(0.85) translate(0, 40%);
             border-radius: 20px;
         }
 
