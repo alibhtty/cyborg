@@ -315,7 +315,7 @@ h1, h2, h3, h4, h5, h6 {
         }
 
         div#content {
-            height: 100vh;
+            height: 90vh; /* 100vh */
             padding: 0rem; /* 15px */
             position: relative;
             z-index: 2;
@@ -1326,7 +1326,7 @@ h1, h2, h3, h4, h5, h6 {
 
         .mixtape{
             position: absolute;
-            bottom: 7rem; /* 4rem */
+            bottom: 4rem; /* 4rem */
             max-height: 20vh;
         }
 
@@ -1593,7 +1593,7 @@ h1, h2, h3, h4, h5, h6 {
         /* BACK MENU BOTON */
         .back-menu{
             position: absolute; /* absolute */
-            bottom: 4rem; /* 1rem */
+            bottom: 1rem; /* 1rem */
             font-size: 14px;
             margin: 0px 6vw;
             width: -webkit-fill-available;
