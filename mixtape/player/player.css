@@ -290,7 +290,7 @@ h1, h2, h3, h4, h5, h6 {
         }
         div#content-wrap.inactive .mixtape-banner{
             margin: 0;
-            height: 64vh;
+            height: calc(64vh - 4rem); /* 64vh */
         }
 
 
