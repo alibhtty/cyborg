@@ -1413,6 +1413,7 @@ h1, h2, h3, h4, h5, h6 {
             div.menu span.close-btn {
                 height: 3.2rem; border: solid .5px #333349;
                 bottom: 2rem;
+                padding: 1rem 0;
             }
         }
 
