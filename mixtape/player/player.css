@@ -1350,7 +1350,7 @@ h1, h2, h3, h4, h5, h6 {
         .back-menu{
             position: absolute; /* absolute */
             /* bottom: 1rem; */
-            font-size: 14px;
+            font-size: 16px;
             margin: 0px 6vw;
             width: -webkit-fill-available;
             height: 2.2rem; border: solid 1px #ffffff;
@@ -1375,8 +1375,29 @@ h1, h2, h3, h4, h5, h6 {
             color: #f1f1f1; padding: 8px 0;
             font-family: "Ubuntu";
             letter-spacing: 2px;
+            font-weight: 600;
 
         }
+
+
+        .quotes {
+            display: block;
+            /* color: #ffffff; */
+            /* font-size: 34px; */
+            /* font-family: "BICRODEPERSONALUSE" !important; */
+            animation: fluidos 10s ease-in-out infinite;
+            background: linear-gradient(-45deg, #80a4ff, #17112c, #F6FFDD, #17112c, #23CFD5); /* naranjitaee7752  azul23a6d5    e73c7e      #23cfd5, #23d5ab    limon#BFFF00 */
+            background-size: 300%;
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+          }
+        
+          @keyframes fluidos {
+            0% { background-position: 0 50% }
+            50% { background-position: 100% 50% }
+            100% { background-position: 0 50% }
+          }
 
 
 
