@@ -1507,7 +1507,7 @@ h1, h2, h3, h4, h5, h6 {
           } */
         .burbuja{
             height: 4vh;
-            border: solid .8px #dbdbdb;
+            border: solid 1px #cecece;
             background-color: rgb(255,255,255, .15);
             /* background-color: rgb(255,255,255, .08); */
             font-family: "Ubuntu";
