@@ -94,7 +94,7 @@
                 /* max-width: 100vw;
                 min-width: 320px; */
                 margin: 0 2vw;
-                position: fixed;
+                position: absolute; /* fixed */
                 background-color: rgba(0, 0, 0, .4);
                 border-radius: 14px 14px 0 0;
             }

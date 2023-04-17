@@ -740,6 +740,7 @@ h1, h2, h3, h4, h5, h6 {
 
         div#bluetooth-devices ul li.connected span {
             display: block;
+            opacity: 1;
         }
 
         div#bluetooth-devices ul li.connected i {
