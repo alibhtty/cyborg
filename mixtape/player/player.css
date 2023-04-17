@@ -1358,8 +1358,8 @@ h1, h2, h3, h4, h5, h6 {
             background: linear-gradient(-45deg, #11242c, #11242c, #11242c, #11307d, #17112c, #11242c, #11242c);
             background-size: 300%;
               -webkit-background-clip:content-box;
-              background-clip: text;
-              -webkit-text-fill-color: transparent;
+              background-clip:content-box;
+              /* -webkit-text-fill-color: transparent; */
             /* background-color: #000000; */
             /* z-index: 999; */
             border-radius: 16px  16px 4rem 4rem
