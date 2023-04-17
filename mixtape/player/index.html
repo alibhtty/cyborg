@@ -34,6 +34,7 @@
     <!-- <link rel="stylesheet" href="../../assets/css/brake.css"> -->
 
 
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
     <link preload rel="stylesheet" href="audiplay.css">
     <link rel="stylesheet" href="assets/css/mixtape.css">
@@ -490,7 +491,7 @@
                 </div>
 
                 <div id="sidemenu">
-                    <ul>
+                    <!-- <ul>
                         <a href="../../catalogo/index.html" class="menu-item">
                             <i class="fa fa-search fa-fw" aria-hidden="true"></i> &nbsp;
                             Catálogo
@@ -507,7 +508,68 @@
                             <i class="fa fa-cog fa-fw" aria-hidden="true"></i> &nbsp;
                             Menú
                         </a>
-                    </ul>
+                    </ul> -->
+
+
+                    <!-- BUSCADOR -->
+                    <div class="container">
+                        <!-- Main Content-->
+                        <div class="masthead">
+                          
+                      <input type="text" id="buscar" onkeyup="buscar()" placeholder="Buscar" title="Empieza a escribir para buscar">
+                          
+                          <div class="table-responsive">
+                            <table class="table" id="tabla" data-sort="table">
+                              <thead style="display: none;">
+                                <tr>
+                                  <th>Item</th>
+                                  <th>Name</th>
+                                  <th>Description</th>
+                                  <th>Date</th>
+                                  <th>Price</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <th scope=row>1</th>
+                                  <td>First Last</td>
+                                  <td>Two Items</td>
+                                  <td>01/01/2015</td>
+                                  <td>$200</td>
+                                </tr>
+                                <tr>
+                                  <th scope=row>2</th>
+                                  <td>Firstname Lastname</td>
+                                  <td>One Item</td>
+                                  <td>06/01/2015</td>
+                                  <td>$100</td>
+                                </tr>
+                                <tr>
+                                  <th scope=row>3</th>
+                                  <td>Name Another</td>
+                                  <td>One Item</td>
+                                  <td>12/15/2014</td>
+                                  <td>$100</td>
+                                </tr>
+                                <tr>
+                                  <th scope=row>4</th>
+                                  <td>One More</td>
+                                  <td>Three Items</td>
+                                  <td>01/20/2016</td>
+                                  <td>$300</td>
+                                </tr>
+                                <tr>
+                                  <th scope=row>5</th>
+                                  <td>Name Right Here</td>
+                                  <td>Two Items</td>
+                                  <td>01/20/2016</td>
+                                  <td>$200</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
                 </div>
 
                 <div id="bluetooth-devices" class="menu">
@@ -583,29 +645,13 @@
                     </ul>
                 </div>
 
-                <!-- <div id="home-screen">
-                    <div class="home-content">
-                        <h2>Music Player App</h2>
-                        <p id="made-by">Made by <a href="https://codepen.io/emilcarlsson">@emilcarlsson</a></p>
-                        <div class="app-icon">
-                            <img class="svg" src="https://emilcarlsson.se/assets/svg/music-note.svg" alt="">
-                        </div>
-                        <p id="icons-by">Icons by <a href="http://fontawesome.io/" title="Font Awesome">Font
-                                Awesome</a>, <a href="https://www.flaticon.com/authors/those-icons"
-                                title="Those Icons">Those Icons</a>,<br /><a
-                                href="https://www.flaticon.com/authors/epiccoders" title="EpicCoders">EpicCoders</a> &
-                            <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a>
-                        </p>
-                    </div>
-                </div> -->
-
             </div>
             <!-- <div id="home-btn"></div> -->
         </div>
     </div>
 
 
-    
+<!-- general -->
     <!-- <script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-2c7831bb44f98c1391d6a4ffda0e1fd302503391ca806e7fcc7b9b87197aec26.js"></script> -->
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
     <script src='https://use.fontawesome.com/15af25ac7b.js'></script>
@@ -951,29 +997,111 @@
 //# sourceURL=pen.js
     </script>
 
-
-<!-- generos slide -->
-<!-- <script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-2c7831bb44f98c1391d6a4ffda0e1fd302503391ca806e7fcc7b9b87197aec26.js"></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/gsap.min.js'></script>
-<script src="./assets/js/generos.js"></script> -->
-
-<script src="audiplay.js"></script>
-<style>
-    .ap_loop, .ap_sound{
-        display: none;
-        pointer-events: none;
-        width: 0px;
-        visibility: hidden;
-    }
-</style>
+<!-- audiplay -->
+    <script src="audiplay.js"></script>
 
 <!-- agenda -->
-<script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-2c7831bb44f98c1391d6a4ffda0e1fd302503391ca806e7fcc7b9b87197aec26.js"></script>
+    <script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-2c7831bb44f98c1391d6a4ffda0e1fd302503391ca806e7fcc7b9b87197aec26.js"></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react-with-addons.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react-dom.min.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/node-uuid/1.4.7/uuid.min.js'></script>
     <script src="./agenda/app.js"></script>
 
+<!-- buscador -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+    <script id="rendered-js" >
+/* W3 Example */
+function busqueda() {
+  var input, filter, table, tr, td, i;
+  input = document.getElementById("buscar");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("tabla");
+  tr = table.getElementsByTagName("tr");
+  for (i = 0; i < tr.length; i++) {if (window.CP.shouldStopExecution(0)) break;
+    td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }
+  }window.CP.exitedLoop(0);
+}
+
+function busquedaJQsimple() {
+  var filtro = $("#buscar").val().toUpperCase();
+
+  $("#tabla tbody tr").each(function () {
+    texto = $(this).children("td:eq(0)").text().toUpperCase();
+
+    if (texto.indexOf(filtro) < 0) {
+      $(this).hide();
+    } else {
+      $(this).show();
+    }
+
+
+  });
+
+}
+
+function buscar() {
+
+  var filtro = $("#buscar").val().toUpperCase();
+
+  $("#tabla td").each(function () {
+    var textoEnTd = $(this).text().toUpperCase();
+    if (textoEnTd.indexOf(filtro) >= 0) {
+      $(this).addClass("existe");
+    } else {
+      $(this).removeClass("existe");
+    }
+  });
+
+  $("#tabla tbody tr").each(function () {
+    if ($(this).children(".existe").length > 0) {
+      $(this).show();
+    } else {
+      $(this).hide();
+    }
+  });
+
+}
+
+function busquedaJQmultiple() {
+  var filtro = $("#buscar").val().toUpperCase();
+
+  $("#tabla tbody tr").each(function () {
+
+    $(this).children("td").each(function () {
+      var texto = $(this).text().toUpperCase();
+
+      if (texto.indexOf(filtro) < 0) {
+        $(this).addClass("sin");
+      } else {
+        $(this).removeClass("sin");
+      }
+    });
+
+    // nTds = la cantidad de <td> en el <tr> evaluado
+    nTds = $(this).children("td").length;
+    // nTdsSin = la cantidad de <td> con la clase ".sin" en el <tr> evaluado
+    nTdsSin = $(this).children(".sin").length;
+
+    if (nTdsSin == nTds) {
+      //$(this).hide()
+      $(this).addClass("noTiene");
+    } else {
+      //$(this).show()
+      $(this).removeClass("noTiene");
+    }
+
+  });
+
+}
+//# sourceURL=pen.js
+    </script>
 </body>
 
 </html>
