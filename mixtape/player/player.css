@@ -1367,7 +1367,7 @@ h1, h2, h3, h4, h5, h6 {
             transition: color 0.25s ease;
               /* -webkit-text-fill-color: transparent; */
             /* background-color: #000000; */
-            /* z-index: 999; */
+            z-index: 100;
             border-radius: 16px  16px 4rem 4rem
         }
         .back-menu h2{
