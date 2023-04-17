@@ -1507,7 +1507,7 @@ h1, h2, h3, h4, h5, h6 {
           } */
         .burbuja{
             height: 4vh;
-            border: solid .6px #dbdbdb;
+            border: solid .8px #dbdbdb;
             background-color: rgb(255,255,255, .15);
             /* background-color: rgb(255,255,255, .08); */
             font-family: "Ubuntu";
@@ -1635,7 +1635,7 @@ h1, h2, h3, h4, h5, h6 {
         } */
         #cont2{border-radius: 8px;}
         .mb-normal {
-            margin-bottom: 1rem;
+            margin-bottom: .6rem;
           }
         @media (max-width: 920px){
             .aspect-2-3 {
