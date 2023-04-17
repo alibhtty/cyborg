@@ -38,6 +38,7 @@
     <link preload rel="stylesheet" href="audiplay.css">
     <link rel="stylesheet" href="assets/css/mixtape.css">
     <link rel="stylesheet" href="player.css">
+    <link rel="stylesheet" href="./agenda/calendar.css">
 
     <style>
         .float-ban{
@@ -573,6 +574,12 @@
                     <p class="info-text">
                         Make sure your bluetooth device is turned on and in range.
                     </p>
+
+                    <!-- calendario -->
+                    <div style="position: absolute; background-color: #80a4ff;">
+                        <div id="app"></div>
+                    </div>
+                    
                 </div>
 
                 <div id="song-options" class="menu">
@@ -990,6 +997,13 @@
         visibility: hidden;
     }
 </style>
+
+<!-- agenda -->
+<script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-2c7831bb44f98c1391d6a4ffda0e1fd302503391ca806e7fcc7b9b87197aec26.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react-with-addons.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react-dom.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/node-uuid/1.4.7/uuid.min.js'></script>
+    <script src="./agenda/app.js"></script>
 
 </body>
 
