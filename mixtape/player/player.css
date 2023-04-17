@@ -1348,8 +1348,14 @@ h1, h2, h3, h4, h5, h6 {
             margin: 0px 6vw;
             width: -webkit-fill-available;
             height: 2.2rem; border: solid .5px #333349;
-            background-color: #000000;
-            z-index: 999;
+            animation: fluidos 10s ease-in-out infinite;
+            background: linear-gradient(-45deg, #11242c, #11242c, #11242c, #11307d, #17112c, #11242c, #11242c);
+            background-size: 300%;
+              /* -webkit-background-clip: text; */
+              background-clip: text;
+              -webkit-text-fill-color: transparent;
+            /* background-color: #000000; */
+            /* z-index: 999; */
             border-radius: 16px  16px 4rem 4rem
         }
         .back-menu h2{
@@ -1467,9 +1473,10 @@ h1, h2, h3, h4, h5, h6 {
             position: relative;
           } */
         .burbuja{
-            height: 1.5rem;
-            border: solid 1px #a2a2a2;
-            background-color: rgb(255,255,255, .08);
+            height: 4vh;
+            border: solid .6px #dbdbdb;
+            background-color: rgb(255,255,255, .15);
+            /* background-color: rgb(255,255,255, .08); */
             font-family: "Ubuntu";
             font-size: 11px;
             border-radius: 20px;
@@ -1477,9 +1484,10 @@ h1, h2, h3, h4, h5, h6 {
         }
         .burbuja h2{
             position: relative;
-            padding: 5px 12px;
+            padding: 1.2vh 12px;
             text-align: center;
             color: #f1f1f1;
+            letter-spacing: .9px;
         }
         /* div.catego{
             height: 1.6rem;
