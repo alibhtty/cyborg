@@ -48,6 +48,10 @@
         #background{
             background-image: linear-gradient(-180deg,rgba(73,74,79,0) 2%,#252525),radial-gradient(80% 137%,rgba(73,74,79,0) 0,#151515 100%), url(https://ali-bhtty.web.app/assets/img/banner/ep015.jpg);  
         }
+        .atras audio{
+            display: hidden;
+
+        }
     </style>
 
 </head>
@@ -182,9 +186,20 @@
                                      </div>
                             
                                      
-                                    <audio controls class="audiplay" nodownload> <!-- id="track" -->
-                                        <source src="https://dl.dropbox.com/s/z1z6ybtxdd6f77t/Ep.%20015%20House%20Sause%20-%20Ali%20Bhtty.mp3?dl=0" type="audio/mp3" /> <!-- /assets/media/audio/intro.mp3 -->
-                                    </audio>
+                                    <a id="mix" href="#">
+                                        <audio controls class="audiplay" nodownload> <!-- id="track" -->
+                                            <source class="atras" src="https://dl.dropbox.com/s/z1z6ybtxdd6f77t/Ep.%20015%20House%20Sause%20-%20Ali%20Bhtty.mp3?dl=0" type="audio/mp3" /> <!-- /assets/media/audio/intro.mp3 -->
+                                        </audio>
+                                    </a>
+
+                                    <!-- <script type="text/javascript">
+                                        function ocultar() {
+                                            document.getElementById('mix').style.display = 'none';
+                                        }
+                                    </script> 
+
+                                    onclick="ocultar();" class="atras" style="pointer-events: none;"
+                                -->
                             
                                     <!-- <div id="player-container" style="width: 100%;">
                                         <div id="player-container" style="height: 30px; display: grid; grid-template-columns: 1fr 1fr; column-gap: 15px; padding: 0px 0px;">
@@ -770,7 +785,7 @@
         });
 
         // Current slide
-        $('.jcarousel').on('jcarousel:visiblein', 'li', function (event, carousel) {
+        /* $('.jcarousel').on('jcarousel:visiblein', 'li', function (event, carousel) {
             let cover = $(this).find("img").attr("src");
             let songTitle = $(this).find("p.song-title").html();
             let songArtist = $(this).find("p.song-artist").html();
@@ -804,7 +819,7 @@
             }
             $('#play-btn i').removeClass('fa-pause');
             player.pause();
-        });
+        }); */
 
         // Play Icon Switcher
         $('#play-btn').click(function () {
@@ -884,7 +899,7 @@
          * https://codepen.io/gregh/pen/NdVvbm
          */
 
-        var audioPlayer = document.querySelector('#content');
+        /* var audioPlayer = document.querySelector('#content');
         var playpauseBtn = audioPlayer.querySelector('#play-btn');
         var progress = audioPlayer.querySelector('.progress');
         var sliders = audioPlayer.querySelectorAll('.slider');
@@ -1007,7 +1022,7 @@
             } else {
                 player.pause();
             }
-        }
+        } */
 //# sourceURL=pen.js
     </script>
 
@@ -1135,7 +1150,7 @@ function busquedaJQmultiple() {
            $("#contenidos").load("https://alibhtty.github.io/cyborg/mixtape/player/set/alibhtty/013.html");
                                      });
         $('#alibhtty012').click(function(){
-           $("#contenidos").load("https://alibhtty.github.io/cyborg/mixtape/player/set/alibhtty/012.html");
+           $("#contenidos").load("./set/alibhtty/012.html");
                                      });
                                 });
 </script>
