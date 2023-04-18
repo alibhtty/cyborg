@@ -41,6 +41,24 @@
     <link rel="stylesheet" href="player.css">
     <link rel="stylesheet" href="./agenda/calendar.css">
 
+    <!-- cambio -->
+    <script type="text/javascript" src="http://code.jquery.com/jquery.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#alibhtty-015').click(function(){
+               $("#contenidos").load("set/alibhtty/015.html");
+                                         });
+
+            $('#alibhtty-014').click(function(){
+               $("#contenidos").load("set/alibhtty/014.html");
+                                         });
+
+            $('#alibhtty-013').click(function(){
+               $("#contenidos").load("set/alibhtty/013.html");
+                                         });
+                                    });
+    </script>
+
     <style>
         .float-ban{
             background-image: linear-gradient( rgba(255,255,255,.1), rgba(0,0,0,.8) 100%), url(https://ali-bhtty.web.app/assets/img/banner/ep015.jpg);
@@ -134,7 +152,7 @@
                         </section>
 
                         <!-- BANNER -->
-                        <div class="mixtape-banner sombra-set">
+                        <div id="contenidos" class="mixtape-banner sombra-set">
                             <!-- <div class="set-banner">
                                 <img class="set-img" src="../assets/img/015.jpg" alt="EP. 015">
                             </div> -->
@@ -206,6 +224,20 @@
                                         
                                  </div>
                         </div>
+
+                        <!-- <a href="#" id="Python">Python</a>
+	<a href="#" id="Django">Django</a>
+	<a href="#" id="Jython">Jython</a>
+		<br>
+		<table border="1">
+			<tr>
+				<td>
+					Hola gente soy
+				</td>
+				<td id ="contenido">
+				</td>
+			</tr>
+		</table> -->
                         
 
                         <!-- MIXTAPE -->
@@ -219,7 +251,7 @@
                         					style="background:url('../assets/img/015.jpg') no-repeat; background-size: cover; background-position: center center;">
                         
                         					<div id="cont2">
-                        						<a href="./index-ep13.html">
+                        						<a id="alibhtty-015" href="#">
                         							<img style="filter: invert(100%) contrast(5);" src="../../assets/icons/play.svg" alt="">
                         						</a>
                         					</div>
@@ -234,7 +266,7 @@
                         					style="background:url('../assets/img/014.jpg') no-repeat; background-size: cover; background-position: center center;">
                         
                         					<div id="cont2">
-                        						<a href="./index-ep13.html">
+                        						<a id="alibhtty-014" href="#">
                         							<img style="filter: invert(100%) contrast(5);" src="../../assets/icons/play.svg" alt="">
                         						</a>
                         					</div>
@@ -242,14 +274,14 @@
                         			</a>
                         		</div>
                         
-                        		<div id="imagen" class="opacy">
+                        		<div class="opacy">
                         			<h3 class="header-section fs-desktop-medium fs-xsmall"><a>Ep.013</a></h3>
                         			<a class="buttons aspect-2-3" style="height: 100%;">
                         				<div id="cont1" class="aspect-2-3"
                         					style="background:url('../assets/img/013.jpg') no-repeat; background-size: cover; background-position: center center;">
                         				
                         					<div id="cont2">
-                        						<a href="./index-ep13.html"><img style="filter: invert(100%) contrast(5);" src="../../assets/icons/play.svg" alt=""></a>
+                        						<a id="alibhtty-013" href="#"><img style="filter: invert(100%) contrast(5);" src="../../assets/icons/play.svg" alt=""></a>
                         					</div>
                         				</div>
                         			</a>
@@ -262,7 +294,7 @@
                         					style="background:url('../assets/img/012.jpg') no-repeat; background-size: cover; background-position: center center;">
                         				
                         					<div id="cont2">
-                        						<a href="./index-ep13.html"><img style="filter: invert(100%) contrast(5);" src="../../assets/icons/play.svg" alt=""></a>
+                        						<a id="alibhtty-012" href="./index-ep13.html"><img style="filter: invert(100%) contrast(5);" src="../../assets/icons/play.svg" alt=""></a>
                         					</div>
                         				</div>
                         			</a>
