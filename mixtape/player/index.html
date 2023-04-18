@@ -465,10 +465,56 @@
                         	</div>
                         </section>
                         
-                        <footer id="menu-btn" class="back-menu centrado">
+                        <footer id="menu-btn" class="back-menu centrado" style="overflow: hidden;">
                             <div>
                                 <h2 class="quotes">MENÚ</h2>
                             </div>
+
+                            <shader-doodle style="position: absolute;display: flex; top: 0; width: 100%; height: 4vh; z-index:-1;">
+                                <script type="x-shader/x-fragment">
+                                  float stroke(float x, float s, float w) {
+                                    float d = step(s, x + w * .5) - step(s, x - w * .5);
+                                    return clamp(d, 0., 1.);
+                                  }
+                          
+                                  vec2 rotateUV(vec2 uv, float rotation) {
+                                    float mid = 0.5;
+                                    return vec2(
+                                      cos(rotation) * (uv.x - mid) + sin(rotation) * (uv.y - mid) + mid,
+                                      cos(rotation) * (uv.y - mid) - sin(rotation) * (uv.x - mid) + mid
+                                    );
+                                  }
+                          
+                                  void main() {
+                                    vec2 st = gl_FragCoord.xy / u_resolution;
+                                    vec2 mouse = u_mouse.xy / u_resolution;
+                          
+                                    float grid = 32.;
+                                    // fractional and integer st from grid
+                                    vec2 i_st = floor(st * grid);
+                                    vec2 f_st = fract(st * grid);
+                          
+                                    // diff mouse and int grid centerpoint
+                                    vec2 dm = mouse.xy - ((i_st + .5) / grid);
+                          
+                                    // angle of diff vector
+                                    float d = atan(dm.x, dm.y);
+                                    
+                                    // rotate grid square uv
+                                    f_st = rotateUV(f_st, -d + u_time * .5);
+                          
+                                    vec3 color = vec3(0.);
+                                    
+                                    // draw ten lines
+                                    for (float i = 0.; i <= 10.; i++) {
+                                      color += stroke(f_st.x, -.15 + i * .13, .05);
+                                    }
+                          
+                                    gl_FragColor = vec4(color, 1.);
+                                  }
+                                </script>
+                              </shader-doodle>
+                              <script src='../../catalogo/about/fx.js'></script>
                         </footer>
 
 
