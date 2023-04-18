@@ -18,7 +18,89 @@
 <link rel="stylesheet" href="../../assets/css/player.css">
 <link rel="stylesheet" href="../../assets/css/audiplay.css">
 <script src="../../assets/js/audiplay.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery.js"></script>
 
+<style>
+    #background{
+            background-image: linear-gradient(-180deg,rgba(73,74,79,0) 2%,#252525),radial-gradient(80% 137%,rgba(73,74,79,0) 0,#151515 100%), url(https://alibhtty.github.io/cyborg/mixtape/player/assets/img/set-baner/alibhtty/012.jpg);  
+        }
+        @media screen and (display-mode: standalone) {
+                .float-ban{
+                    width: 100%;
+                }
+            }    
+            @media (max-width: 920px){
+                .float-ban{
+                    width: 100%;
+                }
+            }
+        /* .atras{
+            display: hidden;
+            pointer-events: none;
+            visibility: hidden;
+        }
+        audio.atras{
+            display: hidden;
+            pointer-events: none;
+            visibility: hidden;
+        }
+        .front{
+            z-index: 999;
+        }
+        audio.front{
+            z-index: 999;
+        } */
+</style>
+</head>
+
+
+<div id="contenidos" class="set-data inner colPad left float-ban" style="background-image: linear-gradient( rgba(255,255,255,.1), rgba(0,0,0,.8) 100%), url(https://alibhtty.github.io/cyborg/mixtape/player/assets/img/set-baner/alibhtty/012.jpg);"> <!--  margin-top: 14rem; -->
+                        
+    <!-- <div>
+        <img src="../../assets/img/banner/ep015.jpg" alt="Ali Bhtty Music">
+    </div> -->
+
+    <div style="width: 100%; height: auto;"></div>
+
+
+    <div style="position: absolute; top: 1rem; display:inline-flex;">
+        <img style="width: 45px; box-shadow: 0px 2px 6px 1px rgba(0,0,0,.2); border-radius: 8px; " src="../../mixtape/player/dj/licks/img/cyborg.jpg" alt="">
+        <!-- <h4 class="set-text-min" style="padding: 2px; font-weight: 600;">RADIOSHOW</h4> -->
+        <!-- <div class="noti-set">
+            <h4 style="padding: 3px 0; font-weight: 600;"> NUEVO </h4> 
+        </div> -->
+    </div>
+    <div style="position: absolute; bottom: 13rem; display:inline-flex;">
+        <h4 class="set-text-min present">RADIOSHOW</h4>
+        <!-- <div class="noti-set">
+            <h4 style="padding: 3px 0; font-weight: 600;"> NUEVO </h4> 
+        </div> -->
+    </div>
+     <h2 class="set-text">Ep. 012 <br> Turn It Up</h2>
+     
+     <p class="set-description">Afro House <br>& Moombah<br> 102 BPM.</p>
+
+     <div style="position: absolute; width: fit-content; bottom: 4rem; display: grid;
+     grid-auto-flow: column;
+     grid-column-gap: .3rem;
+     grid-gap: .5rem; margin-bottom: .5rem;">
+        <div class="genero-set set-text-min">
+            <h4 class="genero-text" href="">&nbsp; AFRO &nbsp;</h4>
+        </div>
+        <div class="genero-set set-text-min">
+            <h4 class="genero-text" href="">&nbsp; MOOMBAHTON &nbsp;</h4>
+        </div>
+        <div class="genero-set set-text-min" style="background: rgba(0,0,0,.5);">
+            <h4 class="genero-text" style="color: #cacaca;" href="">&nbsp; +15 min &nbsp;</h4>
+        </div>
+     </div>
+
+     
+    
+    
+    <audio controls="" class="audiplay" nodownload="" >
+        <source src="https://dl.dropbox.com/s/b6av3crndrp70b0/Ep.%20012%20Turn%20It%20Up%20-%20Ali%20Bhtty.mp3?dl=0" type="audio/mp3">
+    </audio>
 
     <!-- <div id="player-container" style="width: 100%;">
         <div id="player-container" style="height: 30px; display: grid; grid-template-columns: 1fr 1fr; column-gap: 15px; padding: 0px 0px;">
@@ -37,9 +119,26 @@
             </div>
         </div>
     </div> -->
-        
-
-    <audio controls class="audiplay front" nodownload>
-        <source src="https://dl.dropbox.com/s/b6av3crndrp70b0/Ep.%20012%20Turn%20It%20Up%20-%20Ali%20Bhtty.mp3?dl=0" type="audio/mp3" />
-    </audio>
  </div>
+
+
+
+ <script type="text/javascript" src="http://code.jquery.com/jquery.js"></script>
+<script>
+    $(document).ready(function(){
+        $('#alibhtty015').click(function(){
+           $("#contenidos").load("https://alibhtty.github.io/cyborg/mixtape/player/set/alibhtty/015.html");
+                                     });
+
+        $('#alibhtty014').click(function(){
+           $("#contenidos").load("https://alibhtty.github.io/cyborg/mixtape/player/set/alibhtty/014.html");
+                                     });
+
+        $('#alibhtty013').click(function(){
+           $("#contenidos").load("https://alibhtty.github.io/cyborg/mixtape/player/set/alibhtty/013.html");
+                                     });
+        $('#alibhtty012').click(function(){
+           $("#contenidos").load("./set/alibhtty/012-2.html");
+                                     });
+                                });
+</script>
