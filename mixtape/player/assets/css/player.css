@@ -333,12 +333,12 @@ h1, h2, h3, h4, h5, h6 {
             top: 0;
             width: 100%;
             z-index: 1;
-            -webkit-backdrop-filter: blur(100px) saturate(1.6) brightness(1.6) contrast(1.2);
-            -webkit-filter: blur(100px) saturate(1.6) brightness(1.6) contrast(1.2);
-            -moz-filter: blur(100px) saturate(1.6) brightness(1.6) contrast(1.2);
-            -ms-filter: blur(100px) saturate(1.6) brightness(1.6) contrast(1.2);
-            -o-filter: blur(100px) saturate(1.6) brightness(1.6) contrast(1.2);
-            filter: blur(70px) saturate(1.6) brightness(1.6) contrast(1.2);
+            -webkit-backdrop-filter: blur(100px) saturate(1.6) brightness(1.7) contrast(1.2);
+            -webkit-filter: blur(100px) saturate(1.6) brightness(1.7) contrast(1.2);
+            -moz-filter: blur(100px) saturate(1.6) brightness(1.7) contrast(1.2);
+            -ms-filter: blur(100px) saturate(1.6) brightness(1.7) contrast(1.2);
+            -o-filter: blur(100px) saturate(1.6) brightness(1.7) contrast(1.2);
+            filter: blur(70px) saturate(1.6) brightness(1.7) contrast(1.2);
             -webkit-transition: background-image 0.25s ease;
             -moz-transition: background-image 0.25s ease;
             -ms-transition: background-image 0.25s ease;
@@ -1739,3 +1739,37 @@ h1, h2, h3, h4, h5, h6 {
           outline-color: transparent; 
           outline-style: none;
         }
+
+
+        html, body {
+            position: fixed;
+            overflow: hidden;
+            overscroll-behavior: contain;
+            overscroll-behavior-x: contain;
+            overscroll-behavior-y: none;
+
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            -webkit-tap-highlight-color:  rgba(255, 255, 255, 0.5);
+          }
+          @media screen and (display-mode: standalone){
+            html, body {
+            position: fixed;
+            overflow: hidden;
+            overscroll-behavior: contain;
+            overscroll-behavior-x: contain;
+            overscroll-behavior-y: none;
+
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            -webkit-tap-highlight-color:  rgba(255, 255, 255, 0.3);
+            }
+          }
