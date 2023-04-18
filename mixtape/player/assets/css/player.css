@@ -637,7 +637,7 @@ h1, h2, h3, h4, h5, h6 {
         }
 
         div#sidemenu ul a.menu-item:hover {
-            background: #212121;
+            background: #000000; /* 212121 */
             border-radius: 6px;
         }
 
@@ -689,34 +689,45 @@ h1, h2, h3, h4, h5, h6 {
 
         div#song-options div#song-info img {
             float: left;
-            width: 100px;
+            width: 6rem; /* 100px */
             -webkit-box-shadow: 0 2px 5px rgba(50, 50, 50, 0.2);
             -moz-box-shadow: 0 2px 5px rgba(50, 50, 50, 0.2);
             box-shadow: 0 2px 5px rgba(50, 50, 50, 0.2);
         }
 
         div#song-options div#song-info div.artist-wrap {
+            margin: 1rem;
+            /* width: 100%; */
+            /* background-color: #2ecc71; */
             box-sizing: border-box;
-            float: right;
-            padding: 0 0 0 8px;
-            width: calc(100% - 50px);
+            /* float: right; */
+            /* position: absolute; */
+            padding: 0 0 0 6rem;
+            /* width: calc(100% - 50px); */
         }
 
         div#song-options div#song-info div.artist-wrap p {
+            line-height: 12px;
             bottom: 0; /* 4px */
-            margin-left: 4rem; /* none */
-            font-size: 36px; /* 16px */
-            position: absolute;
+            /* margin-left: 6rem; */
+            font-size: 26px; /* 16px */
+            /* position: absolute; */
         }
 
         div#song-options div#song-info div.artist-wrap p span {
             display: block;
-            font-size: 30px;
+            font-size: 22px;
         }
 
         div#song-options div#song-info div.artist-wrap p span.artist {
-            font-size: 25px; /* 12px */
+            font-size: 18px; /* 12px */
             font-weight: 300;
+            margin: 1rem 0 0; /* 4px 0 0 */
+        }
+        div#song-options div#song-info div.artist-wrap p span.studio {
+            font-size: 18px; /* 12px */
+            font-weight: 300;
+            color: #aaaaaa;
             margin: 1rem 0 0; /* 4px 0 0 */
         }
 
@@ -1699,7 +1710,7 @@ h1, h2, h3, h4, h5, h6 {
         #buscar{
             width: 100%;
             border: none;
-            background-color: #cacaca;
+            background-color: #f1f1f1;
             padding: 10px 20px;
             border-radius: 25px;
             color: #000000;

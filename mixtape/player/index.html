@@ -6,7 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=0">
     <meta name="apple-mobile-web-app-title" content="Cyborg">
     <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <!-- Haga que el título de la aplicación sea diferente al título de la página. -->
+    <meta name="apple-mobile-web-app-title" content="Cyborg">
+    <!-- Habilitar la detección automática de números de teléfono. -->
+    <meta name="format-detection" content="telephone=yes">
+
     <title>Cyborg it's ready!</title>
     <meta name="msapplication-TileColor" content="#2da3ba">
     <meta name="referrer" content="always" />
@@ -21,8 +28,8 @@
     <link rel="manifest" href="../../manifest.json">
     <link rel="shortcut icon" type="image/x-icon" href="../../assets/icons/icon_192.ico">
 
-    <link rel="stylesheet" href="../guias/css/style-global.css"> <!-- ../guias/css/style-global.css -->
-    <link integrity="" rel="stylesheet" href="../guias/css/style-guias.css">
+    <!-- <link rel="stylesheet" href="../guias/css/style-global.css">
+    <link integrity="" rel="stylesheet" href="../guias/css/style-guias.css"> -->
     <!-- <link href='https://fonts.googleapis.com/css?family=Lato:400,700,900' rel='stylesheet' type='text/css'>
     <script src="https://use.typekit.net/hoy3lrg.js"></script>
     <script>try { Typekit.load({ async: true }); } catch (e) { }</script> -->
@@ -188,10 +195,12 @@
                                      </div>
                             
                                      
+                                    <a class="baned">
+                                        <audio controls class="audiplay" nodownload >
+                                            <source src="https://dl.dropbox.com/s/z1z6ybtxdd6f77t/Ep.%20015%20House%20Sause%20-%20Ali%20Bhtty.mp3?dl=0" type="audio/mp3" />
+                                        </audio>
+                                    </a>
                                     
-                                    <audio controls class="audiplay" nodownload>
-                                        <source src="https://dl.dropbox.com/s/z1z6ybtxdd6f77t/Ep.%20015%20House%20Sause%20-%20Ali%20Bhtty.mp3?dl=0" type="audio/mp3" />
-                                    </audio>
                                     
 
                                     <!-- <script type="text/javascript">
@@ -519,8 +528,12 @@
                 </div>
 
                 <div id="sidemenu">
-                    <!-- <ul>
-                        <a href="../../catalogo/index.html" class="menu-item">
+                    
+                    <ul>
+                        <a class="menu-item">
+                            <input type="text" id="buscar" onkeyup="buscar()" placeholder="Buscar" title="Empieza a escribir para buscar">
+                        </a>
+                        <!-- <a href="../../catalogo/index.html" class="menu-item">
                             <i class="fa fa-search fa-fw" aria-hidden="true"></i> &nbsp;
                             Catálogo
                         </a>
@@ -535,8 +548,8 @@
                         <a href="../../menu/index.html" class="menu-item" class="menu-item">
                             <i class="fa fa-cog fa-fw" aria-hidden="true"></i> &nbsp;
                             Menú
-                        </a>
-                    </ul> -->
+                        </a> -->
+                    </ul>
 
 
                     <!-- BUSCADOR -->
@@ -544,7 +557,7 @@
                         <!-- Main Content-->
                         <div class="masthead">
                           
-                      <input type="text" id="buscar" onkeyup="buscar()" placeholder="Buscar" title="Empieza a escribir para buscar">
+                        <!-- aqui va el input buscar -->
                           
                           <div class="table-responsive">
                             <table class="table" id="tabla" data-sort="table">
@@ -608,19 +621,19 @@
                             <img id="headphones-icon" class="svg menu-icons"
                                 src="./assets/icons/calendario.svg" alt=""> <!-- https://emilcarlsson.se/assets/svg/headphone.svg -->
                             <p>
-                            Remix #04
-                                <span>Disponible
-                                    <span style="margin: .5rem; margin-top: 1rem; background-color: rgba(0,0,0,.3); border-radius: 8px;">
-                                        <img style="width: 30%; height: 30%; margin: .5rem; border-radius: 4px;" src="./calling.jpg" alt=""></span>
-                                </span>
+                                Featuring post
+                                <span>En proceso</span>
                             </p>
                         </li>
                         <li>
                             <img id="headphones-icon" class="svg menu-icons"
                                 src="./assets/icons/calendario.svg" alt=""> <!-- https://emilcarlsson.se/assets/svg/loudspeaker.svg -->
                             <p>
-                                featuring post
-                                <span>En proceso</span>
+                                Remix #04
+                                <span>Disponible
+                                    <span style="margin: .5rem; margin-top: 1rem; background-color: rgba(0,0,0,.3); border-radius: 8px;">
+                                        <img style="width: 30%; height: 30%; margin: .5rem; border-radius: 4px;" src="./assets/img/remix/calling.jpg" alt=""></span>
+                                </span>
                             </p>
                         </li>
                         <li>
@@ -644,11 +657,12 @@
                 <div id="song-options" class="menu">
                     <span class="close-btn"><!-- <span>&times;</span> --> BACK</span>
                     <div id="song-info">
-                        <img style="border-radius: 4px;" src="set/ep015.jpg" alt="">
+                        <img style="border-radius: 4px;" src="./assets/img/remix/calling.jpg" alt="">
                         <div class="artist-wrap">
                             <p>
-                                <span class="title">Ep. 015</span>
-                                <span class="artist">Radioshow</span>
+                                <span class="title">Calling</span>
+                                <span class="artist">Jalen & Ali Bhtty</span>
+                                <span class="studio">4bstudio</span>
                             </p>
                         </div>
                     </div>
@@ -1134,7 +1148,7 @@ function busquedaJQmultiple() {
 
 
 <!-- cambio -->
-<script type="text/javascript" src="http://code.jquery.com/jquery.js"></script>
+<!-- <script type="text/javascript" src="http://code.jquery.com/jquery.js"></script> -->
 <script>
     $(document).ready(function(){
         $('#alibhtty015').click(function(){
