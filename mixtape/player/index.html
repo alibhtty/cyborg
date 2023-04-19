@@ -48,6 +48,7 @@
     <link rel="stylesheet" href="assets/css/mixtape.css">
     <link rel="stylesheet" href="./assets/css/player.css">
     <link rel="stylesheet" href="./agenda/calendar.css">
+    <link rel="stylesheet" href="./assets/css/arrow.css">
 
     <style>
         .float-ban{
@@ -465,9 +466,12 @@
                         </section>
                         
                         <footer id="menu-btn" class="back-menu centrado" style="overflow: hidden;">
-                            <div>
+                            <!-- <div>
                                 <h2 class="quotes">MENÚ</h2>
-                            </div>
+                            </div> -->
+                            
+                            <div class="arrow arrow-first"></div>
+                            <div class="arrow arrow-second"></div>
 
                             <shader-doodle style="position: absolute;display: flex; top: 0; width: 100%; height: 6rem; opacity: 30%; z-index:-1;">
                                 <script type="x-shader/x-fragment">
@@ -1200,24 +1204,7 @@ function busquedaJQmultiple() {
 
 <!-- cambio -->
 <!-- <script type="text/javascript" src="http://code.jquery.com/jquery.js"></script> -->
-<script>
-    $(document).ready(function(){
-        $('#alibhtty015').click(function(){
-           $("#contenidos").load("https://alibhtty.github.io/cyborg/mixtape/player/set/alibhtty/015.html");
-                                     });
-
-        $('#alibhtty014').click(function(){
-           $("#contenidos").load("https://alibhtty.github.io/cyborg/mixtape/player/set/alibhtty/014.html");
-                                     });
-
-        $('#alibhtty013').click(function(){
-           $("#contenidos").load("https://alibhtty.github.io/cyborg/mixtape/player/set/alibhtty/013.html");
-                                     });
-        $('#alibhtty012').click(function(){
-           $("#contenidos").load("./set/alibhtty/012-2.html");
-                                     });
-                                });
-</script>
+<script type="text/javascript" src="./assets/js/chunks.js"></script>
 </body>
 
 </html>
