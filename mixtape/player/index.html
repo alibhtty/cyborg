@@ -67,6 +67,12 @@
 
 <body translate="no">
 
+    <script>
+        function cambiar() {
+            document.getElementById("antes").src="https://dl.dropbox.com/s/b6av3crndrp70b0/Ep.%20012%20Turn%20It%20Up%20-%20Ali%20Bhtty.mp3?dl=0"
+        }
+    </script>
+
     <div id="wrapper">
         <div id="iphone">
             <div id="camera">
@@ -151,8 +157,8 @@
                                 <img class="set-img" src="../assets/img/015.jpg" alt="EP. 015">
                             </div> -->
                         
-                                <span>
-                                    <div class="set-data inner colPad left float-ban"> <!--  margin-top: 14rem; -->
+                                <span id="float-ban">
+                                    <div id="#zoom-btn" class="set-data inner colPad left float-ban"> <!--  margin-top: 14rem; -->
                         
                                         <!-- <div>
                                             <img src="../../assets/img/banner/ep015.jpg" alt="Ali Bhtty Music">
@@ -196,7 +202,7 @@
                                          
                                         <a class="baned">
                                             <audio controls class="audiplay" nodownload >
-                                                <source src="https://dl.dropbox.com/s/z1z6ybtxdd6f77t/Ep.%20015%20House%20Sause%20-%20Ali%20Bhtty.mp3?dl=0" type="audio/mp3" />
+                                                <source id="antes" src="https://dl.dropbox.com/s/z1z6ybtxdd6f77t/Ep.%20015%20House%20Sause%20-%20Ali%20Bhtty.mp3?dl=0" type="audio/mp3" />
                                             </audio>
                                         </a>
                                         
@@ -723,7 +729,7 @@
                         </li>
                         <li>
                             <img id="album-icon" class="svg menu-icons"
-                                src="https://emilcarlsson.se/assets/svg/compact-disc.svg" alt="">
+                                src="./assets/icons/compact-disc.svg" alt="">
                                 &nbsp; View Album
                         </li>
                         <li>
@@ -890,6 +896,12 @@
         $("#menu-btn").click(function () {
             $("#content-wrap").addClass('inactive');
             $("#sidemenu").addClass('active');
+        });
+
+        // Zoomtouch
+        $("#float-ban").click(function () {
+            $("#wrapper").addClass('inactive');
+            $(".float-ban").addClass('active');
         });
 
         // Home Button

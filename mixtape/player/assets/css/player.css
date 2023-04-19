@@ -256,11 +256,11 @@ h1, h2, h3, h4, h5, h6 {
             overflow: hidden;
             position: relative;
             z-index: 5;
-            -webkit-transition: transform 0.25s ease;
-            -moz-transition: transform 0.25s ease;
-            -ms-transition: transform 0.25s ease;
-            -o-transition: transform 0.25s ease;
-            transition: transform 0.25s ease;
+            -webkit-transition: transform 0.55s ease;
+            -moz-transition: transform 0.55s ease;
+            -ms-transition: transform 0.55s ease;
+            -o-transition: transform 0.55s ease;
+            transition: transform 0.55s ease; /* 0.25s */
         }
 
         div#content-wrap.minimized {
@@ -278,6 +278,21 @@ h1, h2, h3, h4, h5, h6 {
             -webkit-transform: scale(0.85) translate(0, 60%);
             transform: scale(0.85) translate(0, 40%);
             border-radius: 20px;
+        }
+
+        /* animacion banner */
+        @media screen and (display-mode: standalone){
+            div#content-wrap {
+                height: 55%;
+            }
+            div#content-wrap.inactive {
+                -moz-transform: scale(0.85) translate(0, 60%);
+                -o-transform: scale(0.85) translate(0, 60%);
+                -ms-transform: scale(0.85) translate(0, 60%);
+                -webkit-transform: scale(0.85) translate(0, 60%);
+                transform: scale(0.85) translate(0, 90%);
+                border-radius: 20px;
+            }
         }
 
         div#content-wrap.inactive div#header{
@@ -1093,6 +1108,26 @@ h1, h2, h3, h4, h5, h6 {
         }
 
 
+        /* #float-ban{
+            -moz-transform: scale(0.85) translate(0, 10%);
+            -o-transform: scale(0.85) translate(0, 10%);
+            -ms-transform: scale(0.85) translate(0, 10%);
+            -webkit-transform: scale(0.85) translate(0, 10%);
+            transform: scale(0.85) translate(0, 10%);
+            border-radius: 20px;
+        } */
+        #float-ban.inactive{
+            /* transform: scale(0.8) translate(0, 10%); */
+
+            -moz-transform: scale(0.85) translate(0, 10%);
+            -o-transform: scale(0.85) translate(0, 10%);
+            -ms-transform: scale(0.85) translate(0, 10%);
+            -webkit-transform: scale(0.85) translate(0, 10%);
+            transform: scale(0.85) translate(0, 10%);
+            border-radius: 20px;
+        }
+
+
 
 
 
@@ -1413,6 +1448,13 @@ h1, h2, h3, h4, h5, h6 {
 
 
 
+
+
+        @media (orientation: portrait) {
+            html, body{
+                height: 70%;
+            }
+          }
 
         /* --------                    -------- */
         /* --------     STANDALONE     -------- */
