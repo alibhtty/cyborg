@@ -1452,8 +1452,7 @@ h1, h2, h3, h4, h5, h6 {
 
         @media (orientation: portrait) {
             html, body{
-                height: 90%;
-                bottom: 0;
+                height: 100%;
             }
           }
 
@@ -1461,6 +1460,9 @@ h1, h2, h3, h4, h5, h6 {
         /* --------     STANDALONE     -------- */
         /* --------                    -------- */
         @media screen and (display-mode: standalone) {
+            body{
+                height: 110%;
+            }
             /* header {
                 height: 80px !important;
             } */
