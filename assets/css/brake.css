@@ -1,7 +1,7 @@
 /* pwa @alibhtty  */
 html, body {
-    position: fixed;
-    overflow: hidden;
+    /* position: fixed;
+    overflow: hidden; */
     overscroll-behavior: contain;
     overscroll-behavior-x: contain;
     overscroll-behavior-y: none;
@@ -16,8 +16,8 @@ html, body {
   }
   @media screen and (display-mode: standalone){
     html, body {
-    position: fixed;
-    overflow: hidden;
+    /* position: fixed;
+    overflow: hidden; */
     overscroll-behavior: contain;
     overscroll-behavior-x: contain;
     overscroll-behavior-y: none;
