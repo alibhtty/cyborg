@@ -1450,13 +1450,13 @@ h1, h2, h3, h4, h5, h6 {
 
 
 
-        @media (orientation: portrait) {
+        /* @media (orientation: portrait) {
             html, body{
                 height: 100%;
                 top: 0;
                 bottom: 0;
             }
-          }
+          } */
 
         /* --------                    -------- */
         /* --------     STANDALONE     -------- */
