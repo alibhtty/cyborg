@@ -44,12 +44,18 @@
     <!-- ball -->
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"> -->
 
+    <!-- agenda -->
+    <!-- <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.2/css/bootstrap-grid.css'> -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css'>
+    <link rel="stylesheet" href="./agenda/agenda.css">
+
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
     <link preload rel="stylesheet" href="./assets/css/audiplay.css">
     <link rel="stylesheet" href="assets/css/mixtape.css">
     <link rel="stylesheet" href="./assets/css/player.css">
-    <link rel="stylesheet" href="./agenda/calendar.css">
+    <!-- <link rel="stylesheet" href="./agenda/calendar.css"> -->
     <link rel="stylesheet" href="./assets/css/arrow.css">
 
     <style>
@@ -281,7 +287,7 @@
                         			</a>
                         		</div>
                         
-                        		<div class="opacy">
+                        		<div id="imagen" class="opacy">
                         			<h3 class="header-section fs-desktop-medium fs-xsmall"><a>Ep.013</a></h3>
                         			<a class="buttons aspect-2-3" style="height: 100%;">
                         				<div id="cont1" class="aspect-2-3"
@@ -680,10 +686,125 @@
                 <div id="bluetooth-devices" class="menu">
                     <span class="close-btn"><!-- <span>&times;</span> --> BACK</span>
                     <h3>NEXT</h3>
-                    <ul>
+
+                    <!-- eventos -->
+                    <div class="mobile-header z-depth-1">
+
+                        <div class="row">
+                          <div class="col-2">
+                            <a href="#" data-activates="sidebar" class="button-collapse">
+                              <i class="material-icons">Fechas</i>
+                            </a>
+                          </div>
+                          <!-- <div class="col">
+                            <h4>   </h4>
+                          </div> -->
+                        </div>
+                  
+                      </div>
+                  
+                      <div class="main-wrapper">
+                  
+                        <div class="sidebar-wrapper z-depth-2 side-nav fixed" id="sidebar">
+                  
+                          <div class="sidebar-title">
+                            <h4>Eventos</h4>
+                            <h5 id="eventDayName">Fechas</h5>
+                          </div>
+                          <div class="sidebar-events" id="sidebarEvents">
+                            <div class="empty-message">Sorry, no hay eventos hasta esa fecha</div>
+                          </div>
+                  
+                        </div>
+                  
+                        <div class="content-wrapper ">
+                          <div class="container">
+                  
+                            <div class="calendar-wrapper z-depth-2">
+                  
+                              <div class="header-background">
+                                <div class="calendar-header">
+                  
+                                  <a class="prev-button" id="prev">
+                                    <i class="material-icons"> x </i>
+                                  </a>
+                                  <a class="next-button" id="next">
+                                    <i class="material-icons"> x </i>
+                                  </a>
+                  
+                                  <div class="row header-title">
+                  
+                                    <div class="header-text">
+                                      <h3 id="month-name">February</h3>
+                                      <h5 id="todayDayName">Today is Friday 7 Feb</h5>
+                                    </div>
+                  
+                                  </div>
+                                </div>
+                              </div>
+                  
+                              <div class="calendar-content">
+                                <div id="calendar-table" class="calendar-cells">
+                  
+                                  <div id="table-header">
+                                    <div class="row">
+                                      <div class="col">Lun</div>
+                                      <div class="col">Mar</div>
+                                      <div class="col">Mie</div>
+                                      <div class="col">Jue</div>
+                                      <div class="col">Vie</div>
+                                      <div class="col">Sab</div>
+                                      <div class="col">Dom</div>
+                                    </div>
+                                  </div>
+                  
+                                  <div id="table-body" class="">
+                  
+                                  </div>
+                  
+                                </div>
+                              </div>
+                  
+                              <div class="calendar-footer">
+                                <div class="emptyForm" id="emptyForm">
+                                  <h4 id="emptyFormTitle">Ahora no hay eventos</h4>
+                                  <a class="addEvent" id="changeFormButton">Add new</a>
+                                </div>
+                                <div class="addForm" id="addForm">
+                                  <h4>Añadir nuevo</h4>
+                  
+                                  <div class="row">
+                                    <div class="input-field col s6">
+                                      <input id="eventTitleInput" type="text" class="validate">
+                                      <label for="eventTitleInput">Título</label>
+                                    </div>
+                                    <div class="input-field col s6">
+                                      <input id="eventDescInput" type="text" class="validate">
+                                      <label for="eventDescInput">Descripción</label>
+                                    </div>
+                                  </div>
+                  
+                                  <div class="addEventButtons">
+                                    <a class="waves-effect waves-light btn blue lighten-2" id="addEventButton">Listo</a>
+                                    <a class="waves-effect waves-light btn grey lighten-2" id="cancelAdd">Cancelar</a>
+                                  </div>
+                  
+                                </div>
+                              </div>
+                  
+                            </div>
+                  
+                          </div>
+                        </div>
+                  
+                    </div>
+
+
+
+                    <!-- <ul>
                         <li class="connected">
                             <img id="headphones-icon" class="svg menu-icons"
-                                src="./assets/icons/calendario.svg" alt=""> <!-- https://emilcarlsson.se/assets/svg/headphone.svg -->
+                                src="./assets/icons/calendario.svg" alt=""> <!-- https://emilcarlsson.se/assets/svg/headphone.svg - ->
                             <p>
                                 Featuring post
                                 <span>En proceso</span>
@@ -691,7 +812,7 @@
                         </li>
                         <li>
                             <img id="headphones-icon" class="svg menu-icons"
-                                src="./assets/icons/calendario.svg" alt=""> <!-- https://emilcarlsson.se/assets/svg/loudspeaker.svg -->
+                                src="./assets/icons/calendario.svg" alt=""> <!-- https://emilcarlsson.se/assets/svg/loudspeaker.svg - ->
                             <p>
                                 Remix #04
                                 <span>Disponible
@@ -702,7 +823,7 @@
                         </li>
                         <li>
                             <img id="headphones-icon" class="svg menu-icons"
-                                src="./assets/icons/calendario.svg" alt=""> <!-- https://emilcarlsson.se/assets/svg/car.svg -->
+                                src="./assets/icons/calendario.svg" alt=""> <!-- https://emilcarlsson.se/assets/svg/car.svg - ->
                             <p>
                                 2B2
                                 <span>En proceso</span>
@@ -711,10 +832,10 @@
                     </ul>
                     <p class="info-text">
                         Make sure your bluetooth device is turned on and in range.
-                    </p> <br><br>
+                    </p> <br><br> -->
 
                     <!-- calendario -->
-                    <div id="app"></div>
+                    <!-- <div id="app"></div> -->
                     
                 </div>
 
@@ -849,118 +970,6 @@
                                 <h3 class="dj-name header-section fs-desktop-medium fs-xsmall"><a>Ep.008</a></h3>
                             </div>
                     
-                            <div id="imagen" class="opacy">
-                                <a class="buttons aspect-2-3 aspect-2-3-mini" style="height: 100%;">
-                                    <div id="cont1" class="aspect-2-3 aspect-2-3-mini"
-                                        style="background:url('../assets/img/007.jpg') no-repeat; background-size: cover; background-position: center center;">
-                                    
-                                        <div id="cont2">
-                                            <a href="#"><img style="filter: invert(100%) contrast(5);" src="../../assets/icons/play.svg" alt=""></a>
-                                        </div>
-                                    </div>
-                                    
-                                </a>
-                                <h3 class="dj-name header-section fs-desktop-medium fs-xsmall"><a>Ep.007</a></h3>
-                            </div>
-                    
-                            <div id="imagen" class="opacy">
-                                <a class="buttons aspect-2-3 aspect-2-3-mini" style="height: 100%;">
-                                    <div id="cont1" class="aspect-2-3 aspect-2-3-mini"
-                                        style="background:url('../assets/img/006.jpg') no-repeat; background-size: cover; background-position: center center;">
-                                    
-                                        <div id="cont2">
-                                            <a href="#"><img style="filter: invert(100%) contrast(5);" src="../../assets/icons/play.svg" alt=""></a>
-                                        </div>
-                                    </div>
-                                    
-                                </a>
-                                <h3 class="dj-name header-section fs-desktop-medium fs-xsmall"><a>Ep.006</a></h3>
-                            </div>
-                    
-                            <div id="imagen" class="opacy">
-                                <a class="buttons aspect-2-3 aspect-2-3-mini" style="height: 100%;">
-                                    <div id="cont1" class="aspect-2-3 aspect-2-3-mini"
-                                        style="background:url('../assets/img/005.jpg') no-repeat; background-size: cover; background-position: center center;">
-                                    
-                                        <div id="cont2">
-                                            <a href="#"><img style="filter: invert(100%) contrast(5);" src="../../assets/icons/play.svg" alt=""></a>
-                                        </div>
-                                    </div>
-                                    
-                                </a>
-                                <h3 class="dj-name header-section fs-desktop-medium fs-xsmall"><a>Ep.005</a></h3>
-                            </div>
-                    
-                            <div id="imagen" class="opacy">
-                                <a class="buttons aspect-2-3 aspect-2-3-mini" style="height: 100%;">
-                                    <div id="cont1" class="aspect-2-3 aspect-2-3-mini"
-                                        style="background:url('../assets/img/013.jpg') no-repeat; background-size: cover; background-position: center center;">
-                                    
-                                        <div id="cont2">
-                                            <a href="#"><img style="filter: invert(100%) contrast(5);" src="../../assets/icons/play.svg" alt=""></a>
-                                        </div>
-                                    </div>
-                                    
-                                </a>
-                                <h3 class="dj-name header-section fs-desktop-medium fs-xsmall"><a>Ep.004</a></h3>
-                            </div>
-                    
-                            <div id="imagen" class="opacy">
-                                <a class="buttons aspect-2-3 aspect-2-3-mini" style="height: 100%;">
-                                    <div id="cont1" class="aspect-2-3 aspect-2-3-mini"
-                                        style="background:url('../assets/img/003.jpg') no-repeat; background-size: cover; background-position: center center;">
-                                    
-                                        <div id="cont2">
-                                            <a href="#"><img style="filter: invert(100%) contrast(5);" src="../../assets/icons/play.svg" alt=""></a>
-                                        </div>
-                                    </div>
-                                    
-                                </a>
-                                <h3 class="dj-name header-section fs-desktop-medium fs-xsmall"><a>Ep.003</a></h3>
-                            </div>
-                    
-                            <div id="imagen" class="opacy">
-                                <a class="buttons aspect-2-3 aspect-2-3-mini" style="height: 100%;">
-                                    <div id="cont1" class="aspect-2-3 aspect-2-3-mini"
-                                        style="background:url('../assets/img/002.jpg') no-repeat; background-size: cover; background-position: center center;">
-                                    
-                                        <div id="cont2">
-                                            <a href="sesiones/index.html"><img style="filter: invert(100%) contrast(5);" src="../../assets/icons/play.svg" alt=""></a>
-                                        </div>
-                                    </div>
-                                    
-                                </a>
-                                <h3 class="dj-name header-section fs-desktop-medium fs-xsmall"><a>Ep.002</a></h3>
-                            </div>
-                    
-                            <div id="imagen" class="opacy">
-                                <a class="buttons aspect-2-3 aspect-2-3-mini" style="height: 100%;">
-                                    <div id="cont1" class="aspect-2-3 aspect-2-3-mini"
-                                        style="background:url('../assets/img/001.jpg') no-repeat; background-size: cover; background-position: center center;">
-                    
-                                        <div id="cont2">
-                                            <a href="sesiones/index.html"><img style="filter: invert(100%) contrast(5);" src="../../assets/icons/play.svg" alt=""></a>
-                                        </div>
-                                        <!-- <div id="info" style="height: 100%;">
-                                            <a href="https://www.mixcloud.com/alibhtty/dirty-house-mix-ali-bhtty-2014/" id="mas-info" target="_blank"></a>
-                                            <div id="player-containers">
-                                                <div id="play-pauses" class="pausa">
-                                                </div>
-                                            </div>
-                    
-                                            <div class="iframe" style="background:transparent; position: absolute; bottom: 0; left: 0; pointer-events: none;">
-                                                <h4 class="iframe-text">	
-                                                    Dirty House <br> by Ali&nbsp;Bhtty
-                                                </h4>
-                                            </div>
-                                            <!-- <iframe style="border-radius:18px; position: absolute; bottom: 0; padding-top: 10px;opacity: .1%;" width="100%" height="60" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&mini=1&hide_artwork=1&feed=%2Falibhtty%2Fep-011-blackouts-ali-bhtty-live-set%2F" loading="lazy" frameborder="0" ></iframe> - ->
-                                        </div> -->
-                                    </div>
-                                    
-                                </a>
-                                <h3 class="dj-name header-section fs-desktop-medium fs-xsmall"><a>Ep.001</a></h3>
-                            </div>
-                    
                         </div>
                     </section>
                     <!-- RANKING -->
@@ -973,7 +982,7 @@
                                         style="background:url('../assets/img/015.jpg') no-repeat; background-size: cover; background-position: center center;">
                     
                                         <div id="cont2">
-                                            <a id="alibhtty015" href="#">
+                                            <a id="alibhtty02" href="#">
                                                 <img style="filter: invert(100%) contrast(5);" src="../../assets/icons/play.svg" alt="">
                                             </a>
                                         </div>
@@ -988,7 +997,7 @@
                                         style="background:url('../assets/img/014.jpg') no-repeat; background-size: cover; background-position: center center;">
                     
                                         <div id="cont2">
-                                            <a id="alibhtty014" href="#">
+                                            <a id="alibhtty03" href="#">
                                                 <img style="filter: invert(100%) contrast(5);" src="../../assets/icons/play.svg" alt="">
                                             </a>
                                         </div>
@@ -996,14 +1005,14 @@
                                 </a>
                             </div>
                     
-                            <div class="opacy">
+                            <div id="imagen" class="opacy">
                                 <h3 class="header-section fs-desktop-medium fs-xsmall"><a>Ep.013</a></h3>
                                 <a class="buttons aspect-2-3" style="height: 100%;">
                                     <div id="cont1" class="aspect-2-3"
                                         style="background:url('../assets/img/013.jpg') no-repeat; background-size: cover; background-position: center center;">
                                     
                                         <div id="cont2">
-                                            <a id="alibhtty013" href="#"><img style="filter: invert(100%) contrast(5);" src="../../assets/icons/play.svg" alt=""></a>
+                                            <a id="alibhtty04" href="#"><img style="filter: invert(100%) contrast(5);" src="../../assets/icons/play.svg" alt=""></a>
                                         </div>
                                     </div>
                                 </a>
@@ -1016,7 +1025,7 @@
                                         style="background:url('../assets/img/012.jpg') no-repeat; background-size: cover; background-position: center center;">
                                     
                                         <div id="cont2">
-                                            <a id="alibhtty012" href="#"><img style="filter: invert(100%) contrast(5);" src="../../assets/icons/play.svg" alt=""></a>
+                                            <a id="alibhtty05" href="#"><img style="filter: invert(100%) contrast(5);" src="../../assets/icons/play.svg" alt=""></a>
                                         </div>
                                     </div>
                                 </a>
@@ -1029,7 +1038,7 @@
                                         style="background:url('../assets/img/011.jpg') no-repeat; background-size: cover; background-position: center center;">
                                     
                                         <div id="cont2">
-                                            <a id="alibhtty011" href="#"><img style="filter: invert(100%) contrast(5);" src="../../assets/icons/play.svg" alt=""></a>
+                                            <a id="alibhtty06" href="#"><img style="filter: invert(100%) contrast(5);" src="../../assets/icons/play.svg" alt=""></a>
                                         </div>
                                     </div>
                                 </a>
@@ -1042,7 +1051,7 @@
                                         style="background:url('../assets/img/010.jpg') no-repeat; background-size: cover; background-position: center center;">
                                     
                                         <div id="cont2">
-                                            <a id="alibhtty010" href="#"><img style="filter: invert(100%) contrast(5);" src="../../assets/icons/play.svg" alt=""></a>
+                                            <a id="alibhtty7" href="#"><img style="filter: invert(100%) contrast(5);" src="../../assets/icons/play.svg" alt=""></a>
                                         </div>
                                     </div>
                                 </a>
@@ -1068,7 +1077,7 @@
                                         style="background:url('../assets/img/008.jpg') no-repeat; background-size: cover; background-position: center center;">
                                     
                                         <div id="cont2">
-                                            <a id="alibhtty008" href="#"><img style="filter: invert(100%) contrast(5);" src="../../assets/icons/play.svg" alt=""></a>
+                                            <a id="alibhtty08" href="#"><img style="filter: invert(100%) contrast(5);" src="../../assets/icons/play.svg" alt=""></a>
                                         </div>
                                     </div>
                                 </a>
@@ -1081,7 +1090,7 @@
                                         style="background:url('../assets/img/007.jpg') no-repeat; background-size: cover; background-position: center center;">
                                     
                                         <div id="cont2">
-                                            <a href="#"><img style="filter: invert(100%) contrast(5);" src="../../assets/icons/play.svg" alt=""></a>
+                                            <a id="alibhtty09" href="#"><img style="filter: invert(100%) contrast(5);" src="../../assets/icons/play.svg" alt=""></a>
                                         </div>
                                     </div>
                                 </a>
@@ -1094,7 +1103,7 @@
                                         style="background:url('../assets/img/006.jpg') no-repeat; background-size: cover; background-position: center center;">
                                     
                                         <div id="cont2">
-                                            <a href="#"><img style="filter: invert(100%) contrast(5);" src="../../assets/icons/play.svg" alt=""></a>
+                                            <a id="alibhtty0000" href="#"><img style="filter: invert(100%) contrast(5);" src="../../assets/icons/play.svg" alt=""></a>
                                         </div>
                                     </div>
                                 </a>
@@ -1107,7 +1116,7 @@
                                         style="background:url('../assets/img/005.jpg') no-repeat; background-size: cover; background-position: center center;">
                                     
                                         <div id="cont2">
-                                            <a href="#"><img style="filter: invert(100%) contrast(5);" src="../../assets/icons/play.svg" alt=""></a>
+                                            <a id="alibhtty0001" href="#"><img style="filter: invert(100%) contrast(5);" src="../../assets/icons/play.svg" alt=""></a>
                                         </div>
                                     </div>
                                 </a>
@@ -1120,7 +1129,7 @@
                                         style="background:url('../assets/img/013.jpg') no-repeat; background-size: cover; background-position: center center;">
                                     
                                         <div id="cont2">
-                                            <a href="#"><img style="filter: invert(100%) contrast(5);" src="../../assets/icons/play.svg" alt=""></a>
+                                            <a id="alibhtty0002" href="#"><img style="filter: invert(100%) contrast(5);" src="../../assets/icons/play.svg" alt=""></a>
                                         </div>
                                     </div>
                                 </a>
@@ -1133,7 +1142,7 @@
                                         style="background:url('../assets/img/003.jpg') no-repeat; background-size: cover; background-position: center center;">
                                     
                                         <div id="cont2">
-                                            <a href="#"><img style="filter: invert(100%) contrast(5);" src="../../assets/icons/play.svg" alt=""></a>
+                                            <a id="alibhtty0003" href="#"><img style="filter: invert(100%) contrast(5);" src="../../assets/icons/play.svg" alt=""></a>
                                         </div>
                                     </div>
                                 </a>
@@ -1146,7 +1155,7 @@
                                         style="background:url('../assets/img/002.jpg') no-repeat; background-size: cover; background-position: center center;">
                                     
                                         <div id="cont2">
-                                            <a href="sesiones/index.html"><img style="filter: invert(100%) contrast(5);" src="../../assets/icons/play.svg" alt=""></a>
+                                            <a id="alibhtty0004" href="sesiones/index.html"><img style="filter: invert(100%) contrast(5);" src="../../assets/icons/play.svg" alt=""></a>
                                         </div>
                                     </div>
                                 </a>
@@ -1159,7 +1168,7 @@
                                         style="background:url('../assets/img/001.jpg') no-repeat; background-size: cover; background-position: center center;">
                     
                                         <div id="cont2">
-                                            <a href="sesiones/index.html"><img style="filter: invert(100%) contrast(5);" src="../../assets/icons/play.svg" alt=""></a>
+                                            <a id="alibhtty0005" href="sesiones/index.html"><img style="filter: invert(100%) contrast(5);" src="../../assets/icons/play.svg" alt=""></a>
                                         </div>
                                         <!-- <div id="info" style="height: 100%;">
                                             <a href="https://www.mixcloud.com/alibhtty/dirty-house-mix-ali-bhtty-2014/" id="mas-info" target="_blank"></a>
@@ -1363,10 +1372,10 @@
         });
 
         // Zoomtouch
-        $("#float-ban").click(function () {
+        /* $("#float-ban").click(function () {
             $("#wrapper").addClass('inactive');
             $(".float-ban").addClass('active');
-        });
+        }); */
 
         // Home Button
         $("#home-btn").click(function () {
@@ -1676,9 +1685,24 @@ function busquedaJQmultiple() {
     </script>
      <script src="https://cpwebassets.codepen.io/assets/editor/iframe/iframeRefreshCSS-44fe83e49b63affec96918c9af88c0d80b209a862cf87ac46bc933074b8c557d.js"></script> -->
 
-<!-- cambio -->
+<!-- cambios html -->
 <!-- <script type="text/javascript" src="http://code.jquery.com/jquery.js"></script> -->
 <script type="text/javascript" src="./assets/js/chunks.js"></script>
+
+<!-- agenda -->
+    <script src="./agenda/agenda.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+        <script>
+          $(".button-collapse").sideNav();
+        </script>
+    </html>
+    <script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-2c7831bb44f98c1391d6a4ffda0e1fd302503391ca806e7fcc7b9b87197aec26.js"></script>
+    
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/js/bootstrap.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+
 </body>
 
 </html>

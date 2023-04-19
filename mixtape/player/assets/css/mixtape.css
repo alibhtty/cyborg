@@ -2070,11 +2070,10 @@
   } */
 
 
-  @media (max-width: 920px) {
+  /* @media (max-width: 920px) {
     .roster-lane > div {
       display: inline-block;
-      width: 120px;    /* 140px */
-      /* width: 367px; */
+      width: 120px;
       margin-right: 1.5em;
     }
     .roster-lane {
@@ -2082,7 +2081,6 @@
       overflow-x: scroll;
       white-space: nowrap;
       padding: 0rem 1rem;
-      /* padding-bottom: 1rem; */
       position: relative;
     }
 
@@ -2096,11 +2094,10 @@
       overflow-x: scroll;
       white-space: nowrap;
       padding: 0rem 1rem;
-      /* padding-bottom: 1rem; */
       position: relative;
       z-index: 100;
     }
-  }
+  } */
 
   @media all and (orientation:landscape) {
     .roster-lane-remix > div {
@@ -2174,6 +2171,7 @@
 }
 @media (max-width: 920px){
   .roster-lane {
+    /* display: block; */
     /* display: inline-flex; */
     height: fit-content;
     overflow-x: scroll;
