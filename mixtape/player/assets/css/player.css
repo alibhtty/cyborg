@@ -296,7 +296,7 @@ h1, h2, h3, h4, h5, h6 {
         /* animacion banner */
         @media screen and (display-mode: standalone){
             div#content-wrap {
-                height: 110%; /* 55% */
+                height: 100%; /* 55% */
             }
             div#content-wrap.inactive {
                 -moz-transform: scale(0.85) translate(0, 60%);
@@ -1482,7 +1482,7 @@ h1, h2, h3, h4, h5, h6 {
                 height: 80px !important;
             } */                       /* ---------  margin-top: 44px   --------- */
             div#header{
-                margin-top: 66px;
+                margin-top: 40px;
             }
             /* .standalone {
                 margin-top: 88px;
