@@ -2174,7 +2174,7 @@
 }
 @media (max-width: 920px){
   .roster-lane {
-    /* display: inline-flex; */
+    display: inline-flex;
     height: fit-content;
     overflow-x: scroll;
     white-space: nowrap;
