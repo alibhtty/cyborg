@@ -289,7 +289,7 @@ h1, h2, h3, h4, h5, h6 {
                 -o-transform: scale(0.85) translate(0, 60%);
                 -ms-transform: scale(0.85) translate(0, 60%);
                 -webkit-transform: scale(0.85) translate(0, 60%);
-                transform: scale(0.85) translate(0, 30%);
+                transform: scale(0.85) translate(0, 40%);
                 border-radius: 20px;
             }
         }
@@ -1666,6 +1666,43 @@ h1, h2, h3, h4, h5, h6 {
             /* transition-timing-function: ease-in;
             transition: .4s; */
         }
+        .roster-mini > div {
+            /* height: 35vh; */
+            display: inline-table;
+            width: 145px; /* 165px */
+            margin-right: 2em;
+            /* transition-timing-function: ease-in;
+            transition: .4s; */
+        }
+        @media (max-width: 920px){
+            .aspect-2-3 {
+                height: 16vh;
+            }
+            /* .roster-lane > div {
+                display: inline-block;
+                width: 165px;
+                margin-right: 2em;
+            } */
+            .roster-lane > div {
+              /* display: inline-block; */
+              display: inline-table;
+              width: 25vw; /* 165px */
+              margin-right: 2em;
+              margin-right: .5rem;
+            }
+
+            .aspect-2-3-mini {
+                height: 14vh;
+            }
+            .roster-mini > div {
+              /* display: inline-block; */
+              display: inline-table;
+              width: 22vw; /* 165px */
+              margin-right: 2em;
+              margin-right: .5rem;
+            }
+            
+        }
 
         #cont2{
             display: none;
@@ -1709,25 +1746,6 @@ h1, h2, h3, h4, h5, h6 {
         .mb-normal {
             margin-bottom: .6rem;
           }
-        @media (max-width: 920px){
-            .aspect-2-3 {
-                height: 16vh;
-            }
-            /* .roster-lane > div {
-                display: inline-block;
-                width: 165px;
-                margin-right: 2em;
-            } */
-            .roster-lane > div {
-              /* display: inline-block; */
-              display: inline-table;
-              width: 25vw; /* 165px */
-              margin-right: 2em;
-              margin-right: .5rem;
-            }
-            
-        }
-
 
 
         @media (max-width: 920px){

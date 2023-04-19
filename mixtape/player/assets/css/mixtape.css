@@ -2188,4 +2188,7 @@
     display: inline-block;
     margin-right: 1rem;
 }
+.roster-mini{
+ padding: 0;               
+}
 }
