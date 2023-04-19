@@ -1481,9 +1481,9 @@ h1, h2, h3, h4, h5, h6 {
             /* header {
                 height: 80px !important;
             } */                       /* ---------  margin-top: 44px   --------- */
-            /* div#header{
-                margin-top: 33px;
-            } */
+            div#header{
+                margin-top: 66px;
+            }
             /* .standalone {
                 margin-top: 88px;
             } */
