@@ -1,3 +1,37 @@
+/* pwa @alibhtty  */
+html, body {
+    position: fixed;
+    overflow: hidden;
+    overscroll-behavior: contain;
+    overscroll-behavior-x: contain;
+    overscroll-behavior-y: none;
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color:  rgba(255, 255, 255, 0.5);
+  }
+  @media screen and (display-mode: standalone){
+    html, body {
+    position: fixed;
+    overflow: hidden;
+    overscroll-behavior: contain;
+    overscroll-behavior-x: contain;
+    overscroll-behavior-y: none;
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color:  rgba(255, 255, 255, 0.3);
+    }
+  }
+
 
 /* BLOQUEADOR DE ANIMACIONES, para PWA 
                             @alibhtty*/
