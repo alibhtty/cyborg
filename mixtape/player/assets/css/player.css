@@ -1697,8 +1697,8 @@ h1, h2, h3, h4, h5, h6 {
                 border-radius: 50%;
             }
             .roster-mini > div {
-              /* display: inline-block; */
-              display: inline-table;
+              display: inline-block;
+              /* display: inline-table; */
               width: 22vw; /* 165px */
               margin-right: 2em;
               margin-right: .5rem;
@@ -1869,6 +1869,9 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
     color: #c2d7e4;
     margin: .5rem 0;
-    font-family: "Roboto";
+    font-family: "Ubuntu";
+    font-weight: 400;
+    letter-spacing: .2px;
     font-size: 12px;
+    text-transform: none;
 }
