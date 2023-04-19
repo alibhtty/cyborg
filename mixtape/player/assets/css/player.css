@@ -1469,7 +1469,7 @@ h1, h2, h3, h4, h5, h6 {
                 height: 80px !important;
             } */                       /* ---------  margin-top: 44px   --------- */
             div#header{
-                margin-top: 33px;
+                margin-top: 44px;
             }
             /* .standalone {
                 margin-top: 88px;
@@ -1805,8 +1805,8 @@ h1, h2, h3, h4, h5, h6 {
           }
           @media screen and (display-mode: standalone){
             html, body {
-            position: fixed;
-            overflow: hidden;
+            /* position: fixed;
+            overflow: hidden; */
             overscroll-behavior: contain;
             overscroll-behavior-x: contain;
             overscroll-behavior-y: none;
