@@ -280,6 +280,19 @@ h1, h2, h3, h4, h5, h6 {
             border-radius: 20px;
         }
 
+        @media (orientation: portrait){
+            div#content-wrap {
+                height: 55%;
+            }
+            div#content-wrap.inactive {
+                -moz-transform: scale(0.85) translate(0, 60%);
+                -o-transform: scale(0.85) translate(0, 60%);
+                -ms-transform: scale(0.85) translate(0, 60%);
+                -webkit-transform: scale(0.85) translate(0, 60%);
+                transform: scale(0.85) translate(0, 75%);
+                border-radius: 20px;
+            }
+        }
         /* animacion banner */
         @media screen and (display-mode: standalone){
             div#content-wrap {
