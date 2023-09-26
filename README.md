@@ -12,4 +12,3 @@ Street Photography. @4B
 
 Website. [Cyborg 4B](https://alibhtty.com/cyborg/)
 
-![preview img](/preview.png)
