@@ -10,6 +10,6 @@ Street Photography. @4B
 * CSS
 * PWA
 
-Website. [4B](https://alibhtty.com/cyborg/)
+Website. [Cyborg 4B](https://alibhtty.com/cyborg/)
 
-![preview img](/preview.jpg)
+![preview img](/preview.png)
