@@ -1,13 +1,13 @@
 {
     "name":"Cyborg",
     "short_name":"Cyborg",
-    "description":"Welcomte to Cyborg by alibhtty",
+    "description":"Welcome to Cyborg by alibhtty",
     "background_color":"#000000",
     "theme_color":"#FF6600",
     "orientation":"portrait",
     "display":"standalone",
-    "start_url":"https://alibhtty.github.io/cyborg/",
-    "scope":"https://alibhtty.github.io/cyborg/",
+    "start_url":"../?utm_source=web_app_manifest",
+    "scope":"../",
     "lang":"es-ES",
     "icons":[
         {

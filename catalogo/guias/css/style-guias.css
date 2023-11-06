@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: "BICRODEPERSONALUSE";
-    src: url("../../assets/fonts/BICRODEPERSONALUSE.ttf");
+    src: url("../../../assets/fonts/BICRODEPERSONALUSE.ttf");
        }
 
 #localnav-viewport-emitter {
@@ -1498,7 +1498,7 @@
     }
 }
 
-@font-face {
+/* @font-face {
     font-family: "Apple WebExp Icons Custom";
     font-style: normal;
     font-weight: 400;
@@ -1520,7 +1520,7 @@
     font-weight: 100;
     src: url("webexp-iconfont/fonts/webexpicons_ultralight.eot.html");
     src: url("webexp-iconfont/fonts/webexpicons_ultralight.eot-.html#iefix") format("embedded-opentype"), url("webexp-iconfont/fonts/webexpicons_ultralight.woff.html") format("woff"), url("webexp-iconfont/fonts/webexpicons_ultralight.ttf.html") format("truetype")
-}
+} */
 
 html {
     -ms-text-size-adjust: 100%;

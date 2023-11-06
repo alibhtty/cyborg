@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Cyborg">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no">
+  <meta name="applicable-device" content="pc,mobile">
+
+	<meta name="referrer" content="always" />
+	<meta name="theme-color" content="#000000" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://alibhtty.com/cyborg">
+  <meta property="og:title" content="Cyborg">
+  <meta property="og:description" content="Curación de fotografía y arte digital - &quot;Barcelona &quot; It's Cyborg art">
+  <meta property="og:image" content="https://ali-bhtty.web.app/cyborg/assets/icons/meta.jpg">
+
+  <meta name="web-experience-app/config/environment">
+  <!-- <link rel="stylesheet preload" name="fonts"
+    href="https://www.apple.com/wss/fonts?families=SF+Pro,v2%7CSF+Pro+Icons,v1%7CSF+Pro+Rounded,v1%7CNew+York+Small,v1%7CNew+York+Medium,v1"
+    as="style"> -->
+  <title>Cyborg</title>
+  <link rel="manifest" href="../../../manifest.json">
+
+  <!-- FAVICON -->
+	<link rel="apple-touch-icon" sizes="180x180" href="../../../assets/icons/icon_192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="../../../assets/icons/icon_32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="../../../assets/icons/icon_16.png">
+	<link rel="shortcut icon" type="image/x-icon" href="../../../assets/icons/icon_192.ico">
+	<meta name="msapplication-TileColor" content="#000000">
+	<!-- <meta name="theme-color" content="#ffffff"> -->
+
+  <link rel="stylesheet" href="../../guias/css/style-global.css">
+  <link integrity="" rel="stylesheet" href="../../guias/css/style-guias.css">
+  <!-- <link integrity="" rel="stylesheet" href="../../css/style-v=2.css"> -->
+  <!-- <link rel="stylesheet" href="https://ali-bhtty.web.app/cyborg/style.css"> -->
+
+  <!-- galery css -->
+  <link rel="stylesheet" href="../../css/styles.css">
+  <link rel="stylesheet" href="../../style-catalogo.css">
+  <!-- <link rel="stylesheet" href="../../css/fancybox-v5.css"> -->
+
+  <!-- preloader -->
+  <!-- <link href="../../../assets/css/preloader.css" type="text/css" rel="stylesheet" media="screen" /> -->
+
+  <link rel="stylesheet" href="../feed/feed.css">
+
+  <style>
+    @font-face {
+  font-family: "BICRODEPERSONALUSE";
+  src: url("https://alibhtty.github.io/cyborg/assets/fonts/BICRODEPERSONALUSE.ttf");
+     }
+    .headerWrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 124px;
+    z-index: 300;
+    }
+    .headerUpper {
+    position: relative;
+    width: 100%;
+    height: 48px;
+    background: rgba(20, 20, 19, 0.5);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);}
+
+
+    body:before {
+    content: "";
+    bottom: 0;
+    width: 100%;
+    height: 10rem; /* 70vh */
+    position: fixed;
+    /* top: 0;
+    right: 0; */
+    background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(0,0,0,.9) 98%);
+    z-index: 999;
+    pointer-events: none;
+    /* background: radial-gradient(circle, rgba(255,255,255,0), rgba(0,0,0,1) ); */
+    }
+
+    @media (max-width: 920px) {
+      body:before {
+        content: "";
+    bottom: 0;
+    width: 100%;
+    height: 10rem; /* 70vh */
+    position: fixed;
+    /* top: 0;
+    right: 0; */
+    background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(0,0,0,.9) 98%);
+    z-index: 999;
+    pointer-events: none;
+      }
+    }
+
+
+
+    .header-top {
+      width: 100%;
+      text-align: center;
+      padding-top: .7rem;
+      /* background-color: #5500ff; */
+      /* padding-top: 44px; */
+    }
+    .header-top-text {
+      width: 100%;
+      font-family: "BICRODEPERSONALUSE";
+      font-size: 24px;
+      color: #fbfbfd;
+      /* margin-bottom: 7rem; */
+      padding-top: 44px;
+    }
+
+
+    /* .localnav-background, .localnav-content {
+        height: 100px;
+      }
+
+      .localnav-title {
+        padding-top: 30px
+      } */
+
+      .localnav-background, .localnav-content {
+        height: 65px; /* 78px */
+        z-index: 9999;
+      }
+
+      .localnav-title {
+        padding-top: 0px
+      }
+
+      .l-content-width {
+        padding-top: 24px
+      }
+    
+    @media screen and (display-mode: standalone) {
+      .header-top {
+      width: 100%;
+      text-align: center;
+      padding-top: .7rem;
+      /* background-color: #5500ff; */
+      height: 88px;
+      padding-top: 44px;
+      }
+      .header-top-text {
+        width: 100%;
+        font-family: 'BICRODEPERSONALUSE';
+        font-size: 24px;
+        color: #fbfbfd;
+        /* margin-bottom: 7rem; */
+        margin-top: 44px;
+      }
+
+      .localnav-background, .localnav-content {
+        height: 110px;
+      }
+
+      .localnav-title {
+        padding-top: 38px
+      }
+
+      .l-content-width {
+        padding-top: 34px
+      }
+
+    } ;
+
+
+  /* preloader */
+    .centrado{
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    position: absolute;
+    z-index: 9999;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000
+  }
+
+  </style>
+
+</head>
+
+<body oncontextmenu="return false" ondragstart="return false" onselectstart="return false">  <!-- style={{ WebkitTapHighlightColor: "transparent" }} class="no-js no-touch" -->
+
+  <!-- Preloader -->
+  <!-- <div id="onload" class="centrado">
+    <div class="preloader-orbit-loading">
+      <div class="cssload-inner cssload-one"></div>
+      <div class="cssload-inner cssload-two"></div>
+      <div class="cssload-inner cssload-three"></div>
+    </div>
+  </div> -->
+  
+  <!-- <script type="x/boundary" id="fastboot-body-start"></script> -->
+
+
+
+
+  <div id="globalheader"> 
+
+    <nav id="globalnav" lang="es-ES" dir="ltr" aria-label="Global"
+      data-analytics-element-engagement-start="globalnav:onFlyoutOpen"
+      data-analytics-element-engagement-end="globalnav:onFlyoutClose"
+      
+      data-analytics-activitymap-region-id="global nav" data-analytics-region="global nav" class="globalnav no-js   "> <!-- data-store-api="https://www.apple.com/[storefront]/shop/bag/status" -->
+      <div class="globalnav-content">
+        <div class="globalnav-item globalnav-menuback"><button class="globalnav-menuback-button"
+            aria-label="Men&#xFA; principal"><span class="globalnav-chevron-icon"><svg height="48" viewbox="0 0 9 48"
+                width="9" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="m1.5618 24.0621 6.5581-6.4238c.2368-.2319.2407-.6118.0088-.8486-.2324-.2373-.6123-.2407-.8486-.0088l-7 6.8569c-.1157.1138-.1807.2695-.1802.4316.001.1621.0674.3174.1846.4297l7 6.7241c.1162.1118.2661.1675.4155.1675.1577 0 .3149-.062.4326-.1846.2295-.2388.2222-.6187-.0171-.8481z" />
+              </svg></span></button></div>
+        <ul id="globalnav-list" class="globalnav-list" aria-labelledby="globalnav-menutrigger-button">
+
+          <li class="globalnav-item globalnav-item-apple"> <!-- data-analytics-element-engagement="globalnav hover - apple" -->
+            <div class="header-top">
+              <h2 class="header-top-text">Cyborg</h2>
+              </div>
+            <!-- <a style="font-family: BICRODEPERSONALUSE; font-size: 24px; color: #ffffff; padding: 20px,20px ;">Cyborg</a> -->
+            </li>
+
+          <!-- MENU -->
+          <!-- <li class="globalnav-item globalnav-menu" data-topnav-flyout-item="menu" data-topnav-flyout-label="Menu" role="none">
+            <div class="globalnav-flyout" data-topnav-flyout="menu">
+              </div>
+            </div>
+          </li> -->
+
+        </ul>
+      </div>
+    </nav>
+
+    <div id="globalnav-curtain" class="globalnav-curtain"></div>
+    <div id="globalnav-placeholder" class="globalnav-placeholder"></div>
+  </div>
+  
+
+  <!--==================== NAVEGACION ====================-->
+      <nav id="localnav" style="width: 100%; z-index: 9990;" class="css-sticky we-localnav localnav we-localnav--app-store" data-sticky>
+        <div class="localnav-wrapper">
+          <div class="localnav-background we-localnav__background"></div>
+          <div class="localnav-content we-localnav__content">
+            <div style="width: 100%;" class="localnav-title we-localnav__title">
+
+                <span class="line-menu">
+                  <div class="line-content">
+                      <a href="../../../index.html" class="line-item line-r-1 line-on">INICIO</a>
+                      <a href="../../index.html" class="line-item line-r-2 line-on">CATÁLOGO</a>
+                      <a href="../../sesiones/index.html" class="line-item line-r-2 line-on">SESIONES</a>
+                      <a href="index.html" class="line-item line-r-4 line-on"> CYBORG</a>
+                  </div>
+                </span>
+            
+              </div>
+            <div class="localnav-menu we-localnav__menu we-localnav__menu--apps">
+              <div class="localnav-actions we-localnav__actions">  </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+  <!--==================== MAIN ====================-->
+      <main class="main">
+        <div class="container_grid">
+          
+          <div class="modal">
+            <div class='carousel'>
+              <div id="close-carousel">
+                <div class="x">
+                  <div id="barra1"></div>
+                  <div id="barra2"></div>
+                </div>
+              </div>
+              <div class="setas">
+                <div class="seta-esq">
+                  <div id='prev-card'><i class="fa-solid fa-angle-left" style="color: #ffffff;"></i></div>
+                </div>
+                <div class="seta-dir">
+                  <div id='next-card'><i class="fa-solid fa-angle-right" style="color: #ffffff;"></i></div>
+                </div>
+              </div>
+              <div class="centered-container">
+                <img class="modal-content" src="" alt="">
+              </div>
+            </div>
+            <span class="close"></span>
+          </div>
+
+          <div class='carousel-images'>
+            <div class="card_medium card_exp">
+              <img class="img_card" src="../../../images/colon-min.jpg" alt="">
+              <figcaption>C.Colón.</figcaption>
+            </div>
+            <div class="card_small card_exp">
+              <img class="img_card" src="../../../images/consul-peru.jpg" alt="">
+              <figcaption> </figcaption>
+            </div>
+            <div class="card_medium card_exp">
+              <img class="img_card" src="../../../images/dispensador-metro-min.jpg" alt="">
+              <figcaption> </figcaption>
+            </div>
+      
+            <div class="card_medium card_exp">
+              <img class="img_card" src="../../../images/rolex-holo-min.jpg" alt="">
+              <figcaption> </figcaption>
+            </div>
+            <div class="card_small card_exp">
+              <img class="img_card" src="../../../images/croma-rims-min.jpg" alt="">
+              <figcaption> </figcaption>
+            </div>
+            <div class="card_medium card_exp">
+              <img class="img_card" src="../../../images/cascanueces-min.jpg" alt="">
+              <figcaption> </figcaption>
+            </div>
+      
+            <div class="card_small card_exp">
+              <img class="img_card" src="../../../images/01ex.jpg" alt="">
+              <figcaption> </figcaption>
+            </div>
+            <div class="card_medium card_exp">
+              <img class="img_card" src="../../../images/centro-bcn-min.jpg" alt="">
+              <figcaption> </figcaption>
+            </div>
+            <div class="card_small card_exp">
+              <img class="img_card" src="../../../images/gato-raval-min.jpg" alt="">
+              <figcaption> </figcaption>
+            </div>
+      
+            <div class="card_large card_exp">
+              <img class="img_card" src="../../../images/angeles-barceloneta.jpg" alt="">
+              <figcaption> </figcaption>
+            </div>
+            <div class="card_large card_exp">
+              <img class="img_card" src="../../../images/noria-min.jpg" alt="">
+              <figcaption> </figcaption>
+            </div>
+          </div>
+        </div>
+
+
+
+          <!--=============== HOME ===============-->
+          <!-- <div hidden class="work__container"></div> --> <!-- activa light-mode -->
+
+          <!--=============== GALLERY ===============-->
+          <!-- <section class="gallery section" id="galery">
+
+            <main class="mains">
+                <div class="containers">
+                  <div class="card">
+                    <div class="card-image">
+                      <a data-fancybox="gallery" data-src="https://www.dropbox.com/s/mnaf5p7fen40lak/cyborg-zoom-min.jpg?raw=1" data-caption="">
+                        <img src="https://www.dropbox.com/s/b3ag1jvq4aw0u9s/cyborg-zoom-min.jpg?raw=1" alt="Image Gallery">
+                      </a>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-image">
+                      <a data-fancybox="gallery" data-src="https://www.dropbox.com/s/03mmzgdg4i5q1k0/iberostar-min.jpg?raw=1" data-caption="">
+                        <img src="https://www.dropbox.com/s/ypupbzwuu4wzpq0/iberostar-min.jpg?raw=1" alt="Image Gallery">
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                      <div class="card-image">
+                        <a data-fancybox="gallery" data-src="https://www.dropbox.com/s/h8jed4i3mnoybou/DSC07018-4k.jpg?raw=1" data-caption="">
+                          <img src="https://www.dropbox.com/s/sp2pfv3m3jyvipx/DSC07018-360p.jpg?raw=1" alt="">
+                        </a>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="card-image">
+                        <a data-fancybox="gallery" data-src="https://www.dropbox.com/s/5d6juc4axz20lsm/DSC07549-4k.jpg?raw=1" data-caption="">
+                          <img src="https://www.dropbox.com/s/883ae2xn2ordst5/DSC07549-360p.jpg?raw=1" alt="">
+                        </a>
+                      </div>
+                    </div>
+
+                  <div class="card">
+                    <div class="card-image">
+                      <a data-fancybox="gallery" data-src="https://www.dropbox.com/s/u4kc9n0lfgo25oc/rolex-holo-min.jpg?raw=1" data-caption="">
+                        <img src="https://www.dropbox.com/s/0p0t2k7k8f2t7xm/rolex-holo-min.jpg?raw=1" alt="">
+                      </a>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-image">
+                      <a data-fancybox="gallery" data-src="https://www.dropbox.com/s/qkfcqfycphmdwt2/cyborg-zoom.jpg?raw=1" data-caption="">
+                        <img src="https://www.dropbox.com/s/xgpssq4mems92zp/cyborg-holo-m.jpg?raw=1" alt="">
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <div class="card-image">
+                      <a data-fancybox="gallery" data-src="https://www.dropbox.com/s/qtuw6jdaslrf7ej/angeles-barceloneta.jpg?raw=1" data-caption="">
+                        <img src="https://www.dropbox.com/s/gtkiar225e0bvlu/angeles-barceloneta.jpg?raw=1" alt="">
+                      </a>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-image">
+                      <a data-fancybox="gallery" data-src="https://www.dropbox.com/s/jvvz79cvvwxg98o/centro-bcn-min.jpg?raw=1" data-caption="">
+                        <img src="https://www.dropbox.com/s/4uwmearxcuayrnh/centro-bcn-min.jpg?raw=1" alt="">
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <div class="card-image">
+                      <a data-fancybox="gallery" data-src="https://www.dropbox.com/s/udchhzrznromxsk/DSC07545-4k-lil.jpg?raw=1" data-caption="">
+                        <img src="https://www.dropbox.com/s/knkf2zp30zsgio8/DSC07545-360p.jpg?raw=1" alt="">
+                      </a>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-image">
+                      <a data-fancybox="gallery" data-src="https://www.dropbox.com/s/yqu97llhj2o5f75/IMG_5100-4k.jpg?raw=1" data-caption="">
+                        <img src="https://www.dropbox.com/s/y2dkfupikpp2dou/IMG_5100-360p.jpg?raw=1" alt="">
+                      </a>
+                    </div>
+                  </div>
+
+                </div>
+              </main>
+          </section> -->
+
+      </main>
+
+  </div>
+  
+  <script type="fastboot/shoebox" id="shoebox-language-code">"es-es"</script>
+  <!-- <script src="/script.js"></script> -->
+
+  <!-- <script type="text/javascript">
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function() {
+        navigator.serviceWorker.register('/sw.js').then(function(registration) {
+          // Registration was successful
+          console.log('ServiceWorker registration successful with scope: ', registration.scope);
+        }, function(err) {
+          // registration failed :(
+          console.log('ServiceWorker registration failed: ', err);
+        });
+      });
+    }
+  
+    let deferredPrompt;
+    var div = document.querySelector('.add-to');
+    var button = document.querySelector('.add-to-btn');
+    /* div.style.display = 'none'; */
+    
+  
+    window.addEventListener('beforeinstallprompt', (e) => {
+      // Prevent Chrome 67 and earlier from automatically showing the prompt
+      e.preventDefault();
+      // Stash the event so it can be triggered later.
+      deferredPrompt = e;
+      div.style.display = 'block';
+  
+      button.addEventListener('click', (e) => {
+      // hide our user interface that shows our A2HS button
+      div.style.display = 'none';
+      // Show the prompt
+      deferredPrompt.prompt();
+      // Wait for the user to respond to the prompt
+      deferredPrompt.userChoice
+        .then((choiceResult) => {
+          if (choiceResult.outcome === 'accepted') {
+            console.log('User accepted the A2HS prompt');
+          } else {
+            console.log('User dismissed the A2HS prompt');
+          }
+          deferredPrompt = null;
+        });
+    });
+    });
+  
+  </script> -->
+
+  <!-- preloader -->
+  <!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="../../../assets/js/preloader.js"></script> -->
+
+</body>
+
+</html>
