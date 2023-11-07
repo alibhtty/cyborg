@@ -71,3 +71,52 @@ nextButton.addEventListener('click', nextButton);
 function showImage(index) {
   modalImg.src = gridImages[index].src;
 }
+
+
+
+
+
+/* ====== TOUCH ====== */
+var touchStartX = 0;
+var touchEndX = 0;
+var touchStartY = 0;
+var touchEndY = 0;
+
+modal.addEventListener('touchstart', function(event) {
+    touchStartX = event.changedTouches[0].screenX;
+    touchStartY = event.changedTouches[0].screenY;
+}, false);
+
+modal.addEventListener('touchend', function(event) {
+    touchEndX = event.changedTouches[0].screenX;
+    touchEndY = event.changedTouches[0].screenY;
+    handleGesture();
+}, false); 
+
+function handleGesture() {
+    var swiped = 'swiped: ';
+    if (touchEndX < touchStartX) {
+        swiped += 'left';
+    }
+    if (touchEndX > touchStartX) {
+        swiped += 'right';
+    }
+    if (touchEndY < touchStartY) {
+        swiped += 'up';
+    }
+    if (touchEndY > touchStartY) {
+        swiped += 'down';
+    }
+    if (swiped.includes('left')) {
+        // Ir a la imagen anterior
+        prevButton.click();
+    }
+    if (swiped.includes('right')) {
+        // Ir a la imagen siguiente
+        nextButton.click();
+    }
+    if (swiped.includes('down')) {
+        // Cerrar el modal
+        x.click();
+    }
+}

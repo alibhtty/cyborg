@@ -77,7 +77,7 @@ body{
     position:fixed;
     background-color:rgba(0,0,0,1);
     /* top:0; */
-    bottom: 8vh;
+    bottom: 6vh;
     right:0;
     /* margin: 10px; */
     margin-right: 50%;
@@ -271,6 +271,11 @@ body{
         margin-top: 2rem;
       }
     }
+    @media all and (display-mode: browser) {
+      #close-carousel{
+        bottom: 1rem;
+      }
+    }
   
     @media (orientation: landscape) {
       .container_grid {
@@ -299,8 +304,4 @@ width: auto;
 height: auto;
 display: flex;
 justify-content: center;
-}
-
-.header-top{
-  position: absolute;
 }
