@@ -116,9 +116,12 @@ body{
   .modal-content {
     display: block;
     z-index: 9995;
-    border-radius:15px;
-    max-width: 80%;
+    border-radius: 6px;
+    max-width: 90%;
     max-height: 80%;
+  }
+  .modal-content:active{
+    scroll-behavior: none;
   }
   .x{
     display:flex;
