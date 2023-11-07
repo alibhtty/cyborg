@@ -115,7 +115,7 @@ function handleGesture() {
       // Ir a la imagen siguiente
       nextButton.click();
   }
-  if (swiped.includes('up')) {
+  if (swiped.includes('down')) {
       // Cerrar el modal solo si la aplicación está en modo standalone
       if (window.matchMedia('(display-mode: standalone)').matches && Math.abs(touchStartY - touchEndY) > 100) {
         x.click();
