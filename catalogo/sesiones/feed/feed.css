@@ -267,10 +267,9 @@ body{
         padding:.5rem .5rem;
         margin-top: 3rem;
       }
-      #close-carousel{
-        display: hidden;
-        /* margin-top: 2rem; */
-      }
+      #close-carousel {
+        display: none;
+      }    
     }
     @media all and (display-mode: browser) {
       #close-carousel{
