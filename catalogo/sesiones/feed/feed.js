@@ -117,9 +117,15 @@ function handleGesture() {
   }
   if (swiped.includes('up')) {
       // Cerrar el modal solo si la aplicación está en modo standalone
-      if (window.matchMedia('(display-mode: standalone)').matches) {
-          x.click();
+      if (window.matchMedia('(display-mode: standalone)').matches && Math.abs(touchStartY - touchEndY) > 100) {
+        x.click();
       }
+      /* if (window.matchMedia('(display-mode: standalone)').matches) {
+          x.click();
+      } */
+      /* if (Math.abs(touchStartY - touchEndY) > 100) {
+        x.click();
+      } */ // Sin display-mode: standalone
   }
 }
 
