@@ -4,11 +4,12 @@ body{
     height:100%;
     background-color: rgb(1,1,1);
   }
+
   .container_grid{
     max-width:1200px;
     position:relative;
     margin: 0 auto;
-    column-gap:.5rem; /* 10px */
+    column-gap:.5rem;
     columns:4;
     padding:.5rem .5rem;
     transition: all 0.5s ease;
@@ -74,13 +75,16 @@ body{
   #close-carousel{
     display:flex;
     position:fixed;
-    /* background-color:rgba(10,10,10,0.2); */
-    top:0;
+    background-color:rgba(0,0,0,1);
+    /* top:0; */
+    bottom: 8vh;
     right:0;
-    margin: 10px;
-    width:50px;
+    /* margin: 10px; */
+    margin-right: 50%;
+    /* border-radius:25px; */
+    /* width: 100%; */
+    /* width:50px; */
     height:50px;
-    border-radius:25px;
     cursor:pointer;
     z-index:9997;
   }
@@ -95,8 +99,8 @@ body{
     height:100%;
     width:100%;
     background-color:rgba(0,0,0,0.6);
-    backdrop-filter: blur(50px) saturate(1);
-    -webkit-backdrop-filter: blur(50px) saturate(1);
+    backdrop-filter: blur(50px) saturate(4) brightness(0.3);
+    -webkit-backdrop-filter: blur(50px) saturate(4)  brightness(0.3);
     transition: all 0.5s ease;
   }
   
@@ -116,7 +120,6 @@ body{
     max-width: 80%;
     max-height: 80%;
   }
-  
   .x{
     display:flex;
     align-items:center;
@@ -175,12 +178,31 @@ body{
   #prev-card, #next-card{
     position:fixed;
     opacity:1;
-    min-width:25vw;
+    min-width:20vw;
     height:100%;
     transition: all .5s ease;
   }
-  
+
   #prev-card{
+    top:0;
+    left:0;
+    background: linear-gradient(90deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0) 100%);
+  }
+  #next-card{
+    top:0;
+    right:0;
+    background: linear-gradient(-90deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0) 100%);
+  }
+  #next-card:hover{
+    cursor:pointer;
+    background: linear-gradient(-90deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 100%);
+  }
+  #prev-card:hover{
+    cursor:pointer;
+    background: linear-gradient(90deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 100%);}
+
+  
+  /* #prev-card{
     top:0;
     left:0;
     background: linear-gradient(90deg, rgba(27,27,27,0.5) 0%, rgba(247,247,247,0) 100%);
@@ -197,7 +219,7 @@ body{
   #prev-card:hover{
     cursor:pointer;
     background: linear-gradient(90deg, rgba(27,27,27,0.8) 0%, rgba(247,247,247,0) 100%);}
-
+ */
 
 
 
@@ -255,7 +277,7 @@ body{
           columns: 4;
           column-gap: .8rem;
           padding:1rem 1rem;
-          margin-top: 0rem;
+          margin-top: 1.5rem;
         }
     }
 
@@ -267,4 +289,18 @@ body{
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none
+}
+
+#globalnav .globalnav-list {
+  display: block;
+}
+.modal .modal-content {
+width: auto;
+height: auto;
+display: flex;
+justify-content: center;
+}
+
+.header-top{
+  position: absolute;
 }
