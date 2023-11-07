@@ -94,29 +94,31 @@ modal.addEventListener('touchend', function(event) {
 }, false); 
 
 function handleGesture() {
-    var swiped = 'swiped: ';
-    if (touchEndX < touchStartX) {
-        swiped += 'left';
-    }
-    if (touchEndX > touchStartX) {
-        swiped += 'right';
-    }
-    if (touchEndY < touchStartY) {
-        swiped += 'up';
-    }
-    if (touchEndY > touchStartY) {
-        swiped += 'down';
-    }
-    if (swiped.includes('left')) {
-        // Ir a la imagen anterior
-        prevButton.click();
-    }
-    if (swiped.includes('right')) {
-        // Ir a la imagen siguiente
-        nextButton.click();
-    }
-    if (swiped.includes('down')) {
-        // Cerrar el modal
-        x.click();
-    }
+  var swiped = 'swiped: ';
+  if (touchEndX < touchStartX) {
+      swiped += 'left';
+  }
+  if (touchEndX > touchStartX) {
+      swiped += 'right';
+  }
+  if (touchEndY < touchStartY) {
+      swiped += 'up';
+  }
+  if (touchEndY > touchStartY) {
+      swiped += 'down';
+  }
+  if (swiped.includes('left')) {
+      // Ir a la imagen anterior
+      prevButton.click();
+  }
+  if (swiped.includes('right')) {
+      // Ir a la imagen siguiente
+      nextButton.click();
+  }
+  if (swiped.includes('up')) {
+      // Cerrar el modal solo si la aplicación está en modo standalone
+      if (window.matchMedia('(display-mode: standalone)').matches) {
+          x.click();
+      }
+  }
 }

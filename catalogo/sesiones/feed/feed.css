@@ -77,7 +77,7 @@ body{
     position:fixed;
     background-color:rgba(0,0,0,1);
     /* top:0; */
-    bottom: 6vh;
+    bottom: 7vh;
     right:0;
     /* margin: 10px; */
     margin-right: 50%;
@@ -268,7 +268,8 @@ body{
         margin-top: 3rem;
       }
       #close-carousel{
-        margin-top: 2rem;
+        display: hidden;
+        /* margin-top: 2rem; */
       }
     }
     @media all and (display-mode: browser) {
