@@ -122,3 +122,26 @@ function handleGesture() {
       }
   }
 }
+
+
+
+
+
+/* // Obtén el elemento que contiene el modal
+var modalContainer = document.querySelector('.modal');
+
+// Obtén la imagen dentro del modal
+var modalImage = document.querySelector('.modal-content');
+
+// Cuando el usuario hace clic en el modalContainer, cierra el modal
+modalContainer.addEventListener('click', function(event) {
+    // Si el usuario hizo clic en el modalContainer, cierra el modal
+    if (event.target === modalContainer) {
+        x.click();
+    }
+});
+
+// Cuando el usuario hace clic en la imagen, evita que el evento se propague al modalContainer
+modalImage.addEventListener('click', function(event) {
+    event.stopPropagation();
+}); */
