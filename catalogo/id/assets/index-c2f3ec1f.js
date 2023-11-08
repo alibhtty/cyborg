@@ -92,18 +92,23 @@ Add a <Suspense fallback=...> component higher in the tree to provide a loading 
     display:flex;
     justify-content:space-between;
     align-items:center;
-`,YE=ge.button`
-    padding: 8px 15px;
+`,YE=ge.a`
+    padding: 4px 16px 4px 30px;
     background-color:#0060e2;
     color:#eeeeee;
     text-transform:uppercase;
+    text-decoration:none;
     font-size:13px;
     font-weight:700;
     border:3px solid transparent;
     outline:none;
     cursor:pointer;
     transition:all 290ms ease-in-out;
-    border-radius:20px;
+    border-radius:3px;
+
+    clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
+    
+    
     &:hover{
         background-color: rgb(6, 110, 255, .1);
         color:#fff;
@@ -131,7 +136,7 @@ Add a <Suspense fallback=...> component higher in the tree to provide a loading 
         width:auto;
         height:26px;
     }
-`;function KE(e){return W.jsxs(HE,{children:[W.jsx(El,{children:"MIXTAPE.IO"}),W.jsxs(Cl,{children:[W.jsx(WE,{children:"DJ, Productor"}),W.jsx(Yd,{href:"https://instagram.com/ali.bhtty/",target:"_blank",children:"Instagram"})]}),W.jsxs(Cl,{children:[W.jsx(El,{children:"Desallorador web"}),W.jsx(Yd,{href:"https://soundcloud.com/alibhtty/tracks",target:"_blank",children:"Soundcloud"})]}),W.jsx(Ds,{direction:"vertical",margin:".6em"}),W.jsxs(Cl,{children:[W.jsx(El,{children:"FRACCIONA TU PRÓXIMO PROYECTO CONMIGO "}),W.jsx(YE,{children:"COLLAB"})]}),W.jsx("div",{style:{height:"3px",background:"repeating-linear-gradient(to right, #000, #000 15px, transparent 15px, transparent 25px)",marginTop:"1em",borderRadius:"4px"}}),W.jsx(Ds,{direction:"vertical",margin:"1em"}),W.jsxs(GE,{children:[W.jsx(Pl,{href:"https://alibhtty.com/",target:"_blank",children:W.jsx("img",{src:UE})}),W.jsx(Pl,{href:"https://mix-tape.web.app/",target:"_blank",children:W.jsx("img",{src:bE})}),W.jsx(Pl,{href:"https://alibhtty.com/cyborg/",target:"_blank",children:W.jsx("img",{src:BE})})]})]})}const XE=ge.div`
+`;function KE(e){return W.jsxs(HE,{children:[W.jsx(El,{children:"MIXTAPE.IO"}),W.jsxs(Cl,{children:[W.jsx(WE,{children:"DJ, Productor"}),W.jsx(Yd,{href:"https://instagram.com/ali.bhtty/",target:"_blank",children:"Instagram"})]}),W.jsxs(Cl,{children:[W.jsx(El,{children:"SOFTWARE / WEB FREAK"}),W.jsx(Yd,{href:"https://soundcloud.com/alibhtty/tracks",target:"_blank",children:"Soundcloud"})]}),W.jsx(Ds,{direction:"vertical",margin:".6em"}),W.jsxs(Cl,{children:[W.jsx(El,{children:"FRACCIONA TU PRÓXIMO PROYECTO CONMIGO "}),W.jsx(YE,{href:"https://api.whatsapp.com/send?phone=34602316998&text=Hola, ",children:"COLLAB"})]}),W.jsx("div",{style:{height:"3px",background:"repeating-linear-gradient(to right, #000, #000 15px, transparent 15px, transparent 25px)",marginTop:"1em",borderRadius:"4px"}}),W.jsx(Ds,{direction:"vertical",margin:"1em"}),W.jsxs(GE,{children:[W.jsx(Pl,{href:"https://alibhtty.com/",target:"_blank",children:W.jsx("img",{src:UE})}),W.jsx(Pl,{href:"https://mix-tape.web.app/",target:"_blank",children:W.jsx("img",{src:bE})}),W.jsx(Pl,{href:"https://alibhtty.com/cyborg/",target:"_blank",children:W.jsx("img",{src:BE})})]})]})}const XE=ge.div`
   width: 100%;
   perspective: 2000;
   display: flex;
@@ -161,7 +166,6 @@ Add a <Suspense fallback=...> component higher in the tree to provide a loading 
   width: 100%;
   height: 100%;
   z-index: 5;
-
   background-color: #066EFF;
   background: linear-gradient(to bottom, rgb(6, 110, 255), rgb(29, 31, 33));
   border-radius: 20px;
@@ -205,7 +209,7 @@ Add a <Suspense fallback=...> component higher in the tree to provide a loading 
     user-select: none;
     pointer-events:none;
   }
-`;function iC(e){const t=js(0),n=js(0),r=Hd(n,[-100,100],[30,-30]),i=Hd(t,[-100,100],[-30,30]);return W.jsx(XE,{children:W.jsxs(QE,{style:{x:t,y:n,rotateX:r,rotateY:i,z:100},drag:!0,dragElastic:.16,dragConstraints:{top:0,left:0,right:0,bottom:0},whileTap:{cursor:"grabbing"},children:[W.jsxs(JE,{children:[W.jsx(ZE,{children:W.jsx(qE,{})}),W.jsx(nC,{children:W.jsx(rC,{style:{x:t,y:n,rotateX:r,rotateY:i,rotate:"0deg",z:1e5},drag:!0,dragElastic:.12,dragConstraints:{top:0,left:0,right:0,bottom:0},whileTap:{cursor:"grabbing"},children:W.jsx("img",{src:FE})})}),W.jsx(tC,{children:"ALI BHTTY"})]}),W.jsx(eC,{children:W.jsx(KE,{})})]})})}const oC=ge.div`
+`;function iC(e){const t=js(0),n=js(0),r=Hd(n,[-100,100],[30,-30]),i=Hd(t,[-100,100],[-30,30]);return D.useEffect(()=>{function o(a){const{alpha:l,beta:s,gamma:u}=a;t.set(u*3),n.set(s*3)}return window.addEventListener("deviceorientation",o),()=>{window.removeEventListener("deviceorientation",o)}},[]),W.jsx(XE,{children:W.jsxs(QE,{style:{x:t,y:n,rotateX:r,rotateY:i,z:100},drag:!0,dragElastic:.16,dragConstraints:{top:0,left:0,right:0,bottom:0},whileTap:{cursor:"grabbing"},children:[W.jsxs(JE,{children:[W.jsx(ZE,{children:W.jsx(qE,{})}),W.jsx(nC,{children:W.jsx(rC,{style:{x:t,y:n,rotateX:r,rotateY:i,rotate:"0deg",z:1e5},drag:!0,dragElastic:.12,dragConstraints:{top:0,left:0,right:0,bottom:0},whileTap:{cursor:"grabbing"},children:W.jsx("img",{src:FE})})}),W.jsx(tC,{children:"ALI BHTTY"})]}),W.jsx(eC,{children:W.jsx(KE,{})})]})})}const oC=ge.div`
   width:100%;
   height:100%;
   display:flex;
