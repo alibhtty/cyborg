@@ -13398,7 +13398,7 @@ html[dir=rtl] .tracks__track__button .icon-play::after {
 @media only screen and (max-width:767px) {
     .we-localnav__title {
         font-size: 19px;
-        line-height: 1;
+        line-height: 10px; /* 1 */
         font-weight: 600;
         letter-spacing: .012em;
         font-family: "SF Pro Display", "SF Pro Icons", "Apple WebExp Icons Custom", "Helvetica Neue", Helvetica, Arial, sans-serif

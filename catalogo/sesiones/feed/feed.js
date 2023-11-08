@@ -205,3 +205,21 @@ images.forEach(function(img) {
         }
     });
 });
+
+
+
+
+
+/* ===== ScrollBAR Invisible ===== */
+    // Crear un nuevo elemento de estilo
+    var style = document.createElement('style');
+
+    // Definir las reglas CSS para ocultar la barra de desplazamiento
+    style.innerHTML = `
+    ::-webkit-scrollbar {
+        width: 0 !important;
+    }
+    `;
+    
+    // Agregar el nuevo elemento de estilo al head del documento
+    document.head.appendChild(style);
