@@ -1288,6 +1288,7 @@ img, video {
 
 .p-4 {
     padding: 1.5vh; /* 1rem */
+    min-height: 4.5rem;
 }
 @media screen and (orientation: portrait) {
     .p-4 {
@@ -2575,7 +2576,7 @@ pre.line-numbers, pre.line-numbers>code {
         line-height: 2.5rem
     }
 }
-@media screen and (display-mode: landscape) {
+@media screen and (orientation: landscape) {
     .md\:px-10 {
         padding-left: 10%;
         padding-right: 10%
