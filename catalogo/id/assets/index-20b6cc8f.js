@@ -76,11 +76,11 @@ Add a <Suspense fallback=...> component higher in the tree to provide a loading 
 `,El=ge.span`
     max-width:50%;
     font-size:11px;
-    color:rgb(255,255,255,.8);
+    color:rgb(255,255,255,.7);
     font-weight:700;
     text-transform:uppercase;
     letter-spacing:.2px
-`,Yd=ge.span`
+`,Yd=ge.a`
     max-width:50%;
     font-size:11px;
     color:#6ec0ff;
@@ -131,7 +131,7 @@ Add a <Suspense fallback=...> component higher in the tree to provide a loading 
         width:auto;
         height:26px;
     }
-`;function KE(e){return W.jsxs(HE,{children:[W.jsx(El,{children:"MIXTAPE.IO"}),W.jsxs(Cl,{children:[W.jsx(WE,{children:"DJ, Productor"}),W.jsx(Yd,{href:"https://instagram.com/ali.bhtty/",children:"Instagram"})]}),W.jsxs(Cl,{children:[W.jsx(El,{children:"Desallorador web"}),W.jsx(Yd,{href:"https://soundcloud.com/",children:"Soundcloud"})]}),W.jsx(Ds,{direction:"vertical",margin:".6em"}),W.jsxs(Cl,{children:[W.jsx(El,{children:"FRACCIONA TU PRÓXIMO PROYECTO CONMIGO "}),W.jsx(YE,{children:"COLLAB"})]}),W.jsx("div",{style:{height:"2.5px",background:"repeating-linear-gradient(to right, #000, #000 15px, transparent 15px, transparent 20px)",marginTop:"1em",borderRadius:"4px"}}),W.jsx(Ds,{direction:"vertical",margin:"1em"}),W.jsxs(GE,{children:[W.jsx(Pl,{href:"https://alibhtty.com/",target:"_blank",children:W.jsx("img",{src:UE})}),W.jsx(Pl,{href:"https://mix-tape.web.app/",target:"_blank",children:W.jsx("img",{src:bE})}),W.jsx(Pl,{href:"https://alibhtty.com/cyborg/",target:"_blank",children:W.jsx("img",{src:BE})})]})]})}const XE=ge.div`
+`;function KE(e){return W.jsxs(HE,{children:[W.jsx(El,{children:"MIXTAPE.IO"}),W.jsxs(Cl,{children:[W.jsx(WE,{children:"DJ, Productor"}),W.jsx(Yd,{href:"https://instagram.com/ali.bhtty/",target:"_blank",children:"Instagram"})]}),W.jsxs(Cl,{children:[W.jsx(El,{children:"Desallorador web"}),W.jsx(Yd,{href:"https://soundcloud.com/alibhtty/tracks",target:"_blank",children:"Soundcloud"})]}),W.jsx(Ds,{direction:"vertical",margin:".6em"}),W.jsxs(Cl,{children:[W.jsx(El,{children:"FRACCIONA TU PRÓXIMO PROYECTO CONMIGO "}),W.jsx(YE,{children:"COLLAB"})]}),W.jsx("div",{style:{height:"3px",background:"repeating-linear-gradient(to right, #000, #000 15px, transparent 15px, transparent 25px)",marginTop:"1em",borderRadius:"4px"}}),W.jsx(Ds,{direction:"vertical",margin:"1em"}),W.jsxs(GE,{children:[W.jsx(Pl,{href:"https://alibhtty.com/",target:"_blank",children:W.jsx("img",{src:UE})}),W.jsx(Pl,{href:"https://mix-tape.web.app/",target:"_blank",children:W.jsx("img",{src:bE})}),W.jsx(Pl,{href:"https://alibhtty.com/cyborg/",target:"_blank",children:W.jsx("img",{src:BE})})]})]})}const XE=ge.div`
   width: 100%;
   perspective: 2000;
   display: flex;
