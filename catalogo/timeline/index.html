@@ -286,12 +286,45 @@
       color: var(--color-grey);
       transition: color 1s cubic-bezier(0, 0.39, 0.58, 1);
     }
+    .back-menu{
+      display: flex; flex-direction: row;
+      width: 5.8rem; height: 44px;
+      position: absolute;
+      padding: 9px;
+      right: 0rem;
+      font-size: 16px;
+      color: #00D8FF;
+      background-color: rgb(0, 216, 255, .08);
+      border: #00D8FF  solid 1px;
+      border-radius: 25px 25px;
+      justify-content: center;
+      transition: all .4s ease-in-out;
+    }
+    .back-menu:hover{
+      background-color: rgba(0, 216, 255, .32);
+      border: #000000  solid 1px;
+      transition: all .4s ease-in-out;
+    }
+    .back-menu:active{
+      background-color: rgba(0, 216, 255, .32);
+      border: #000000  solid 1px;
+    }
+    .back-menu h2{
+      position: absolute;
+      /* color: #a0a0a0; */
+      color: #00D8FF;
+      width: auto; right: 1.1rem;
+      padding: 7px 0;
+    }
     @media screen and (orientation: portrait) {
       .timeline__content {
       width: 58vw;
       font-size: 16px; /* 3rem */
       line-height: 20px;
       } 
+      .back-menu{
+      right: 1rem;
+    }
       .espacio{
         margin-top: 1.5rem;
       }
@@ -300,6 +333,9 @@
       .espacio{
         margin-top: 2rem;
       }
+      .back-menu h2{
+      padding: 4px 0;
+    }
     }
     
     .animate-on-scroll {
@@ -546,11 +582,11 @@
           <div class="localnav-content we-localnav__content">
               <div class="localnav-title we-localnav__title">
 
-                <a href="../index.html" style="display: flex; flex-direction: row; width: 5.8rem; height: 44px; position: absolute; padding: 9px; margin-right: 1rem; right: 0rem; font-size: 16px; background-color: rgb(255, 255, 255, .15); border-radius: 25px 25px; justify-content: center;" >
+                <a class="back-menu" href="../index.html">
                   <div style="position: absolute; left: .5rem;">
-                    <svg style="color: #a0a0a0;" viewBox="0 0 38 38" width="28" height="28" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M18 27L8 18L18 9" stroke="currentColor" stroke-width="1.6" fill-rule="evenodd" fill="none"></path><path d="M8 18H27.2818" stroke="currentColor" stroke-width="1.6"></path>
+                    <svg style="color: #00d8ff;" viewBox="0 0 38 38" width="28" height="28" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M18 27L8 18L18 9" stroke="currentColor" stroke-width="1.6" fill-rule="evenodd" fill="none"></path><path d="M8 18H27.2818" stroke="currentColor" stroke-width="1.6"></path>
                   </div>
-                  <h2 style="position: absolute; color: #a0a0a0; width: auto; right: 1.1rem; padding: 5px 0;">Back</h2>
+                  <h2>Back</h2>
                   </svg>
                 </a>
 
