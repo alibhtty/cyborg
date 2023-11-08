@@ -182,7 +182,7 @@ body{
   #prev-card, #next-card{
     position:fixed;
     opacity:1;
-    min-width:20vw;
+    min-width:45vw;
     height:100%;
     transition: all .5s ease;
   }

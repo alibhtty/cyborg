@@ -1289,7 +1289,7 @@ img, video {
 .p-4 {
     padding: 1.5vh; /* 1rem */
 }
-@media screen and (display-mode: portrait) {
+@media screen and (orientation: portrait) {
     .p-4 {
         padding: 1vh
     }
@@ -2575,6 +2575,19 @@ pre.line-numbers, pre.line-numbers>code {
         line-height: 2.5rem
     }
 }
+@media screen and (display-mode: landscape) {
+    .md\:px-10 {
+        padding-left: 10%;
+        padding-right: 10%
+    }
+}
+@media screen and (orientation: portrait) {
+    .atropos2 {
+        display: none;
+    }
+}
+
+
 
 @media (min-width:1024px) {
     .lg\:sticky {
