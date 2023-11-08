@@ -1,5 +1,7 @@
 {
   "short_name": "4B ID",
+  "start_url":"./?utm_source=web_app_manifest",
+  "scope":"./",
   "name": "Card 4B @alibhtty on-air",
   "icons": [
     {
@@ -13,13 +15,12 @@
       "sizes": "192x192"
     },
     {
-      "src": "logo512.png",
+      "src": "logo192.png",
       "type": "image/png",
       "sizes": "512x512"
     }
   ],
-  "start_url": ".",
   "display": "standalone",
-  "theme_color": "#000000",
+  "theme_color": "#066EFF",
   "background_color": "#000000"
 }
