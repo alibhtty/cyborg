@@ -51,11 +51,12 @@ body{
   .container_grid figcaption{
     position: absolute;
     bottom: 10px;
-    left:15px;
+    left:12px;
     color:white;
-    font-size:14px;
+    font-size:13px;
+    line-height: 16px;
     font-weight:600;
-    z-index:999;
+    z-index:998;
     /*background-color:rgba(1, 1, 1, 0.2);*/
     filter: drop-shadow(0 0 0.1rem black);
     text-shadow: 0px 0px 10px black;
