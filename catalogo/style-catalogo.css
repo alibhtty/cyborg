@@ -1293,7 +1293,7 @@ img, video {
 }
 @media screen and (orientation: portrait) {
     .p-4 {
-        padding: .9vh;
+        padding: .9vh 2vh;
         min-height: 4.5rem;
     }
 }
@@ -1376,6 +1376,12 @@ img, video {
 .text-sm {
     font-size: .835rem; /* .875rem */
     line-height: 1rem; /* 1.25 */
+}
+@media screen and (orientation: portrait) {
+    .text-sm {
+        font-size: .810rem;
+        line-height: 1rem;
+    }
 }
 
 .text-\[0px\] {

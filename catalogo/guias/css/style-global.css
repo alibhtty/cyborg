@@ -347,7 +347,7 @@ html, body {
     margin: 0 -9px;
     width: auto;
     height: 44px;
-    display: flex;
+    /* display: flex; */
     justify-content: space-between;
     -webkit-user-select: none;
     user-select: none;
