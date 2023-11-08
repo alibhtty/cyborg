@@ -1291,7 +1291,7 @@ img, video {
 }
 @media screen and (display-mode: portrait) {
     .p-4 {
-        padding: 1.5vh
+        padding: 1vh
     }
 }
 @media screen and (display-mode: standalone) {
