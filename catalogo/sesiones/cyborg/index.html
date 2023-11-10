@@ -35,6 +35,7 @@
   <link integrity="" rel="stylesheet" href="../../guias/css/style-guias.css">
 
   <!-- galery css -->
+  <link rel="stylesheet" href="../../../assets/css/brake.css">
   <link rel="stylesheet" href="../../css/styles.css">
   <link rel="stylesheet" href="../../style-catalogo.css">
   <link rel="stylesheet" href="../assets/css/feed.css">
@@ -73,18 +74,15 @@
     -webkit-backdrop-filter: blur(10px);}
 
 
-    body:before {
+    /* body:before {
     content: "";
     bottom: 0;
     width: 100%;
-    height: 10rem; /* 70vh */
+    height: 10rem;
     position: fixed;
-    /* top: 0;
-    right: 0; */
     background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(0,0,0,.9) 98%);
     z-index: 999;
     pointer-events: none;
-    /* background: radial-gradient(circle, rgba(255,255,255,0), rgba(0,0,0,1) ); */
     }
 
     @media (max-width: 920px) {
@@ -92,15 +90,13 @@
         content: "";
     bottom: 0;
     width: 100%;
-    height: 20rem; /* 10rem */
+    height: 20rem; 
     position: fixed;
-    /* top: 0;
-    right: 0; */
     background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 100%);
     z-index: 999;
     pointer-events: none;
       }
-    }
+    } */
 
 
 
@@ -257,8 +253,8 @@
                 <span class="line-menu">
                   <div class="line-content">
                       <a href="../../../index.html" class="line-item line-r-1 line-on">INICIO</a>
-                      <a href="../../index.html" class="line-item line-r-2 line-on">CATÁLOGO</a>
-                      <a href="../../sesiones/index.html" class="line-item line-r-2 line-on">SESIONES</a>
+                      <a href="../../index.html" class="line-item line-r-2 line-on">SESIONES</a>
+                      <!-- <a href="../../sesiones/index.html" class="line-item line-r-2 line-on">SES</a> -->
                       <a href="index.html" class="line-item line-r-4 line-on"> CYBORG</a>
                   </div>
                 </span>
@@ -446,11 +442,99 @@
           </section> -->
 
       </main>
-      <section style="width: 100%; height: 5rem;;">
+      <!-- <section style="width: 100%; height: 5rem;;">
         <div>
 
+
+      
+
         </div>
-      </section>
+      </section> -->
+
+      <section class="l-content-width section section--hero product-hero">
+        <div class="l-row">
+
+      <div style="width:calc(100% - 1rem); position: fixed; bottom: -1rem; z-index: 9; margin-left: -5px;">
+        <ul class="story__section we-product-collection">
+          <div class="we-product-collection__item">
+            <picture
+              class="we-artwork we-artwork--downloaded we-product-collection__item__artwork we-artwork--ios-app-icon"
+              style="--background-color: #1b1b1b;"> <!-- id="ember6814" -->
+
+              <!-- <source
+                srcset="https://alibhtty.web.app/cyborg/assets/icons/icon_512.png 48w, https://alibhtty.web.app/cyborg/assets/icons/icon_512.png 48w, https://alibhtty.web.app/cyborg/assets/icons/icon_512.png 48w, https://alibhtty.web.app/cyborg/assets/icons/icon_512.png 96w, https://alibhtty.web.app/cyborg/assets/icons/icon_512.png 96w"
+                sizes="(max-width: 734px) 48px, (min-width: 735px) and (max-width: 1068px) 48px, 48px"
+                type="image/png">
+
+              <source
+                srcset="https://alibhtty.web.app/cyborg/assets/icons/icon_512.png 48w, https://alibhtty.web.app/cyborg/assets/icons/icon_512.png 48w, https://alibhtty.web.app/cyborg/assets/icons/icon_512.png 48w, https://alibhtty.web.app/cyborg/assets/icons/icon_512.png 96w, https://alibhtty.web.app/cyborg/assets/icons/icon_512.png 96w, https://alibhtty.web.app/cyborg/assets/icons/icon_512.png 96w"
+                sizes="(max-width: 734px) 48px, (min-width: 735px) and (max-width: 1068px) 48px, 48px"
+                type="image/png"> -->
+
+              <img src="../../../../go/assets/cover4b-842257cf.png" decoding="async"
+                loading="lazy" class="we-artwork__image ember6814  we-artwork__image--lazyload" alt
+                role="presentation" height="48" width="48">
+
+
+              <style>
+                .ember6814,
+                #ember6814::before {
+                  width: 48px;
+                  height: 48px;
+                }
+
+                .ember6814::before {
+                  padding-top: 100%;
+                }
+
+                @media (min-width: 735px) {
+
+                  .ember6814,
+                  #ember6814::before {
+                    width: 48px;
+                    height: 48px;
+                  }
+
+                  .ember6814::before {
+                    padding-top: 100%;
+                  }
+                }
+
+                @media (min-width: 1069px) {
+
+                  .ember6814,
+                  #ember6814::before {
+                    width: 48px;
+                    height: 48px;
+                  }
+
+                  .ember6814::before {
+                    padding-top: 100%;
+                  }
+                }
+              </style>
+            </picture>
+
+
+            <div class="we-product-collection__item__headings">
+              <!---->
+              <h3 class="truncate-single-line we-product-collection__item__product-name" dir="auto">
+                Ali Bhtty
+              </h3>
+              <h4 class="truncate-single-line we-product-collection__item__category">
+                Cyborg & Co.
+              </h4>
+            </div>
+
+            <a arial-label="VER Vampire Survivors"
+              class="we-button we-button-flat we-button--pill we-product-collection__item__button"
+              href="../../../../go">INSTALAR</a> <!-- ../app/vampire-survivors/id6444525702.html -->
+          </div>
+
+        </ul>
+      </div> 
+    </div>
+    </section>
 
   </div>
 
