@@ -25421,6 +25421,7 @@ html[dir=rtl] .story-card__day-icon {
     border-radius: 14px;
     background-color: rgb(100, 100, 100, .3);
     backdrop-filter: blur(40px) brightness(1.5) saturate(2);
+    -webkit-backdrop-filter: blur(40px) brightness(1.5) saturate(2);
     width: 100%;
     min-height: 72px;
     display: flex;
