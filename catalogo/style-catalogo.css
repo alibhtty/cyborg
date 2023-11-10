@@ -1,6 +1,11 @@
 /*
 ! tailwindcss v3.0.24 | MIT License | https://tailwindcss.com
 */
+@font-face {
+    font-family: "bicro";
+    src: url("../assets/fonts/bicro.ttf");
+  }
+
 *, :after, :before {
     box-sizing: border-box;
     border: 0 solid #e5e7eb

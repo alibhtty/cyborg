@@ -1,4 +1,14 @@
-/* pwa @alibhtty  */
+
+/* ======== TAP TOUCH ======== */
+ a, img{
+    -webkit-tap-highlight-color:  rgba(0, 216, 255, .1);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; 
+    }
+
+/* ====== PWA @alibhtty ====== */
 html, body {
     /* position: fixed;
     overflow: hidden; */
@@ -33,9 +43,7 @@ html, body {
   }
 
 
-/* BLOQUEADOR DE ANIMACIONES, para PWA 
-                            @alibhtty*/
-
+/* ========= BLOQUEADOR DE ANIMACIONES, para PWA      @alibhtty ========= */
         body {
             -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
             -moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;

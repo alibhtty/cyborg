@@ -1,24 +1,69 @@
 @font-face {
-    font-family: "BICRODEPERSONALUSE";
-    src: url("https://ali-bhtty.web.app/assets/fonts/BICRODEPERSONALUSE.ttf");
+    font-family: "bicro";
+    src: url("../fonts/bicro.ttf");
   }
-
-.quotes {
+  
+  .quotes {
     display: none;
-    color: #000000;
+    /* color: #ffffff; */
     font-size: 34px;
-    font-family: "BICRODEPERSONALUSE";
+    font-family: "bicro" !important;
+    animation: fluido 5s ease-in-out infinite;
+    background: linear-gradient(-45deg, #ff5500, #F6FFDD, #6638FF,  #23CFD5); /* naranjitaee7752  azul23a6d5    e73c7e      #23cfd5, #23d5ab    limon#BFFF00 */
+    background-size: 300%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
+  
+  @keyframes fluido {
+    0% { background-position: 0 50% }
+    50% { background-position: 100% 50% }
+    100% { background-position: 0 50% }
+  }
+  
+  
+  .centrado{
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    position: absolute;
+    z-index: 9999;
+    top: -2rem;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000
+  }  
+  
+  .quotes {
+      display: none;
+      /* color: #006600; */
+      font-size: 34px;
+      font-family: "bicro";
+    }
 
 
-.centrado{
+
+
+
+/* .quotes {
+    display: none;
+    color: #006600;
+    font-size: 34px;
+    font-family: "bicro";
+  } */
+
+
+/* .centrado{
   width: 100%;
     height: 100vh;
     text-align: center;
+    top: -2rem;
     position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 999;
     background-color: #ffffff
-  }
+  } */

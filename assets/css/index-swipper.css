@@ -8,8 +8,8 @@
 }
 
 @font-face {
-    font-family: "BICRODE";
-    src: url(../assets/fonts/BICRODEPERSONALUSE.ttf);
+    font-family: "bicro";
+    src: url(../fonts/bicro.ttf);
 }
 
 :root {

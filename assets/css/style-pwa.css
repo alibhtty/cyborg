@@ -82,8 +82,8 @@
 
 /* --- */
 @font-face {
-    font-family: "BICRODEPERSONALUSE";
-    src: url("../fonts/BICRODEPERSONALUSE.ttf");
+    font-family: "bicro";
+    src: url("../fonts/bicro.ttf");
      }
     .headerWrapper {
     position: fixed;

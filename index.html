@@ -1,706 +1,868 @@
 <!DOCTYPE html>
 <html lang="es-ES">
-  <head>
-      <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=0">
-      <meta name="apple-mobile-web-app-title" content="Cyborg">
-      <meta name="apple-mobile-web-app-capable" content="yes">
-      <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-      <title>Cyborg</title>
-      <meta name="msapplication-TileColor" content="#2da3ba">
-      <meta name="referrer" content="always" />
-      <meta name="theme-color" content="#000000" />
-      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-      <meta name="applicable-device" content="pc,mobile">
-      <!-- FAVICON -->
-      <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/icon_192.png">
-      <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/icon_32.png">
-      <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/icon_16.png">
-      <link rel="manifest" href="manifest.json">
-      <link rel="shortcut icon" type="image/x-icon" href="assets/icons/icon_192.ico">
-    
-      <script type="module" crossorigin src="assets/js/index-swipper.js"></script>
-      <link rel="modulepreload" href="assets/js/vendor-swipper.js">
-      <link rel="stylesheet" href="assets/css/index-swipper.css">
-      <link rel="stylesheet" href="style.css">
-      <link rel="stylesheet" href="assets/materialize/materialdesignicons.min.css">
-      <link rel="stylesheet" href="assets/css/brake.css">
 
-      <!-- Open Graph / Facebook -->
-	    <meta property="og:type" content="website">
-	    <meta property="og:url" content="https://alibhtty.com/cyborg">
-	    <meta property="og:title" content="Cyborg">
-	    <meta property="og:description" content="Curación de fotografía y arte digital - &quot;Barcelona &quot; It's Cyborg art">
-	    <meta property="og:image" content="https://alibhtty.com/cyborg/assets/icons/meta.jpg">
+<head>
+    <meta charSet="utf-8" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=0"> <!-- viewport-fit=cover,   no -- minimum-scale=1 -->
+    <meta name="apple-mobile-web-app-title" content="Cyborg">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="theme-color" content="#000000" />
+    <!-- <link rel="shortcut icon" href="./assets/icons/favicon.png" /> -->
+    <meta property="og:site_name" content="Cyborg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@cyborg" />
+    <meta name="twitter:creator" content="@cyborg" />
+    <title>Catálogo</title>
 
-      <!-- PWA CSS -->
-      <link href="assets/css/style-pwa.css" type="text/css" rel="stylesheet" media="screen" />
-      <link href="assets/css/preload-cyborg.css" type="text/css" rel="stylesheet" media="screen" />
-   
-      <style>
-        body, img{
-          overscroll-behavior: contain;
-          overscroll-behavior-x: contain;
-          overscroll-behavior-y: none;
+    <!-- FAVICON -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/icons/icon_192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/icons/icon_32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/icons/icon_16.png">
+    <link rel="manifest" href="./manifest.json">
+    <link rel="shortcut icon" type="image/x-icon" href="./assets/icons/icon_192.ico">
 
-          -webkit-touch-callout: none;
-          -webkit-user-select: none;
-          -khtml-user-select: none;
-          -moz-user-select: none;
-          -ms-user-select: none;
-          user-select: none;
-          -webkit-tap-highlight-color:  rgba(255, 255, 255, 0.5);
-          }
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://alibhtty.com/cyborg">
+    <meta property="og:title" content="Cyborg – Go">
+    <meta property="og:description" content="Curación de fotografía y arte digital - &quot;Barcelona &quot; It's Cyborg art">
+    <meta property="og:image" content="https://alibhtty.web.app/cyborg/assets/icons/meta.jpg">
+    <meta name="description" content="Fotografía y arte digital" />
+ 
+    <meta name="twitter:title" content="Catálogo - Cyborg" />
+    <meta name="twitter:description" content="Curación de fotografía y arte digital - &quot;Barcelona &quot; It's Cyborg art"/>
+    <meta name="twitter:image" content="https://alibhtty.web.app/cyborg/assets/icons/meta.jpg"/>
 
-          .footer-menu{
-            display: block;
-            position: fixed;
-            bottom: 0px;
-            width: 100%;
-            height: 75px; /* 60px o    50px nutral*/
-            /* background-color: #000000; */
-            /* background: rgba(20, 20, 19, 0.5);
-            backdrop-filter: blur(10px);
-            -webkit-backdrop-filter: blur(10px); */           
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="true" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /> -->
 
-            z-index: 998;
-            box-shadow: 0 2px 2px 0 rgba(0,0,0,0), 0 3px 1px -2px rgba(0,0,0,0), 0 1px 5px 0 rgba(0,0,0,0);
-            -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0), 0 3px 1px -2px rgba(0,0,0,0), 0 1px 5px 0 rgba(0,0,0,0);
+    <!-- <link href="./assets/css/preloader.css" type="text/css" rel="stylesheet" media="screen" /> -->
+    <link href="./assets/css/preload-cyborg.css" type="text/css" rel="stylesheet" media="screen" />
+    <!-- <link rel="preload" href="./catalogo/style-catalogo.css" as="style" /> -->
+    <link rel="stylesheet" href="./catalogo/style-catalogo.css"/>
+    <link rel="stylesheet" href="./assets/css/brake.css">
+    <!-- <link rel="preload" href="./style-catalogo.css" as="style" />
+    <link rel="stylesheet" href="./style-catalogo.css"/> -->
 
-            /* box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
-            -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2); */
-            /* border-top-left-radius: 24px;
-            border-top-right-radius: 24px; */
-          }
-
-          .footer-menu li a{
-            display: inline-block;
-            background: rgba(20, 20, 19, 0.5);
-            backdrop-filter: blur(10px);
-            -webkit-backdrop-filter: blur(10px);
-            /* background-color: #000000; */
-            border-radius: 50%;
-            width: 55px;
-            height: 55px;
-            margin-bottom: 10px;
-            color: #546E7A;
-          }
-
-
-          /* PWA STYLE */
-      @media screen and (display-mode: standalone) {
-      .headerUpper{
-        height: 88px !important;
-      }
-      .headerUpper-text{
-        display: block;
-        margin-top: 44px !important;
-      }
-      .headerUpper h1{
-        display: block;
-        padding-top: 44px !important;
-      }
-      .swiper {
-      width: 100%;
-      padding-top: 0px; /* 28px */
-      }
-      .swiper-wrapper {
-        position: relative;
-        width: 100%;
-        height: 112%;
-        z-index: 1;
-        display: flex;
-        transition-property: transform;
-        box-sizing: content-box
-      }
-      .swiper {
-        width: 100%;
-        height: 100vh;
-      }
-      .footer-menu{
-        height: 70px;
-      }
-
-      .toast-container{
-        visibility:hidden !important;
-        display:none !important;
-      }
-    } ;
-      </style>
-
-      <style>
-        body{
-          overscroll-behavior-x: contain;
-          overscroll-behavior-y: none;
+    <!-- <style
+        data-href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap">
+        @font-face {
+            font-family: 'Roboto Mono';
+            font-style: italic;
+            font-weight: 400;
+            font-display: swap;
+            src: url("https://fonts.gstatic.com/s/robotomono/v22/L0xoDF4xlVMF-BfR8bXMIjhOsXG-q2oeuFoqFrlnAOW-.woff") format('woff')
         }
 
-          @font-face {
-              font-family: "BICRODEPERSONALUSE";
-              src: url("./assets/fonts/BICRODEPERSONALUSE.ttf");
+        @font-face {
+            font-family: 'Roboto Mono';
+            font-style: italic;
+            font-weight: 500;
+            font-display: swap;
+            src: url("https://fonts.gstatic.com/s/robotomono/v22/L0xoDF4xlVMF-BfR8bXMIjhOsXG-q2oeuFoqFrlVAOW-.woff") format('woff')
+        }
+
+        @font-face {
+            font-family: 'Roboto Mono';
+            font-style: italic;
+            font-weight: 600;
+            font-display: swap;
+            src: url("https://fonts.gstatic.com/s/robotomono/v22/L0xoDF4xlVMF-BfR8bXMIjhOsXG-q2oeuFoqFrm5B-W-.woff") format('woff')
+        }
+
+        @font-face {
+            font-family: 'Roboto Mono';
+            font-style: italic;
+            font-weight: 700;
+            font-display: swap;
+            src: url("https://fonts.gstatic.com/s/robotomono/v22/L0xoDF4xlVMF-BfR8bXMIjhOsXG-q2oeuFoqFrmAB-W-.woff") format('woff')
+        }
+
+        @font-face {
+            font-family: 'Roboto Mono';
+            font-style: normal;
+            font-weight: 400;
+            font-display: swap;
+            src: url("https://fonts.gstatic.com/s/robotomono/v22/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vqPQA.woff") format('woff')
+        }
+
+        @font-face {
+            font-family: 'Roboto Mono';
+            font-style: normal;
+            font-weight: 500;
+            font-display: swap;
+            src: url("https://fonts.gstatic.com/s/robotomono/v22/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_7PqPQA.woff") format('woff')
+        }
+
+        @font-face {
+            font-family: 'Roboto Mono';
+            font-style: normal;
+            font-weight: 600;
+            font-display: swap;
+            src: url("https://fonts.gstatic.com/s/robotomono/v22/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_AP2PQA.woff") format('woff')
+        }
+
+        @font-face {
+            font-family: 'Roboto Mono';
+            font-style: normal;
+            font-weight: 700;
+            font-display: swap;
+            src: url("https://fonts.gstatic.com/s/robotomono/v22/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_Of2PQA.woff") format('woff')
+        }
+
+        @font-face {
+            font-family: 'Roboto Mono';
+            font-style: italic;
+            font-weight: 400;
+            font-display: swap;
+            src: url("https://fonts.gstatic.com/s/robotomono/v22/L0xdDF4xlVMF-BfR8bXMIjhOsXG-q2oeuFoqFrlnAIe2Imhk1T8rbociImtEluUlco8VkKjG.woff2") format('woff2');
+            unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F
+        }
+
+        @font-face {
+            font-family: 'Roboto Mono';
+            font-style: italic;
+            font-weight: 400;
+            font-display: swap;
+            src: url("https://fonts.gstatic.com/s/robotomono/v22/L0xdDF4xlVMF-BfR8bXMIjhOsXG-q2oeuFoqFrlnAIe2Imhk1T8rbociImtEn-Ulco8VkKjG.woff2") format('woff2');
+            unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116
+        }
+
+        @font-face {
+            font-family: 'Roboto Mono';
+            font-style: italic;
+            font-weight: 400;
+            font-display: swap;
+            src: url("https://fonts.gstatic.com/s/robotomono/v22/L0xdDF4xlVMF-BfR8bXMIjhOsXG-q2oeuFoqFrlnAIe2Imhk1T8rbociImtEmOUlco8VkKjG.woff2") format('woff2');
+            unicode-range: U+0370-03FF
+        }
+
+        @font-face {
+            font-family: 'Roboto Mono';
+            font-style: italic;
+            font-weight: 400;
+            font-display: swap;
+            src: url("https://fonts.gstatic.com/s/robotomono/v22/L0xdDF4xlVMF-BfR8bXMIjhOsXG-q2oeuFoqFrlnAIe2Imhk1T8rbociImtElOUlco8VkKjG.woff2") format('woff2');
+            unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB
+        }
+
+        @font-face {
+            font-family: 'Roboto Mono';
+            font-style: italic;
+            font-weight: 400;
+            font-display: swap;
+            src: url("https://fonts.gstatic.com/s/robotomono/v22/L0xdDF4xlVMF-BfR8bXMIjhOsXG-q2oeuFoqFrlnAIe2Imhk1T8rbociImtEleUlco8VkKjG.woff2") format('woff2');
+            unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF
+        }
+
+        @font-face {
+            font-family: 'Roboto Mono';
+            font-style: italic;
+            font-weight: 400;
+            font-display: swap;
+            src: url("https://fonts.gstatic.com/s/robotomono/v22/L0xdDF4xlVMF-BfR8bXMIjhOsXG-q2oeuFoqFrlnAIe2Imhk1T8rbociImtEm-Ulco8VkA.woff2") format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
+        }
+
+        @font-face {
+            font-family: 'Roboto Mono';
+            font-style: italic;
+            font-weight: 500;
+            font-display: swap;
+            src: url("https://fonts.gstatic.com/s/robotomono/v22/L0xdDF4xlVMF-BfR8bXMIjhOsXG-q2oeuFoqFrlnAIe2Imhk1T8rbociImtEluUlco8VkKjG.woff2") format('woff2');
+            unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F
+        }
+
+        @font-face {
+            font-family: 'Roboto Mono';
+            font-style: italic;
+            font-weight: 500;
+            font-display: swap;
+            src: url("https://fonts.gstatic.com/s/robotomono/v22/L0xdDF4xlVMF-BfR8bXMIjhOsXG-q2oeuFoqFrlnAIe2Imhk1T8rbociImtEn-Ulco8VkKjG.woff2") format('woff2');
+            unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116
+        }
+
+        @font-face {
+            font-family: 'Roboto Mono';
+            font-style: italic;
+            font-weight: 500;
+            font-display: swap;
+            src: url("https://fonts.gstatic.com/s/robotomono/v22/L0xdDF4xlVMF-BfR8bXMIjhOsXG-q2oeuFoqFrlnAIe2Imhk1T8rbociImtEmOUlco8VkKjG.woff2") format('woff2');
+            unicode-range: U+0370-03FF
+        }
+
+        @font-face {
+            font-family: 'Roboto Mono';
+            font-style: italic;
+            font-weight: 500;
+            font-display: swap;
+            src: url("https://fonts.gstatic.com/s/robotomono/v22/L0xdDF4xlVMF-BfR8bXMIjhOsXG-q2oeuFoqFrlnAIe2Imhk1T8rbociImtElOUlco8VkKjG.woff2") format('woff2');
+            unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB
+        }
+
+        @font-face {
+            font-family: 'Roboto Mono';
+            font-style: italic;
+            font-weight: 500;
+            font-display: swap;
+            src: url("https://fonts.gstatic.com/s/robotomono/v22/L0xdDF4xlVMF-BfR8bXMIjhOsXG-q2oeuFoqFrlnAIe2Imhk1T8rbociImtEleUlco8VkKjG.woff2") format('woff2');
+            unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF
+        }
+
+        @font-face {
+            font-family: 'Roboto Mono';
+            font-style: italic;
+            font-weight: 500;
+            font-display: swap;
+            src: url("https://fonts.gstatic.com/s/robotomono/v22/L0xdDF4xlVMF-BfR8bXMIjhOsXG-q2oeuFoqFrlnAIe2Imhk1T8rbociImtEm-Ulco8VkA.woff2") format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
+        }
+
+        @font-face {
+            font-family: 'Roboto Mono';
+            font-style: italic;
+            font-weight: 600;
+            font-display: swap;
+            src: url("https://fonts.gstatic.com/s/robotomono/v22/L0xdDF4xlVMF-BfR8bXMIjhOsXG-q2oeuFoqFrlnAIe2Imhk1T8rbociImtEluUlco8VkKjG.woff2") format('woff2');
+            unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F
+        }
+
+        @font-face {
+            font-family: 'Roboto Mono';
+            font-style: italic;
+            font-weight: 600;
+            font-display: swap;
+            src: url("https://fonts.gstatic.com/s/robotomono/v22/L0xdDF4xlVMF-BfR8bXMIjhOsXG-q2oeuFoqFrlnAIe2Imhk1T8rbociImtEn-Ulco8VkKjG.woff2") format('woff2');
+            unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116
+        }
+
+        @font-face {
+            font-family: 'Roboto Mono';
+            font-style: italic;
+            font-weight: 600;
+            font-display: swap;
+            src: url("https://fonts.gstatic.com/s/robotomono/v22/L0xdDF4xlVMF-BfR8bXMIjhOsXG-q2oeuFoqFrlnAIe2Imhk1T8rbociImtEmOUlco8VkKjG.woff2") format('woff2');
+            unicode-range: U+0370-03FF
+        }
+
+        @font-face {
+            font-family: 'Roboto Mono';
+            font-style: italic;
+            font-weight: 600;
+            font-display: swap;
+            src: url("https://fonts.gstatic.com/s/robotomono/v22/L0xdDF4xlVMF-BfR8bXMIjhOsXG-q2oeuFoqFrlnAIe2Imhk1T8rbociImtElOUlco8VkKjG.woff2") format('woff2');
+            unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB
+        }
+
+        @font-face {
+            font-family: 'Roboto Mono';
+            font-style: italic;
+            font-weight: 600;
+            font-display: swap;
+            src: url("https://fonts.gstatic.com/s/robotomono/v22/L0xdDF4xlVMF-BfR8bXMIjhOsXG-q2oeuFoqFrlnAIe2Imhk1T8rbociImtEleUlco8VkKjG.woff2") format('woff2');
+            unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF
+        }
+
+        @font-face {
+            font-family: 'Roboto Mono';
+            font-style: italic;
+            font-weight: 600;
+            font-display: swap;
+            src: url("https://fonts.gstatic.com/s/robotomono/v22/L0xdDF4xlVMF-BfR8bXMIjhOsXG-q2oeuFoqFrlnAIe2Imhk1T8rbociImtEm-Ulco8VkA.woff2") format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
+        }
+
+        @font-face {
+            font-family: 'Roboto Mono';
+            font-style: italic;
+            font-weight: 700;
+            font-display: swap;
+            src: url("https://fonts.gstatic.com/s/robotomono/v22/L0xdDF4xlVMF-BfR8bXMIjhOsXG-q2oeuFoqFrlnAIe2Imhk1T8rbociImtEluUlco8VkKjG.woff2") format('woff2');
+            unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F
+        }
+
+        @font-face {
+            font-family: 'Roboto Mono';
+            font-style: italic;
+            font-weight: 700;
+            font-display: swap;
+            src: url("https://fonts.gstatic.com/s/robotomono/v22/L0xdDF4xlVMF-BfR8bXMIjhOsXG-q2oeuFoqFrlnAIe2Imhk1T8rbociImtEn-Ulco8VkKjG.woff2") format('woff2');
+            unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116
+        }
+
+        @font-face {
+            font-family: 'Roboto Mono';
+            font-style: italic;
+            font-weight: 700;
+            font-display: swap;
+            src: url("https://fonts.gstatic.com/s/robotomono/v22/L0xdDF4xlVMF-BfR8bXMIjhOsXG-q2oeuFoqFrlnAIe2Imhk1T8rbociImtEmOUlco8VkKjG.woff2") format('woff2');
+            unicode-range: U+0370-03FF
+        }
+
+        @font-face {
+            font-family: 'Roboto Mono';
+            font-style: italic;
+            font-weight: 700;
+            font-display: swap;
+            src: url("https://fonts.gstatic.com/s/robotomono/v22/L0xdDF4xlVMF-BfR8bXMIjhOsXG-q2oeuFoqFrlnAIe2Imhk1T8rbociImtElOUlco8VkKjG.woff2") format('woff2');
+            unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB
+        }
+
+        @font-face {
+            font-family: 'Roboto Mono';
+            font-style: italic;
+            font-weight: 700;
+            font-display: swap;
+            src: url("https://fonts.gstatic.com/s/robotomono/v22/L0xdDF4xlVMF-BfR8bXMIjhOsXG-q2oeuFoqFrlnAIe2Imhk1T8rbociImtEleUlco8VkKjG.woff2") format('woff2');
+            unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF
+        }
+
+        @font-face {
+            font-family: 'Roboto Mono';
+            font-style: italic;
+            font-weight: 700;
+            font-display: swap;
+            src: url("https://fonts.gstatic.com/s/robotomono/v22/L0xdDF4xlVMF-BfR8bXMIjhOsXG-q2oeuFoqFrlnAIe2Imhk1T8rbociImtEm-Ulco8VkA.woff2") format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
+        }
+
+        @font-face {
+            font-family: 'Roboto Mono';
+            font-style: normal;
+            font-weight: 400;
+            font-display: swap;
+            src: url("https://fonts.gstatic.com/s/robotomono/v22/L0xTDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vrtSM1J-gEPT5Ese6hmHSV0me8iUI0lkQ.woff2") format('woff2');
+            unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F
+        }
+
+        @font-face {
+            font-family: 'Roboto Mono';
+            font-style: normal;
+            font-weight: 400;
+            font-display: swap;
+            src: url("https://fonts.gstatic.com/s/robotomono/v22/L0xTDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vrtSM1J-gEPT5Ese6hmHSx0me8iUI0lkQ.woff2") format('woff2');
+            unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116
+        }
+
+        @font-face {
+            font-family: 'Roboto Mono';
+            font-style: normal;
+            font-weight: 400;
+            font-display: swap;
+            src: url("https://fonts.gstatic.com/s/robotomono/v22/L0xTDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vrtSM1J-gEPT5Ese6hmHSt0me8iUI0lkQ.woff2") format('woff2');
+            unicode-range: U+0370-03FF
+        }
+
+        @font-face {
+            font-family: 'Roboto Mono';
+            font-style: normal;
+            font-weight: 400;
+            font-display: swap;
+            src: url("https://fonts.gstatic.com/s/robotomono/v22/L0xTDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vrtSM1J-gEPT5Ese6hmHSd0me8iUI0lkQ.woff2") format('woff2');
+            unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB
+        }
+
+        @font-face {
+            font-family: 'Roboto Mono';
+            font-style: normal;
+            font-weight: 400;
+            font-display: swap;
+            src: url("https://fonts.gstatic.com/s/robotomono/v22/L0xTDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vrtSM1J-gEPT5Ese6hmHSZ0me8iUI0lkQ.woff2") format('woff2');
+            unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF
+        }
+
+        @font-face {
+            font-family: 'Roboto Mono';
+            font-style: normal;
+            font-weight: 400;
+            font-display: swap;
+            src: url("https://fonts.gstatic.com/s/robotomono/v22/L0xTDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vrtSM1J-gEPT5Ese6hmHSh0me8iUI0.woff2") format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
+        }
+
+        @font-face {
+            font-family: 'Roboto Mono';
+            font-style: normal;
+            font-weight: 500;
+            font-display: swap;
+            src: url("https://fonts.gstatic.com/s/robotomono/v22/L0xTDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vrtSM1J-gEPT5Ese6hmHSV0me8iUI0lkQ.woff2") format('woff2');
+            unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F
+        }
+
+        @font-face {
+            font-family: 'Roboto Mono';
+            font-style: normal;
+            font-weight: 500;
+            font-display: swap;
+            src: url("https://fonts.gstatic.com/s/robotomono/v22/L0xTDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vrtSM1J-gEPT5Ese6hmHSx0me8iUI0lkQ.woff2") format('woff2');
+            unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116
+        }
+
+        @font-face {
+            font-family: 'Roboto Mono';
+            font-style: normal;
+            font-weight: 500;
+            font-display: swap;
+            src: url("https://fonts.gstatic.com/s/robotomono/v22/L0xTDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vrtSM1J-gEPT5Ese6hmHSt0me8iUI0lkQ.woff2") format('woff2');
+            unicode-range: U+0370-03FF
+        }
+
+        @font-face {
+            font-family: 'Roboto Mono';
+            font-style: normal;
+            font-weight: 500;
+            font-display: swap;
+            src: url("https://fonts.gstatic.com/s/robotomono/v22/L0xTDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vrtSM1J-gEPT5Ese6hmHSd0me8iUI0lkQ.woff2") format('woff2');
+            unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB
+        }
+
+        @font-face {
+            font-family: 'Roboto Mono';
+            font-style: normal;
+            font-weight: 500;
+            font-display: swap;
+            src: url("https://fonts.gstatic.com/s/robotomono/v22/L0xTDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vrtSM1J-gEPT5Ese6hmHSZ0me8iUI0lkQ.woff2") format('woff2');
+            unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF
+        }
+
+        @font-face {
+            font-family: 'Roboto Mono';
+            font-style: normal;
+            font-weight: 500;
+            font-display: swap;
+            src: url("https://fonts.gstatic.com/s/robotomono/v22/L0xTDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vrtSM1J-gEPT5Ese6hmHSh0me8iUI0.woff2") format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
+        }
+
+        @font-face {
+            font-family: 'Roboto Mono';
+            font-style: normal;
+            font-weight: 600;
+            font-display: swap;
+            src: url("https://fonts.gstatic.com/s/robotomono/v22/L0xTDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vrtSM1J-gEPT5Ese6hmHSV0me8iUI0lkQ.woff2") format('woff2');
+            unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F
+        }
+
+        @font-face {
+            font-family: 'Roboto Mono';
+            font-style: normal;
+            font-weight: 600;
+            font-display: swap;
+            src: url("https://fonts.gstatic.com/s/robotomono/v22/L0xTDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vrtSM1J-gEPT5Ese6hmHSx0me8iUI0lkQ.woff2") format('woff2');
+            unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116
+        }
+
+        @font-face {
+            font-family: 'Roboto Mono';
+            font-style: normal;
+            font-weight: 600;
+            font-display: swap;
+            src: url("https://fonts.gstatic.com/s/robotomono/v22/L0xTDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vrtSM1J-gEPT5Ese6hmHSt0me8iUI0lkQ.woff2") format('woff2');
+            unicode-range: U+0370-03FF
+        }
+
+        @font-face {
+            font-family: 'Roboto Mono';
+            font-style: normal;
+            font-weight: 600;
+            font-display: swap;
+            src: url("https://fonts.gstatic.com/s/robotomono/v22/L0xTDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vrtSM1J-gEPT5Ese6hmHSd0me8iUI0lkQ.woff2") format('woff2');
+            unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB
+        }
+
+        @font-face {
+            font-family: 'Roboto Mono';
+            font-style: normal;
+            font-weight: 600;
+            font-display: swap;
+            src: url("https://fonts.gstatic.com/s/robotomono/v22/L0xTDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vrtSM1J-gEPT5Ese6hmHSZ0me8iUI0lkQ.woff2") format('woff2');
+            unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF
+        }
+
+        @font-face {
+            font-family: 'Roboto Mono';
+            font-style: normal;
+            font-weight: 600;
+            font-display: swap;
+            src: url("https://fonts.gstatic.com/s/robotomono/v22/L0xTDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vrtSM1J-gEPT5Ese6hmHSh0me8iUI0.woff2") format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
+        }
+
+        @font-face {
+            font-family: 'Roboto Mono';
+            font-style: normal;
+            font-weight: 700;
+            font-display: swap;
+            src: url("https://fonts.gstatic.com/s/robotomono/v22/L0xTDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vrtSM1J-gEPT5Ese6hmHSV0me8iUI0lkQ.woff2") format('woff2');
+            unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F
+        }
+
+        @font-face {
+            font-family: 'Roboto Mono';
+            font-style: normal;
+            font-weight: 700;
+            font-display: swap;
+            src: url("https://fonts.gstatic.com/s/robotomono/v22/L0xTDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vrtSM1J-gEPT5Ese6hmHSx0me8iUI0lkQ.woff2") format('woff2');
+            unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116
+        }
+
+        @font-face {
+            font-family: 'Roboto Mono';
+            font-style: normal;
+            font-weight: 700;
+            font-display: swap;
+            src: url("https://fonts.gstatic.com/s/robotomono/v22/L0xTDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vrtSM1J-gEPT5Ese6hmHSt0me8iUI0lkQ.woff2") format('woff2');
+            unicode-range: U+0370-03FF
+        }
+
+        @font-face {
+            font-family: 'Roboto Mono';
+            font-style: normal;
+            font-weight: 700;
+            font-display: swap;
+            src: url("https://fonts.gstatic.com/s/robotomono/v22/L0xTDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vrtSM1J-gEPT5Ese6hmHSd0me8iUI0lkQ.woff2") format('woff2');
+            unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB
+        }
+
+        @font-face {
+            font-family: 'Roboto Mono';
+            font-style: normal;
+            font-weight: 700;
+            font-display: swap;
+            src: url("https://fonts.gstatic.com/s/robotomono/v22/L0xTDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vrtSM1J-gEPT5Ese6hmHSZ0me8iUI0lkQ.woff2") format('woff2');
+            unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF
+        }
+
+        @font-face {
+            font-family: 'Roboto Mono';
+            font-style: normal;
+            font-weight: 700;
+            font-display: swap;
+            src: url("https://fonts.gstatic.com/s/robotomono/v22/L0xTDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vrtSM1J-gEPT5Ese6hmHSh0me8iUI0.woff2") format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
+        }
+    </style> -->
+
+    <style>
+        span{
+            display: inline-block;
+            overflow: hidden;
+            border-radius: 12px;
+        }
+
+
+        /* hr {
+            height: 2px;
+            background-color: red;
             }
-          
-          .quotes {
-              display: none;
-              /* color: #ffffff; */
-              font-size: 34px;
-              font-family: "BICRODEPERSONALUSE" !important;
-              animation: fluido 10s ease-in-out infinite;
-              background: linear-gradient(-45deg, #ff5500, #F6FFDD, #6638FF,  #23CFD5); /* naranjitaee7752  azul23a6d5    e73c7e      #23cfd5, #23d5ab    limon#BFFF00 */
-              background-size: 300%;
-              -webkit-background-clip: text;
-              background-clip: text;
-              -webkit-text-fill-color: transparent;
+
+        #pulse{
+            border-color: #00D8FF;
+            color: #00D8FF;
+            background-color: rgb(0, 217, 255, 0.3);
+            } */
+
+
+            /* PWA STYLE */
+            @media screen and (display-mode: standalone) {
+                .headerUpper{
+                  height: 88px !important;
+                  /* margin-top: 6rem; */
+                }
             }
-          
-            @keyframes fluido {
-              0% { background-position: 0 50% }
-              50% { background-position: 100% 50% }
-              100% { background-position: 0 50% }
-            }
-          
-          
-          .centrado{
-              width: 100%;
-              height: 100vh;
-              text-align: center;
-              display: flex;
-              position: absolute;
-              z-index: 9999;
-              justify-content: center;
-              align-items: center;
-              background-color: #000000
-            }
-      </style>
-  </head>
+    </style>
+</head>
 
-<body class="hidden menu-full header-image html" data-header="light" data-footer="dark"  data-header_align="center"  data-menu_type="left" data-menu="light" data-menu_icons="on" data-footer_type="left" data-site_mode="light" data-footer_menu="show" data-footer_menu_style="light"        data-page="homepage" data-device="desktop" data-site="index.html" translate="no" oncontextmenu="return false">
+<body oncontextmenu="return false">
 
-  <div class="toast-container">
-  </div>
-    <!-- Preloader -->
-  <div id="onload" class="centrado">
-    <div class="container">
-      <h2 class="quotes">cyborg</h2>
-      <h2 class="quotes">cyborg</h2>
-      <h2 class="quotes">cyborg</h2>
-      <h2 class="quotes">cyborg</h2>
-      <h2 class="quotes">cyborg</h2>
-    </div>
-    <!-- <div class="preloader-orbit-loading">
-      <div class="cssload-inner cssload-one"></div>
-      <div class="cssload-inner cssload-two"></div>
-      <div class="cssload-inner cssload-three"></div>
-    </div> -->
-  </div>
-  
-  <!-- header -->
-  <header>
-    <div class="headerWrapper">
-      <div class="headerUpper" style="text-align: center; font-family: Ubuntu; font-size: 22px; padding-top: .7rem;">
-        <a class="headerUpper-text" style="font-family: BICRODEPERSONALUSE; font-size: 24px; color: #ffffff">Cyborg</a>
+
+    <div id="__next">
+
+        <div class="toast-container">
         </div>
-    </div>
-  </header>
-
-
-  <!-- menu  -- ps-->
-  <!-- <ul id="slide-nav" class="sidenav sidemenu">
-    <li class="user-wrap">
-      <div class="user-view row" style="margin-top: 3rem;">
-  
-        <div class="col s3 imgarea">
-          <a class="status available">
-            <img class="circle" src="assets/img/alibhtty-mini.jpg" alt="ali bhtty">
-          </a>
+          <!-- Preloader -->
+      <div id="onload" class="centrado">
+        <div class="container">
+          <h2 class="quotes">cyborg</h2>
+          <h2 class="quotes">cyborg</h2>
+          <h2 class="quotes">cyborg</h2>
         </div>
-        <div class="col s9 infoarea">
-          <a><span class="name">alibhtty</span></a>
-          <a><span class="email">4b.contact@gmail.com</span></a>
-        </div>
-      </div>
-      <div class="center">
-        <a href="https://ali-bhtty.web.app/cyborg/shorts" class='waves-light btn'> Shorts </a>
-      </div>
-  
-      <div class="connections">
-        <a href='#' class="count">
-          <div class="no">102</div>
-          <div class="tag">Friends</div>
-        </a>
-        <a href='#' class="count">
-          <div class="no">510</div>
-          <div class="tag">Followers</div>
-        </a>
-        <a href='#' class="count">
-          <div class="no">814</div>
-          <div class="tag">Following</div>
-        </a>
-      </div>
-  
-    </li>
-  
-    <li class="menulinks">
-      <ul class="collapsible">
-  
-        <li class="lvl1 ">
-          <div class=" waves-effect   ui-app-social-timeline ">
-            <a href="https://ali-bhtty.web.app/">
-              <i><img class="icon-menu" style="width: 15px;" src="./assets/icons/hogar.svg" alt=""></i>
-  
-              <span class="title">Inicio alibhtty</span></a>
-          </div>
-        </li>
-  
-        <li class="lvl1 ">
-          <div class=" waves-effect   ui-app-social-timeline ">
-            <a href="https://ali-bhtty.web.app/mixtape/">
-              <i><img class="icon-menu" style="width: 15px;" src="./assets/icons/tocar.svg" alt=""></i>
-              <span class="title">Radio Mixtape</span>
-              <span class="badge">15</span>
-            </a>
-          </div>
-        </li>
-  
-        <li class="lvl1 ">
-          <div class=" waves-effect   ui-app-social-timeline ">
-            <a href="https://ali-bhtty.web.app/" data-target="slide-proyectos" class="sidenav-trigger show-on-large">
-              <i><img class="icon-menu" style="width: 15px;" src="./assets/icons/camara.svg" alt=""></i>
-              <span class="title">Urbano</span>
-              <span class="badge">5</span>
-            </a>
-          </div>
-        </li>
-  
-        <li class="lvl1 ">
-          <div class=" waves-effect   ui-app-social-timeline ">
-            <a href="https://ali-bhtty.web.app/cyborg/guias">
-              <i><img class="icon-menu" style="width: 15px;" src="./assets/icons/comentario.svg" alt=""></i>
-              <span class="title">Guías</span>
-              <span class="badge">1</span>
-            </a>
-          </div>
-        </li>
-  
-        <li class="lvl1 ">
-          <div class=" waves-effect   ui-app-social-timeline ">
-            <a href="https://ali-bhtty.web.app/cyborg/menu">
-              <i><img class="icon-menu" style="width: 15px;" src="./assets/icons/comentario.svg" alt=""></i>
-              <span class="title">Menu</span>
-              <span class="badge">1</span>
-            </a>
-          </div>
-        </li>
-  
-      </ul>
-    </li>
-  
-  
-  
-  </ul> -->
-
-  <!-- musica ->
-  <ul id="slide-settings" class="sidenav sidesettings ">
-
-  <!-- carrusel ->
-  <div class="carousel carousel-fullscreen carousel-slider home_carousel carousel-dashboard-home" style="height: auto;" >
-    <a class="carousel-item" href="https://ali-bhtty.web.app/mixtape">
-      <div class="bg" style="background-image: url('/assets/img/banner/mixtape-app.jpg')"></div>
-    </a>
-    <a class="carousel-item">
-      <div class="bg" style="background-image: url('/assets/img/banner/mixtape-list-slider.jpg')"></div>
-    </a>
-    <a class="carousel-item">
-      <div class="bg" style="background-image: url('/assets/img/banner/calling-slider.jpg')"></div>
-    </a>
-    <a class="carousel-item">
-      <div class="bg" style="background-image: url('/assets/img/banner/disco.jpg')"></div>
-    </a>
-    <a class="carousel-item">
-      <div class="bg" style="background-image: url('/assets/img/banner/ep014-slider.jpg')"></div>
-    </a>
-  </div>
-
-
-  <!-- <div class="container">
-     <!-- sets ->
-    <div class="section pb0">
-      <div class="spacer"></div>
-      <div class="row mb0">
-        <div class="col s12 pad-0">
-
-          <div class="row">
-
-            <div class="col s12 m12 l3">
-              <iframe width="100%" height="120" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&feed=%2Falibhtty%2Fep-015-house-sause-ali-bhtty%2F" frameborder="0" ></iframe>
-              <div class="spacer"></div>
-            </div>
-
-            <div class="col s12 m12 l3">
-              <iframe width="100%" height="20" scrolling="no" frameborder="no" allow="autoplay"
-                src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1295884267&color=%23ff5500&inverse=true&auto_play=false&show_user=true"></iframe>
-              <div class="spacer"></div>
-            </div>
-
-            <div class="col s12 m12 l3">
-              <iframe width="100%" height="20" scrolling="no" frameborder="no" allow="autoplay"
-                src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1242707422&color=%23ff5500&inverse=true&auto_play=false&show_user=true"></iframe>
-              <div class="spacer"></div>
-            </div>
-    
-            <div class="col s12 m12 l3">
-              <iframe width="100%" height="20" scrolling="no" frameborder="no" allow="autoplay"
-                src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/897868348&color=%23ff5500&inverse=true&auto_play=false&show_user=true"></iframe>
-              <div class="spacer"></div>
-            </div>
-    
-            <div class="col s12 m12 l3">
-              <iframe width="100%" height="20" scrolling="no" frameborder="no" allow="autoplay"
-                src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/774579379&color=%23ff5500&inverse=true&auto_play=false&show_user=true"></iframe>
-              <div class="spacer"></div>
-            </div>
-    
-          </div>
-    
-        </div>
-      </div>
-    </div>
-
-    <div class="spacer"></div>
-    <div class="spacer"></div>
-    <div class="spacer"></div>
-
-  <!-- text footer ->
-    <div class="slider testi-slider3 testi-boxed testi-overlay white-text primary-bg ">
-      <ul class="slides transparent testimonials center">
-      
-        <li>
-          <div class="center-align">
-            <div class="row userinfo">
-              <img src="./assets/img/alibhtty.jpg" alt="image" class="circle responsive-img">
-              <div class="center-align">
-                <span class="name"><strong>ali bhtty</strong>
-                  <br><span class='small position'>productor</span>
-                </span>
-              </div>
-            </div>
-          </div>
-      
-      
-          <div class='prod-rating'></div>
-          <p class="center"><i class="mdi mdi-format-quote-open"></i>Colección de sesiones de música electrónica <br> sin cortes ni anuncios<i
-              class="mdi mdi-format-quote-close"></i></p>
-      
-        </li>
-        <li>
-          <div class="center-align">
-            <div class="row userinfo">
-              <img src="./assets/img/alibhtty.jpg" alt="image" class="circle responsive-img">
-              <div class="center-align">
-                <span class="name"><strong>ali bhtty</strong>
-                  <br><span class='small position'>Productor</span>
-                </span>
-              </div>
-            </div>
-          </div>
-      
-      
-          <div class='prod-rating'></div>
-          <p class="center"><i class="mdi mdi-format-quote-open"></i>Tracklist actualizado y <br> colaboraciones con nuevos artistas<i class="mdi mdi-format-quote-close"></i>
-          </p>
-      
-        </li>
-        <li>
-          <div class="center-align">
-            <div class="row userinfo">
-              <img src="./assets/img/alibhtty.jpg" alt="image" class="circle responsive-img">
-              <div class="center-align">
-                <span class="name"><strong>ali bhtty</strong>
-                  <br><span class='small position'>Productor</span>
-                </span>
-              </div>
-            </div>
-          </div>
-      
-      
-          <div class='prod-rating'></div>
-          <p class="center"><i class="mdi mdi-format-quote-open"></i>Descargas formato mp3 en el sitio oficial, <br> completamente gratis.<i class="mdi mdi-format-quote-close"></i></p>
-      
-        </li>
-      
-      </ul>
-    </div>
-  </div> ->
-
-  <div class="spacer"></div>
-  <div class="spacer"></div>
-  <div class="spacer"></div>
-  <div class="spacer"></div>
-
-  </ul> -->
-
-  <!-- Proyectos -->
-  <!-- <ul id="slide-proyectos" class="sidenav sidesettings" style="padding-top: 0;">
-
-    <div class="swiper">
-      <div class="swiper-wrapper">
-
-        <div class="swiper-slide">
-          <img class="swiper-gl-image" src="images/massimo-dutti-min.jpg" alt="massimo dutti">
-          <div class="swiper-slide-content">
-            <div class="swiper-slide-title" style="width: 110px; height: 50px; border-radius: 25px; background-color: var(--primary-color); text-align: center;">
-              <a style="display: block; color: #ffffff; font-size: 16px;padding: 13px 0; text-align: center; font-weight: 600; font-family: Ubuntu;" href="https://ali-bhtty.web.app/cyborg/images/massimo-dutti-min.jpg" download="massimo-dutti-alibhtty.jpg">&nbsp; Descargar &nbsp;</a>
-            </div>
-          </div>
-
-          <div class="swiper-slide-content-right">
-            <div class="swiper-slide-title" style="width: 110px; height: 50px; border-radius: 25px; background-color: var(--primary-color); text-align: center;">
-              <a style="display: block; color: #ffffff; font-size: 16px;padding: 13px 0; text-align: center; font-weight: 600; font-family: Ubuntu;">&nbsp; Plz Cat. &nbsp;</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="swiper-slide">
-          <img class="swiper-gl-image" src="images/yellow-lights-min-1.jpg" alt="yellow lights">
-          <div class="swiper-slide-content">
-            <div class="swiper-slide-title" style="width: 110px; height: 50px; border-radius: 25px; background-color: var(--primary-color); text-align: center;">
-              <a style="display: block; color: #ffffff; font-size: 16px;padding: 13px 0; text-align: center; font-weight: 600; font-family: Ubuntu;" href="https://ali-bhtty.web.app/cyborg/images/yellow-lights.jpg" download="andres-bon-nadal-bcn.jpg">&nbsp; Descargar &nbsp;</a>
-            </div>
-          </div>
-
-          <div class="swiper-slide-content-right">
-            <div class="swiper-slide-title" style="width: 110px; height: 50px; border-radius: 25px; background-color: var(--primary-color); text-align: center;">
-              <a style="display: block; color: #ffffff; font-size: 16px;padding: 13px 0; text-align: center; font-weight: 600; font-family: Ubuntu;">&nbsp; Plz Cat. &nbsp;</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="swiper-slide">
-          <img class="swiper-gl-image" src="images/yellow-lights-min-2.jpg" alt="yellow lights">
-          <div class="swiper-slide-content">
-            <div class="swiper-slide-title" style="width: 110px; height: 50px; border-radius: 25px; background-color: var(--primary-color); text-align: center;">
-              <a style="display: block; color: #ffffff; font-size: 16px;padding: 13px 0; text-align: center; font-weight: 600; font-family: Ubuntu;" href="https://ali-bhtty.web.app/cyborg/images/yellow-lights-2.jpg" download="andres-bon-nadal-2-bcn.jpg">&nbsp; Descargar &nbsp;</a>
-            </div>
-          </div>
-
-          <div class="swiper-slide-content-right">
-            <div class="swiper-slide-title" style="width: 110px; height: 50px; border-radius: 25px; background-color: var(--primary-color); text-align: center;">
-              <a style="display: block; color: #ffffff; font-size: 16px;padding: 13px 0; text-align: center; font-weight: 600; font-family: Ubuntu;">&nbsp; Plz Cat. &nbsp;</a>
-            </div>
-          </div>
-        </div>
-        
-        <div class="swiper-slide">
-          <img class="swiper-gl-image" src="images/pz-catalunya.jpg" alt="plaza catalunya">
-          <div class="swiper-slide-content">
-            <div class="swiper-slide-title" style="width: 110px; height: 50px; border-radius: 25px; background-color: var(--primary-color); text-align: center;">
-              <a style="display: block; color: #ffffff; font-size: 16px;padding: 13px 0; text-align: center; font-weight: 600; font-family: Ubuntu;" href="https://ali-bhtty.web.app/cyborg/images/pz-catalunya.jpg" download="pz-catalunya.jpg">&nbsp; Descargar &nbsp;</a>
-            </div>
-          </div>
-
-          <div class="swiper-slide-content-right">
-            <div class="swiper-slide-title" style="width: 110px; height: 50px; border-radius: 25px; background-color: var(--primary-color); text-align: center;">
-              <a style="display: block; color: #ffffff; font-size: 16px;padding: 13px 0; text-align: center; font-weight: 600; font-family: Ubuntu;">&nbsp; Plz Cat. &nbsp;</a>
-            </div>
-          </div>
-        </div>
-  
-        <div class="swiper-slide">
-          <img class="swiper-gl-image" src="images/feria-dani-min.jpg" alt="retrato feria">
-          <div class="swiper-slide-content">
-            <div class="swiper-slide-title" style="width: 110px; height: 50px; border-radius: 25px; background-color: var(--primary-color); text-align: center;">
-              <a style="display: block; color: #ffffff; font-size: 16px;padding: 13px 0; text-align: center; font-weight: 600; font-family: Ubuntu;" href="https://ali-bhtty.web.app/cyborg/images/feria-dani-min.jpg" download="retrato-feria-bcn.jpg">&nbsp; Descargar &nbsp;</a>
-            </div>
-          </div>
-
-          <div class="swiper-slide-content-right">
-            <div class="swiper-slide-title" style="width: 110px; height: 50px; border-radius: 25px; background-color: var(--primary-color); text-align: center;">
-              <a style="display: block; color: #ffffff; font-size: 16px;padding: 13px 0; text-align: center; font-weight: 600; font-family: Ubuntu;">&nbsp; Feria Port. &nbsp;</a>
-            </div>
-          </div>
-        </div>
-  
-        
-      </div>
-      </div>
-  
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-button-next"></div>
-    </div>
-
-  </ul> -->
-    
-    <!-- <div class="menu-close"><i class="mdi mdi-close"></i></div> -->
-
-  <!-- Galería Shaders -->
-  <div class="swiper">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide">
-        <!-- shaders image must be a direct child of the slide and have additional "swiper-gl-image" class  -->
-        <img class="swiper-gl-image" src="https://alibhtty.github.io/cyborg/images/cyborg-holo-min.jpg" alt="cyborg ali bhtty">
-        <!-- <div class="swiper-slide-content">
-          <div class="swiper-slide-title">Cyborg</div>
+        <!-- <div class="preloader-orbit-loading">
+          <div class="cssload-inner cssload-one"></div>
+          <div class="cssload-inner cssload-two"></div>
+          <div class="cssload-inner cssload-three"></div>
         </div> -->
       </div>
 
-      <div class="swiper-slide">
-        <img class="swiper-gl-image" src="images/cyborg-zoom-min.jpg" alt="cyborg zoom ali bhtty">
-      </div>
+        <!-- Catálogo -->
+        <div class="headerUpper max-w-screen-xl px-4 md:px-10 mx-auto my-12">
+            <h1 class="text-3xl md:text-4xl font-bold mb-8 ">Catálogo</h1>
 
-      <div class="swiper-slide">
-        <img class="swiper-gl-image" src="catalogo/guias/img/barceloneta-1k.jpg" alt="plaza catalunya">
-      </div>
+            <span class="line-menu">
+                <div class="line-content">
+                    <a href="./index-slide.html" class="line-item line-r-1 line-on">SWIPE</a>
+                    <a class="line-item line-r-2 line-on">CATÁLOGO</a>
+                    <a class="line-item"> </a>
+                    <a class="line-item"> </a>
+                </div>
+            </span>
 
-      <div class="swiper-slide">
-        <img class="swiper-gl-image" loading="lazy" src="images/iberostar-min.jpg" alt="iberostar barcelona">
-      </div>
+            <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+                <span>
+                    <a id="catalog-shaders-slider"
+                    class="catalog-item group relative block rounded-xl duration-200 active:bg-dark-3 group-hover:bg-dark-2 bg-dark-1 p-4" 
+                    href="./catalogo/sesiones/"> <!-- LINEAS NOVEDAD   --    catalog-item-featured -->
+                    <div class="catalog-item-featured-label absolute right-0 top-0 rounded-tr-lg rounded-bl bg-primary-p3 px-2 py-1 text-xs font-semibold uppercase text-white">
+                        Nuevo</div><svg class="absolute left-0 top-0 z-0 h-full w-full">
+                        <rect x="1" y="1" fill="none" stroke-width="2" rx="8" ry="8"></rect>
+                    </svg>
+                    <div class="relative mb-4">
+                        <div class="font-bold">Sesiones</div>
+                        <div class="mt-1 text-sm font-medium opacity-75">Retrato, urbano</div>
+                    </div>
+                    <div class="atropos">
+                        <span class="atropos-scale">
+                            <span class="atropos-rotate">
+                                <span class="atropos-inner rounded-xl text-[0px]">
+                                    <img data-atropos-offset="-1" alt="Sesiones" class="rounded-xl"
+                                        src="https://alibhtty.github.io/cyborg/assets/icons/meta.jpg"/> <!-- width="560" height="280" loading="lazy"    lazy -->
+                                    <!-- <div data-atropos-offset="4" class="absolute left-0 top-0 h-full w-full"><img
+                                            class="absolute top-[11%] left-[5.5%] w-[20%]" src="./icon/icon1.svg" alt="Shaders Slider" width="192"
+                                            height="192" /></div> -->
+                                    <!-- <div class="absolute left-0 top-0 h-full w-full" data-atropos-offset="1"><img src="images/techs/swiper.svg"
+                                            width="22" height="22" alt="Swiper" class="absolute top-[65%]" style="left:5.5%;width:6%;height:12%" />
+                                    </div> -->
+                                    <span class="atropos-highlight"></span>
+                                </span>
+                                <span class="atropos-shadow"></span>
+                            </span>
+                        </span>
+                    </div>
+                </a>
+                </span>
+                
+                <span>
+                    <a id="catalog-slicer-slider"
+                    class="catalog-item group relative block rounded-xl duration-200 active:bg-dark-3 group-hover:bg-dark-2 bg-dark-1 p-4 border border-white border-opacity-5 "
+                    href="./catalogo/guias/">
+                    <div class="relative mb-4">
+                        <div class="font-bold">Guías</div>
+                        <div class="mt-1 text-sm font-medium opacity-75">Rutas de Barcelona</div>
+                    </div>
+                    <div class="atropos">
+                        <span class="atropos-scale">
+                            <span class="atropos-rotate"><span
+                                    class="atropos-inner rounded-xl text-[0px]">
+                                    <img data-atropos-offset="-1" alt="Guías"
+                                        class="rounded-xl" src="https://alibhtty.github.io/cyborg/catalogo/img/cover-2.jpeg"/> <!-- width="560" height="280" loading="lazy" -->
+                                    <!-- <div data-atropos-offset="4" class="absolute left-0 top-0 h-full w-full"><img
+                                            class="absolute top-[11%] left-[5.5%] w-[20%]" src="./icon/icon2.svg"
+                                            alt="Slicer Slider" width="192" height="192" /></div> -->
+                                    <!-- <div class="absolute left-0 top-0 h-full w-full" data-atropos-offset="1"><img
+                                            src="images/techs/swiper.svg" width="22" height="22" alt="Swiper"
+                                            class="absolute top-[65%]" style="left:5.5%;width:6%;height:12%" /></div> -->
+                                    <span class="atropos-highlight"></span>
+                                </span><span class="atropos-shadow"></span>
+                            </span>
+                        </span>
+                    </div>
+                </a>
+                </span>
+                
+                <span>
+                    <a id="catalog-password-input"
+                    class="catalog-item group relative block rounded-xl duration-200 active:bg-dark-3 group-hover:bg-dark-2 bg-dark-1 p-4 border border-white border-opacity-5 "
+                    href="./catalogo/timeline/">
+                    <div class="relative mb-4">
+                        <div class="font-bold">Timeline</div>
+                        <div class="mt-1 text-sm font-medium opacity-75">Proyectos y colaboraciones</div>
+                    </div>
+                    <div class="atropos atropos2">
+                        <span class="atropos-scale">
+                            <span class="atropos-rotate">
+                                <span class="atropos-inner rounded-xl text-[0px]">
+                                    <img data-atropos-offset="-1" alt="Timeline" class="rounded-xl"
+                                        src="https://alibhtty.github.io/cyborg/assets/icons/meta.jpg"/> <!-- width="560" height="280" loading="lazy"    lazy -->
+                                    <!-- <div data-atropos-offset="4" class="absolute left-0 top-0 h-full w-full"><img
+                                            class="absolute top-[11%] left-[5.5%] w-[20%]" src="./icon/icon1.svg" alt="Shaders Slider" width="192"
+                                            height="192" /></div> -->
+                                    <!-- <div class="absolute left-0 top-0 h-full w-full" data-atropos-offset="1"><img src="images/techs/swiper.svg"
+                                            width="22" height="22" alt="Swiper" class="absolute top-[65%]" style="left:5.5%;width:6%;height:12%" />
+                                    </div> -->
+                                    <span class="atropos-highlight"></span>
+                                </span>
+                                <span class="atropos-shadow"></span>
+                            </span>
+                        </span>
+                    </div>
+                    <!-- <div class="atropos"><span class="atropos-scale"><span class="atropos-rotate"><span
+                                    class="atropos-inner rounded-xl text-[0px]"><img data-atropos-offset="-1" alt="Password Input"
+                                        class="lazy rounded-xl " src="https://s.uiinitiative.com/items/password-input/cover_s.jpg"
+                                        width="560" height="280" loading="lazy" />
+                                    <div data-atropos-offset="4" class="absolute left-0 top-0 h-full w-full"><img
+                                            class="absolute top-[11%] left-[5.5%] w-[20%]" src="items/password-input/icon.svg"
+                                            alt="Password Input" width="192" height="192" /></div>
+                                    <div class="absolute left-0 top-0 h-full w-full" data-atropos-offset="1"><img
+                                            src="images/techs/framework7.svg" width="22" height="22" alt="Framework7"
+                                            class="absolute top-[65%]" style="left:5.5%;width:6%;height:12%" /><img
+                                            src="images/techs/react.svg" width="22" height="22" alt="React"
+                                            class="absolute top-[65%]" style="left:13%;width:6%;height:12%" /><img
+                                            src="images/techs/vue.svg" width="22" height="22" alt="Vue" class="absolute top-[65%]"
+                                            style="left:20.5%;width:6%;height:12%" /><img src="images/techs/svelte.svg" width="22"
+                                            height="22" alt="Svelte" class="absolute top-[65%]"
+                                            style="left:28%;width:6%;height:12%" /></div>
+                                    <span class="atropos-highlight"></span>
+                                </span><span class="atropos-shadow"></span></span></span>
+                            </div> -->
+                    </a>
+                </span>
+                
+                <span>
+                    <a id="catalog-shutters-slider"
+                    class="catalog-item group relative block rounded-xl duration-200 active:bg-dark-3 group-hover:bg-dark-2 bg-dark-1 p-4 border border-white border-opacity-5 "
+                    href="./catalogo/story/index.html">
+                    <div class="relative mb-4">
+                        <div class="font-bold">Fondos</div>
+                        <div class="mt-1 text-sm font-medium opacity-75">Fondos para smartphone</div>
+                    </div>
+                    <!-- <div class="atropos"><span class="atropos-scale"><span class="atropos-rotate"><span
+                                    class="atropos-inner rounded-xl text-[0px]"><img data-atropos-offset="-1" alt="Shutters Slider"
+                                        class="lazy rounded-xl " src="https://s.uiinitiative.com/items/shutters-slider/cover_s.jpg"
+                                        width="560" height="280" loading="lazy" />
+                                    <div data-atropos-offset="4" class="absolute left-0 top-0 h-full w-full"><img
+                                            class="absolute top-[11%] left-[5.5%] w-[20%]" src="items/shutters-slider/icon.svg"
+                                            alt="Shutters Slider" width="192" height="192" /></div>
+                                    <div class="absolute left-0 top-0 h-full w-full" data-atropos-offset="1"><img
+                                            src="images/techs/swiper.svg" width="22" height="22" alt="Swiper"
+                                            class="absolute top-[65%]" style="left:5.5%;width:6%;height:12%" /></div>
+                                    <span class="atropos-highlight"></span>
+                                </span><span class="atropos-shadow"></span></span></span>
+                            </div> -->
+                </a>
+                </span>
+                
+                <span>
+                    <a id="catalog-stories-slider"
+                    class="catalog-item group relative block rounded-xl duration-200 active:bg-dark-3 group-hover:bg-dark-2 bg-dark-1 p-4 border border-white border-opacity-5 "
+                    href="https://mix-tape.web.app">
 
-      <div class="swiper-slide">
-        <img class="swiper-gl-image" loading="lazy" src="images/lorito-1k.jpg" alt="iberostar barcelona">
-      </div>
+                    <div class="relative mb-4">
+                        <div class="font-bold">Música</div>
+                        <div class="mt-1 text-sm font-medium opacity-75">Reproductor de música by 4B
+                        </div>
+                    </div>
+                    <!-- <div class="atropos"><span class="atropos-scale"><span class="atropos-rotate"><span
+                                    class="atropos-inner rounded-xl text-[0px]"><img data-atropos-offset="-1" alt="Stories Slider"
+                                        class="lazy rounded-xl " src="https://s.uiinitiative.com/items/stories-slider/cover_s.jpg"
+                                        width="560" height="280" loading="lazy" />
+                                    <div data-atropos-offset="4" class="absolute left-0 top-0 h-full w-full"><img
+                                            class="absolute top-[11%] left-[5.5%] w-[20%]" src="items/stories-slider/icon.svg"
+                                            alt="Stories Slider" width="192" height="192" /></div>
+                                    <div class="absolute left-0 top-0 h-full w-full" data-atropos-offset="1"><img
+                                            src="images/techs/swiper.svg" width="22" height="22" alt="Swiper"
+                                            class="absolute top-[65%]" style="left:5.5%;width:6%;height:12%" /><img
+                                            src="images/techs/react.svg" width="22" height="22" alt="React"
+                                            class="absolute top-[65%]" style="left:13%;width:6%;height:12%" /><img
+                                            src="images/techs/vue.svg" width="22" height="22" alt="Vue" class="absolute top-[65%]"
+                                            style="left:20.5%;width:6%;height:12%" /></div>
+                                    <span class="atropos-highlight"></span>
+                                </span><span class="atropos-shadow"></span></span></span>
+                            </div> -->
+                </a>
+                </span>
+                
+                <span>
+                    <a id="catalog-keypad"
+                    class="catalog-item group relative block rounded-xl duration-200 active:bg-dark-3 group-hover:bg-dark-2 bg-dark-1 p-4 border border-white border-opacity-5 "
+                    href="">
+                    <div class="relative mb-4">
+                        <div class="font-bold">Cyborg Shop</div>
+                        <div class="mt-1 text-sm font-medium opacity-75"> Descarga LUTs y presets Lr
+                        </div>
+                    </div>
+                    <!-- <div class="atropos"><span class="atropos-scale"><span class="atropos-rotate"><span
+                                    class="atropos-inner rounded-xl text-[0px]"><img data-atropos-offset="-1" alt="Keypad"
+                                        class="lazy rounded-xl " src="https://s.uiinitiative.com/items/keypad/cover_s.jpg"
+                                        width="560" height="280" loading="lazy" />
+                                    <div data-atropos-offset="4" class="absolute left-0 top-0 h-full w-full"><img
+                                            class="absolute top-[11%] left-[5.5%] w-[20%]" src="items/keypad/icon.svg" alt="Keypad"
+                                            width="192" height="192" /></div>
+                                    <div class="absolute left-0 top-0 h-full w-full" data-atropos-offset="1"><img
+                                            src="images/techs/framework7.svg" width="22" height="22" alt="Framework7"
+                                            class="absolute top-[65%]" style="left:5.5%;width:6%;height:12%" /></div>
+                                    <span class="atropos-highlight"></span>
+                                </span><span class="atropos-shadow"></span></span></span>
+                            </div> -->
+                </a>
+                </span>  
 
-      <div class="swiper-slide">
-        <img class="swiper-gl-image" loading="lazy" src="images/cascanueces-min.jpg" alt="cascanueces feria">
-      </div>
+                <span>  <!-- style="box-shadow: 6px 6px 2px rgba(0, 216, 255, .45);" -->
+                    <a id="catalog-stories-slider"
+                    class="catalog-item group relative block rounded-xl duration-200 active:bg-dark-3 group-hover:bg-dark-2 bg-dark-1 p-4 border border-white border-opacity-5 "
+                    href="./catalogo/game/index.html" style="padding: 0 ;background-color: rgba(0, 179, 255, 0.27)">
 
-      <div class="swiper-slide">
-        <img class="swiper-gl-image" loading="lazy" src="images/colon-min.jpg" alt="Cristobal Colon">
-      </div>
+                    <div class="relative mb-4" style="position: absolute;;">
+                        <div class="font-bold" style="padding: 5px 10px;">FlappyBird ®</div>
+                        <!-- <div class="mt-1 text-sm font-medium opacity-75">Reproductor de música by 4B
+                        </div> -->
+                    </div>
+                    <img style="width: auto;" src="./catalogo/img/flappy.png" alt="">
+                    <!-- <div class="atropos"><span class="atropos-scale"><span class="atropos-rotate"><span
+                                    class="atropos-inner rounded-xl text-[0px]"><img data-atropos-offset="-1" alt="Stories Slider"
+                                        class="lazy rounded-xl " src="https://s.uiinitiative.com/items/stories-slider/cover_s.jpg"
+                                        width="560" height="280" loading="lazy" />
+                                    <div data-atropos-offset="4" class="absolute left-0 top-0 h-full w-full"><img
+                                            class="absolute top-[11%] left-[5.5%] w-[20%]" src="items/stories-slider/icon.svg"
+                                            alt="Stories Slider" width="192" height="192" /></div>
+                                    <div class="absolute left-0 top-0 h-full w-full" data-atropos-offset="1"><img
+                                            src="images/techs/swiper.svg" width="22" height="22" alt="Swiper"
+                                            class="absolute top-[65%]" style="left:5.5%;width:6%;height:12%" /><img
+                                            src="images/techs/react.svg" width="22" height="22" alt="React"
+                                            class="absolute top-[65%]" style="left:13%;width:6%;height:12%" /><img
+                                            src="images/techs/vue.svg" width="22" height="22" alt="Vue" class="absolute top-[65%]"
+                                            style="left:20.5%;width:6%;height:12%" /></div>
+                                    <span class="atropos-highlight"></span>
+                                </span><span class="atropos-shadow"></span></span></span>
+                            </div> -->
+                </a>
+                </span>
 
-      <!-- <div class="swiper-slide">
-        <img class="swiper-gl-image" loading="lazy" src="catalogo/guias/img/marina-1k.jpg" alt="croma rims">
-      </div> -->
+                <span>
+                    <a id="catalog-keypad"
+                    class="catalog-item group relative block rounded-xl duration-200 active:bg-dark-3 group-hover:bg-dark-2 bg-dark-1 p-4 border border-white border-opacity-5 "
+                    href="./go/">
+                    <div class="relative mb-4">
+                        <div class="font-bold">4B Go</div>
+                        <!-- <div class="mt-1 text-sm font-medium opacity-75">6Mb
+                        </div> -->
+                    </div>
+                    <!-- <div class="atropos"><span class="atropos-scale"><span class="atropos-rotate"><span
+                                    class="atropos-inner rounded-xl text-[0px]"><img data-atropos-offset="-1" alt="Keypad"
+                                        class="lazy rounded-xl " src="https://s.uiinitiative.com/items/keypad/cover_s.jpg"
+                                        width="560" height="280" loading="lazy" />
+                                    <div data-atropos-offset="4" class="absolute left-0 top-0 h-full w-full"><img
+                                            class="absolute top-[11%] left-[5.5%] w-[20%]" src="items/keypad/icon.svg" alt="Keypad"
+                                            width="192" height="192" /></div>
+                                    <div class="absolute left-0 top-0 h-full w-full" data-atropos-offset="1"><img
+                                            src="images/techs/framework7.svg" width="22" height="22" alt="Framework7"
+                                            class="absolute top-[65%]" style="left:5.5%;width:6%;height:12%" /></div>
+                                    <span class="atropos-highlight"></span>
+                                </span><span class="atropos-shadow"></span></span></span>
+                            </div> -->
+                </a>
+                </span> 
 
-      <div class="swiper-slide">
-        <img class="swiper-gl-image" loading="lazy" src="images/rolex-holo-min.jpg" alt="rolex">
-      </div>
+            </div>
 
-      <!-- <div class="swiper-slide">
-        <img class="swiper-gl-image" src="images/hardest-mix-min.jpg" alt="hardestmix ali bhtty">
-      </div> -->
-
-      <div class="swiper-slide">
-        <img class="swiper-gl-image" loading="lazy" src="images/gaviota-min.jpg" alt="Barceloneta">
-      </div>
-
-      <div class="swiper-slide">
-        <img class="swiper-gl-image" loading="lazy" src="images/animat-min.jpg" alt="Animat">
-      </div>
-
-      <div class="swiper-slide">
-        <img class="swiper-gl-image" loading="lazy" src="images/massimo-dutti-min.jpg" alt="Massimo Dutti">
-      </div>
-
-      <div class="swiper-slide">
-        <img class="swiper-gl-image" loading="lazy" src="images/gato-raval-min.jpg" alt="el raval">
-      </div>
-
-      <!-- <div class="swiper-slide">
-        <img class="swiper-gl-image" src="images/cyborg-bw-min.jpg" alt="Cyborg B&W">
-      </div> -->
+        </div>
     </div>
 
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
-  </div>
 
-  <!-- Footer Nav -->
-  <div class="footer-menu circular" style="position: fixed; background: transparent;"> <!-- background: rgba(20, 20, 19, 0.5);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px); -->
-  
-    <ul style="height: 100%;">
-      <li>
-        <a style="margin-left: -40px;" href="https://mix-tape.web.app" class="but-nav waves-effect navicon sidenav-trigger show-on-large">
-          <span><img style="scale: 130%;" class="icon-menu" src="assets/icons/play.svg" alt=""></span> <!-- tocar -->
-        </a>
-      </li>
-      <li>
-        <!-- <a href="./menu/" class="but-nav white-text">
-          <span><img class="icon-menu" src="https://ali-bhtty.web.app/cyborg/assets/icons/hogar.svg" alt=""></span></a> -->
-  
-      </li>
-      <li>
-        <span class="btn-nave" style="margin-left: 40px;">
-          <a href="./catalogo/" class="but-nav waves-effect navicon sidenav-trigger show-on-large">
-            <span><img class="icon-menu" src="assets/icons/biblioteca.svg" alt=""></span>
-          </a>
-        </span>
-      </li>
-    </ul>
-  </div>
-
-  <div class="demo-shader-picker" style="display: none;">
-    <div class="demo-shader-selector">
-      <span>Shader:</span>
-      <div class="demo-shader-current">random</div>
-      <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56" fill="currentColor">
-        <path
-          d="M 28.0000 39.4609 C 28.5859 39.4609 29.1718 39.2266 29.5703 38.7813 L 47.7344 20.1953 C 48.1328 19.7969 48.3672 19.2813 48.3672 18.6953 C 48.3672 17.4766 47.4297 16.5391 46.2109 16.5391 C 45.6484 16.5391 45.0859 16.7735 44.6875 17.1484 L 28.0000 34.2109 L 11.3125 17.1484 C 10.9140 16.7735 10.3750 16.5391 9.7891 16.5391 C 8.5703 16.5391 7.6328 17.4766 7.6328 18.6953 C 7.6328 19.2813 7.8672 19.7969 8.2656 20.2187 L 26.4297 38.7813 C 26.875 39.2266 27.3906 39.4609 28.0000 39.4609 Z" />
-      </svg>
-    </div>
-    <div class="demo-shader-options">
-      <span>random</span>
-      <span>dots</span>
-      <span>flyeye</span>
-      <span>morph-x</span>
-      <span>morph-y</span>
-      <span>page-curl</span>
-      <span>peel-x</span>
-      <span>peel-y</span>
-      <span>polygons-fall</span>
-      <span>polygons-morph</span>
-      <span>polygons-wind</span>
-      <span>pixelize</span>
-      <span>ripple</span>
-      <span>shutters</span>
-      <span>slices</span>
-      <span>squares</span>
-      <span>stretch</span>
-      <span>wave-x</span>
-      <span>wind</span>
-    </div>
-  </div>
-
-  <!-- Modal Trigger -->
-<!-- <a class="waves-effect waves-light btn modal-trigger indigo lighten-2 white-text" href="#modal1958039793">Fullscreen Popup</a> -->
-
-<!-- Modal Structure -->
-<!-- <div id="modal1958039793" class="modal indigo lighten-2 white-text modal-fixed-footer full">
-  <div class="modal-content ">
-    <div class="spacer"></div>
-        <h4 class="bot-20 ">Música a la carta </h4> <!-- sec-tit ->
-        
-    <p><img alt="image" class=" img-wrap round" style="width: 100%;" src="./../assets/img/banner/ep015.jpg"></p><p>Escucha la nueva lista de sesiones, mientras revisar el álbum.</p><p>Mesclas de Soundcloud y Mixcloud.</p> </div>
-    <div class="modal-footer indigo lighten-2 white-text">
-    <a href="#" class="modal-close waves-effect waves-red btn-flat">Volver</a>
-    <a href="#" data-target="slide-settings" class="modal-close waves-effect waves-green btn-flat">Siguiente</a>
-  </div>  
-</div> -->
-
-
-<!-- menu -->
-  <!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script> -->
-
-  <!-- <script src="chat/js/jquery-2.2.4.min.js"></script>
-  <script src="chat/js/materialize.js"></script>
-  <script src="chat/js/perfect-scrollbar.min.js"></script>
-  <script src="chat/js/variables.js"></script> -->
-  <!-- CORE JS FRAMEWORK - END -->
-  
-  <!-- OTHER SCRIPTS INCLUDED ON THIS PAGE - START -->
-  <!-- <script src="https://ali-bhtty.web.app/cyborg/chat/js/common.js"></script> -->  <!-- OTHER SCRIPTS INCLUDED ON THIS PAGE - END -->
-  
-  <!-- CORE TEMPLATE JS - START -->
-  <!-- <script src="https://ali-bhtty.web.app/cyborg/chat/js/init.js"></script>
-  <script src="https://ali-bhtty.web.app/cyborg/chat/js/settings.js"></script>
-  
-  <script src="https://ali-bhtty.web.app/cyborg/chat/js/scripts.js"></script> -->
-
-  <!-- <script src="https://ali-bhtty.web.app/cyborg/chat/js/preloader.js"></script> -->
-
-  <!-- preloader -->
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-  <script src="assets/js/preloader.js"></script>
+    <!-- preloader -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="assets/js/preloader.js"></script>
 
   <script>
           (function() {
@@ -712,8 +874,8 @@
         ++quoteIndex;
         quotes.eq(quoteIndex % quotes.length)
           .fadeIn(2000)
-          .delay(1500)
-          .fadeOut(2500, showNextQuote);
+          .delay(200)
+          .fadeOut(1100, showNextQuote);
       }
       
       showNextQuote();
@@ -721,59 +883,10 @@
       })();
       
       window.onload = function(){
-          $('#onload').delay(3000).fadeOut(2000);
+          $('#onload').delay(2000).fadeOut(2300);
           $('body').removeClass('hidden')
       }
   </script>
-  
-
-  <!-- notificacion -->
-  <script type="text/javascript">
-    (function (window, document) { // asilamos el componente
-      // creamos el contedor de las tostadas o la tostadora
-      var container = document.createElement('div');
-      container.className = 'toast-container';
-      document.body.appendChild(container);
-
-      // esta es la funcion que hace la tostada
-      window.doToast = function (message) {
-        // creamos tostada
-        var toast = document.createElement('div');
-        toast.className = 'toast-toast';
-        toast.innerHTML = message;
-
-        // agregamos a la tostadora
-        container.appendChild(toast);
-
-        // programamos su eliminación
-        setTimeout(function () {
-          // cuando acabe de desaparecer, lo eliminamos del dom.
-          toast.addEventListener("transitionend", function () {
-            container.removeChild(toast);
-          }, true);
-
-          // agregamos un estilo que inicie la "transition". 
-          toast.classList.add("fadeout");
-        }, 5000); // OP dijo, "solo dos segundos"
-      }
-    })(window, document);
-
-    // ejempo de uso
-    /* doToast("Hola mundo!"); */
-
-    // ejemplo retardado de uso
-    setTimeout(function () {
-      doToast("Instala nuestra <br> APP ✨"); /*  &nbsp; ツ */
-    }, 7000);
-
-    // ejemplo retardado de uso
-    setTimeout(function () {
-      doToast("Presiona Compartir y <br> Añadir a pantalla de inicio");
-    }, 14000);
-
-  </script>
-
-<script src="./script.js"></script>
-</body>
+    </body>
 
 </html>
