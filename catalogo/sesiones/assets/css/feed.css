@@ -56,7 +56,7 @@ body{
     font-size:13px;
     line-height: 16px;
     font-weight:600;
-    z-index:998;
+    z-index:2;  /* 998 */
     /*background-color:rgba(1, 1, 1, 0.2);*/
     filter: drop-shadow(0 0 0.1rem black);
     text-shadow: 0px 0px 10px black;
@@ -255,6 +255,7 @@ body{
           column-gap: .8rem;
           padding:.5rem .5rem;
           margin-top: 0rem;
+          margin-bottom: 2.5rem;
         }
         .container_grid [class*="card"]:hover{
           scale:95%;
