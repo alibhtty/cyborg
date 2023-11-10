@@ -23,7 +23,7 @@
       <link rel="modulepreload" href="assets/js/vendor-swipper.js">
       <link rel="stylesheet" href="assets/css/index-swipper.css">
       <link rel="stylesheet" href="style.css">
-      <link rel="stylesheet" href="assets/materialize/materialdesignicons.min.css">
+      <!-- <link rel="stylesheet" href="assets/materialize/materialdesignicons.min.css"> -->
       <link rel="stylesheet" href="assets/css/brake.css">
 
       <!-- Open Graph / Facebook -->
@@ -38,6 +38,12 @@
       <!-- <link href="assets/css/preload-cyborg.css" type="text/css" rel="stylesheet" media="screen" /> -->
    
       <style>
+        body:before {
+          content: "";
+          display: none;
+          pointer-events: none;
+          /* background: radial-gradient(circle, rgba(255,255,255,0), rgba(0,0,0,1) ); */
+          }
         /* body, img{
           overscroll-behavior: contain;
           overscroll-behavior-x: contain;
@@ -75,7 +81,7 @@
 
           .footer-menu li a{
             display: inline-block;
-            background: rgba(20, 20, 19, 0.5);
+            background: rgba(20, 20, 19, 0.8);
             backdrop-filter: blur(10px);
             -webkit-backdrop-filter: blur(10px);
             /* background-color: #000000; */
