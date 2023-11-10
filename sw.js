@@ -4,12 +4,8 @@ const CACHE_NAME = 'cache_cyborg',
 urlToCache = [
     './',
     'https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap',
-    'https://alibhtty.github.io/cyborg/index.html',
-    'https://alibhtty.github.io/cyborg/images/cyborg-bw-min.jpg',
     'https://alibhtty.github.io/cyborg/style.css',
-    'https://alibhtty.github.io/cyborg/guias/index.html',
-    'https://alibhtty.github.io/cyborg/guias/style-global',
-    'https://alibhtty.github.io/cyborg/guias/style-guias'
+    'https://alibhtty.github.io/cyborg/guias/index.html'
 ]
 
 //durante la fase de instalación, generalmente se almacena en cache los activos estáticos
