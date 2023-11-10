@@ -21,20 +21,11 @@
   <meta property="og:description" content="Curación de fotografía y arte digital - &quot;Barcelona &quot; It's Cyborg art">
   <meta property="og:image" content="https://alibhtty.web.app/cyborg/assets/icons/meta.jpg">
 
-  <meta name="web-experience-app/config/environment">
+  <!-- <meta name="web-experience-app/config/environment"> -->
   <!-- EMBER_CLI_FASTBOOT_TITLE -->
-  <link rel="stylesheet preload" name="fonts"
+  <!-- <link rel="stylesheet preload" name="fonts"
     href="https://www.apple.com/wss/fonts?families=SF+Pro,v2%7CSF+Pro+Icons,v1%7CSF+Pro+Rounded,v1%7CNew+York+Small,v1%7CNew+York+Medium,v1"
-    as="style">
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Chivo:300,700%7CPress+Start+2P" rel="stylesheet"> -->
-
-  <!-- <link rel="stylesheet" type="text/css"
-    href="https://www.apple.com/api-www/global-elements/global-header/v1/assets/globalheader.css"
-    data-global-elements-nav-styles> -->
-  <!-- <link rel="stylesheet" type="text/css"
-    href="../../global-elements/2306.1.0/es_ES/ac-global-footer.37c9d75490910defaa9bdb2b442c44eb.css"
-    data-global-elements-footer-styles> -->
+    as="style"> -->
   <title>‎La Barceloneta</title>
   <link rel="manifest" href="../../../../manifest.json">
 
@@ -42,8 +33,6 @@
 	<link rel="apple-touch-icon" sizes="180x180" href="../../../../assets/icons/icon_192.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="../../../../assets/icons/icon_32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="../../../../assets/icons/icon_16.png">
-	<!-- <link rel="manifest" href="https://alibhtty.web.app/favicon/site.webmanifest"> -->
-	<!-- <link rel="mask-icon" href="https://alibhtty.web.app/favicon/safari-pinned-tab.svg" color="#5bbad5"> -->
 	<link rel="shortcut icon" type="image/x-icon" href="../../../../assets/icons/icon_192.ico">
 	<meta name="msapplication-TileColor" content="#2da3ba">
 	<!-- <meta name="theme-color" content="#ffffff"> -->
@@ -109,7 +98,7 @@
       }
 
       .l-content-width {
-        padding-top: 24px
+        padding-top: 34px
       }
     
     @media screen and (display-mode: standalone) {
@@ -139,7 +128,7 @@
       }
 
       .l-content-width {
-        padding-top: 34px
+        padding-top: 54px
       }
 
     } ;
@@ -384,7 +373,7 @@
           <div class="localnav-content we-localnav__content">
             <div class="localnav-title we-localnav__title">
               <span class="we-localnav__title__qualifier" data-test-we-localnav-preview-title>Resumen de</span> <a
-                href="../../../index.html" data-we-link-to-exclude> <!-- https://www.apple.com/es/ios/app-store/ -->
+                href="../../../../index.html" data-we-link-to-exclude> <!-- https://www.apple.com/es/ios/app-store/ -->
                 <span class="we-localnav__title__product" data-test-we-localnav-store-title>Guías</span></a>
 
                 <!-- <a href="javascript:history.back()"><img src="/assets/svg/arrowLeft.svg" height="33" width="100" alt="Botón atrás"</a> -->
@@ -485,13 +474,6 @@
                     srcset="https://alibhtty.web.app/cyborg/images/colon-min.jpg 366w, https://alibhtty.web.app/cyborg/images/colon-min.jpg 336w, https://alibhtty.web.app/cyborg/images/colon-min.jpg 480w, https://alibhtty.web.app/cyborg/images/colon-min.jpg 732w, https://alibhtty.web.app/cyborg/images/colon-min.jpg 672w, https://alibhtty.web.app/cyborg/images/colon-min.jpg 960w"
                     sizes="(max-width: 734px) 366px, (min-width: 735px) and (max-width: 1068px) 336px, 480px"
                     type="image/jpg">
-
-                  <img src="../../assets/artwork/1x1-42817eea7ade52607a760cbee00d1495.gif" decoding="async"
-                    loading="lazy" class="we-artwork__image ember6811  we-artwork__image--lazyload" alt
-                    role="presentation" height="483" width="366">
-
-
-
 
 
                     <!-- test -- source -->
@@ -809,12 +791,12 @@
 
 
 
-            <div style="margin-bottom: 5rem;">
+            <div style="margin-bottom: 6rem;">
               <ul class="story__section we-product-collection">
                 <div class="we-product-collection__item">
                   <picture
                     class="we-artwork we-artwork--downloaded we-product-collection__item__artwork we-artwork--ios-app-icon"
-                    style="--background-color: #1b1b1b;" id="ember6814">
+                    style="--background-color: #1b1b1b;"> <!-- id="ember6814" -->
 
                     <!-- <source
                       srcset="https://alibhtty.web.app/cyborg/assets/icons/icon_512.png 48w, https://alibhtty.web.app/cyborg/assets/icons/icon_512.png 48w, https://alibhtty.web.app/cyborg/assets/icons/icon_512.png 48w, https://alibhtty.web.app/cyborg/assets/icons/icon_512.png 96w, https://alibhtty.web.app/cyborg/assets/icons/icon_512.png 96w"
@@ -937,52 +919,6 @@
   
   <script type="fastboot/shoebox" id="shoebox-language-code">"es-es"</script>
   <!-- <script src="/script.js"></script> -->
-
-  <script type="text/javascript">
-    if ('serviceWorker' in navigator) {
-      window.addEventListener('load', function() {
-        navigator.serviceWorker.register('../../../../sw.js').then(function(registration) {
-          // Registration was successful
-          console.log('ServiceWorker registration successful with scope: ', registration.scope);
-        }, function(err) {
-          // registration failed :(
-          console.log('ServiceWorker registration failed: ', err);
-        });
-      });
-    }
-  
-    let deferredPrompt;
-    var div = document.querySelector('.add-to');
-    var button = document.querySelector('.add-to-btn');
-    /* div.style.display = 'none'; */
-    
-  
-    window.addEventListener('beforeinstallprompt', (e) => {
-      // Prevent Chrome 67 and earlier from automatically showing the prompt
-      e.preventDefault();
-      // Stash the event so it can be triggered later.
-      deferredPrompt = e;
-      div.style.display = 'block';
-  
-      button.addEventListener('click', (e) => {
-      // hide our user interface that shows our A2HS button
-      div.style.display = 'none';
-      // Show the prompt
-      deferredPrompt.prompt();
-      // Wait for the user to respond to the prompt
-      deferredPrompt.userChoice
-        .then((choiceResult) => {
-          if (choiceResult.outcome === 'accepted') {
-            console.log('User accepted the A2HS prompt');
-          } else {
-            console.log('User dismissed the A2HS prompt');
-          }
-          deferredPrompt = null;
-        });
-    });
-    });
-  
-  </script>
 
   <!-- preloader -->
   <!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>

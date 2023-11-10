@@ -1,4 +1,4 @@
-@charset "UTF-8";
+/* @charset "UTF-8"; */
 
 @font-face {
     font-family: "BICRODEPERSONALUSE";
@@ -14658,7 +14658,7 @@ html[dir=rtl] .tracks__track__button .icon-play::after {
     border-radius: 22.5%
 }
 
-@supports ((-webkit-mask-position: initial) or (mask-position: initial)) {
+/* @supports ((-webkit-mask-position: initial) or (mask-position: initial)) {
     .we-artwork--ios-app-icon::before {
         background: url("images/masks/icon-app-mask-border-61226afcae6a8f2b3d2755728daaf4f2.svg") center/100% 100% no-repeat
     }
@@ -14674,7 +14674,7 @@ html[dir=rtl] .tracks__track__button .icon-play::after {
             mask: none
         }
     }
-}
+} */
 
 @supports ((-webkit-mask-position: initial) or (mask-position: initial)) {
     .we-artwork--ios-app-icon .we-artwork__image, .we-artwork--ios-app-icon::before {
