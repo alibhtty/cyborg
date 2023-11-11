@@ -37,6 +37,10 @@
     align-items: center;
     background-color: #000000
   }  
+      @media screen and (display-mode: standalone) {
+      .centrado{
+        height: 95vh;
+      }
   
   .quotes {
       display: none;
