@@ -1294,12 +1294,12 @@ img, video {
 
 .p-4 {
     padding: 1.5vh; /* 1rem */
-    min-height: 8.5rem;
+    min-height: 12rem; /* 8.5rem */
 }
 @media screen and (orientation: portrait) {
     .p-4 {
         padding: .9vh 2vh;
-        min-height: 4.5rem;
+        min-height: 100%; /* 4.5rem */
     }
 }
 @media screen and (display-mode: standalone) {

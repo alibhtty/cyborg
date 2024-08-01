@@ -15,13 +15,13 @@
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://alibhtty.com/cyborg">
+  <meta property="og:url" content="https://alibhtty.web.app/cyborg">
   <meta property="og:title" content="Cyborg">
   <meta property="og:description" content="Curación de fotografía y arte digital - &quot;Barcelona &quot; It's Cyborg art">
   <meta property="og:image" content="https://alibhtty.web.app/cyborg/assets/icons/meta.jpg">
 
   <meta name="web-experience-app/config/environment">
-  <title>Cyborg</title>
+  <title>Wok Ronda</title>
 
   <!-- FAVICON -->
 	<link rel="apple-touch-icon" sizes="180x180" href="../../../assets/icons/icon_192.png">
@@ -35,7 +35,6 @@
   <link integrity="" rel="stylesheet" href="../../guias/css/style-guias.css">
 
   <!-- galery css -->
-  <link rel="stylesheet" href="../../../assets/css/brake.css">
   <link rel="stylesheet" href="../../css/styles.css">
   <link rel="stylesheet" href="../../style-catalogo.css">
   <link rel="stylesheet" href="../assets/css/feed.css">
@@ -57,6 +56,10 @@
   <!-- <link href="../../../assets/css/preloader.css" type="text/css" rel="stylesheet" media="screen" /> -->
 
   <style>
+    @font-face {
+  font-family: "bicro";
+  src: url("https://alibhtty.github.io/cyborg/assets/fonts/bicro.ttf");
+     }
     .headerWrapper {
     position: fixed;
     top: 0;
@@ -74,15 +77,18 @@
     -webkit-backdrop-filter: blur(10px);}
 
 
-    /* body:before {
+    body:before {
     content: "";
     bottom: 0;
     width: 100%;
-    height: 10rem;
+    height: 10rem; /* 70vh */
     position: fixed;
+    /* top: 0;
+    right: 0; */
     background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(0,0,0,.9) 98%);
     z-index: 999;
     pointer-events: none;
+    /* background: radial-gradient(circle, rgba(255,255,255,0), rgba(0,0,0,1) ); */
     }
 
     @media (max-width: 920px) {
@@ -90,13 +96,15 @@
         content: "";
     bottom: 0;
     width: 100%;
-    height: 20rem; 
+    height: 20rem; /* 10rem */
     position: fixed;
+    /* top: 0;
+    right: 0; */
     background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 100%);
     z-index: 999;
     pointer-events: none;
       }
-    } */
+    }
 
 
 
@@ -224,7 +232,7 @@
             <div class="header-top">
               <h2 class="header-top-text">Cyborg</h2>
               </div>
-            <!-- <a style="font-family: bicro; font-size: 24px; color: #ffffff; padding: 20px,20px ;">Cyborg</a> -->
+            <!-- <a style="font-family: BICRODEPERSONALUSE; font-size: 24px; color: #ffffff; padding: 20px,20px ;">Cyborg</a> -->
             </li>
 
           <!-- MENU -->
@@ -254,8 +262,8 @@
                   <div class="line-content">
                       <a href="../../../index.html" class="line-item line-r-1 line-on">INICIO</a>
                       <a href="../../index.html" class="line-item line-r-2 line-on">SESIONES</a>
-                      <!-- <a href="../../sesiones/index.html" class="line-item line-r-2 line-on">SES</a> -->
-                      <a href="index.html" class="line-item line-r-4 line-on"> CYBORG</a>
+                      <!-- <a href="../../sesiones/" class="line-item line-r-2 line-on">SESIONES</a> -->
+                      <a href="index.html" class="line-item line-r-4 line-on"> SER ALPHA</a>
                   </div>
                 </span>
             
@@ -297,58 +305,41 @@
           <div class='carousel-images'>
             <!-- == 1 Block Portrait == -->
             <div class="card_large card_exp">
-              <img class="img_card" src="../../../images/6x19.jpg" alt="">
-              <figcaption>Carrer de Fontanella</figcaption>
-            </div>
-            <div class="card_small card_exp">
-              <img class="img_card" src="../../../images/consul-peru.jpg" alt="">
+              <img class="img_card" src="./img/1.jpg" alt="">
               <figcaption> </figcaption>
             </div>
             <div class="card_medium card_exp">
-              <img class="img_card" src="../../../images/dispensador-metro-min.jpg" alt="">
+              <img class="img_card" src="./img/2.jpg" alt="">
               <figcaption> </figcaption>
             </div>
       
             <div class="card_medium card_exp">
-              <img class="img_card" src="../../../images/rolex-holo-min.jpg" alt="">
-              <figcaption> Passeig de Gràcia </figcaption>
-            </div>
-            <div class="card_small card_exp">
-              <img class="img_card" src="../../../images/croma-rims-min.jpg" alt="">
+              <img class="img_card" src="./img/3.jpg" alt="">
               <figcaption> </figcaption>
-            </div>
-            <div class="card_medium card_exp">
-              <img class="img_card" src="../../../images/cascanueces-min.jpg" alt="">
-              <figcaption> </figcaption>
-            </div>
-      
+            </div> 
 
             <!-- == 2 Block Portrait == -->
             <div class="card_small card_exp">
-              <img class="img_card" src="../../../images/colon-min.jpg" alt="">
-              <figcaption>Plaza del <br> Portal de la Paz</figcaption>
-            </div>
-            <div class="card_medium card_exp">
-              <img class="img_card" src="../../../images/01ex.jpg" alt="">
-              <figcaption> ©Cyborg </figcaption>
-            </div>
-            <div class="card_medium card_exp">
-              <img class="img_card" src="../../../images/centro-bcn-min.jpg" alt="">
+              <img class="img_card" src="./img/4.jpg" alt="">
               <figcaption> </figcaption>
             </div>
             <div class="card_small card_exp">
-              <img class="img_card" src="../../../images/gato-raval-min.jpg" alt="">
+              <img class="img_card" src="./img/5.jpg" alt="">
               <figcaption> </figcaption>
             </div>
+<!--             <div class="card_medium card_exp">
+              <img class="img_card" src="./img/DSC06866n.jpg" alt="">
+              <figcaption> </figcaption>
+            </div>
+            <div class="card_medium card_exp">
+              <img class="img_card" src="./img/DSC06879n.jpg" alt="">
+              <figcaption> </figcaption>
+            </div>
+            <div class="card_small card_exp">
+              <img class="img_card" src="./img/wok-min.jpg" alt="">
+              <figcaption> </figcaption>
+            </div> -->
       
-            <div class="card_large card_exp">
-              <img class="img_card" src="../../../images/angeles-barceloneta.jpg" alt="">
-              <figcaption> </figcaption>
-            </div>
-            <div class="card_large card_exp">
-              <img class="img_card" src="../../../images/noria-min.jpg" alt="">
-              <figcaption> </figcaption>
-            </div>
           </div>
         </div>
 
@@ -442,99 +433,11 @@
           </section> -->
 
       </main>
-      <!-- <section style="width: 100%; height: 5rem;;">
+      <section style="width: 100%; height: 5rem;;">
         <div>
 
-
-      
-
         </div>
-      </section> -->
-
-      <section class="l-content-width section section--hero product-hero">
-        <div class="l-row">
-
-      <div style="width:calc(100% - 1rem); position: fixed; bottom: -.5rem; z-index: 9; margin-left: -5px;">
-        <ul class="story__section we-product-collection">
-          <div class="we-product-collection__item">
-            <picture
-              class="we-artwork we-artwork--downloaded we-product-collection__item__artwork we-artwork--ios-app-icon"
-              style="--background-color: #1b1b1b;"> <!-- id="ember6814" -->
-
-              <!-- <source
-                srcset="https://alibhtty.web.app/cyborg/assets/icons/icon_512.png 48w, https://alibhtty.web.app/cyborg/assets/icons/icon_512.png 48w, https://alibhtty.web.app/cyborg/assets/icons/icon_512.png 48w, https://alibhtty.web.app/cyborg/assets/icons/icon_512.png 96w, https://alibhtty.web.app/cyborg/assets/icons/icon_512.png 96w"
-                sizes="(max-width: 734px) 48px, (min-width: 735px) and (max-width: 1068px) 48px, 48px"
-                type="image/png">
-
-              <source
-                srcset="https://alibhtty.web.app/cyborg/assets/icons/icon_512.png 48w, https://alibhtty.web.app/cyborg/assets/icons/icon_512.png 48w, https://alibhtty.web.app/cyborg/assets/icons/icon_512.png 48w, https://alibhtty.web.app/cyborg/assets/icons/icon_512.png 96w, https://alibhtty.web.app/cyborg/assets/icons/icon_512.png 96w, https://alibhtty.web.app/cyborg/assets/icons/icon_512.png 96w"
-                sizes="(max-width: 734px) 48px, (min-width: 735px) and (max-width: 1068px) 48px, 48px"
-                type="image/png"> -->
-
-              <img src="../../../go/assets/cover4b-842257cf.png" decoding="async"
-                loading="lazy" class="we-artwork__image ember6814  we-artwork__image--lazyload" alt
-                role="presentation" height="48" width="48">
-
-
-              <style>
-                .ember6814,
-                #ember6814::before {
-                  width: 48px;
-                  height: 48px;
-                }
-
-                .ember6814::before {
-                  padding-top: 100%;
-                }
-
-                @media (min-width: 735px) {
-
-                  .ember6814,
-                  #ember6814::before {
-                    width: 48px;
-                    height: 48px;
-                  }
-
-                  .ember6814::before {
-                    padding-top: 100%;
-                  }
-                }
-
-                @media (min-width: 1069px) {
-
-                  .ember6814,
-                  #ember6814::before {
-                    width: 48px;
-                    height: 48px;
-                  }
-
-                  .ember6814::before {
-                    padding-top: 100%;
-                  }
-                }
-              </style>
-            </picture>
-
-
-            <div class="we-product-collection__item__headings">
-              <!---->
-              <h3 class="truncate-single-line we-product-collection__item__product-name" dir="auto">
-                Ali Bhtty
-              </h3>
-              <h4 class="truncate-single-line we-product-collection__item__category">
-                Cyborg & Co.
-              </h4>
-            </div>
-
-            <a arial-label="VER Vampire Survivors"
-              class="we-button we-button-flat we-button--pill we-product-collection__item__button"
-              href="../../../../go">INSTALAR</a> <!-- ../app/vampire-survivors/id6444525702.html -->
-          </div>
-
-        </ul>
-      </div> 
-    </div>
-    </section>
+      </section>
 
   </div>
 
