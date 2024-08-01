@@ -1294,7 +1294,7 @@ img, video {
 
 .p-4 {
     padding: 1.5vh; /* 1rem */
-    min-height: 12rem; /* 8.5rem */
+    min-height: 10.4rem; /* 8.5rem */
 }
 @media screen and (orientation: portrait) {
     .p-4 {
